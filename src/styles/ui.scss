@@ -324,7 +324,7 @@
 	}
 
 	&:disabled {
-        cursor: default;
+		cursor: default;
 		background-color: #757575;
 
 		.d-show__icon::before {
@@ -351,7 +351,7 @@
 		align-items: center;
 
 		&::before {
-			color: #EDEDED;
+			color: #ededed;
 			font-size: 12px;
 			transition-duration: 0.3s;
 			translate: 0 -25%;
@@ -370,7 +370,7 @@
 		background-color: transparent;
 
 		.d-show-alt__icon::before {
-			color: #EDEDED;
+			color: #ededed;
 		}
 	}
 
@@ -393,118 +393,129 @@
 }
 
 .d-button-sm {
-    @extend .d-button;
+	@extend .d-button;
 
-    padding-left: 24px;
-    padding-right: 24px;
-    width: fit-content;
+	padding-left: 24px;
+	padding-right: 24px;
+	width: fit-content;
 
-    &:hover {
-        color: #F92C0D;
-    }
+	&:hover {
+		color: #f92c0d;
+	}
 
-    &:active {
-        color: #fbfbfb;
-        font-weight: 600;
-    }
+	&:active {
+		color: #fbfbfb;
+		font-weight: 600;
+	}
 
-    &:disabled {
-        color: #282828;
-    }
+	&:disabled {
+		color: #282828;
+	}
 }
 
 .d-button-alt-sm {
-    @extend .d-button-alt;
+	@extend .d-button-alt;
 
-    border-color: #282828;
+	border-color: #282828;
 
-    padding-left: 24px;
-    padding-right: 24px;
-    width: fit-content;
+	padding-left: 24px;
+	padding-right: 24px;
+	width: fit-content;
 
-    &:hover {
-        background-color: #FBFBFB;
-        border-color: #F92C0D;
-        color: #F92C0D;
-    }
+	&:hover {
+		background-color: #fbfbfb;
+		border-color: #f92c0d;
+		color: #f92c0d;
+	}
 
-    &:active {
-        background-color: #FBFBFB;
-        border-color: #282828;
-        color: #242424;
-    }
+	&:active {
+		background-color: #fbfbfb;
+		border-color: #282828;
+		color: #242424;
+	}
 
-    &:disabled {
-        background-color: #757575;
-        border-color: transparent;
-        color: #242424;
-    }
+	&:disabled {
+		background-color: #757575;
+		border-color: transparent;
+		color: #242424;
+	}
 }
 
 .d-notion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
 
-    background-color: #2828284D;
-    backdrop-filter: blur(81.1px);
-    border: 1px solid #E2E2E2;
-    border-radius: 6px;
+	background-color: #2828284d;
+	backdrop-filter: blur(81.1px);
+	border: 1px solid #e2e2e2;
+	border-radius: 6px;
 
-    position: fixed;
-    top: 1%;
-    left: 50%;
-    translate: -50% -1%;
+	position: fixed;
+	top: 1%;
+	left: 50%;
+	translate: -50% -1%;
 
-    padding: 4px 16px;
+	padding: 4px 16px;
 
-    max-width: 1520px;
-    width: 80%;
-    height: 48px;
+	max-width: 1520px;
+	width: 80%;
+	height: 48px;
 
-    &__left {
-        display: flex;
-        align-items: center;
-        gap: 12px;
+	&__left {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__category {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__icon::before {
+		color: #f92c0d;
+		font-size: 16px;
+	}
+
+	&__category-name,
+	&__title {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.3;
+	}
+
+	&__category-name {
+		color: #f92c0d;
+	}
+
+	&__title {
+		color: #fbfbfb;
+	}
+
+	&__right {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+
+	&__button {
+		padding-left: 20px;
+		padding-right: 20px;
+		height: 30px;
+	}
+
+    &:focus-within {
+        border-color: #f92c0d;
     }
 
-    &__category {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-
-    &__icon::before {
-        color: #F92C0D;
-        font-size: 16px;
-    }
-
-    &__category-name,
-    &__title {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.3;
-    }
-
-    &__category-name {
-        color: #F92C0D;
-
-    }
-
-    &__title {
-        color: #FBFBFB;
-    }
-
-    &__right {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-
-    &__button {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 30px;
-    }
+	&:has(.d-notion__button:disabled) {
+		.d-notion__category-name,
+		.d-notion__title,
+		.d-notion__icon::before {
+			color: #282828;
+		}
+	}
 }
