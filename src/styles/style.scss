@@ -1,0 +1,15 @@
+@import "mixins";
+@import "grid";
+@import "temp";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto !important;
+}
