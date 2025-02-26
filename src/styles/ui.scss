@@ -81,11 +81,89 @@
     &:active {
         background-color: #FBFBFB;
         color: #282828;
+        font-weight: 600;
     }
 
     &:focus-visible {
         background-color: #282828;
         border-color: #FBFBFB;
         color: #FBFBFB;
+    }
+}
+
+.d-link {
+    @extend .d-button;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-weight: 400;
+    text-decoration: underline;
+
+    &:hover {
+        background-color: transparent;
+        color: #F92C0D;
+        font-weight: 400;
+    }
+
+    &:active {
+        background-color: transparent;
+        color: #FBFBFB;
+        font-weight: 400;
+    }
+
+    &:focus-visible {
+        background-color: transparent;
+        border-color: #FBFBFB;
+        color: #FBFBFB;
+        font-weight: 400;
+    }
+
+    &:disabled {
+        background-color: transparent;
+        font-weight: 400;
+    }
+}
+
+.d-input {
+    display: flex;
+    align-items: center;
+
+    background-color: #282828;
+    border: 1px solid #757575;
+    border-radius: 4px;
+
+    color: #EDEDED;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    position: relative;
+
+    width: 368px;
+    height: 40px;
+
+    &__field {
+        background-color: transparent;
+        color: inherit;
+
+        padding: 4px 12px;
+
+        width: 100%;
+        height: 100%;
+
+        &::placeholder {
+            color: #757575;
+        }
+    }
+
+    &:focus-within {
+        border-color: #FBFBFB;
+        border-bottom-width: 2px;
+    }
+
+    &:has(.d-input__field:disabled) {
+        background-color: #757575;
+        border-color: transparent;
+        color: #282828;
     }
 }
