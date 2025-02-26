@@ -5,3 +5,15 @@
     padding: 15px;
     height: 150px;
 }
+
+body {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    background-color: azure;
+
+    min-height: 100dvh;
+}
