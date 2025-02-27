@@ -1,0 +1,18 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Responsive Dots
+$desktop:               "1800px";   // xxl  	d-col-xxl-{1-12}
+$small-desktop:         "1200px";   // xl		d-col-xl-{1-12}
+$tablets:               "991px";    // lg		d-col-lg-{1-12}
+$small-tablets:         "768px";    // md		d-col-md-{1-12}
+$big-phones:            "611px";    // sm		d-col-sm-{1-12}
+$phones:                "430px";	// from 0	d-col-{1-12}
+
+// Main settings
+$main-padding: 24px;

@@ -1,8 +1,13 @@
+@import 'variables';
 @import "fonts";
 @import "mixins";
 @import "grid";
 @import "ui";
 @import "temp";
+@import 'utils';
+
+// pages
+@import "pages/registration";
 
 *,
 *:after,
@@ -69,4 +74,21 @@ select {
 
 a{
     text-decoration: none;
+}
+
+
+
+// Other
+.copyright {
+    position: absolute;
+    bottom: 3.7%;
+    left: 50%;
+    translate: -50% 0;
+
+    &__text {
+        color: #FBFBFB;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.3;
+    }
 }

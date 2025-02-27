@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Авторизация</title>
+		<link rel="stylesheet" href="./src/styles/style.scss" />
+	</head>
+	<body>
+		<section class="dart_wrapper registration">
+			<form class="registration__form">
+				<picture>
+					<source media="(max-width: 1920px)" srcset="./src/assets/icons/logo-1920.svg" />
+					<source media="(max-width: 800px)" srcset="./src/assets/icons/logo-800.svg" />
+					<source media="(max-width: 640px)" srcset="./src/assets/icons/logo-640.svg" />
+					<source media="(max-width: 400px)" srcset="./src/assets/icons/logo-400.svg" />
+					<source media="(max-width: 320px)" srcset="./src/assets/icons/logo-320.svg" />
+
+					<img
+						src="./src/assets/icons/logo-1920.svg"
+						loading="lazy"
+						class="registration__logo"
+					/>
+				</picture>
+
+				<div class="registration__fields">
+					<div class="d-input">
+						<input type="text" placeholder="Введите логин" class="d-input__field" data-input-id="login" />
+						<button type="button" class="d-close d-input__button" data-input="clear" data-for-input="login">
+							<i class="d-icon-times d-close__icon"></i>
+						</button>
+					</div>
+					<div class="d-input">
+						<input
+							type="password"
+							placeholder="Введите пароль"
+							class="d-input__field"
+                            data-input-id="password"
+						/>
+						<button type="button" class="d-show-alt d-input__button" data-input="show" data-for-input="password">
+							<i class="d-icon-eye d-show-alt__icon"></i>
+						</button>
+						<div class="d-show__wrapper d-input__button" data-input="hide" data-for-input="password">
+							<button type="button" class="d-show">
+								<i class="d-icon-eye d-show__icon"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="registration__buttons">
+					<button class="d-button">Войти</button>
+					<button type="button" class="d-button-alt">Зарегистрироваться</button>
+					<button type="button" class="d-link">Забыли пароль?</button>
+				</div>
+			</form>
+		</section>
+
+		<div class="copyright">
+			<span class="copyright__text">© МСТ, 2024</span>
+		</div>
+
+		<script type="module" src="./src/scripts/other.js"></script>
+	</body>
+</html>

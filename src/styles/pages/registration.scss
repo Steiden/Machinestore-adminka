@@ -1,0 +1,32 @@
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #282828;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 368px;
+    }
+
+    &__logo {
+        margin-bottom: 80px;
+    }
+
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
