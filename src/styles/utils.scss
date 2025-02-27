@@ -1,29 +1,116 @@
 .inliner {
-    display: block;
-    font-size: 0;
-    & > * {
-        display: inline-block;
-        float: none;
-    }
-    &.inliner-vam > * {
-        vertical-align: middle;
-    }
-    &.inliner-top > * {
-        vertical-align: top;
-    }
-    &.inliner-bottom > * {
-        vertical-align: bottom;
-    }
+	display: block;
+	font-size: 0;
+	& > * {
+		display: inline-block;
+		float: none;
+	}
+	&.inliner-vam > * {
+		vertical-align: middle;
+	}
+	&.inliner-top > * {
+		vertical-align: top;
+	}
+	&.inliner-bottom > * {
+		vertical-align: bottom;
+	}
 }
 
 @for $i from 1 to 5 {
-    .dart-mb-#{$i}{
-        margin-top: #{$i}rem;
-    }
+	.dart-mb-#{$i} {
+		margin-top: #{$i}rem;
+	}
 }
 
 @for $i from 1 to 5 {
-    .dart-mt-#{$i}{
-        margin-top: #{$i}rem;
-    }
+	.dart-mt-#{$i} {
+		margin-top: #{$i}rem;
+	}
+}
+
+// Steiden
+.visible-1920 {
+	@media (width > 1920px) {
+		display: none !important;
+	}
+}
+.visible-1536 {
+	@media (width > 1535px) {
+		display: none !important;
+	}
+}
+.visible-1280 {
+	@media (width > 1280px) {
+		display: none !important;
+	}
+}
+.visible-1024 {
+	@media (width > 1024px) {
+		display: none !important;
+	}
+}
+.visible-800 {
+	@media (width > 800px) {
+		display: none !important;
+	}
+}
+.visible-640 {
+	@media (width > 640px) {
+		display: none !important;
+	}
+}
+.visible-400 {
+	@media (width > 400px) {
+		display: none !important;
+	}
+}
+.visible-320 {
+	@media (width > 320px) {
+		display: none !important;
+	}
+}
+
+.hidden-1920 {
+	@media (width <= 1920px) {
+		display: none !important;
+	}
+}
+.hidden-1536 {
+	@media (width <= 1535px) {
+		display: none !important;
+	}
+}
+.hidden-1280 {
+	@media (width <= 1280px) {
+		display: none !important;
+	}
+}
+.hidden-1024 {
+	@media (width <= 1024px) {
+		display: none !important;
+	}
+}
+.hidden-800 {
+	@media (width <= 800px) {
+		display: none !important;
+	}
+}
+.hidden-640 {
+	@media (width <= 640px) {
+		display: none !important;
+	}
+}
+.hidden-400 {
+	@media (width <= 400px) {
+		display: none !important;
+	}
+}
+.hidden-320 {
+	@media (width <= 320px) {
+		display: none !important;
+	}
+}
+
+.inline-block {
+	display: inline-block;
 }

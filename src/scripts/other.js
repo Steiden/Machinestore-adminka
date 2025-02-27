@@ -7,6 +7,8 @@ try {
 		const inputs = document.querySelectorAll(`[data-input-id='${inputId}']`);
 
 		inputs.forEach((input) => {
+			clearButton.style.display = input.value ? "flex" : "none";
+
 			input.addEventListener("input", (e) => {
 				clearButton.style.display = input.value ? "flex" : "none";
 			});
@@ -33,12 +35,16 @@ try {
 			`[data-input='hide'][data-for-input='${inputId}']`
 		);
 
-        inputs.forEach(input => {
-            input.addEventListener("input", (e) => {
-                const inputType = input.getAttribute("type");
-                showButton.style.display = input.value && inputType === "password" ? "flex" : "none";
-            });
-        })
+		inputs.forEach((input) => {
+			const inputType = input.getAttribute("type");
+			showButton.style.display = input.value && inputType === "password" ? "flex" : "none";
+
+			input.addEventListener("input", (e) => {
+				const inputType = input.getAttribute("type");
+				showButton.style.display =
+					input.value && inputType === "password" ? "flex" : "none";
+			});
+		});
 
 		showButton.addEventListener("click", (e) => {
 			inputs.forEach((input) => {
@@ -59,12 +65,15 @@ try {
 			`[data-input='show'][data-for-input='${inputId}']`
 		);
 
-        inputs.forEach(input => {
-            input.addEventListener("input", (e) => {
-                const inputType = input.getAttribute("type");
-                hideButton.style.display = input.value && inputType === "text" ? "flex" : "none";
-            });
-        })
+		inputs.forEach((input) => {
+			const inputType = input.getAttribute("type");
+			hideButton.style.display = input.value && inputType === "password" ? "flex" : "none";
+
+			input.addEventListener("input", (e) => {
+				const inputType = input.getAttribute("type");
+				hideButton.style.display = input.value && inputType === "text" ? "flex" : "none";
+			});
+		});
 
 		hideButton.addEventListener("click", (e) => {
 			inputs.forEach((input) => {
