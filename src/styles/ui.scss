@@ -9,6 +9,8 @@
 	background-color: #f92c0d;
 	border: 1px solid transparent;
 	border-radius: 28px; // 30px
+	box-shadow: 0px 32px 64px 0px #0000008F;
+
 
 	color: #fbfbfb;
 	font-size: 16px;
@@ -308,6 +310,7 @@
 	border: 1px solid #757575;
 	border-bottom-width: 2px;
 	border-radius: 4px;
+	box-shadow: 0px 32px 64px 0px #0000008f;
 
 	color: #ededed;
 
@@ -368,6 +371,27 @@
 		}
 	}
 
+	&__group {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+
+		@media (width <= 640px) {
+            gap: 12px;
+        }
+	}
+
+	&__label {
+		display: inline-block;
+		color: #E2E2E2;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.2;
+		margin-bottom: 4px;
+		position: relative;
+		z-index: 1;
+	}
+
 	.d-show-alt {
 		background-color: inherit;
 	}
@@ -395,7 +419,7 @@
 
 	&--error {
 		border-color: #f92c0d;
-		color: #F92C0D;
+		color: #f92c0d;
 	}
 
 	@media (width <= 800px) {
@@ -824,6 +848,9 @@
 	display: flex;
 	gap: 4px;
 	margin-top: 2px;
+
+	position: relative;
+	z-index: 1;
 
 	width: 368px;
 	max-width: 100%;

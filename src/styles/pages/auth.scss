@@ -1,0 +1,114 @@
+.auth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        margin-top: 15%;
+        padding: 0 5px;
+        width: 368px;
+        max-width: 100%;
+
+        &:has(.registration__loading) {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        @media (width <= 800px) {
+            margin-top: 5%;
+            margin-bottom: 80px;
+        }
+        @media (width <= 640px) {
+            margin-top: 6.25%;
+            margin-bottom: 30px;
+        }
+        @media (width <= 400px) {
+            margin-top: 40%;
+        }
+        @media (width <= 320px) {
+            margin-top: 25%;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 80px;
+
+        @media (width <= 800px) {
+            margin-bottom: 40px;
+            width: 248px;
+        }
+        @media (width <= 640px) {
+            width: 184px;
+        }
+        @media (width <= 400px) {
+            margin-bottom: 60px;
+        }
+        @media (width <= 320px) {
+            margin-bottom: 56px;
+        }
+    }
+
+    &__fields {
+        margin-bottom: 40px;
+        max-width: 100%;
+
+        @media (width <= 800px) {
+            margin-bottom: 32px;
+        }
+        @media (width <= 400px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        max-width: 100%;
+
+        @media (width <= 640px) {
+            gap: 12px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__loading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        .text {
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        @media (width <= 800px) {
+            gap: 16px;
+        }
+        @media (width <= 640px) {
+            gap: 20px;
+        }
+        @media (width <= 400px) {
+            gap: 28px;
+        }
+        @media (width <= 320px) {
+            gap: 20px;
+        }
+    }
+
+    @media (width <= 800px) {
+        justify-content: space-between;
+    }
+}

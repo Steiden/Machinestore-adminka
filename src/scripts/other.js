@@ -1,4 +1,5 @@
 import { DotLottie } from "@lottiefiles/dotlottie-web";
+import debounce from "./debounce";
 
 try {
 	// Очистка поля ввода
@@ -92,22 +93,166 @@ try {
 	console.error("Ошибка работы кнопок показать/скрыть пароль: " + e);
 }
 
-
 try {
 	// Lottie анимации
 
 	const dLoaders = document.querySelectorAll(".d-loader");
-	console.log(dLoaders);
-	dLoaders.forEach(dLoader => {
+	dLoaders.forEach((dLoader) => {
 		new DotLottie({
 			autoplay: true,
 			loop: true,
 			canvas: dLoader,
-			src: "https://lottie.host/b816b1ca-73aa-452d-b295-bf8cb9b3b3b1/fqUmFIbkpf.lottie"
+			src: "https://lottie.host/b816b1ca-73aa-452d-b295-bf8cb9b3b3b1/fqUmFIbkpf.lottie",
 		});
-	})
-
-}
-catch (e) {
+	});
+} catch (e) {
 	console.error("Ошибка загрузки Lottiefiles: " + e);
+}
+
+try {
+	// Яндекс карты
+
+	async function refreshAddress(addressInput, markerELement, coordinates) {
+		const address = await getAddress(coordinates);
+		addressInput.value = address;
+		markerELement.querySelector(".marker__text").textContent = address;
+	}
+
+	async function getAddress(coordinates) {
+		// Обратное геокодирование через Яндекс API
+
+		const response = await fetch(
+			`https://geocode-maps.yandex.ru/1.x/?apikey=9cc9371c-b0ef-422b-b0be-2b1d49e32386&geocode=${coordinates.join(
+				","
+			)}&format=json&results=1`
+		).catch((err) => {
+			console.error("Ошибка получения адреса по координатам: " + err);
+		});
+
+		const data = await response.json();
+		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.metaDataProperty
+			?.GeocoderMetaData?.text;
+	}
+
+	async function getCoordinates(address) {
+		// Обратное геокодирование через Яндекс API
+
+		const response = await fetch(
+			`https://geocode-maps.yandex.ru/1.x/?apikey=9cc9371c-b0ef-422b-b0be-2b1d49e32386&geocode=${address}&format=json&results=1`
+		).catch((err) => {
+			console.error("Ошибка получения адреса по координатам: " + err);
+		});
+
+		const data = await response.json();
+		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.Point?.pos?.split(
+			" "
+		);
+	}
+
+	async function initMap() {
+		await ymaps3.ready;
+		const { YMap, YMapListener, YMapMarker, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } =
+			ymaps3;
+
+		// Creating maps
+		const yandexMapContainers = document.querySelectorAll(".yandex-map");
+		yandexMapContainers.forEach((yandexMapContainer) => {
+			const addressInput = document.querySelector(
+				`[data-input-id='${yandexMapContainer.getAttribute("data-for-input")}']`
+			);
+
+			// Create marker element
+			const markerHtml = `
+				<img src="/icons/marker.svg" class="marker__icon" />
+				<img src="/icons/marker-active.svg" class="marker__icon--active" />
+				<div class="marker__content">
+					<p class="marker__text"></p>
+				</div>
+			`;
+			const markerELement = document.createElement("div");
+			markerELement.classList.add("marker");
+			markerELement.innerHTML = markerHtml;
+
+			markerELement.addEventListener("click", (e) => {
+				e.stopPropagation();
+				const markerContent = markerELement.querySelector(".marker__content");
+				const markerText = markerELement.querySelector(".marker__text");
+				markerContent.classList.contains("marker__content--visible")
+					? markerContent.classList.remove("marker__content--visible")
+					: markerText.textContent &&
+					  markerContent.classList.add("marker__content--visible");
+			});
+
+			// Create marker
+			const marker = new YMapMarker(
+				{
+					coordinates: [37.588144, 55.733842],
+					draggable: true,
+					onDragEnd: async (coordinates) =>
+						refreshAddress(addressInput, markerELement, coordinates),
+				},
+				markerELement
+			);
+
+			const mapListener = new YMapListener({
+				layer: "any",
+				onClick: (object, event) => {
+					const coordinates = event.coordinates;
+					marker?.update({
+						coordinates,
+					});
+					refreshAddress(addressInput, markerELement, coordinates);
+				},
+			});
+
+			// Create map
+			const map = new YMap(yandexMapContainer, {
+				location: {
+					center: [37.588144, 55.733842],
+					zoom: 10,
+				},
+				theme: "dark",
+				showScaleInCopyrights: true,
+			});
+
+			map.addChild(new YMapDefaultSchemeLayer({}));
+			map.addChild(new YMapDefaultFeaturesLayer({}));
+			map.addChild(mapListener);
+			map.addChild(marker);
+
+			// Link map and input field
+			addressInput.addEventListener("input", (e) => {
+				debounce(async () => {
+					const address = addressInput.value;
+					if (!address) return;
+
+					const coordinates = await getCoordinates(address);
+					marker.update({ coordinates });
+					map.update({
+						location: {
+							center: coordinates,
+						},
+					});
+				}, 300);
+			});
+		});
+	}
+
+	initMap();
+} catch (e) {
+	console.error("Ошибка работы Яндекс карт: " + e);
+}
+
+try {
+	// Маска на все поля ввода телефона
+
+	const phoneInputs = document.querySelectorAll("input[type=tel]");
+	phoneInputs.forEach((phoneInput) => {
+		const maskOptions = {
+			mask: "+{7} (000) 000-00-00",
+		};
+		IMask(phoneInput, maskOptions);
+	});
+} catch (e) {
+	console.error("Ошибка работы IMask: " + e);
 }
