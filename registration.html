@@ -40,6 +40,11 @@
 					</picture>
 				</a>
 
+				<!-- <div class="registration__loading">
+					<canvas class="d-loader" style="width: 60px; height: 60px"></canvas>
+					<p class="text">Пожалуйста, подождите,<br>идет загрузка контента</p>
+				</div> -->
+
 				<div class="registration__fields">
 					<div class="d-input">
 						<input
@@ -102,43 +107,49 @@
 				</div>
 			</form>
 
-			<div class="feedback visible-800">
-				<div class="feedback__content">
-					<p class="feedback__title">Не получается войти в ЛК?</p>
-					<p class="feedback__text">
-						Свяжитесь с нами через почту
-						<a href="mailto:client.ms@yandex.ru" class="inline-block link">client.ms@yandex.ru</a> или по номеру
-						телефона
-						<a href="tel:88003501519" class="inline-block link">+7 (800) 350-15-19</a>
-					</p>
+			<div class="registration__footer">
+				<div class="feedback visible-800">
+					<div class="feedback__content">
+						<p class="feedback__title">Не получается войти в ЛК?</p>
+						<p class="feedback__text">
+							Свяжитесь с нами через почту
+							<a href="mailto:client.ms@yandex.ru" class="inline-block link"
+								>client.ms@yandex.ru</a
+							>
+							или по номеру телефона
+							<a href="tel:88003501519" class="inline-block link"
+								>+7 (800) 350-15-19</a
+							>
+						</p>
+					</div>
+				</div>
+				<div class="copyright visible-800">
+					<span class="copyright__text">© МСТ, 2024</span>
 				</div>
 			</div>
 
-			<div class="copyright visible-800">
+			<div class="copyright hidden-800">
 				<span class="copyright__text">© МСТ, 2024</span>
+			</div>
+
+			<div class="feedback hidden-800">
+				<div class="feedback__content">
+					<p class="feedback__title">Не получается войти в ЛК?</p>
+					<p class="feedback__text">
+						Свяжитесь с нами через обратную связь, кликнув на кнопку, расположенную
+						справа.
+					</p>
+				</div>
+
+				<div class="feedback__button-wrapper">
+					<button type="button" class="d-button-rounded">
+						<i class="d-icon-messages d-button-rounded__icon"></i>
+					</button>
+				</div>
 			</div>
 		</section>
 
-		<div class="copyright hidden-800">
-			<span class="copyright__text">© МСТ, 2024</span>
-		</div>
-
-		<div class="feedback hidden-800">
-			<div class="feedback__content">
-				<p class="feedback__title">Не получается войти в ЛК?</p>
-				<p class="feedback__text">
-					Свяжитесь с нами через обратную связь, кликнув на кнопку, расположенную справа.
-				</p>
-			</div>
-
-			<div class="feedback__button-wrapper">
-				<button type="button" class="d-button-rounded">
-					<i class="d-icon-messages d-button-rounded__icon"></i>
-				</button>
-			</div>
-		</div>
-
-		<div class="d-notion">
+		<!-- <div class="d-notion">
 			<div class="d-notion__left">
 				<i class="d-error"></i>
 
@@ -158,12 +169,12 @@
 			</div>
 
 			<div class="d-notion__right">
-				<button type="button" class="d-button-sm d-notion__button">Обновить</button>
+				<button type="button" class="d-button-sm d-notion__button hidden-640">Обновить</button>
 				<button type="button" class="d-close">
 					<i class="d-icon-times d-close__icon"></i>
 				</button>
 			</div>
-		</div>
+		</div> -->
 
 		<script type="module" src="./src/scripts/other.js"></script>
 	</body>

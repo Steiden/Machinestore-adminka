@@ -1,3 +1,5 @@
+import { DotLottie } from "@lottiefiles/dotlottie-web";
+
 try {
 	// Очистка поля ввода
 
@@ -88,4 +90,24 @@ try {
 	});
 } catch (e) {
 	console.error("Ошибка работы кнопок показать/скрыть пароль: " + e);
+}
+
+
+try {
+	// Lottie анимации
+
+	const dLoaders = document.querySelectorAll(".d-loader");
+	console.log(dLoaders);
+	dLoaders.forEach(dLoader => {
+		new DotLottie({
+			autoplay: true,
+			loop: true,
+			canvas: dLoader,
+			src: "https://lottie.host/b816b1ca-73aa-452d-b295-bf8cb9b3b3b1/fqUmFIbkpf.lottie"
+		});
+	})
+
+}
+catch (e) {
+	console.error("Ошибка загрузки Lottiefiles: " + e);
 }

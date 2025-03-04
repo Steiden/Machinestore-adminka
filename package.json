@@ -12,6 +12,7 @@
     "vite": "^6.2.0"
   },
   "dependencies": {
+    "@lottiefiles/dotlottie-web": "^0.40.1",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5"
   }
