@@ -112,9 +112,11 @@ try {
 try {
 	// Яндекс карты
 
-	async function refreshAddress(addressInput, markerELement, coordinates) {
+	async function refreshAddress(addressInput, markerELement, coordinates, refreshInput = true) {
 		const address = await getAddress(coordinates);
-		addressInput.value = address;
+
+		if (refreshInput) addressInput.value = address;
+
 		markerELement.querySelector(".marker__text").textContent = address;
 	}
 
@@ -215,6 +217,8 @@ try {
 				showScaleInCopyrights: true,
 			});
 
+			// map.behaviors.disable("scrollZoom");
+
 			map.addChild(new YMapDefaultSchemeLayer({}));
 			map.addChild(new YMapDefaultFeaturesLayer({}));
 			map.addChild(mapListener);
@@ -233,6 +237,7 @@ try {
 							center: coordinates,
 						},
 					});
+					refreshAddress(addressInput, markerELement, coordinates, false);
 				}, 300);
 			});
 		});
@@ -255,4 +260,19 @@ try {
 	});
 } catch (e) {
 	console.error("Ошибка работы IMask: " + e);
+}
+
+try {
+	// Функционал модальных окон
+
+	const modals = document.querySelectorAll(".d-modal");
+	modals.forEach((modal) => {
+		const closeButton = modal
+			.querySelector(".d-modal__close")
+			.addEventListener("click", (e) => {
+				modal.classList.remove("modal--active");
+			});
+	});
+} catch (e) {
+	console.error("Ошибка работы модального окна: " + e);
 }

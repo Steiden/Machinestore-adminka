@@ -10,6 +10,25 @@
 @import "pages/auth";
 @import "pages/registration";
 
+span[class="d-icon"],
+span[class^="d-icon-"],
+span[class*=" d-icon-"] {
+    display: inline-block;
+    font-family: "Iconly" !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+	&::before {
+		font-size: inherit;
+		color: inherit;
+	}
+}
+
 *,
 *:after,
 *:before {
@@ -26,6 +45,7 @@ html {
 
 body {
 	background-color: #282828;
+	color: #282828;
 }
 
 *,
@@ -317,3 +337,4 @@ a {
 .box-shadow-none {
 	box-shadow: none;
 }
+

@@ -33,9 +33,9 @@
 }
 
 @mixin scrollbar(
-	$width: 5px,
+	$width: 3px,
 	$height: auto,
-	$border-radius: 5px,
+	$border-radius: 999px,
 	$bg-thumb-color: #2828287e,
 	$bg-track-color: transparent
 ) {
