@@ -29,7 +29,7 @@
 
 	@media (width <= 640px) {
 		font-size: 14px;
-		min-height: 32px;
+		height: 32px;
 		min-height: 32px;
 		padding-top: 4px;
 		padding-bottom: 4px;
@@ -560,6 +560,7 @@
 	}
 
 	&:focus-visible {
+		background-color: #f92c0d;
 		border-color: #fbfbfb;
 	}
 
