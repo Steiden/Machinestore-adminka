@@ -96,7 +96,9 @@ img {
 input,
 button,
 textarea,
-select {
+select,
+legend,
+fieldset {
 	font: inherit;
 	outline: none;
 	border: none;

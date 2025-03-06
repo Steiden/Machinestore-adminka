@@ -115,11 +115,11 @@
 						</div>
 					</div>
 
-					<div class="d-input__group">
+					<fieldset class="d-input__group">
+						<legend class="d-input__label"
+							>Данные контактного лица:</legend
+						>
 						<div class="d-input__wrapper">
-							<label for="contact_fio" class="d-input__label"
-								>Данные контактного лица:</label
-							>
 							<div class="d-input">
 								<input
 									type="text"
@@ -171,11 +171,11 @@
 								</button>
 							</div>
 						</div>
-					</div>
+					</fieldset>
 
-					<div class="d-input__group">
+					<fieldset class="d-input__group">
+						<legend class="d-input__label">Данные компании:</legend>
 						<div class="d-input__wrapper">
-							<label for="contact_fio" class="d-input__label">Данные компании:</label>
 							<div class="d-input">
 								<input
 									type="text"
@@ -254,14 +254,14 @@
 								</button>
 							</div>
 						</div>
-					</div>
+					</fieldset>
 
-					<button class="d-button-alt registration__add-button">
+					<button class="d-button d-button-secondary registration__add-button">
 						<i class="d-icon-plus"></i>
 						Добавить адрес доставки
 					</button>
 				</div>
-				<button type="button" class="d-button box-shadow-none">Зарегистрироваться</button>
+				<button type="button" class="d-button d-button-primary box-shadow-none">Зарегистрироваться</button>
 			</form>
 
 			<div class="auth__footer">
@@ -299,14 +299,14 @@
 				</div>
 
 				<div class="feedback__button-wrapper">
-					<button type="button" class="d-button-rounded">
+					<button type="button" class="d-button d-button-primary d-button-rounded">
 						<i class="d-icon-messages d-button-rounded__icon"></i>
 					</button>
 				</div>
 			</div>
 		</section>
 
-		<!-- <div class="d-modal__wrapper">
+		<div class="d-modal__wrapper">
 			<div class="d-modal registration-address">
 				<button class="d-modal__close">
 					<i class="d-icon-times d-modal__icon"></i>
@@ -330,7 +330,7 @@
 							placeholder="Найти адрес доставки"
 							class="d-search__field"
 						/>
-						<button type="button" class="d-button-sm box-shadow-none d-search__button">
+						<button type="button" class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button">
 							Найти
 						</button>
 
@@ -355,14 +355,14 @@
 					</p>
 
 					<div class="registration-address__buttons">
-						<button type="button" class="d-button-alt-sm box-shadow-none">
+						<button type="button" class="d-button d-button-secondary d-button-secondary-small box-shadow-none">
 							Отмена
 						</button>
-						<button type="button" class="d-button-sm box-shadow-none">Выбрать</button>
+						<button type="button" class="d-button d-button-primary d-button-primary-small box-shadow-none">Выбрать</button>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<script src="https://unpkg.com/imask"></script>
 		<script type="module" src="./src/scripts/other.js"></script>
