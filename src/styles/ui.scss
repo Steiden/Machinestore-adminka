@@ -96,6 +96,7 @@
 .d-link {
 	@extend .d-button;
 
+	box-shadow: none;
 	background-color: transparent;
 	border: 1px solid transparent;
 	font-weight: 400;
