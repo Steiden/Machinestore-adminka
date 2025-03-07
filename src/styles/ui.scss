@@ -29,7 +29,7 @@
 
 	@media (width <= 640px) {
 		font-size: 14px;
-		height: 32px;
+		// height: 32px;
 		min-height: 32px;
 		padding-top: 4px;
 		padding-bottom: 4px;
@@ -1089,6 +1089,8 @@
 	}
 
 	&__suggestions[class] {
+		@include scrollbar;
+
 		box-shadow: 0px 0px 2px 0px #0000001f, 0px 8px 16px 0px #00000024;
 		background-color: #ffffff;
 		border-radius: 4px;
@@ -1124,8 +1126,9 @@
 		position: relative;
 		transition-duration: 0.2s;
 
+		flex: 1 0 auto;
 		padding: 4px 8px;
-		height: 30px;
+		min-height: 30px;
 		width: 100%;
 
 		&::before {
