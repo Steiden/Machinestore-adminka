@@ -10,6 +10,7 @@
 @import "pages/auth";
 @import "pages/registration";
 @import "pages/login";
+@import "pages/base";
 
 span[class="d-icon"],
 span[class^="d-icon-"],
@@ -106,6 +107,12 @@ fieldset {
 
 a {
 	text-decoration: none;
+}
+
+// + Reset styles
+button {
+	background: none;
+	cursor: pointer;
 }
 
 // Other

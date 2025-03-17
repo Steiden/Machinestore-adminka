@@ -1,13 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+		<link href="https://dev.iconly.io/public/NrjD5MCn0Lux/iconly.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="app">
+			<aside class="sidebar">
+				<div class="sidebar__inner">
+					<div class="sidebar__content-wrapper">
+						<a href="/" class="sidebar__logo-container">
+							<img src="/icons/logo.svg" alt="MST" class="sidebar__logo" />
+						</a>
+						<div class="sidebar__content">
+							<div class="sidebar__block sidebar__toggle-block">
+								<button class="sidebar__toggle">
+									<i class="d-icon-arrow sidebar__toggle-icon"></i>
+								</button>
+							</div>
+							<div class="sidebar__block">
+								<button class="sidebar__organization">
+									<img
+										src="/icons/spo-logo.svg"
+										alt="SPO"
+										class="sidebar__organization-logo"
+									/>
+								</button>
+							</div>
+							<div class="sidebar__divider"></div>
+							<nav class="sidebar__nav">
+								<ul class="sidebar__list">
+									<li class="sidebar__block sidebar__item">
+										<button class="sidebar__item-button">
+											<i class="d-icon-list sidebar__item-icon"></i>
+											<span class="sidebar__item-text">Закупки</span>
+										</button>
+									</li>
+									<li class="sidebar__block sidebar__item">
+										<button class="sidebar__item-button">
+											<i class="d-icon-cart-solid sidebar__item-icon"></i>
+											<span class="sidebar__item-text">Закупки</span>
+										</button>
+									</li>
+									<li class="sidebar__block sidebar__item">
+										<button class="sidebar__item-button">
+											<i class="d-icon-star sidebar__item-icon"></i>
+											<span class="sidebar__item-text">Поставщики</span>
+										</button>
+									</li>
+									<li class="sidebar__block sidebar__item">
+										<button class="sidebar__item-button">
+											<i class="d-icon-box sidebar__item-icon"></i>
+											<span class="sidebar__item-text">Товары</span>
+										</button>
+									</li>
+								</ul>
+							</nav>
+							<div class="sidebar__divider"></div>
+						</div>
+					</div>
+					<div class="sidebar__bottom">
+						<div class="sidebar__block">
+							<button class="sidebar__question">
+								<i class="d-icon-question sidebar__question-logo"></i>
+							</button>
+						</div>
+						<div class="sidebar__block">
+							<button class="sidebar__exit">
+								<i class="d-icon-exit sidebar__exit-logo"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<div class="content">
+				<header class="header"></header>
+				<main class="main"></main>
+				<footer class="footer"></footer>
+			</div>
+		</div>
+
+		<script type="module" src="/src/main.js"></script>
+	</body>
 </html>
