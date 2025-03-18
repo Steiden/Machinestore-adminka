@@ -79,7 +79,7 @@
 											<i
 												class="d-icon-refresh sidebar__organization-button-icon"
 											></i>
-											<span>Сменить компанию</span>
+											<span class="sidebar__organization-button-text">Сменить компанию</span>
 										</button>
 									</div>
 									<button class="sidebar__organization-info-button">
@@ -184,7 +184,76 @@
 				</div>
 			</aside>
 			<div class="content">
-				<header class="header"></header>
+				<header class="header">
+					<div class="header__top">
+						<button class="header__address">
+							<i class="d-icon-location header__address-icon"></i>
+							<p class="header__address-title">Склад доставки:</p>
+							<p class="header__address-text">
+								Ростов на Дону, ул. Микухина Каланахлоя, 11 / 7 к 32 ЛИТ 898
+							</p>
+						</button>
+						<div class="header__vendor">
+							<span class="header__vendor-title">выбрано поставщиков:</span>
+							<button class="header__vendor-button">
+								<i class="d-icon-trolley header__vendor-icon"></i>
+								<span class="header__vendor-value">6 из 45</span>
+								<i class="d-icon-angle header__vendor-arrow"></i>
+							</button>
+						</div>
+					</div>
+					<div class="header__content">
+						<div class="header__left">
+							<button class="d-button d-button-primary header__catalog">
+								<i class="d-icon-catalog header__catalog-icon"></i>
+								<span>Каталог</span>
+							</button>
+							<form class="d-search header__search">
+								<input
+									type="text"
+									placeholder="Найти у выбранных поставщиков"
+									class="d-search__field"
+								/>
+								<button
+									type="button"
+									class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button"
+								>
+									Найти
+								</button>
+								<ul class="d-search__suggestions">
+									<!-- <li class="d-search__suggestion">
+										Россия, Москва, Большой Предтеченский переулок, 13с4
+									</li>
+									<li class="d-search__suggestion">
+										Россия, Москва, Большой Предтеченский переулок, 13с4
+									</li>
+									<li class="d-search__suggestion">
+										Россия, Москва, Большой Предтеченский переулок, 13с4
+									</li>
+									<li class="d-search__suggestion">
+										Россия, Москва, Большой Предтеченский переулок, 13с4
+									</li> -->
+								</ul>
+							</form>
+							<button class="d-button d-button-tertiary header__upload">
+								<i class="d-icon-upload header__upload-icon"></i>
+								<span>Загрузить потребность</span>
+							</button>
+						</div>
+						<div class="header__right">
+							<button
+								class="d-button d-button-secondary d-button-rounded header__cart"
+							>
+								<i class="d-icon-cart header__cart-icon"></i>
+							</button>
+							<button
+								class="d-button d-button-secondary d-button-rounded header__notification"
+							>
+								<i class="d-icon-bell header__notification-icon"></i>
+							</button>
+						</div>
+					</div>
+				</header>
 				<main class="main"></main>
 				<footer class="footer"></footer>
 			</div>
