@@ -276,3 +276,24 @@ try {
 } catch (e) {
 	console.error("Ошибка работы модального окна: " + e);
 }
+
+try {
+	// Функционал сайдбара
+
+	const sidebar = document.getElementById("sidebar");
+	const sidebarToggles = document.querySelectorAll("[data-sidebar-toggle]");
+
+	sidebarToggles.forEach((sidebarToggle) => {
+		sidebarToggle.addEventListener("click", (e) => {
+			const sidebarIsFull = sidebar.classList.contains("sidebar--full");
+
+			if (sidebarIsFull) {
+				sidebar.classList.remove("sidebar--full");
+			} else {
+				sidebar.classList.add("sidebar--full");
+			}
+		});
+	});
+} catch (e) {
+	console.error("Ошибка работы сайдбара: " + e);
+}

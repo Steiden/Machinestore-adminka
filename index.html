@@ -9,28 +9,92 @@
 	</head>
 	<body>
 		<div id="app">
-			<aside class="sidebar">
+			<aside class="sidebar" id="sidebar">
 				<div class="sidebar__inner">
 					<div class="sidebar__content-wrapper">
 						<a href="/" class="sidebar__logo-container">
 							<img src="/icons/logo.svg" alt="MST" class="sidebar__logo" />
+							<span class="sidebar__logo-text">МСТ Аналитика</span>
 						</a>
 						<div class="sidebar__content">
+							<div
+								class="sidebar__divider sidebar__divider--light sidebar__warehouse-divider-top sidebar__hidden"
+							></div>
+
+							<div class="sidebar__warehouse sidebar__hidden">
+								<div class="sidebar__warehouse-content">
+									<span class="sidebar__warehouse-title">Склад доставки:</span>
+									<p class="sidebar__warehouse-text">
+										Ростов на Дону, ул. Микухина Каланахлоя, 11 / 7 к 32 ЛИТ 898
+									</p>
+								</div>
+								<button class="sidebar__warehouse-button">
+									<i class="d-icon-pen sidebar__warehouse-button-icon"></i>
+								</button>
+							</div>
+
+							<div
+								class="sidebar__divider sidebar__divider--light sidebar__warehouse-divider-bottom sidebar__hidden"
+							></div>
+
 							<div class="sidebar__block sidebar__toggle-block">
-								<button class="sidebar__toggle">
+								<button class="sidebar__toggle" data-sidebar-toggle>
 									<i class="d-icon-arrow sidebar__toggle-icon"></i>
 								</button>
 							</div>
-							<div class="sidebar__block">
-								<button class="sidebar__organization">
+
+							<div class="sidebar__divider sidebar__divider--light sidebar__hidden"></div>
+
+							<div class="sidebar__block sidebar__organization-block">
+								<button class="sidebar__organization sidebar__organization--mini">
 									<img
 										src="/icons/spo-logo.svg"
 										alt="SPO"
 										class="sidebar__organization-logo"
 									/>
 								</button>
+								<div class="sidebar__organization sidebar__organization--full sidebar__hidden">
+									<img
+										src="/icons/spo-logo.svg"
+										alt="SPO"
+										class="sidebar__organization-logo"
+									/>
+									<div class="sidebar__organization-content">
+										<span class="sidebar__organization-title"
+											>Специальное Профессиональное Оборудование</span
+										>
+										<button
+											class="d-button d-button-tertiary d-button-tertiary-small sidebar__organization-button"
+										>
+											<i
+												class="d-icon-refresh sidebar__organization-button-icon"
+											></i>
+											<span>Сменить компанию</span>
+										</button>
+									</div>
+									<button class="sidebar__organization-info-button">
+										<i
+											class="d-icon-info sidebar__organization-info-button-icon"
+										></i>
+									</button>
+								</div>
 							</div>
-							<div class="sidebar__divider"></div>
+
+							<div
+								class="sidebar__divider sidebar__divider--light sidebar__user-divider--top sidebar__hidden"
+							></div>
+
+							<button class="sidebar__user sidebar__hidden">
+								<i class="d-icon-profile sidebar__user-icon"></i>
+								<span class="sidebar__user-text">Игорь Игореведовичив</span>
+							</button>
+
+							<div
+								class="sidebar__divider sidebar__divider--light sidebar__user-divider--bottom sidebar__hidden"
+							></div>
+
+							<div class="sidebar__divider sidebar__nav-divider--top"></div>
+
 							<nav class="sidebar__nav">
 								<ul class="sidebar__list">
 									<li class="sidebar__block sidebar__item">
@@ -40,15 +104,20 @@
 										</button>
 									</li>
 									<li class="sidebar__block sidebar__item">
-										<button class="sidebar__item-button">
+										<button class="sidebar__item-button sidebar__visible">
 											<i class="d-icon-cart-solid sidebar__item-icon"></i>
-											<span class="sidebar__item-text">Закупки</span>
+											<span class="sidebar__item-text">Заказы</span>
+										</button>
+										<button class="sidebar__item-button sidebar__hidden">
+											<i class="d-icon-bag sidebar__item-icon"></i>
+											<span class="sidebar__item-text">Мои заказы</span>
 										</button>
 									</li>
 									<li class="sidebar__block sidebar__item">
 										<button class="sidebar__item-button">
 											<i class="d-icon-star sidebar__item-icon"></i>
-											<span class="sidebar__item-text">Поставщики</span>
+											<span class="sidebar__item-text sidebar__visible">Поставщики</span>
+											<span class="sidebar__item-text sidebar__hidden">Мои поставщики</span>
 										</button>
 									</li>
 									<li class="sidebar__block sidebar__item">
@@ -59,20 +128,39 @@
 									</li>
 								</ul>
 							</nav>
-							<div class="sidebar__divider"></div>
 						</div>
 					</div>
 					<div class="sidebar__bottom">
-						<div class="sidebar__block">
-							<button class="sidebar__question">
-								<i class="d-icon-question sidebar__question-logo"></i>
+						<div class="sidebar__divider sidebar__bottom-divider"></div>
+
+						<div
+							class="sidebar__block sidebar__item sidebar__question-block sidebar__question-block--mini"
+						>
+							<button class="sidebar__item-button sidebar__question">
+								<i
+									class="d-icon-question sidebar__item-icon sidebar__question-logo"
+								></i>
+								<span class="sidebar__item-text">Вопросы</span>
 							</button>
 						</div>
-						<div class="sidebar__block">
-							<button class="sidebar__exit">
-								<i class="d-icon-exit sidebar__exit-logo"></i>
+						<div
+							class="sidebar__block sidebar__item sidebar__exit-block sidebar__exit-block--mini"
+						>
+							<button class="sidebar__item-button sidebar__exit">
+								<i class="d-icon-exit sidebar__item-icon sidebar__exit-logo"></i>
+								<span class="sidebar__item-text">Выйти</span>
 							</button>
 						</div>
+
+						<button class="sidebar__bottom-block sidebar__question-block sidebar__hidden">
+							<i class="d-icon-question sidebar__question-logo"></i>
+							<span class="sidebar__bottom-block-text">Работа в Закупках</span>
+						</button>
+
+						<button class="sidebar__bottom-block sidebar__exit-block sidebar__hidden">
+							<i class="d-icon-exit sidebar__exit-logo"></i>
+							<span class="sidebar__bottom-block-text">Выйти из ЛК</span>
+						</button>
 					</div>
 				</div>
 			</aside>
