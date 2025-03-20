@@ -729,9 +729,9 @@
 	align-items: center;
 	gap: 15px;
 
-	background-color: #2828284D;
+	background-color: #2828284d;
 	backdrop-filter: blur(60px);
-	box-shadow: 0px 32px 64px 0px #0000008F;
+	box-shadow: 0px 32px 64px 0px #0000008f;
 	border: 1px solid #e2e2e2;
 	border-radius: 6px;
 
@@ -1260,4 +1260,19 @@
 	border-radius: 50%;
 	filter: blur(2px);
 	border: 2px solid #f92c0d;
+}
+
+.skeleton {
+	background: linear-gradient(90deg, #e9e9e9 0%, #fafafa 50%, #e9e9e9 100%);
+	border-radius: 5px;
+	height: 200px;
+
+	&--big {
+		height: 260px;
+	}
+
+	&--rounded {
+		border-radius: 50%;
+		aspect-ratio: 1;
+	}
 }

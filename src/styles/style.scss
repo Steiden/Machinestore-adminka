@@ -351,9 +351,34 @@ button {
 .status {
 	background-color: #F92C0D;
 	border-radius: 15px;
+
+	font-size: 14px;
+	font-weight: 500;
 	color: #fff;
 
 	position: absolute;
-	top: 13px;
+	top: 25%;
 	left: 50%;
+	translate: 0 -25%;
+
+	padding: 2px 4px;
+
+	&__wrapper {
+		position: relative;
+	}
+}
+
+.icon-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: transparent;
+	border-radius: 50%;
+	transition: background .1s linear;
+	padding: 4px;
+
+	&:hover {
+		background-color: #FBFBFB;
+	}
 }
