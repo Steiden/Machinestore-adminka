@@ -10,7 +10,7 @@
 	<body>
 		<div id="app">
 			<aside class="sidebar" id="sidebar">
-				<div class="sidebar__inner">
+				<div class="sidebar__inner sidebar__inner--desktop">
 					<div class="sidebar__content-wrapper">
 						<div class="sidebar__logo-wrapper">
 							<a href="/" class="sidebar__logo-container">
@@ -151,6 +151,41 @@
 							<span class="sidebar__bottom-block-text">Выйти из ЛК</span>
 						</button>
 					</div>
+				</div>
+				<div class="sidebar__inner sidebar__inner--mobile">
+					<nav class="sidebar__nav">
+						<ul class="sidebar__list">
+							<li class="sidebar__block sidebar__item">
+								<button class="sidebar__item-button">
+									<i class="d-icon-list sidebar__item-icon"></i>
+									<span class="sidebar__item-text">Закупки</span>
+								</button>
+							</li>
+							<li class="sidebar__block sidebar__item">
+								<button class="sidebar__item-button sidebar__visible">
+									<i class="d-icon-cart-solid sidebar__item-icon"></i>
+									<span class="sidebar__item-text">Заказы</span>
+								</button>
+								<button class="sidebar__item-button sidebar__hidden">
+									<i class="d-icon-bag sidebar__item-icon"></i>
+									<span class="sidebar__item-text">Мои заказы</span>
+								</button>
+							</li>
+							<li class="sidebar__block sidebar__item">
+								<button class="sidebar__item-button">
+									<i class="d-icon-star sidebar__item-icon"></i>
+									<span class="sidebar__item-text sidebar__visible">Поставщики</span>
+									<span class="sidebar__item-text sidebar__hidden">Мои поставщики</span>
+								</button>
+							</li>
+							<li class="sidebar__block sidebar__item">
+								<button class="sidebar__item-button">
+									<i class="d-icon-box sidebar__item-icon"></i>
+									<span class="sidebar__item-text">Товары</span>
+								</button>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</aside>
 			<div class="content">

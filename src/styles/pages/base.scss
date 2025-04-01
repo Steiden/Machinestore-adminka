@@ -37,6 +37,12 @@
 		@media (width <=780px) {
 			height: 32px;
 		}
+
+		@media (width <=600px) {
+			aspect-ratio: 1;
+			width: 32px;
+			height: 32px;
+		}
 	}
 
 	&__inner {
@@ -51,6 +57,24 @@
 		height: inherit;
 		z-index: 50;
 		transition: width 0.2s ease-in-out;
+
+		&--mobile {
+			display: none;
+		}
+
+		@media (width <=600px) {
+			&--desktop {
+				display: none;
+			}
+
+			&--mobile {
+				display: flex;
+
+				position: static;
+
+				padding: 4px 32px;
+			}
+		}
 	}
 
 	&__logo {
@@ -159,6 +183,13 @@
 		}
 	}
 
+	&__nav {
+		@media (width <=600px) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
 	&__list {
 		display: flex;
 		flex-direction: column;
@@ -170,6 +201,11 @@
 
 		@media (width <=780px) {
 			gap: 8px;
+		}
+
+		@media (width <=600px) {
+			flex-direction: row;
+			gap: 24px;
 		}
 	}
 
@@ -668,6 +704,12 @@
 				font-size: 16px;
 			}
 
+			@media (width <=1024px) {
+				&-icon {
+					font-size: 12px;
+				}
+			}
+
 			@media (width <=780px) {
 				&-block:not(.sidebar__logo-toggle) {
 					display: none;
@@ -924,7 +966,7 @@
 				}
 			}
 
-			@media (width <= 780px) {
+			@media (width <=780px) {
 				&-block {
 					margin-bottom: 20px;
 				}
@@ -940,6 +982,21 @@
 	@media (width <=780px) {
 		--sidebar-full-width: 276px;
 		--sidebar-width: 40px;
+	}
+
+	@media (width <=600px) {
+		--sidebar-full-width: 100%;
+		--sidebar-width: 100%;
+
+		background-color: #EDEDED;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+
+		position: fixed;
+		bottom: 0;
+		overflow: hidden;
+
+		height: 44px;
 	}
 }
 
@@ -1452,6 +1509,10 @@
 	}
 
 	@media (width > 1024px) {
+		display: none;
+	}
+
+	@media (width <=600px) {
 		display: none;
 	}
 }
