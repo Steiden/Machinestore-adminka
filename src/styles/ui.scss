@@ -1176,6 +1176,16 @@
 		}
 	}
 
+	&__icon-button {
+		margin-right: 16px;
+		width: 24px;
+		height: 24px;
+
+		&-icon {
+			color: #757575;
+		}
+	}
+
 	&__suggestions[class] {
 		@include scrollbar;
 

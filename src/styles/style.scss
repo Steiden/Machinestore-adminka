@@ -15,15 +15,15 @@
 span[class="d-icon"],
 span[class^="d-icon-"],
 span[class*=" d-icon-"] {
-    display: inline-block;
-    font-family: "Iconly" !important;
-    font-weight: 400;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-family: "Iconly" !important;
+	font-weight: 400;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 
 	&::before {
 		font-size: inherit;
@@ -343,13 +343,15 @@ button {
 	}
 }
 
-
+.shadow {
+	box-shadow: 0px 4px 13.4px 0px #00000042;
+}
 .box-shadow-none {
 	box-shadow: none;
 }
 
 .status {
-	background-color: #F92C0D;
+	background-color: #f92c0d;
 	border-radius: 15px;
 
 	font-size: 14px;
@@ -384,10 +386,11 @@ button {
 
 	background-color: transparent;
 	border-radius: 50%;
-	transition: background .1s linear;
+	transition-duration: .2s;
 	padding: 4px;
 
 	&:hover {
-		background-color: #FBFBFB;
+		background-color: #fbfbfb;
+		box-shadow: 0px 4px 13.4px 0px #00000042;
 	}
 }
