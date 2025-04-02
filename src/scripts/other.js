@@ -297,3 +297,53 @@ try {
 } catch (e) {
 	console.error("Ошибка работы сайдбара: " + e);
 }
+
+try {
+	// Функционал каталога
+
+	const catalogs = document.querySelectorAll("[data-catalog]");
+	const catalogToggles = document.querySelectorAll("[data-catalog-toggle]");
+	const catalogDesign = document.querySelector("[data-catalog-design]");
+
+	catalogToggles.forEach((catalogToggle) => {
+		catalogToggle.addEventListener("click", (e) => {
+			const catalogIsActive = Array.from(catalogs).reduce(
+				(result, catalog) => catalog.classList.contains("catalog--active") || result,
+				false
+			);
+			const catalogDesignIsActive =
+				catalogDesign.classList.contains("header__design--active");
+
+			if (catalogIsActive) {
+				catalogs.forEach((catalog) => catalog.classList.remove("catalog--active"));
+			} else {
+				catalogs.forEach((catalog) => catalog.classList.add("catalog--active"));
+			}
+
+			if (catalogDesignIsActive) {
+				catalogDesign.classList.remove("header__design--active");
+			} else {
+				catalogDesign.classList.add("header__design--active");
+			}
+		});
+	});
+
+	window.addEventListener("click", (e) => {
+		let isAvailable =
+			Array.from(catalogs).reduce(
+				(result, catalog) => !catalog.contains(e.target) & result,
+				true
+			) &
+			Array.from(catalogToggles).reduce(
+				(result, toggle) => !toggle.contains(e.target) & result,
+				true
+			);
+
+		if (isAvailable) {
+			catalogs.forEach((catalog) => catalog.classList.remove("catalog--active"));
+			catalogDesign.classList.remove("header__design--active");
+		}
+	});
+} catch (e) {
+	console.error("Ошибка работы сайдбара: " + e);
+}

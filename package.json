@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@lottiefiles/dotlottie-web": "^0.40.1",
+    "autoprefixer": "^10.4.21",
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5"
   }

@@ -210,7 +210,7 @@
 					<nav class="sidebar__nav">
 						<ul class="sidebar__list">
 							<li class="sidebar__block sidebar__item">
-								<button class="sidebar__item-button">
+								<button class="sidebar__item-button" data-catalog-toggle>
 									<i class="d-icon-burger sidebar__item-icon"></i>
 								</button>
 							</li>
@@ -284,46 +284,53 @@
 							</div>
 							<div class="header__content">
 								<div class="header__left">
-									<button class="d-button d-button-primary header__catalog">
-										<i class="d-icon-catalog header__catalog-icon"></i>
-										<span class="header__catalog-text">Каталог</span>
-									</button>
-									<form class="d-search header__search">
-										<input
-											type="text"
-											placeholder="Найти у поставщиков"
-											class="d-search__field header__search-field"
-										/>
+									<div class="header__design" data-catalog-design>
 										<button
-											type="submit"
-											class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button header__search-button"
+											class="d-button d-button-primary header__catalog"
+											data-catalog-toggle
 										>
-											Найти
+											<i class="d-icon-catalog header__catalog-icon"></i>
+											<span class="header__catalog-text">Каталог</span>
 										</button>
-										<button
-											type="submit"
-											class="d-search__icon-button header__search-icon-button"
-										>
-											<i
-												class="d-icon-search-big header__icon-button-icon"
-											></i>
-										</button>
-										<ul class="d-search__suggestions">
-											<!-- <li class="d-search__suggestion">
-												Россия, Москва, Большой Предтеченский переулок, 13с4
-											</li>
-											<li class="d-search__suggestion">
-												Россия, Москва, Большой Предтеченский переулок, 13с4
-											</li>
-											<li class="d-search__suggestion">
-												Россия, Москва, Большой Предтеченский переулок, 13с4
-											</li>
-											<li class="d-search__suggestion">
-												Россия, Москва, Большой Предтеченский переулок, 13с4
-											</li> -->
-										</ul>
-									</form>
-									<button class="d-button d-button-tertiary shadow header__upload">
+										<form class="d-search header__search">
+											<input
+												type="text"
+												placeholder="Найти у поставщиков"
+												class="d-search__field header__search-field"
+											/>
+											<button
+												type="submit"
+												class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button header__search-button"
+											>
+												Найти
+											</button>
+											<button
+												type="submit"
+												class="d-search__icon-button header__search-icon-button"
+											>
+												<i
+													class="d-icon-search-big header__icon-button-icon"
+												></i>
+											</button>
+											<ul class="d-search__suggestions">
+												<!-- <li class="d-search__suggestion">
+													Россия, Москва, Большой Предтеченский переулок, 13с4
+												</li>
+												<li class="d-search__suggestion">
+													Россия, Москва, Большой Предтеченский переулок, 13с4
+												</li>
+												<li class="d-search__suggestion">
+													Россия, Москва, Большой Предтеченский переулок, 13с4
+												</li>
+												<li class="d-search__suggestion">
+													Россия, Москва, Большой Предтеченский переулок, 13с4
+												</li> -->
+											</ul>
+										</form>
+									</div>
+									<button
+										class="d-button d-button-tertiary shadow header__upload"
+									>
 										<i class="d-icon-upload header__upload-icon"></i>
 										<span class="header__upload-text">Потребность</span>
 									</button>
@@ -459,6 +466,728 @@
 					</div>
 					<span class="cart__header-value">3456 ₽</span>
 				</button>
+			</div>
+
+			<div class="catalog catalog--desktop" data-catalog>
+				<div class="catalog__list">
+					<div class="catalog__top">
+						<button class="catalog__head-item">
+							<i class="d-icon-catalog catalog__head-item-icon"></i
+							><span class="catalog__head-item-text">Каталоги поставщиков</span>
+						</button>
+						<button class="catalog__head-item catalog__head-item--active">
+							<i class="d-icon-boxes catalog__head-item-icon"></i
+							><span class="catalog__head-item-text">Единый каталог</span>
+						</button>
+					</div>
+					<div class="catalog__content">
+						<ul class="catalog__items-list">
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="catalog__list">
+					<div class="catalog__top">
+						<button class="catalog__head-item catalog__head-item--back">
+							<i class="d-icon-angle-rounded catalog__head-item-icon"></i
+							><span class="catalog__head-item-text">Единый каталог</span>
+						</button>
+						<div class="catalog__head-item catalog__head-item--sub">
+							<span class="catalog__head-item-text">Садовая техника</span>
+						</div>
+					</div>
+					<div class="catalog__content">
+						<ul class="catalog__items-list">
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="catalog catalog--mobile" data-catalog>
+				<div class="catalog__list">
+					<div class="catalog__top">
+						<button class="catalog__head-item">
+							<div class="catalog__head-item-content">
+								<i class="d-icon-catalog catalog__head-item-icon"></i
+								><span class="catalog__head-item-text">Каталог поставщиков</span>
+							</div>
+							<i class="d-icon-angle-rounded catalog__head-item-arrow"></i>
+						</button>
+						<button class="catalog__head-item catalog__head-item--active">
+							<div class="catalog__head-item-content">
+								<i class="d-icon-boxes catalog__head-item-icon"></i
+								><span class="catalog__head-item-text">Единый каталог</span>
+							</div>
+							<i class="d-icon-angle-rounded catalog__head-item-arrow"></i>
+						</button>
+					</div>
+					<div class="catalog__content">
+						<ul class="catalog__items-list">
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="catalog__list">
+					<div class="catalog__top">
+						<button class="catalog__head-item catalog__head-item--back">
+							<i class="d-icon-angle-rounded catalog__head-item-icon"></i
+							><span class="catalog__head-item-text">Единый каталог</span>
+						</button>
+						<div class="catalog__head-item catalog__head-item--sub">
+							<span class="catalog__head-item-text">Садовая техника</span>
+						</div>
+					</div>
+					<div class="catalog__content">
+						<ul class="catalog__items-list">
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+							<li class="catalog__item catalog__item--sub">
+								<button class="catalog__item-button">
+									<div class="catalog__item-content">
+										<img src="/images/product.png" class="catalog__item-img" />
+										<p class="catalog__item-title">Измерительный инструмент</p>
+									</div>
+									<i class="d-icon-angle-rounded catalog__item-arrow"></i>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div> -->
 			</div>
 		</div>
 

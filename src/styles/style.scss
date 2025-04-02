@@ -56,8 +56,8 @@ body {
 	box-sizing: inherit;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
 	padding: 0;
 }
 
@@ -80,7 +80,7 @@ dd {
 	margin: 0;
 }
 
-ul[class] {
+ul {
 	list-style: none;
 }
 
@@ -348,6 +348,9 @@ button {
 }
 .box-shadow-none {
 	box-shadow: none;
+}
+.contents {
+	display: contents;
 }
 
 .status {
