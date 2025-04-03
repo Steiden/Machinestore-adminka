@@ -11,6 +11,7 @@
 @import "pages/registration";
 @import "pages/login";
 @import "pages/base";
+@import "pages/index";
 
 span[class="d-icon"],
 span[class^="d-icon-"],
@@ -389,11 +390,29 @@ button {
 
 	background-color: transparent;
 	border-radius: 50%;
-	transition-duration: .2s;
+	transition-duration: 0.2s;
 	padding: 4px;
 
 	&:hover {
 		background-color: #fbfbfb;
 		box-shadow: 0px 4px 13.4px 0px #00000042;
+	}
+}
+
+.content-wrapper {
+	padding-inline: 32px;
+	margin-inline: auto;
+	max-width: 1520px;
+
+	@media (width > 1440px) {
+		padding-inline: 80px;
+	}
+
+	@media (width <=780px) {
+		padding-inline: 40px 80px;
+	}
+
+	@media (width <= 600px) {
+		padding-inline: 44px;
 	}
 }

@@ -930,6 +930,7 @@
 	cursor: pointer;
 
 	background-color: transparent;
+	color: #fbfbfb;
 
 	display: flex;
 	justify-content: space-between;
@@ -944,15 +945,16 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		color: inherit;
 
 		&::before {
 			font-size: 16px;
-			color: #fbfbfb;
+			color: inherit;
 		}
 	}
 
 	&__text {
-		color: #fbfbfb;
+		color: inherit;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 1.2;
@@ -1281,5 +1283,105 @@
 	&--rounded {
 		border-radius: 50%;
 		aspect-ratio: 1;
+	}
+}
+
+.d-breadcrumbs {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	background-color: #ededed;
+	border-radius: 30px;
+
+	padding: 8px;
+	height: 40px;
+	width: fit-content;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		height: 18px;
+
+		font-size: 14px;
+		font-weight: 400;
+
+		&:not(:last-child) {
+			border-right: 0.5px solid #282828;
+			padding-right: 10px;
+		}
+
+		&--active {
+			font-weight: 700;
+		}
+	}
+}
+
+.d-switch {
+	--switch-padding: 1px;
+	--switch-border-width: 1px;
+	--switch-width: 40px;
+	--switch-thumb-width: 18px;
+	--switch-color: #f92c0d;
+	--switch-disabled-color: #757575;
+
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	border: var(--switch-border-width) solid var(--switch-disabled-color);
+	border-radius: 50px;
+
+	position: relative;
+	transition: all 0.1s linear;
+
+	width: var(--switch-width);
+	height: 22px;
+
+	&:has(.d-switch__input:checked) {
+		border-color: var(--switch-color);
+
+		.d-switch__circle {
+			background-color: var(--switch-color);
+			left: calc(
+				100% - var(--switch-thumb-width) - var(--switch-padding) -
+					var(--switch-border-width)
+			);
+		}
+	}
+
+	&__input {
+		@include visually-hidden;
+	}
+
+	&__circle {
+		background-color: var(--switch-disabled-color);
+		border-radius: 50%;
+
+		position: absolute;
+		top: 50%;
+		left: calc(var(--switch-padding));
+		translate: 0 -50%;
+		transition: all 0.1s linear;
+
+		aspect-ratio: 1;
+		width: var(--switch-thumb-width);
+		height: var(--switch-thumb-width);
+	}
+}
+
+.d-switch-button {
+	--switch-disabled-color: #fbfbfb;
+	--switch-color: #fbfbfb;
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	&__text {
+		font-size: 16px;
+		font-weight: 500;
 	}
 }

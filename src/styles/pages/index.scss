@@ -1,0 +1,14 @@
+.promotions {
+    margin-block: 20px 80px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 52px;
+
+        &-back {
+            color: #282828;
+            height: auto;
+        }
+    }
+}

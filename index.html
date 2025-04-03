@@ -245,7 +245,7 @@
 			</aside>
 			<div class="content">
 				<div class="header__wrapper">
-					<header class="header">
+					<header class="content-wrapper header">
 						<div class="header__catalog-content">
 							<a href="/" class="header__logo-container">
 								<img
@@ -285,8 +285,12 @@
 							<div class="header__content">
 								<div class="header__left">
 									<div class="header__design" data-catalog-design>
-										<div class="header__design-block header__design-block--left"></div>
-										<div class="header__design-block header__design-block--right"></div>
+										<div
+											class="header__design-block header__design-block--left"
+										></div>
+										<div
+											class="header__design-block header__design-block--right"
+										></div>
 
 										<button
 											class="d-button d-button-primary header__catalog"
@@ -429,33 +433,55 @@
 					</header>
 				</div>
 				<main class="main">
-					<div class="main__content">
-						<!-- <div class="d-col-24 skeleton skeleton--big main__banner"></div>
-						<div class="main__promotions">
-							<h2 class="main__promotions-title">Акции брендов</h2>
-							<div class="main__promotions-list">
-								<div class="skeleton"></div>
-								<div class="skeleton"></div>
-								<div class="skeleton"></div>
-								<div class="skeleton"></div>
-								<div class="skeleton"></div>
-								<div class="skeleton"></div>
+					<div class="content-wrapper">
+						<section class="promotions" id="promotions">
+							<div class="promotions__top">
+								<a class="d-back promotions__top-back">
+									<i class="d-icon-arrow d-back__icon"></i>
+									<span class="d-back__text hidden-640">Назад</span>
+								</a>
+
+								<ul class="d-breadcrumbs">
+									<li class="d-breadcrumbs__item">
+										<button class="d-breadcrumbs__button">
+											Оптовые продажи
+										</button>
+									</li>
+									<li class="d-breadcrumbs__item">
+										<button class="d-breadcrumbs__button">Оптовые цены</button>
+									</li>
+									<li class="d-breadcrumbs__item">
+										<button class="d-breadcrumbs__button">Акции</button>
+									</li>
+									<li class="d-breadcrumbs__item d-breadcrumbs__item--active">
+										<button class="d-breadcrumbs__button">
+											Насторойка акции
+										</button>
+									</li>
+								</ul>
 							</div>
-						</div>
-						<div class="main__brands">
-							<h2 class="main__promotions-title">Все бренды</h2>
-							<div class="main__brands-list">
-								<div class="skeleton skeleton--rounded"></div>
-								<div class="skeleton skeleton--rounded"></div>
-								<div class="skeleton skeleton--rounded"></div>
-								<div class="skeleton skeleton--rounded"></div>
-								<div class="skeleton skeleton--rounded"></div>
-								<div class="skeleton skeleton--rounded"></div>
-								<div class="skeleton skeleton--rounded"></div>
-								<div class="skeleton skeleton--rounded"></div>
-								<div class="skeleton skeleton--rounded"></div>
+
+							<div class="promotions__header">
+								<h1 class="promotions__header-title">
+									Настройка акции № 454 324 453
+								</h1>
+
+								<div class="promotions__header-actions">
+									<label class="d-switch__label" for="enable-promotion">
+										<div class="d-switch" for="enable-promotion">
+											<input
+												type="checkbox"
+												name="enable-promotion"
+												id="enable-promotion"
+												class="d-switch__input"
+											/>
+											<div class="d-switch__circle"></div>
+										</div>
+										<span class="d-switch__text">Включить акцию</span>
+									</label>
+								</div>
 							</div>
-						</div> -->
+						</section>
 					</div>
 				</main>
 				<footer class="footer"></footer>
