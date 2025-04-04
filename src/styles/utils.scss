@@ -18,14 +18,34 @@
 
 @for $i from 1 to 5 {
 	.dart-mb-#{$i} {
+		margin-bottom: #{$i}rem;
+	}
+
+	.dart-mt-#{$i} {
 		margin-top: #{$i}rem;
 	}
 }
 
-@for $i from 1 to 5 {
-	.dart-mt-#{$i} {
-		margin-top: #{$i}rem;
+@for $i from 1 to 128 {
+	.mb-#{$i} {
+		margin-bottom: #{$i}px;
 	}
+
+	.mt-#{$i} {
+		margin-top: #{$i}px;
+	}
+
+	.ml-#{$i} {
+		margin-left: #{$i}px;
+	}
+
+	.mr-#{$i} {
+		margin-right: #{$i}px;
+	}
+}
+
+.w-full {
+	width: 100%;
 }
 
 // Steiden
