@@ -26,19 +26,6 @@
 		}
 	}
 
-	&__icon {
-		font-size: 18px;
-
-		&-wrapper {
-			width: 40px;
-			height: 40px;
-		}
-
-		&--plus {
-			font-size: 14px;
-		}
-	}
-
 	&__info {
 		display: flex;
 		justify-content: space-between;
@@ -76,8 +63,8 @@
 
 	&__content {
 		display: flex;
-        gap: 32px;
-        flex-direction: column;
+		gap: 32px;
+		flex-direction: column;
 	}
 
 	&__card {
@@ -115,7 +102,7 @@
 			font-size: 20px;
 		}
 
-		&-text {
+		&-title {
 			font-size: 24px;
 			font-weight: 600;
 		}
@@ -125,7 +112,7 @@
 			height: 24px;
 
 			&-icon {
-				font-size: 19px;
+				font-size: 20px;
 			}
 		}
 
@@ -145,6 +132,11 @@
 			margin-bottom: 4px;
 		}
 
+		&-text {
+			font-size: 16px;
+			font-weight: 500;
+		}
+
 		&-value {
 			font-size: 20px;
 			font-weight: 300;
@@ -162,7 +154,8 @@
 		&-banner {
 			border-radius: 4px;
 			position: relative;
-            margin-bottom: 28px;
+			overflow: hidden;
+			margin-bottom: 28px;
 			width: 100%;
 			height: 260px;
 
@@ -171,13 +164,13 @@
 				align-items: center;
 				gap: 12px;
 
-				background-color: #FFFFFF8C;
+				background-color: #ffffff8c;
 				border-radius: 20px;
 
 				position: absolute;
 				top: 8px;
 				left: 8px;
-                z-index: 1;
+				z-index: 1;
 
 				padding: 4px 24px;
 				min-height: 28px;
@@ -196,36 +189,146 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
-                filter: brightness(80%)
+				filter: brightness(80%);
 			}
 		}
 
-        &-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 16px;
+		&-info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 16px;
 
-            &-text {
-                font-size: 20px;
-                font-weight: 500;
-            }
+			&-text {
+				font-size: 20px;
+				font-weight: 500;
+			}
 
-            &-button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 24px;
-                height: 24px;
-            }
+			&-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 24px;
+				height: 24px;
+			}
 
-            &-icon {
-                font-size: 18px;
-            }
+			&-icon {
+				font-size: 18px;
+			}
 
-            &--fit {
-                width: fit-content;
-            }
-        }
+			&--fit {
+				width: fit-content;
+			}
+		}
+
+		&-block {
+			width: 100%;
+
+			&-wrapper {
+				display: flex;
+			}
+
+			&-container {
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+				flex-grow: 1;
+			}
+
+			&-inner {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				flex-grow: 1;
+			}
+
+			&-title {
+			}
+
+			&-description {
+				flex: 1 0 auto;
+			}
+
+			&-value {
+				margin-bottom: 36px;
+			}
+
+			&-divider {
+				margin-inline: 12px;
+			}
+
+			&-button {
+				gap: 8px;
+				box-shadow: 0px 4px 13.4px 0px #00000042;
+				font-size: 16px;
+				font-weight: 500;
+				min-height: 40px;
+				width: fit-content;
+
+				&-icon {
+					font-size: 18px;
+				}
+
+				&:hover {
+					font-weight: 500;
+				}
+			}
+		}
+
+		&-warehouse {
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+
+			&-header {
+				width: 460px;
+
+				&-container {
+					align-items: center;
+					margin-bottom: 40px;
+				}
+			}
+
+			&-settings {
+				display: flex;
+				align-items: center;
+				gap: 80px;
+			}
+
+			&-divider {
+				margin-block: 40px;
+			}
+
+			&-search {
+				max-width: 600px;
+			}
+		}
+
+		&-collection {
+			&-add {
+				&-icon {
+					font-size: 14px;
+				}
+			}
+
+			&-header {
+				display: flex;
+				align-items: center;
+				margin-block: 40px;
+
+				&-divider {
+					margin-inline: 16px;
+				}
+			}
+
+			&-tabs {
+				margin-bottom: 40px;
+			}
+
+			&-search {
+				margin-bottom: 48px;
+				width: 528px;
+			}
+		}
 	}
 }

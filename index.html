@@ -31,7 +31,7 @@
 									<span class="sidebar__warehouse-title">Склад доставки:</span>
 									<p class="sidebar__warehouse-text">Ростов на Дону, ул. Микухина Каланахлоя, 11 / 7 к 32 ЛИТ 898</p>
 								</div>
-								<button class="icon-wrapper sidebar__warehouse-button">
+								<button class="d-icon-wrapper sidebar__warehouse-button">
 									<i class="d-icon-pen sidebar__warehouse-button-icon"></i>
 								</button>
 							</div>
@@ -72,7 +72,7 @@
 											<span class="sidebar__organization-button-text">Сменить компанию</span>
 										</button>
 									</div>
-									<button class="icon-wrapper sidebar__organization-info-button">
+									<button class="d-icon-wrapper sidebar__organization-info-button">
 										<i class="d-icon-info sidebar__organization-info-button-icon"></i>
 									</button>
 								</div>
@@ -291,7 +291,7 @@
 									<img src="/icons/spo-logo.svg" alt="SPO" class="header__organization-logo" />
 									<span class="header__organization-title">Специальное Профессиональное Оборудование</span>
 								</div>
-								<button class="icon-wrapper header__organization-info-button">
+								<button class="d-icon-wrapper header__organization-info-button">
 									<i class="d-icon-info header__organization-info-button-icon"></i>
 								</button>
 							</div>
@@ -362,11 +362,11 @@
 										<span class="d-switch-button__text">Включить акцию</span>
 									</label>
 									<div class="d-divider d-divider--vertical"></div>
-									<button class="icon-wrapper promotions__icon-wrapper">
+									<button class="d-icon-wrapper d-icon-wrapper--big">
 										<i class="d-icon-copy promotions__icon"></i>
 									</button>
 									<div class="d-divider d-divider--vertical"></div>
-									<button class="icon-wrapper promotions__icon-wrapper">
+									<button class="d-icon-wrapper d-icon-wrapper--big">
 										<i class="d-icon-trash promotions__icon"></i>
 									</button>
 								</div>
@@ -385,11 +385,11 @@
 								</div>
 
 								<div class="promotions__info-actions">
-									<button class="icon-wrapper icon-wrapper--black promotions__icon-wrapper">
+									<button class="d-icon-wrapper d-icon-wrapper--black d-icon-wrapper--big">
 										<i class="d-icon-pen2 promotions__icon"></i>
 									</button>
 									<div class="d-divider d-divider--vertical"></div>
-									<button class="icon-wrapper promotions__icon-wrapper">
+									<button class="d-icon-wrapper d-icon-wrapper--big">
 										<i class="d-icon-plus promotions__icon promotions__icon--plus"></i>
 									</button>
 								</div>
@@ -402,7 +402,7 @@
 											<div class="promotions__card-header">
 												<div class="promotions__card-header-left">
 													<i class="d-icon-lines promotions__card-icon"></i>
-													<p class="promotions__card-text">Контент акции</p>
+													<p class="promotions__card-title">Контент акции</p>
 												</div>
 												<button class="promotions__card-button">
 													<i class="d-icon-pen2 promotions__card-button-icon"></i>
@@ -434,7 +434,7 @@
 											<div class="promotions__card-header">
 												<div class="promotions__card-header-left">
 													<i class="d-icon-picture promotions__card-icon"></i>
-													<p class="promotions__card-text">Баннер акции</p>
+													<p class="promotions__card-title">Баннер акции</p>
 												</div>
 												<button class="promotions__card-button">
 													<i class="d-icon-pen2 promotions__card-button-icon"></i>
@@ -466,7 +466,7 @@
 												<div class="promotions__card-header">
 													<div class="promotions__card-header-left">
 														<i class="d-icon-truck promotions__card-icon"></i>
-														<p class="promotions__card-text">Условия акции</p>
+														<p class="promotions__card-title">Условия акции</p>
 													</div>
 													<button class="promotions__card-button">
 														<i class="d-icon-pen2 promotions__card-button-icon"></i>
@@ -490,8 +490,8 @@
 											<div class="promotions__card">
 												<div class="promotions__card-header">
 													<div class="promotions__card-header-left">
-														<i class="d-icon-lines promotions__card-icon"></i>
-														<p class="promotions__card-text">Контент акции</p>
+														<i class="d-icon-wallet promotions__card-icon"></i>
+														<p class="promotions__card-title">Условия оплаты</p>
 													</div>
 													<button class="promotions__card-button">
 														<i class="d-icon-pen2 promotions__card-button-icon"></i>
@@ -535,7 +535,7 @@
 											<div class="promotions__card-header">
 												<div class="promotions__card-header-left">
 													<i class="d-icon-user-star promotions__card-icon"></i>
-													<p class="promotions__card-text">Аудитория акции</p>
+													<p class="promotions__card-title">Аудитория акции</p>
 												</div>
 												<button class="promotions__card-button">
 													<i class="d-icon-pen2 promotions__card-button-icon"></i>
@@ -616,7 +616,7 @@
 											<div class="promotions__card-header">
 												<div class="promotions__card-header-left">
 													<i class="d-icon-check-list promotions__card-icon"></i>
-													<p class="promotions__card-text">Условия участия в акции</p>
+													<p class="promotions__card-title">Условия участия в акции</p>
 
 													<div class="d-category__container ml-44">
 														<div class="d-category">Негативная акция</div>
@@ -628,9 +628,334 @@
 												</button>
 											</div>
 											<div class="promotions__card-content">
-												<div class="promotions__card-value-container">
-													<span class="promotions__card-label">Требования к заказу</span>
-													
+												<div class="promotions__card-block-wrapper">
+													<div class="promotions__card-value-container promotions__card-block">
+														<span class="promotions__card-label">Требования к заказу</span>
+														<div class="promotions__card-block-inner">
+															<p
+																class="promotions__card-value promotions__card-value--bold promotions__card-block-title"
+															>
+																Минимальная общая сумма заказа товаров акции
+															</p>
+															<p class="promotions__card-label promotions__card-block-description">
+																Общая сумма товаров акции должна быть не менее указанной суммы.
+															</p>
+															<p
+																class="promotions__card-value promotions__card-value--bold promotions__card-block-value"
+															>
+																0 ₽
+															</p>
+														</div>
+													</div>
+													<div class="d-divider d-divider--vertical d-divider--full promotions__card-block-divider"></div>
+													<div class="promotions__card-value-container promotions__card-block">
+														<span class="promotions__card-label">&nbsp;</span>
+														<div class="promotions__card-block-inner">
+															<p
+																class="promotions__card-value promotions__card-value--bold promotions__card-block-title"
+															>
+																Минимальное количество SKU акции
+															</p>
+															<p class="promotions__card-label promotions__card-block-description">
+																В заказе должно быть не менее заданного количества SKU товаров акции.
+															</p>
+															<p
+																class="promotions__card-value promotions__card-value--bold promotions__card-block-value"
+															>
+																Любое
+															</p>
+														</div>
+													</div>
+													<div class="d-divider d-divider--vertical d-divider--full promotions__card-block-divider"></div>
+													<div class="promotions__card-value-container promotions__card-block">
+														<span class="promotions__card-label">&nbsp;</span>
+														<div class="promotions__card-block-inner">
+															<p
+																class="promotions__card-value promotions__card-value--bold promotions__card-block-title"
+															>
+																Минимально общее количество товаров
+															</p>
+															<p class="promotions__card-label promotions__card-block-description">
+																В заказе должно быть не менее заданного общего количества товаров акции.
+															</p>
+															<p
+																class="promotions__card-value promotions__card-value--bold promotions__card-block-value"
+															>
+																Любое
+															</p>
+														</div>
+													</div>
+													<div class="d-divider d-divider--vertical d-divider--full promotions__card-block-divider"></div>
+													<div class="promotions__card-value-container promotions__card-block">
+														<span class="promotions__card-label">&nbsp;</span>
+														<div class="promotions__card-block-container">
+															<div class="promotions__card-block-inner grow-0">
+																<p
+																	class="promotions__card-value promotions__card-value--bold promotions__card-block-title"
+																>
+																	Совместимость
+																</p>
+																<p class="promotions__card-label promotions__card-block-description">
+																	С какой акцией может применяться совместно
+																</p>
+															</div>
+															<div class="promotions__card-block-inner">
+																<p
+																	class="promotions__card-value promotions__card-value--bold promotions__card-block-title"
+																>
+																	Совместима со всеми акциями
+																</p>
+																<p class="promotions__card-label promotions__card-block-description"></p>
+																<button class="d-button d-button-tertiary promotions__card-block-button">
+																	<i class="d-icon-trade promotions__card-block-button-icon"></i>
+																	Совместимость акций
+																</button>
+															</div>
+														</div>
+													</div>
+													<div
+														class="d-divider d-divider--vertical d-divider--full d-divider--bold promotions__card-block-divider"
+													></div>
+													<div class="promotions__card-value-container promotions__card-block">
+														<span class="promotions__card-label">&nbsp;</span>
+														<div class="promotions__card-block-container">
+															<div class="promotions__card-block-inner grow-0">
+																<p
+																	class="promotions__card-value promotions__card-value--bold promotions__card-block-title"
+																>
+																	Режим совместимости
+																</p>
+																<p class="promotions__card-label promotions__card-block-description">
+																	Как условия акций сочетаются
+																</p>
+															</div>
+															<div class="promotions__card-block-inner">
+																<p
+																	class="promotions__card-value promotions__card-value--bold promotions__card-block-title"
+																>
+																	Складываются
+																</p>
+																<p class="promotions__card-label promotions__card-block-description">
+																	Процент скидки сложиться и отнимется от цены. Отсрочка сложится.
+																</p>
+																<button class="d-button d-button-tertiary promotions__card-block-button">
+																	<i class="d-icon-trade promotions__card-block-button-icon"></i>
+																	Совместимость акций
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="dart-row">
+									<div class="d-col d-col-24">
+										<div class="promotions__card">
+											<div class="promotions__card-header">
+												<div class="promotions__card-header-left">
+													<i class="d-icon-cube promotions__card-icon"></i>
+													<p class="promotions__card-title">Товары и скидки</p>
+												</div>
+												<button class="promotions__card-button">
+													<i class="d-icon-pen2 promotions__card-button-icon"></i>
+												</button>
+											</div>
+											<div class="promotions__card-content">
+												<div class="promotions__card-warehouse">
+													<div class="promotions__card-value-container promotions__card-warehouse-header">
+														<p class="promotions__card-value promotions__card-value--bold promotions__card-block-title">
+															Склады
+														</p>
+														<span class="promotions__card-label"
+															>Укажите скалады, на товары которых распространяется акция</span
+														>
+													</div>
+													<div class="promotions__card-warehouse-settings">
+														<div class="d-field-container d-field-container--vertical">
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="warehouse1">
+																	<input
+																		type="checkbox"
+																		name="warehouse1"
+																		id="warehouse1"
+																		class="d-switch__input"
+																	/>
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="warehouse1" class="d-switch__label">Все склады</label>
+															</div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="warehouse2">
+																	<input
+																		type="checkbox"
+																		name="warehouse2"
+																		id="warehouse2"
+																		class="d-switch__input"
+																	/>
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="warehouse2" class="d-switch__label"
+																	>ООО МСТ, г Химки, ул, Ленинградская д. 29</label
+																>
+															</div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="warehouse3">
+																	<input
+																		type="checkbox"
+																		name="warehouse3"
+																		id="warehouse3"
+																		class="d-switch__input"
+																	/>
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="warehouse3" class="d-switch__label"
+																	>ООО МСТ, г Химки, ул, Ленинградская д. 29</label
+																>
+															</div>
+														</div>
+														<div class="d-field-container d-field-container--vertical">
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="warehouse4">
+																	<input
+																		type="checkbox"
+																		name="warehouse4"
+																		id="warehouse4"
+																		class="d-switch__input"
+																	/>
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="warehouse4" class="d-switch__label"
+																	>ООО МСТ, г Химки, ул, Ленинградская д. 29</label
+																>
+															</div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="warehouse5">
+																	<input
+																		type="checkbox"
+																		name="warehouse5"
+																		id="warehouse5"
+																		class="d-switch__input"
+																	/>
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="warehouse5" class="d-switch__label"
+																	>ООО МСТ, г Химки, ул, Ленинградская д. 29</label
+																>
+															</div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="warehouse6">
+																	<input
+																		type="checkbox"
+																		name="warehouse6"
+																		id="warehouse6"
+																		class="d-switch__input"
+																	/>
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="warehouse6" class="d-switch__label"
+																	>ООО МСТ, г Химки, ул, Ленинградская д. 29</label
+																>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div
+													class="d-divider d-divider--full d-divider--semibold d-divider--black promotions__card-warehouse-divider"
+												></div>
+
+												<div class="promotions__card-warehouse promotions__card-warehouse-header-container">
+													<div class="promotions__card-value-container promotions__card-warehouse-header">
+														<p class="promotions__card-value promotions__card-value--bold promotions__card-block-title">
+															Товары
+														</p>
+														<span class="promotions__card-label"
+															>Загрузите список товаров и установите скидки, которые получит клиент при выполнении
+															условий акции</span
+														>
+													</div>
+													<form class="d-search d-search--alt promotions__card-warehouse-search">
+														<i class="d-icon-search-big d-search__icon promotions__card-warehouse-search-icon"></i>
+														<input type="text" placeholder="Найти у выбранных поставщиков" class="d-search__field" />
+														<button
+															type="button"
+															class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button"
+														>
+															Добавить товар
+														</button>
+
+														<ul class="d-search__suggestions">
+															<!-- <li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
+															<li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
+															<li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
+															<li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li> -->
+														</ul>
+													</form>
+												</div>
+
+												<div class="promotions__card-warehouse">
+													<div class="promotions__card-value-container promotions__card-warehouse-header">
+														<p class="promotions__card-value promotions__card-value--bold promotions__card-block-title">
+															Коллекции
+														</p>
+														<span class="promotions__card-label"
+															>Загрузите список товаров и установите скидки, которые получит клиент при выполнении
+															условий акции</span
+														>
+													</div>
+													<button
+														class="d-button d-button-primary promotions__card-block-button promotions__card-collection-add"
+													>
+														<i
+															class="d-icon-plus promotions__card-block-button-icon promotions__card-collection-add-icon"
+														></i>
+														Добавить коллекцию
+													</button>
+												</div>
+												<div class="promotions__card-collection-header">
+													<h2 class="promotions__card-title">Коллекция “Купить слона”№345 43</h2>
+													<div class="d-divider d-divider--vertical promotions__card-collection-header-divider"></div>
+													<button class="d-icon-wrapper d-icon-wrapper--big">
+														<i class="d-icon-trash"></i>
+													</button>
+												</div>
+
+												<div class="d-tab__wrapper promotions__card-collection-tabs">
+													<div class="d-tab__container">
+														<!-- NOTE: Порядок табов обратный -->
+														<button class="d-tab">Оснастка Интерскол (34332)</button>
+														<button class="d-tab">Оснастка Интерскол (34332)</button>
+														<button class="d-tab d-tab--active">Основная продукция интерскол (34332)</button>
+													</div>
+												</div>
+
+												<div class="d-field-container d-field-container--vertical d-field-container--long promotions__card-collection-search">
+													<p class="promotions__card-text">Поиск тоаврао по коллекции</p>
+													<form class="d-search d-search--alt2">
+														<input
+															type="text"
+															placeholder="Название, артикул, бренд, тег, категория"
+															class="d-search__field"
+														/>
+														<button type="submit" class="d-search__icon-button">
+															<i class="d-icon-search-big"></i>
+														</button>
+														<ul class="d-search__suggestions">
+															<!-- <li class="d-search__suggestion">
+																Россия, Москва, Большой Предтеченский переулок, 13с4
+															</li>
+															<li class="d-search__suggestion">
+																Россия, Москва, Большой Предтеченский переулок, 13с4
+															</li>
+															<li class="d-search__suggestion">
+																Россия, Москва, Большой Предтеченский переулок, 13с4
+															</li>
+															<li class="d-search__suggestion">
+																Россия, Москва, Большой Предтеченский переулок, 13с4
+															</li> -->
+														</ul>
+													</form>
 												</div>
 											</div>
 										</div>
