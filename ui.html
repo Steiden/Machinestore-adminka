@@ -102,19 +102,14 @@
 
 		<span class="d-indicator"></span>
 
-		<label class="d-switch" for="test-checkbox">
-			<input type="checkbox" name="test-checkbox" id="test-checkbox" class="d-switch__input">
+		<label class="d-switch" for="test-switch">
+			<input type="checkbox" name="test-switch" id="test-switch" class="d-switch__input" />
 			<div class="d-switch__circle"></div>
 		</label>
 
 		<label class="d-switch-button" for="enable-promotion">
 			<div class="d-switch">
-				<input
-					type="checkbox"
-					name="enable-promotion"
-					id="enable-promotion"
-					class="d-switch__input"
-				/>
+				<input type="checkbox" name="enable-promotion" id="enable-promotion" class="d-switch__input" />
 				<div class="d-switch__circle"></div>
 			</div>
 			<span class="d-switch-button__text">Включить акцию</span>
@@ -130,7 +125,33 @@
 			</div>
 		</div>
 
+		<div class="test-wrapper">
+			<div class="d-radio__container">
+				<div class="d-radio__wrapper">
+					<label for="test-radio1" class="d-radio">
+						<input type="radio" name="test-radios" id="test-radio1" class="d-radio__input" />
+					</label>
+					<label for="test-radio1" class="d-radio__label">Задать вручную</label>
+				</div>
+				<div class="d-radio__wrapper">
+					<label for="test-radio2" class="d-radio">
+						<input type="radio" name="test-radios" id="test-radio2" class="d-radio__input" />
+					</label>
+					<label for="test-radio2" class="d-radio__label">Тип цен</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="d-counter" data-counter>
+			<button class="d-counter__button" data-counter-button="decrement">
+				<i class="d-icon-minus d-counter__button-icon"></i>
+			</button>
+			<input class="d-counter__input" type="text" name="test-counter" id="test-counter" value="1" data-counter-input />
+			<button class="d-counter__button" data-counter-button="increment">
+				<i class="d-icon-plus d-counter__button-icon"></i>
+			</button>
+		</div>
+
 		<script type="module" src="./src/main.js"></script>
-		<script type="module" src="./src/scripts/other.js"></script>
 	</body>
 </html>

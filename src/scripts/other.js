@@ -5,7 +5,7 @@ try {
 	// Очистка поля ввода
 
 	const clearInputButtons = document.querySelectorAll("[data-input='clear']");
-	clearInputButtons.forEach((clearButton) => {
+	clearInputButtons?.forEach((clearButton) => {
 		const inputId = clearButton.getAttribute("data-for-input");
 		const inputs = document.querySelectorAll(`[data-input-id='${inputId}']`);
 
@@ -31,12 +31,10 @@ try {
 	const showPasswordButtons = document.querySelectorAll("[data-input='show']");
 	const hidePasswordButtons = document.querySelectorAll("[data-input='hide']");
 
-	showPasswordButtons.forEach((showButton) => {
+	showPasswordButtons?.forEach((showButton) => {
 		const inputId = showButton.getAttribute("data-for-input");
 		const inputs = document.querySelectorAll(`[data-input-id='${inputId}']`);
-		const hideButtons = document.querySelectorAll(
-			`[data-input='hide'][data-for-input='${inputId}']`
-		);
+		const hideButtons = document.querySelectorAll(`[data-input='hide'][data-for-input='${inputId}']`);
 
 		inputs.forEach((input) => {
 			const inputType = input.getAttribute("type");
@@ -44,8 +42,7 @@ try {
 
 			input.addEventListener("input", (e) => {
 				const inputType = input.getAttribute("type");
-				showButton.style.display =
-					input.value && inputType === "password" ? "flex" : "none";
+				showButton.style.display = input.value && inputType === "password" ? "flex" : "none";
 			});
 		});
 
@@ -61,14 +58,12 @@ try {
 		});
 	});
 
-	hidePasswordButtons.forEach((hideButton) => {
+	hidePasswordButtons?.forEach((hideButton) => {
 		const inputId = hideButton.getAttribute("data-for-input");
 		const inputs = document.querySelectorAll(`[data-input-id='${inputId}']`);
-		const showButtons = document.querySelectorAll(
-			`[data-input='show'][data-for-input='${inputId}']`
-		);
+		const showButtons = document.querySelectorAll(`[data-input='show'][data-for-input='${inputId}']`);
 
-		inputs.forEach((input) => {
+		inputs?.forEach((input) => {
 			const inputType = input.getAttribute("type");
 			hideButton.style.display = input.value && inputType === "password" ? "flex" : "none";
 
@@ -79,12 +74,12 @@ try {
 		});
 
 		hideButton.addEventListener("click", (e) => {
-			inputs.forEach((input) => {
+			inputs?.forEach((input) => {
 				input.setAttribute("type", "password");
 			});
 
 			hideButton.style.display = "none";
-			showButtons.forEach((showButton) => {
+			showButtons?.forEach((showButton) => {
 				showButton.style.display = "flex";
 			});
 		});
@@ -97,7 +92,7 @@ try {
 	// Lottie анимации
 
 	const dLoaders = document.querySelectorAll(".d-loader");
-	dLoaders.forEach((dLoader) => {
+	dLoaders?.forEach((dLoader) => {
 		new DotLottie({
 			autoplay: true,
 			loop: true,
@@ -124,16 +119,13 @@ try {
 		// Обратное геокодирование через Яндекс API
 
 		const response = await fetch(
-			`https://geocode-maps.yandex.ru/1.x/?apikey=9cc9371c-b0ef-422b-b0be-2b1d49e32386&geocode=${coordinates.join(
-				","
-			)}&format=json&results=1`
+			`https://geocode-maps.yandex.ru/1.x/?apikey=9cc9371c-b0ef-422b-b0be-2b1d49e32386&geocode=${coordinates.join(",")}&format=json&results=1`
 		).catch((err) => {
 			console.error("Ошибка получения адреса по координатам: " + err);
 		});
 
 		const data = await response.json();
-		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.metaDataProperty
-			?.GeocoderMetaData?.text;
+		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.metaDataProperty?.GeocoderMetaData?.text;
 	}
 
 	async function getCoordinates(address) {
@@ -146,22 +138,17 @@ try {
 		});
 
 		const data = await response.json();
-		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.Point?.pos?.split(
-			" "
-		);
+		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.Point?.pos?.split(" ");
 	}
 
 	async function initMap() {
 		await ymaps3.ready;
-		const { YMap, YMapListener, YMapMarker, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } =
-			ymaps3;
+		const { YMap, YMapListener, YMapMarker, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
 
 		// Creating maps
 		const yandexMapContainers = document.querySelectorAll(".yandex-map");
-		yandexMapContainers.forEach((yandexMapContainer) => {
-			const addressInput = document.querySelector(
-				`[data-input-id='${yandexMapContainer.getAttribute("data-for-input")}']`
-			);
+		yandexMapContainers?.forEach((yandexMapContainer) => {
+			const addressInput = document.querySelector(`[data-input-id='${yandexMapContainer.getAttribute("data-for-input")}']`);
 
 			// Create marker element
 			const markerHtml = `
@@ -181,8 +168,7 @@ try {
 				const markerText = markerELement.querySelector(".marker__text");
 				markerContent.classList.contains("marker__content--visible")
 					? markerContent.classList.remove("marker__content--visible")
-					: markerText.textContent &&
-					  markerContent.classList.add("marker__content--visible");
+					: markerText.textContent && markerContent.classList.add("marker__content--visible");
 			});
 
 			// Create marker
@@ -190,8 +176,7 @@ try {
 				{
 					coordinates: [37.588144, 55.733842],
 					draggable: true,
-					onDragEnd: async (coordinates) =>
-						refreshAddress(addressInput, markerELement, coordinates),
+					onDragEnd: async (coordinates) => refreshAddress(addressInput, markerELement, coordinates),
 				},
 				markerELement
 			);
@@ -252,7 +237,7 @@ try {
 	// Маска на все поля ввода телефона
 
 	const phoneInputs = document.querySelectorAll("input[type=tel]");
-	phoneInputs.forEach((phoneInput) => {
+	phoneInputs?.forEach((phoneInput) => {
 		const maskOptions = {
 			mask: "+{7} (000) 000-00-00",
 		};
@@ -266,12 +251,10 @@ try {
 	// Функционал модальных окон
 
 	const modals = document.querySelectorAll(".d-modal");
-	modals.forEach((modal) => {
-		const closeButton = modal
-			.querySelector(".d-modal__close")
-			.addEventListener("click", (e) => {
-				modal.classList.remove("modal--active");
-			});
+	modals?.forEach((modal) => {
+		modal.querySelector(".d-modal__close").addEventListener("click", (e) => {
+			modal.classList.remove("modal--active");
+		});
 	});
 } catch (e) {
 	console.error("Ошибка работы модального окна: " + e);
@@ -283,7 +266,7 @@ try {
 	const sidebar = document.getElementById("sidebar");
 	const sidebarToggles = document.querySelectorAll("[data-sidebar-toggle]");
 
-	sidebarToggles.forEach((sidebarToggle) => {
+	sidebarToggles?.forEach((sidebarToggle) => {
 		sidebarToggle.addEventListener("click", (e) => {
 			const sidebarIsFull = sidebar.classList.contains("sidebar--full");
 
@@ -305,14 +288,10 @@ try {
 	const catalogToggles = document.querySelectorAll("[data-catalog-toggle]");
 	const catalogDesign = document.querySelector("[data-catalog-design]");
 
-	catalogToggles.forEach((catalogToggle) => {
+	catalogToggles?.forEach((catalogToggle) => {
 		catalogToggle.addEventListener("click", (e) => {
-			const catalogIsActive = Array.from(catalogs).reduce(
-				(result, catalog) => catalog.classList.contains("catalog--active") || result,
-				false
-			);
-			const catalogDesignIsActive =
-				catalogDesign.classList.contains("header__design--active");
+			const catalogIsActive = Array.from(catalogs).reduce((result, catalog) => catalog.classList.contains("catalog--active") || result, false);
+			const catalogDesignIsActive = catalogDesign.classList.contains("header__design--active");
 
 			if (catalogIsActive) {
 				catalogs.forEach((catalog) => catalog.classList.remove("catalog--active"));
@@ -330,20 +309,39 @@ try {
 
 	window.addEventListener("click", (e) => {
 		let isAvailable =
-			Array.from(catalogs).reduce(
-				(result, catalog) => !catalog.contains(e.target) & result,
-				true
-			) &
-			Array.from(catalogToggles).reduce(
-				(result, toggle) => !toggle.contains(e.target) & result,
-				true
-			);
+			Array.from(catalogs).reduce((result, catalog) => !catalog.contains(e.target) & result, true) &
+			Array.from(catalogToggles).reduce((result, toggle) => !toggle.contains(e.target) & result, true);
 
 		if (isAvailable) {
-			catalogs.forEach((catalog) => catalog.classList.remove("catalog--active"));
-			catalogDesign.classList.remove("header__design--active");
+			catalogs?.forEach((catalog) => catalog.classList.remove("catalog--active"));
+			catalogDesign?.classList.remove("header__design--active");
 		}
 	});
 } catch (e) {
-	console.error("Ошибка работы сайдбара: " + e);
+	console.error("Ошибка работы каталога: " + e);
+}
+
+try {
+	// Функционал счетчика
+
+	const counters = document.querySelectorAll("[data-counter]");
+	console.log(counters);
+
+	counters?.forEach((counter) => {
+		const decreaseButton = counter.querySelector("[data-counter-button='decrement']");
+		const increaseButton = counter.querySelector("[data-counter-button='increment']");
+		const input = counter.querySelector("[data-counter-input]");
+
+		decreaseButton.addEventListener("click", () => {
+			if (input.value > 1) {
+				input.value--;
+			}
+		});
+
+		increaseButton.addEventListener("click", () => {
+			input.value++;
+		});
+	});
+} catch (e) {
+	console.error("Ошибка работы счетчика: " + e);
 }

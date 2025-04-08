@@ -58,6 +58,18 @@
 }
 .grow-1 { flex-grow: 1 }
 .grow-0 { flex-grow: 0 }
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&--vertical {
+		flex-direction: column;
+	}
+}
+.text-white {
+	color: #FBFBFB;
+}
 
 // Steiden
 .visible-1920 {

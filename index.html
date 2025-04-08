@@ -752,7 +752,7 @@
 								</div>
 								<div class="dart-row">
 									<div class="d-col d-col-24">
-										<div class="promotions__card">
+										<div class="promotions__card products__card">
 											<div class="promotions__card-header">
 												<div class="promotions__card-header-left">
 													<i class="d-icon-cube promotions__card-icon"></i>
@@ -762,7 +762,7 @@
 													<i class="d-icon-pen2 promotions__card-button-icon"></i>
 												</button>
 											</div>
-											<div class="promotions__card-content">
+											<div class="promotions__card-content products__card-content">
 												<div class="promotions__card-warehouse">
 													<div class="promotions__card-value-container promotions__card-warehouse-header">
 														<p class="promotions__card-value promotions__card-value--bold promotions__card-block-title">
@@ -894,6 +894,485 @@
 													</form>
 												</div>
 
+												<div class="d-table__wrapper promotions__card-products">
+													<table class="d-table">
+														<thead class="d-table__head">
+															<tr class="d-table__row">
+																<th class="d-table__head-col">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--white" id="checkbox1">
+																			<input
+																				type="checkbox"
+																				name="checkbox1"
+																				id="checkbox1"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</th>
+																<th class="d-table__head-col" style="width: 20%">Товар</th>
+																<th class="d-table__head-col">РРЦ</th>
+																<th class="d-table__head-col">Скидка</th>
+																<th class="d-table__head-col">Тип ценообразования</th>
+																<th class="d-table__head-col">Цена со скидкой за шт.</th>
+																<th class="d-table__head-col">Минимальное количество</th>
+																<th class="d-table__head-col">Максимальное количество</th>
+																<th class="d-table__head-col">Кратность</th>
+																<th class="d-table__head-col">
+																	<div class="flex-center">
+																		<button
+																			class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover text-white"
+																		>
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</th>
+															</tr>
+														</thead>
+														<tbody class="d-table__body promotions__product-card">
+															<tr class="d-table__row">
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+															</tr>
+															<tr class="d-table__row">
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--black" id="checkbox2">
+																			<input
+																				type="checkbox"
+																				name="checkbox2"
+																				id="checkbox2"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="product-table-card">
+																		<p class="product-table-card__title">
+																			Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2
+																		</p>
+																		<p class="product-table-card__article">Арт: 844337</p>
+																		<div class="d-badge d-badge--small">
+																			<img src="/icons/spo-logo.svg" alt="" class="d-badge__img" />
+																			МСТ
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="d-table__col-inner">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			2 500.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__discount product-table-card__value"
+																		>
+																			30% ₽
+																		</p>
+																		<button
+																			class="d-button d-button-tertiary d-button-tertiary-small product-table-card__discount-button"
+																		>
+																			<i class="d-icon-mixer product-table-card__discount-button-icon"></i>
+																			Настроить
+																		</button>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p class="promotions__card-text promotions__card-text--bold">Скидка</p>
+																		<p class="product-table-card__text">по формуле</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			1 750.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<button class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover">
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</td>
+															</tr>
+															<tr class="d-table__row">
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--black" id="checkbox2">
+																			<input
+																				type="checkbox"
+																				name="checkbox2"
+																				id="checkbox2"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="product-table-card">
+																		<p class="product-table-card__title">
+																			Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2
+																		</p>
+																		<p class="product-table-card__article">Арт: 844337</p>
+																		<div class="d-badge d-badge--small">
+																			<img src="/icons/spo-logo.svg" alt="" class="d-badge__img" />
+																			МСТ
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="d-table__col-inner">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			2 500.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__discount product-table-card__value"
+																		>
+																			30% ₽
+																		</p>
+																		<button
+																			class="d-button d-button-tertiary d-button-tertiary-small product-table-card__discount-button"
+																		>
+																			<i class="d-icon-mixer product-table-card__discount-button-icon"></i>
+																			Настроить
+																		</button>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p class="promotions__card-text promotions__card-text--bold">Скидка</p>
+																		<p class="product-table-card__text">по формуле</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			1 750.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<button class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover">
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</td>
+															</tr>
+															<tr class="d-table__row">
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--black" id="checkbox2">
+																			<input
+																				type="checkbox"
+																				name="checkbox2"
+																				id="checkbox2"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="product-table-card">
+																		<p class="product-table-card__title">
+																			Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2
+																		</p>
+																		<p class="product-table-card__article">Арт: 844337</p>
+																		<div class="d-badge d-badge--small">
+																			<img src="/icons/spo-logo.svg" alt="" class="d-badge__img" />
+																			МСТ
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="d-table__col-inner">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			2 500.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__discount product-table-card__value"
+																		>
+																			30% ₽
+																		</p>
+																		<button
+																			class="d-button d-button-tertiary d-button-tertiary-small product-table-card__discount-button"
+																		>
+																			<i class="d-icon-mixer product-table-card__discount-button-icon"></i>
+																			Настроить
+																		</button>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p class="promotions__card-text promotions__card-text--bold">Скидка</p>
+																		<p class="product-table-card__text">по формуле</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			1 750.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<button class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover">
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+
+													<div class="d-table__footer">
+														<div class="d-table__footer-left">
+															<div class="d-table__mark">Отмечено 0 из 3</div>
+															<div class="d-divider d-divider--vertical d-divider--big d-divider--black"></div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="products1">
+																	<input type="checkbox" name="products1" id="products1" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="products1" class="d-switch__label"
+																	>Выбрать все элементы на всех страницах</label
+																>
+															</div>
+														</div>
+														<div class="d-table__footer-right">
+															<ul class="d-pagination">
+																<li class="d-pagination__item">1</li>
+																<li class="d-pagination__item">2</li>
+																<li class="d-pagination__item">3</li>
+																<li class="d-pagination__item d-pagination__item--active">4</li>
+																<li class="d-pagination__item">+</li>
+															</ul>
+															<button class="d-select">
+																<span class="d-select__title">Задать вручную</span>
+																<i class="d-icon-angle-rounded-bottom d-select__arrow"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+
+												<div class="d-divider d-divider--black d-divider--full promotions__card-products-divider"></div>
+
 												<div class="promotions__card-warehouse">
 													<div class="promotions__card-value-container promotions__card-warehouse-header">
 														<p class="promotions__card-value promotions__card-value--bold promotions__card-block-title">
@@ -930,8 +1409,10 @@
 													</div>
 												</div>
 
-												<div class="d-field-container d-field-container--vertical d-field-container--long promotions__card-collection-search">
-													<p class="promotions__card-text">Поиск тоаврао по коллекции</p>
+												<div
+													class="d-field-container d-field-container--vertical d-field-container--long promotions__card-collection-search"
+												>
+													<p class="promotions__card-text">Поиск товаров по коллекции</p>
 													<form class="d-search d-search--alt2">
 														<input
 															type="text"
@@ -956,6 +1437,725 @@
 															</li> -->
 														</ul>
 													</form>
+												</div>
+
+												<div class="d-table__wrapper promotions__card-products">
+													<table class="d-table">
+														<thead class="d-table__head">
+															<tr class="d-table__row">
+																<th class="d-table__head-col d-table__head-col--big">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--white" id="checkbox1">
+																			<input
+																				type="checkbox"
+																				name="checkbox1"
+																				id="checkbox1"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</th>
+																<th class="d-table__head-col d-table__head-col--big" style="width: 20%">Товар</th>
+																<th class="d-table__head-col d-table__head-col--big">РРЦ</th>
+																<th class="d-table__head-col d-table__head-col--big">
+																	Скидка
+																	<button
+																		class="d-button d-button-tertiary d-button-tertiary-small product-table-card__discount-button product-table-card__discount-button--table mt-4"
+																	>
+																		<i class="d-icon-mixer product-table-card__discount-button-icon"></i>
+																		Настроить
+																	</button>
+																</th>
+																<th class="d-table__head-col d-table__head-col--big">Тип ценообразования</th>
+																<th class="d-table__head-col d-table__head-col--big">Цена со скидкой за шт.</th>
+																<th class="d-table__head-col d-table__head-col--big">Минимальное количество</th>
+																<th class="d-table__head-col d-table__head-col--big">Максимальное количество</th>
+																<th class="d-table__head-col d-table__head-col--big">Кратность</th>
+																<th class="d-table__head-col d-table__head-col--big">
+																	<div class="flex-center">
+																		<button
+																			class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover text-white"
+																		>
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</th>
+															</tr>
+														</thead>
+														<tbody class="d-table__body promotions__product-card">
+															<tr class="d-table__row">
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+															</tr>
+															<tr class="d-table__row">
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--black" id="checkbox2">
+																			<input
+																				type="checkbox"
+																				name="checkbox2"
+																				id="checkbox2"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="product-table-card">
+																		<p class="product-table-card__title">
+																			Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2
+																		</p>
+																		<p class="product-table-card__article">Арт: 844337</p>
+																		<div class="d-badge d-badge--small">
+																			<img src="/icons/spo-logo.svg" alt="" class="d-badge__img" />
+																			МСТ
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="d-table__col-inner">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			2 500.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__discount product-table-card__value"
+																		>
+																			30% ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p class="promotions__card-text promotions__card-text--bold">Скидка</p>
+																		<p class="product-table-card__text">по формуле</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			1 750.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<button class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover">
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</td>
+															</tr>
+															<tr class="d-table__row">
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--black" id="checkbox2">
+																			<input
+																				type="checkbox"
+																				name="checkbox2"
+																				id="checkbox2"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="product-table-card">
+																		<p class="product-table-card__title">
+																			Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2
+																		</p>
+																		<p class="product-table-card__article">Арт: 844337</p>
+																		<div class="d-badge d-badge--small">
+																			<img src="/icons/spo-logo.svg" alt="" class="d-badge__img" />
+																			МСТ
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="d-table__col-inner">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			2 500.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__discount product-table-card__value"
+																		>
+																			30% ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p class="promotions__card-text promotions__card-text--bold">Скидка</p>
+																		<p class="product-table-card__text">по формуле</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			1 750.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<button class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover">
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+
+													<div class="d-table__footer">
+														<div class="d-table__footer-left">
+															<div class="d-table__mark">Отмечено 0 из 3</div>
+															<div class="d-divider d-divider--vertical d-divider--big d-divider--black"></div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="products2">
+																	<input type="checkbox" name="products2" id="products2" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="products2" class="d-switch__label"
+																	>Выбрать все элементы на всех страницах</label
+																>
+															</div>
+														</div>
+														<div class="d-table__footer-right">
+															<ul class="d-pagination">
+																<li class="d-pagination__item">1</li>
+																<li class="d-pagination__item">2</li>
+																<li class="d-pagination__item d-pagination__item--active">3</li>
+																<li class="d-pagination__item">4</li>
+																<li class="d-pagination__item">+</li>
+															</ul>
+															<button class="d-select">
+																<span class="d-select__title">Массовые действия</span>
+																<i class="d-icon-angle-rounded-bottom d-select__arrow"></i>
+															</button>
+														</div>
+													</div>
+												</div>
+
+												<div class="d-divider d-divider--black d-divider--full promotions__card-products-divider"></div>
+
+												<div class="promotions__card-warehouse promotions__complects-header">
+													<div class="promotions__card-value-container promotions__card-warehouse-header">
+														<p class="promotions__card-value promotions__card-value--bold promotions__card-block-title">
+															Комлпекты
+														</p>
+														<span class="promotions__card-label"
+															>Загрузите список товаров и установите скидки, которые получит клиент при выполнении
+															условий акции</span
+														>
+													</div>
+
+													<div class="promotions__complects-header-right">
+														<button class="d-button d-button-secondary promotions__complects-search-button">
+															<i class="d-icon-search-big"></i>
+															Найти товар
+														</button>
+														<button
+															class="d-button d-button-primary promotions__card-block-button promotions__card-collection-add"
+														>
+															<i
+																class="d-icon-plus promotions__card-block-button-icon promotions__card-collection-add-icon"
+															></i>
+															Создать комплект
+														</button>
+														<div class="d-divider d-divider--vertical d-divider--big"></div>
+														<button class="d-icon-wrapper d-icon-wrapper--big">
+															<i class="d-icon-pen2"></i>
+														</button>
+													</div>
+												</div>
+
+												<div class="d-table__wrapper promotions__card-products">
+													<table class="d-table">
+														<thead class="d-table__head">
+															<tr class="d-table__row">
+																<th class="d-table__head-col">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--white" id="checkbox1">
+																			<input
+																				type="checkbox"
+																				name="checkbox1"
+																				id="checkbox1"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</th>
+																<th class="d-table__head-col" style="width: 20%">Товар</th>
+																<th class="d-table__head-col">РРЦ</th>
+																<th class="d-table__head-col">Скидка</th>
+																<th class="d-table__head-col">Тип ценообразования</th>
+																<th class="d-table__head-col">Цена со скидкой за шт.</th>
+																<th class="d-table__head-col">Минимальное количество</th>
+																<th class="d-table__head-col">Максимальное количество</th>
+																<th class="d-table__head-col">Кратность</th>
+																<th class="d-table__head-col">
+																	<div class="flex-center">
+																		<button
+																			class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover text-white"
+																		>
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</th>
+															</tr>
+														</thead>
+														<tbody class="d-table__body promotions__product-card">
+															<tr class="d-table__row">
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+																<td class="d-table__col"></td>
+															</tr>
+															<tr class="d-table__row">
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--black" id="checkbox2">
+																			<input
+																				type="checkbox"
+																				name="checkbox2"
+																				id="checkbox2"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="product-table-card">
+																		<p class="product-table-card__title">
+																			Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2
+																		</p>
+																		<p class="product-table-card__article">Арт: 844337</p>
+																		<div class="d-badge d-badge--small">
+																			<img src="/icons/spo-logo.svg" alt="" class="d-badge__img" />
+																			МСТ
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="d-table__col-inner">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			2 500.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__discount product-table-card__value"
+																		>
+																			30% ₽
+																		</p>
+																		<button
+																			class="d-button d-button-tertiary d-button-tertiary-small product-table-card__discount-button"
+																		>
+																			<i class="d-icon-mixer product-table-card__discount-button-icon"></i>
+																			Настроить
+																		</button>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p class="promotions__card-text promotions__card-text--bold">Скидка</p>
+																		<p class="product-table-card__text">по формуле</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			1 750.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<button class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover">
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</td>
+															</tr>
+															<tr class="d-table__row">
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<label class="d-radio d-radio--black" id="checkbox2">
+																			<input
+																				type="checkbox"
+																				name="checkbox2"
+																				id="checkbox2"
+																				class="d-radio__input"
+																			/>
+																		</label>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="product-table-card">
+																		<p class="product-table-card__title">
+																			Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2
+																		</p>
+																		<p class="product-table-card__article">Арт: 844337</p>
+																		<div class="d-badge d-badge--small">
+																			<img src="/icons/spo-logo.svg" alt="" class="d-badge__img" />
+																			МСТ
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="d-table__col-inner">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			2 500.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__discount product-table-card__value"
+																		>
+																			30% ₽
+																		</p>
+																		<button
+																			class="d-button d-button-tertiary d-button-tertiary-small product-table-card__discount-button"
+																		>
+																			<i class="d-icon-mixer product-table-card__discount-button-icon"></i>
+																			Настроить
+																		</button>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center flex-center--vertical">
+																		<p class="promotions__card-text promotions__card-text--bold">Скидка</p>
+																		<p class="product-table-card__text">по формуле</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<p
+																			class="promotions__card-text promotions__card-text--bold product-table-card__value"
+																		>
+																			1 750.00 ₽
+																		</p>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<div class="d-counter" data-counter>
+																			<button class="d-counter__button" data-counter-button="decrement">
+																				<i class="d-icon-minus d-counter__button-icon"></i>
+																			</button>
+																			<input
+																				class="d-counter__input"
+																				type="text"
+																				name="test-counter"
+																				id="test-counter"
+																				value="1"
+																				data-counter-input
+																			/>
+																			<button class="d-counter__button" data-counter-button="increment">
+																				<i class="d-icon-plus d-counter__button-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</td>
+																<td class="d-table__col">
+																	<div class="flex-center">
+																		<button class="d-icon-wrapper d-icon-wrapper--big d-icon-wrapper--no-hover">
+																			<i class="d-icon-trash d-table__icon"></i>
+																		</button>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+
+													<div class="d-table__footer">
+														<div class="d-table__footer-left">
+															<div class="d-table__mark">Отмечено 0 из 3</div>
+															<div class="d-divider d-divider--vertical d-divider--big d-divider--black"></div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="products3">
+																	<input type="checkbox" name="products3" id="products3" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="products3" class="d-switch__label"
+																	>Выбрать все элементы на всех страницах</label
+																>
+															</div>
+														</div>
+														<div class="d-table__footer-right">
+															<ul class="d-pagination">
+																<li class="d-pagination__item">1</li>
+																<li class="d-pagination__item">2</li>
+																<li class="d-pagination__item">3</li>
+																<li class="d-pagination__item d-pagination__item--active">4</li>
+																<li class="d-pagination__item">+</li>
+															</ul>
+															<button class="d-select">
+																<span class="d-select__title">Массовые действия</span>
+																<i class="d-icon-angle-rounded-bottom d-select__arrow"></i>
+															</button>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
