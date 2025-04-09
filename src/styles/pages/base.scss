@@ -1843,7 +1843,8 @@
 	border-top-left-radius: 40px;
 	flex: 1 0 0;
 	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 
 	@media (width <= 600px) {
 		border-top-left-radius: 0;

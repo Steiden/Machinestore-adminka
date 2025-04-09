@@ -345,3 +345,34 @@ try {
 } catch (e) {
 	console.error("Ошибка работы счетчика: " + e);
 }
+
+function linkObserve(element, action) {
+	try {
+		// Создаём IntersectionObserver для слежения за видимостью элемента
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					action(entry);
+				});
+			},
+			{
+				rootMargin: '-1px 0px 0px 0px',
+				threshold: [1],
+			}
+		);
+
+		observer.observe(element);
+	} catch (err) {
+		console.error("Ошибка работы счетчика: " + err);
+	}
+}
+
+const promotionsHeader = document.querySelector(".promotions__info");
+promotionsHeader.before(document.createElement("div"));
+linkObserve(promotionsHeader, (entry) => {
+	if (!entry.isIntersecting) {
+		promotionsHeader.classList.add("promotions__info--active");
+	} else {
+		promotionsHeader.classList.remove("promotions__info--active");
+	}
+});
