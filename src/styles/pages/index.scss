@@ -440,6 +440,19 @@
 	&__values {
 		margin-top: 24px;
 	}
+
+	&__values {
+		display: flex;
+		align-items: flex-start;
+
+		&-value {
+			width: 100%;
+		}
+	}
+
+	&__note {
+		margin-top: 92px;
+	}
 }
 
 .product-row {
