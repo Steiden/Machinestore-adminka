@@ -431,3 +431,45 @@
 		padding-block: 40px 32px;
 	}
 }
+
+// Форма настройки скидок
+.promo-settings {
+	padding-block: 24px 40px;
+
+	&__type,
+	&__values {
+		margin-top: 24px;
+	}
+}
+
+.product-row {
+	display: flex;
+	gap: 8px;
+
+	border-top: 0.5px solid #282828;
+	border-bottom: 0.5px solid #282828;
+
+	padding: 4px;
+	height: 68px;
+
+	&__image {
+		width: 54px;
+		height: 54px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		max-width: 300px;
+	}
+
+	&__title {
+		font-size: 14;
+	}
+
+	&__description {
+		color: #757575;
+		font-size: 12px;
+	}
+}
