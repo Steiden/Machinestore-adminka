@@ -1432,6 +1432,7 @@
 
 	padding: var(--switch-padding);
 	width: var(--switch-width);
+	min-width: var(--switch-width);
 	height: 22px;
 
 	&:has(.d-switch__input:checked) {

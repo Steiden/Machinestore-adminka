@@ -38,6 +38,7 @@
 		position: sticky;
 		top: 0;
 		z-index: 10;
+		transition-duration: 0.2s;
 
 		padding: 12px 40px;
 		margin-bottom: 48px;
@@ -62,6 +63,36 @@
 		&-actions {
 			display: flex;
 			align-items: center;
+		}
+
+		&--sticky {
+			background-color: #282828;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			color: #fbfbfb;
+
+			.promotions__info-edit {
+				color: #EDEDED;
+
+				&:hover {
+					background-color: #EDEDED;
+					color: #282828;
+				}
+			}
+
+			.promotions__info-add {
+				display: none;
+			}
+
+			.d-divider {
+				background-color: #fbfbfb;
+			}
+		}
+
+		&:not(&--sticky) {
+			.promotions__info-additional {
+				display: none;
+			}
 		}
 	}
 

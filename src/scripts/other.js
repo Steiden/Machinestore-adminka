@@ -325,7 +325,6 @@ try {
 	// Функционал счетчика
 
 	const counters = document.querySelectorAll("[data-counter]");
-	console.log(counters);
 
 	counters?.forEach((counter) => {
 		const decreaseButton = counter.querySelector("[data-counter-button='decrement']");
@@ -346,33 +345,22 @@ try {
 	console.error("Ошибка работы счетчика: " + e);
 }
 
-function linkObserve(element, action) {
-	try {
-		// Создаём IntersectionObserver для слежения за видимостью элемента
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					action(entry);
-				});
-			},
-			{
-				rootMargin: '-1px 0px 0px 0px',
-				threshold: [1],
-			}
-		);
+try {
+	const promotionsInfo = document.querySelector(".promotions__info");
+	const header = document.querySelector(".header");
+	const main = document.querySelector(".main");
 
-		observer.observe(element);
-	} catch (err) {
-		console.error("Ошибка работы счетчика: " + err);
-	}
+	main.addEventListener("scroll", (e) => {
+		const promotionsInfoTop = Math.floor(promotionsInfo.getClientRects()[0].top);
+		const headerHeight = Math.floor(header.getClientRects()[0].height);
+
+		if(promotionsInfoTop === headerHeight) {
+			promotionsInfo.classList.add("promotions__info--sticky");
+		}
+		else {
+			promotionsInfo.classList.remove("promotions__info--sticky");
+		}
+	});
+} catch (e) {
+	console.error("Ошибка обработки липкого хедера: " + e);
 }
-
-const promotionsHeader = document.querySelector(".promotions__info");
-promotionsHeader.before(document.createElement("div"));
-linkObserve(promotionsHeader, (entry) => {
-	if (!entry.isIntersecting) {
-		promotionsHeader.classList.add("promotions__info--active");
-	} else {
-		promotionsHeader.classList.remove("promotions__info--active");
-	}
-});
