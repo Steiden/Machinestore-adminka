@@ -377,6 +377,7 @@ button {
 .content-wrapper {
 	padding-inline: 32px;
 	margin-inline: auto;
+	width: 100%;
 	max-width: 1520px;
 
 	@media (width > 1440px) {
