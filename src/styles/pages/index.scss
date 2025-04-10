@@ -521,3 +521,25 @@
 		font-size: 12px;
 	}
 }
+
+
+.promo-compatibility {
+	margin-block: 20px;
+
+	.d-table__body .d-table__row {
+		.promo-compatibility__icon {
+			margin-top: 20px;
+		}
+	}
+
+	&__icon {
+		font-size: 13px;
+	}
+
+	&__large-text-container {
+		display: flex;
+		flex-direction: column;
+		gap: 36px;
+		padding-top: 24px;
+	}
+}
