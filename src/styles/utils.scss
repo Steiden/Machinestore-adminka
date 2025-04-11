@@ -74,6 +74,11 @@
 	display: inline-block;
 }
 
+.show-modal {
+	visibility: visible;
+	opacity: 1;
+}
+
 // Steiden
 .visible-1920 {
 	@media (width > 1920px) {

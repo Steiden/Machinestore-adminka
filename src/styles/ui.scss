@@ -53,7 +53,7 @@
 		padding-bottom: 4px;
 	}
 
-	&:disabled[class] {
+	&:disabled {
 		cursor: default;
 	}
 }
@@ -78,7 +78,7 @@
 		color: #f92c0d;
 	}
 
-	&:disabled[class] {
+	&:disabled {
 		cursor: default;
 		background-color: #757575;
 		color: #282828;
@@ -107,7 +107,7 @@
 		color: #fbfbfb;
 	}
 
-	&:disabled[class] {
+	&:disabled {
 		cursor: default;
 		background-color: #757575;
 		color: #282828;
@@ -136,7 +136,7 @@
 		color: #282828;
 	}
 
-	&:disabled[class] {
+	&:disabled {
 		cursor: default;
 		background-color: #757575;
 		color: #282828;
@@ -170,7 +170,7 @@
 		font-weight: 400;
 	}
 
-	&:disabled[class] {
+	&:disabled {
 		background-color: transparent;
 		color: #282828;
 		font-weight: 400;
@@ -220,7 +220,7 @@
 		}
 	}
 
-	&:disabled[class] {
+	&:disabled {
 		cursor: default;
 
 		.d-close__icon::before {
@@ -285,7 +285,7 @@
 		}
 	}
 
-	&:disabled[class] {
+	&:disabled {
 		cursor: default;
 		background-color: #757575;
 
@@ -345,7 +345,7 @@
 		}
 	}
 
-	&:disabled[class] {
+	&:disabled {
 		background-color: transparent;
 
 		.d-show-alt__icon::before {
@@ -670,7 +670,7 @@
 		border-color: #fbfbfb;
 	}
 
-	&:disabled[class] {
+	&:disabled {
 		.d-button-rounded__icon::before {
 			color: #282828;
 		}
@@ -1098,15 +1098,11 @@
 .d-modal {
 	background-color: #ffffff;
 	border-radius: 8px;
+
 	position: relative;
+
 	padding: 20px 24px 16px 24px;
 	width: 850px;
-
-	&--active {
-		.modal__wrapper {
-			visibility: visible;
-		}
-	}
 
 	&__title {
 		color: #282828;
@@ -1131,7 +1127,8 @@
 
 		position: fixed;
 		inset: 0;
-		// visibility: hidden;
+		visibility: hidden;
+		opacity: 0;
 
 		z-index: 100;
 	}
@@ -1601,6 +1598,10 @@
 .d-progress {
 	--progress-height: 4px;
 	--progress-color: #f92c0d;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 
 	border-bottom: 0.4px solid var(--progress-color);
 	position: relative;
@@ -2280,6 +2281,10 @@
 		display: flex;
 		align-items: center;
 		gap: 32px;
+
+		&--small {
+			gap: 24px;
+		}
 	}
 
 	&--white {
@@ -2419,6 +2424,8 @@
 		position: absolute;
 		inset: 0;
 		z-index: 40;
+		visibility: hidden;
+		opacity: 0;
 	}
 
 	&__close {
