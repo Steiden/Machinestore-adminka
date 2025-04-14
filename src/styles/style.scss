@@ -1,18 +1,18 @@
-@import "variables";
-@import "fonts";
-@import "mixins";
-@import "grid";
-@import "ui";
-@import "temp";
+@use "variables" as *;
+@use "fonts";
+@use "mixins";
+@use "grid";
+@use "ui";
+@use "temp";
 
 // pages
-@import "pages/auth";
-@import "pages/registration";
-@import "pages/login";
-@import "pages/base";
-@import "pages/index";
+@use "pages/auth";
+@use "pages/registration";
+@use "pages/login";
+@use "pages/base";
+@use "pages/index";
 
-@import "utils";
+@use "utils";
 
 span[class="d-icon"],
 span[class^="d-icon-"],

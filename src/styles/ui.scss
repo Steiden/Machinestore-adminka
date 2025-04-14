@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 :root {
 	--d-input-bg-color: #282828;
 	--d-input-border-color: #757575;
