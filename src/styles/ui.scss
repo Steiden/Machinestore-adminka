@@ -1,4 +1,4 @@
-@use 'mixins' as *;
+@use "mixins" as *;
 
 :root {
 	--d-input-bg-color: #282828;
@@ -1786,6 +1786,10 @@
 		gap: 8px;
 	}
 
+	&--very-small {
+		gap: 4px;
+	}
+
 	&--vertical {
 		flex-direction: column;
 		align-items: flex-start;
@@ -2540,4 +2544,50 @@
 	justify-content: space-between;
 	gap: 5px;
 	width: 100%;
+}
+
+.d-text {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.d-link {
+	display: inline-block;
+	color: #f92c0d;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.d-upload {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	border: 1px dashed #757575;
+	border-radius: 4px;
+
+	padding: 24px;
+	width: 100%;
+
+	&__input {
+		@include visually-hidden;
+	}
+
+	&__icon {
+		margin-bottom: 16px;
+	}
+
+	&__title {
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+
+	&__description {
+		color: #A0A0A0;
+	}
+
+	&__link {
+	}
 }

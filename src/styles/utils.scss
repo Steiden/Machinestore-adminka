@@ -73,6 +73,9 @@
 .inline-block {
 	display: inline-block;
 }
+.hidden {
+	visibility: collapse;
+}
 
 .show-modal {
 	visibility: visible;

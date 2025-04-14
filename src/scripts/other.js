@@ -158,14 +158,14 @@ try {
 					<p class="marker__text"></p>
 				</div>
 			`;
-			const markerELement = document.createElement("div");
-			markerELement.classList.add("marker");
-			markerELement.innerHTML = markerHtml;
+			const markerElement = document.createElement("div");
+			markerElement.classList.add("marker");
+			markerElement.innerHTML = markerHtml;
 
-			markerELement.addEventListener("click", (e) => {
+			markerElement.addEventListener("click", (e) => {
 				e.stopPropagation();
-				const markerContent = markerELement.querySelector(".marker__content");
-				const markerText = markerELement.querySelector(".marker__text");
+				const markerContent = markerElement.querySelector(".marker__content");
+				const markerText = markerElement.querySelector(".marker__text");
 				markerContent.classList.contains("marker__content--visible")
 					? markerContent.classList.remove("marker__content--visible")
 					: markerText.textContent && markerContent.classList.add("marker__content--visible");
@@ -176,9 +176,9 @@ try {
 				{
 					coordinates: [37.588144, 55.733842],
 					draggable: true,
-					onDragEnd: async (coordinates) => refreshAddress(addressInput, markerELement, coordinates),
+					onDragEnd: async (coordinates) => refreshAddress(addressInput, markerElement, coordinates),
 				},
-				markerELement
+				markerElement
 			);
 
 			const mapListener = new YMapListener({
@@ -188,7 +188,7 @@ try {
 					marker?.update({
 						coordinates,
 					});
-					refreshAddress(addressInput, markerELement, coordinates);
+					refreshAddress(addressInput, markerElement, coordinates);
 				},
 			});
 
@@ -222,7 +222,7 @@ try {
 							center: coordinates,
 						},
 					});
-					refreshAddress(addressInput, markerELement, coordinates, false);
+					refreshAddress(addressInput, markerElement, coordinates, false);
 				}, 300);
 			});
 		});
@@ -309,7 +309,7 @@ try {
 
 	window.addEventListener("click", (e) => {
 		let isAvailable =
-			Array.from(catalogs).reduce((result, catalog) => !catalog.contains(e.target) & result, true) &
+			Array.from(catalogs).reduce((result, catalog) => !catalog.contains(e.target) && result, true) &&
 			Array.from(catalogToggles).reduce((result, toggle) => !toggle.contains(e.target) & result, true);
 
 		if (isAvailable) {
@@ -354,13 +354,26 @@ try {
 		const promotionsInfoTop = Math.floor(promotionsInfo.getClientRects()[0].top);
 		const headerHeight = Math.floor(header.getClientRects()[0].height);
 
-		if(promotionsInfoTop === headerHeight) {
+		if (promotionsInfoTop === headerHeight) {
 			promotionsInfo.classList.add("promotions__info--sticky");
-		}
-		else {
+		} else {
 			promotionsInfo.classList.remove("promotions__info--sticky");
 		}
 	});
 } catch (e) {
 	console.error("Ошибка обработки липкого хедера: " + e);
+}
+
+try {
+	// Функционал модалок
+
+	const modals = document.querySelectorAll("[data-modal2]");
+	modals.forEach((modal) => {
+		const closeButtons = modal.querySelectorAll("[data-modal2-close]");
+		closeButtons.forEach((close) => {
+			close.addEventListener("click", () => modal.classList.remove("show-modal"));
+		});
+	});
+} catch (e) {
+	console.error("Ошибка работы модалки2: " + e);
 }
