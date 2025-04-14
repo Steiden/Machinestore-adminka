@@ -158,11 +158,16 @@
             </div>
             <label for="test-dropdown" class="d-dropdown__label">РРЦ: 23990 ₽</label>
         </div>
+
+        <DatePicker v-model="date" class="d-datepicker" :placeholder="'Выберите дату'" />
     </div>
 </template>
 
 <script lang="ts" setup>
+import { ref } from 'vue';
+import DatePicker from 'primevue/datepicker';
 
+const date = ref(null);
 </script>
 
 <style lang="scss" scoped></style>
