@@ -1,3 +1,6 @@
+@use 'tailwindcss';
+@use 'tailwindcss-primeui';
+
 @use 'variables' as *;
 @use 'fonts';
 @use 'mixins';
@@ -14,6 +17,7 @@
 
 @use 'utils';
 
+// @layer reset {
 span[class='d-icon'],
 span[class^='d-icon-'],
 span[class*=' d-icon-'] {
@@ -116,7 +120,9 @@ button {
   background: none;
   cursor: pointer;
 }
+// }
 
+// @layer components {
 // Other
 .copyright {
   margin-bottom: 2%;
@@ -396,3 +402,4 @@ button {
     padding-inline: 44px;
   }
 }
+// }

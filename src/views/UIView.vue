@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-center flex-center--vertical w-full">
+    <div class="flex-center flex-center--vertical w-full ui-container">
         <button class="d-button d-button-primary">Войти</button>
         <button class="d-button d-button-secondary">Зарегистрироваться</button>
         <button class="d-button d-button-secondary">
@@ -159,15 +159,17 @@
             <label for="test-dropdown" class="d-dropdown__label">РРЦ: 23990 ₽</label>
         </div>
 
-        <DatePicker v-model="date" class="d-datepicker" :placeholder="'Выберите дату'" />
+        <DatePicker />
     </div>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
-import DatePicker from 'primevue/datepicker';
+import DatePicker from '@/components/ui/DatePicker.vue';
 
-const date = ref(null);
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.ui-container {
+    margin-block: 150px;
+}
+</style>
