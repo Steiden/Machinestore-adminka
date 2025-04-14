@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
@@ -155,12 +155,22 @@
 		<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
 			<label for="test-dropdown" class="d-dropdown__label">Тип ценообразования</label>
 			<div class="d-input d-input--light">
-				<input type="text" placeholder="Введите логин" name="login" class="d-input__field" data-input-id="login" required />
+				<input type="text" placeholder="Введите логин" name="login" class="d-input__field" data-input-id="login" />
 				<button class="d-input__dropdown-button">
 					<i class="d-icon-angle-rounded-bottom d-input__dropdown-button-icon"></i>
 				</button>
 			</div>
 			<label for="test-dropdown" class="d-dropdown__label">РРЦ: 23990 ₽</label>
+		</div>
+
+		<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+			<label for="dateStart" class="d-dropdown__label">Дата начала акции</label>
+			<div class="d-input d-input--light">
+				<input type="text" placeholder="__ __" name="dateStart" class="d-input__field" />
+				<button class="d-icon-wrapper d-input__calendar-button">
+					<i class="d-icon-calendar3 d-input__dropdown-button-icon"></i>
+				</button>
+			</div>
 		</div>
 
 		<script type="module" src="./src/main.js"></script>
