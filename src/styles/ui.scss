@@ -379,6 +379,7 @@
 	font-weight: 400;
 
 	position: relative;
+	overflow: hidden;
 
 	// width: 368px;
 	width: 100%;
@@ -396,6 +397,16 @@
 
 		&::placeholder {
 			color: var(--d-input-placeholder-color);
+		}
+
+		&:-webkit-autofill,
+		&:-webkit-autofill:hover,
+		&:-webkit-autofill:focus {
+			// background-color: var(--d-input-bg-color) !important;
+			color: var(--d-input-color) !important;
+			border: none !important; // Высококачественные границы превыше всего
+			-webkit-text-fill-color: var(--d-input-color) !important;
+			-webkit-box-shadow: 0 0 0px 1000px var(--d-input-bg-color) inset !important;
 		}
 	}
 
