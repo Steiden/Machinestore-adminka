@@ -1,20 +1,20 @@
 {
-  "name": "machinestore",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^6.2.0"
-  },
-  "dependencies": {
-    "@lottiefiles/dotlottie-web": "^0.40.1",
-    "autoprefixer": "^10.4.21",
-    "sass": "^1.85.1",
-    "sass-loader": "^16.0.5"
-  }
+	"name": "machinestore",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --port=8080",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"vite": "^6.2.0"
+	},
+	"dependencies": {
+		"@lottiefiles/dotlottie-web": "^0.40.1",
+		"autoprefixer": "^10.4.21",
+		"sass": "^1.85.1",
+		"sass-loader": "^16.0.5"
+	}
 }

@@ -37,7 +37,7 @@
 
 		position: sticky;
 		top: 0;
-		z-index: 10;
+		z-index: 15;
 		transition-duration: 0.2s;
 
 		padding: 12px 40px;
@@ -744,7 +744,7 @@
 	}
 
 	&__action-button {
-		background-color: #FFFFFF8C;
+		background-color: #ffffff8c;
 		backdrop-filter: blur(22.8px);
 	}
 

@@ -2,6 +2,22 @@ import { DotLottie } from "@lottiefiles/dotlottie-web";
 import debounce from "./debounce";
 
 try {
+	// Статус active для полей ввода
+
+	const inputs = document.querySelectorAll(".d-input");
+	inputs.forEach((input) => {
+		const inputField = input.querySelector(".d-input__field");
+		inputField.addEventListener("input", (e) => {
+			console.log(inputField.value);
+			if (inputField.value) input.classList.add("d-input--active");
+			else input.classList.remove("d-input--active");
+		});
+	});
+} catch (e) {
+	console.error("Ошибка работы кнопок показать/скрыть пароль: " + e);
+}
+
+try {
 	// Очистка поля ввода
 
 	const clearInputButtons = document.querySelectorAll("[data-input='clear']");
@@ -17,6 +33,7 @@ try {
 			});
 			clearButton.addEventListener("click", (e) => {
 				input.value = "";
+				input.parentElement.classList.remove("d-input--active");
 				clearButton.style.display = "none";
 			});
 		});

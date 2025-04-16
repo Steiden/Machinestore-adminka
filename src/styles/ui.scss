@@ -614,10 +614,6 @@
 		border-color: #fbfbfb;
 	}
 
-	&:has(.d-input__field:not(:placeholder-shown)) {
-		border-color: var(--d-input-active-border-color);
-	}
-
 	&:has(.d-input__field:disabled) {
 		background-color: #757575;
 		border-color: transparent;
@@ -626,6 +622,10 @@
 		.d-input__button {
 			visibility: hidden;
 		}
+	}
+
+	&--active {
+		border-color: var(--d-input-active-border-color);
 	}
 
 	&--error {
@@ -1280,6 +1280,7 @@
 		left: 0;
 
 		overflow-y: auto;
+		z-index: 10;
 
 		width: 100%;
 		max-height: 176px;
