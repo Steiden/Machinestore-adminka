@@ -1951,6 +1951,8 @@
 }
 
 .d-tab {
+	// TODO Переписать в читаемый вид
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -2064,6 +2066,33 @@
 	&--active {
 		font-weight: 500;
 		z-index: 1;
+	}
+
+	&--more {
+		justify-content: flex-end;
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: 0;
+
+		background-color: #757575;
+		color: #fbfbfb;
+
+		translate: -50% 0;
+
+		margin-left: 0;
+		width: calc(260px - 24px);
+
+		&:not(:hover, .d-tab--active) {
+			border-right-color: transparent;
+
+			&::before {
+				background-color: #757575;
+			}
+		}
+
+		&:hover {
+			background-color: #757575;
+		}
 	}
 }
 
