@@ -31,6 +31,13 @@
 	--d-icon-wrapper-color-hover: inherit;
 	// ________________________________
 
+	// __________Divider__________
+	--divider-length: 20px;
+	--divider-width: 0.5px;
+	--divider-color: #757575;
+	--divider-margin: 8px;
+	// ________________________________
+
 	// __________Tooltip__________
 	//* Элементы: d-tooltip, d-tooltip__container, d-tooltip__content
 	//* Направления: top, bottom, left, right
@@ -1651,12 +1658,6 @@
 }
 
 .d-divider {
-	// TODO Вынести переменные в :root
-	--divider-length: 20px;
-	--divider-width: 0.5px;
-	--divider-color: #757575;
-	--divider-margin: 8px;
-
 	background-color: var(--divider-color);
 	margin-block: var(--divider-margin);
 	width: var(--divider-length);
