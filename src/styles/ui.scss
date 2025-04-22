@@ -27,6 +27,31 @@
 	--d-icon-wrapper-color-hover: inherit;
 
 	// Tooltip
+	// Элементы: d-tooltip, d-tooltip__container, d-tooltip__content
+	// Направления подсказки: top, bottom left, right
+	//
+	// В d-tooltip__container оборачивается элемент, над которым нужен Tooltip
+	// 	внутрь него помещается сама всплывающая подсказка с текстом:
+	// 		<div class="d-tooltip d-tooltip--<направление>">
+	// 			<span>ваш текст</span>
+	// 		</div>
+	//
+	// Полный пример:
+	// <div class="d-tooltip__container">
+	// 		<!-- Какой-то элемент, на который нужно нацепить всплывающую подсказку -->
+	// 		<button class="promotions__card-info-button">
+	// 			<i class="d-icon-info promotions__card-info-icon"></i>
+	// 		</button>
+	//
+	// 		<div class="d-tooltip d-tooltip--right">
+	// 			<div class="d-tooltip__content">
+	// 				<span>Тут надо прописать текст о чем говорит эта иконка.</span>
+	// 			</div>
+	// 		</div>
+	// </div>
+	//
+	// Все CSS переменные находятся ниже ↓
+
 	--d-tooltip-bg-color: #242424;
 	--d-tooltip-border-radius: 8px;
 	--d-tooltip-color: #fbfbfb;
