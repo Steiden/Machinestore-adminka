@@ -1,7 +1,7 @@
 @use "mixins" as *;
 
 :root {
-	// Input
+	// __________Input__________
 	--d-input-bg-color: #282828;
 	--d-input-border-color: #757575;
 	--d-input-active-border-color: #fbfbfb;
@@ -10,47 +10,52 @@
 	--d-input-color: #ededed;
 	--d-input-placeholder-color: #757575;
 	--d-input-padding: 4px 12px;
+	// ________________________________
 
-	// Counter
+	// __________Counter__________
 	--d-counter-border-color: #757575;
 	--d-counter-button-color: #f92c0d;
 	--d-counter-input-background: #ffffff;
+	// ________________________________
 
-	// Modal 2
+	// __________Modal 2__________
 	--d-modal2-width: 36%;
 	--d-modal2-height: 70%;
+	// ________________________________
 
-	// Dropdown
+	// __________Dropdown__________
 	--d-dropdown-bg-color: #fbfbfb;
+	// ________________________________
 
-	// Icon wrapper
+	// __________Icon wrapper__________
 	--d-icon-wrapper-color-hover: inherit;
+	// ________________________________
 
-	// Tooltip
-	// Элементы: d-tooltip, d-tooltip__container, d-tooltip__content
-	// Направления: top, bottom, left, right
-	//
-	// В d-tooltip__container оборачивается элемент, над которым нужен Tooltip
-	// 	внутрь него помещается сама всплывающая подсказка с текстом:
-	// 		<div class="d-tooltip d-tooltip--<направление>">
-	// 			<span>ваш текст</span>
-	// 		</div>
-	//
-	// Полный пример:
-	// <div class="d-tooltip__container">
-	// 		<!-- Какой-то элемент, на который нужно нацепить всплывающую подсказку -->
-	// 		<button class="promotions__card-info-button">
-	// 			<i class="d-icon-info promotions__card-info-icon"></i>
-	// 		</button>
-	//
-	// 		<div class="d-tooltip d-tooltip--right">
-	// 			<div class="d-tooltip__content">
-	// 				<span>Тут надо прописать текст о чем говорит эта иконка.</span>
-	// 			</div>
-	// 		</div>
-	// </div>
-	//
-	// Все CSS переменные находятся ниже ↓
+	// __________Tooltip__________
+	//* Элементы: d-tooltip, d-tooltip__container, d-tooltip__content
+	//* Направления: top, bottom, left, right
+	//*
+	//? В d-tooltip__container оборачивается элемент, над которым нужен Tooltip
+	//? 	внутрь него помещается сама всплывающая подсказка с текстом:
+	//? 		<div class="d-tooltip d-tooltip--<направление>">
+	//? 			<span>ваш текст</span>
+	//? 		</div>
+	//?
+	//? Полный пример:
+	//? <div class="d-tooltip__container">
+	//? 		<!-- Какой-то элемент, на который нужно нацепить всплывающую подсказку -->
+	//? 		<button class="promotions__card-info-button">
+	//? 			<i class="d-icon-info promotions__card-info-icon"></i>
+	//? 		</button>
+	//?
+	//? 		<div class="d-tooltip d-tooltip--right">
+	//? 			<div class="d-tooltip__content">
+	//? 				<span>Тут надо прописать текст о чем говорит эта иконка.</span>
+	//? 			</div>
+	//? 		</div>
+	//? </div>
+	//?
+	//! Все CSS переменные находятся ниже ↓
 
 	--d-tooltip-bg-color: #242424;
 	--d-tooltip-border-radius: 8px;
@@ -75,6 +80,20 @@
 	--d-tooltip-arrow-top: 50%;
 	--d-tooltip-arrow-left: 0;
 	--d-tooltip-arrow-translate: -50% -50%;
+	// ________________________________
+
+	// __________Message__________
+	--d-message-gap: 12px;
+	--d-message-bg-color: #ffffff8c;
+	--d-message-border-radius: 20px;
+	--d-message-color: #282828;
+	--d-message-padding-block: 4px;
+	--d-message-padding-inline: 12px;
+	--d-message-min-height: 28px;
+	--d-message-icon-size: 16px;
+	--d-message-text-font-size: 14px;
+	--d-message-text-font-weight: 600;
+	// ________________________________
 }
 
 .d-button {
@@ -1632,6 +1651,7 @@
 }
 
 .d-divider {
+	// TODO Вынести переменные в :root
 	--divider-length: 20px;
 	--divider-width: 0.5px;
 	--divider-color: #757575;
@@ -2649,5 +2669,28 @@
 		padding-block: var(--d-tooltip-padding-block);
 		padding-inline: var(--d-tooltip-padding-inline);
 		width: var(--d-tooltip-width);
+	}
+}
+
+.d-message {
+	display: flex;
+	align-items: center;
+	gap: var(--d-message-gap);
+
+	background-color: var(--d-message-bg-color);
+	border-radius: var(--d-message-border-radius);
+	color: var(--d-message-color);
+
+	padding-block: var(--d-message-padding-block);
+	padding-inline: var(--d-message-padding-inline);
+	min-height: var(--d-message-min-height);
+
+	&__icon {
+		font-size: var(--d-message-icon-size);
+	}
+
+	&__text {
+		font-size: var(--d-message-text-font-size);
+		font-weight: var(--d-message-text-font-weight);
 	}
 }

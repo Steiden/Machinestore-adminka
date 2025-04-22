@@ -125,12 +125,17 @@
 			border-bottom: 0.3px solid #757575;
 
 			padding: 12px 32px;
-		}
 
-		&-header-left {
-			display: flex;
-			align-items: center;
-			gap: 12px;
+			&-left {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+
+			&-right {
+				display: flex;
+				align-items: center;
+			}
 		}
 
 		&-icon {
@@ -207,29 +212,12 @@
 			height: 260px;
 
 			&-message {
-				display: flex;
-				align-items: center;
-				gap: 12px;
-
-				background-color: #ffffff8c;
-				border-radius: 20px;
+				--d-message-padding-inline: 24px;
 
 				position: absolute;
 				top: 8px;
 				left: 8px;
 				z-index: 1;
-
-				padding: 4px 24px;
-				min-height: 28px;
-
-				&-icon {
-					font-size: 16px;
-				}
-
-				&-title {
-					font-size: 14px;
-					font-weight: 600;
-				}
 			}
 
 			&-img {
@@ -382,6 +370,10 @@
 			&-divider {
 				margin-block: 40px;
 			}
+		}
+
+		&-message {
+			--d-message-color: #757575;
 		}
 
 		&--small {

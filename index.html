@@ -452,9 +452,9 @@
 											</div>
 											<div class="promotions__card-content">
 												<div class="promotions__card-banner">
-													<div class="promotions__card-banner-message">
-														<i class="d-icon-danger promotions__card-banner-message-icon"></i>
-														<p class="promotions__card-banner-message-title">Баннер не показывается в рекламе</p>
+													<div class="d-message promotions__card-banner-message">
+														<i class="d-icon-danger d-message__icon"></i>
+														<p class="d-message__text">Баннер не показывается в рекламе</p>
 													</div>
 													<img src="/images/banner.png" alt="Banner image" class="promotions__card-banner-img" />
 												</div>
@@ -641,9 +641,18 @@
 														<div class="d-category">Акция доступна только в предложениях</div>
 													</div>
 												</div>
-												<button class="promotions__card-button">
-													<i class="d-icon-pen2 promotions__card-button-icon"></i>
-												</button>
+												<div class="promotions__card-header-right">
+													<div class="d-message promotions__card-message">
+														<i class="d-icon-danger d-message__icon"></i>
+														<p class="d-message__text">Требуется интеграция склада</p>
+													</div>
+
+													<div class="d-divider d-divider--vertical d-divider--big"></div>
+
+													<button class="promotions__card-button">
+														<i class="d-icon-pen2 promotions__card-button-icon"></i>
+													</button>
+												</div>
 											</div>
 											<div class="promotions__card-content">
 												<div class="promotions__card-block-wrapper">
@@ -2478,7 +2487,7 @@
 						</div>
 					</div>
 
-					<div class="d-modal2__overlay show-modal" data-modal2>
+					<div class="d-modal2__overlay" data-modal2>
 						<div class="content-wrapper promo-modal__wrapper">
 							<div class="d-modal2 promo-modal">
 								<div class="promo-modal__header">
