@@ -136,7 +136,7 @@ try {
 		// Обратное геокодирование через Яндекс API
 
 		const response = await fetch(
-			`https://geocode-maps.yandex.ru/1.x/?apikey=9cc9371c-b0ef-422b-b0be-2b1d49e32386&geocode=${coordinates.join(",")}&format=json&results=1`
+			`https://geocode-maps.yandex.ru/1.x/?apikey=0d8c71de-8c91-4122-b738-3d97ebe7846c&geocode=${coordinates.join(",")}&format=json&results=1`
 		).catch((err) => {
 			console.error("Ошибка получения адреса по координатам: " + err);
 		});
@@ -149,7 +149,7 @@ try {
 		// Обратное геокодирование через Яндекс API
 
 		const response = await fetch(
-			`https://geocode-maps.yandex.ru/1.x/?apikey=9cc9371c-b0ef-422b-b0be-2b1d49e32386&geocode=${address}&format=json&results=1`
+			`https://geocode-maps.yandex.ru/1.x/?apikey=0d8c71de-8c91-4122-b738-3d97ebe7846c&geocode=${address}&format=json&results=1`
 		).catch((err) => {
 			console.error("Ошибка получения адреса по координатам: " + err);
 		});
@@ -363,6 +363,8 @@ try {
 }
 
 try {
+	// Функционал липкого хедера
+
 	const promotionsInfo = document.querySelector(".promotions__info");
 	const header = document.querySelector(".header");
 	const main = document.querySelector(".main");
@@ -393,4 +395,58 @@ try {
 	});
 } catch (e) {
 	console.error("Ошибка работы модалки2: " + e);
+}
+
+// try {
+// 	// Функционал всплывашки
+
+// 	const tooltips = document.querySelectorAll("[data-tooltip-id]");
+// 	const main = document.querySelector(".main");
+
+// 	tooltips?.forEach((tooltip) => {
+// 		console.log(tooltip);
+// 		const tooltipTrigger = document.querySelector(`[data-tooltip="${tooltip.getAttribute("data-tooltip-id")}"]`);
+// 		const tooltipPosition = tooltip.getAttribute("data-tooltip-position");
+
+// 		main.addEventListener("scroll", () => {
+// 			const positionData = tooltipTrigger.getBoundingClientRect();
+// 			console.log(positionData);
+
+// 			let left = 0;
+// 			let top = 0;
+// 			if (tooltipPosition === "right") {
+// 				console.log(getCSSVariable("--d-tooltip-offset", true));
+// 				left =
+// 					positionData.left +
+// 					positionData.width +
+// 					getCSSVariable("--d-tooltip-offset", true) +
+// 					getCSSVariable("--d-tooltip-arrow-size", true);
+// 				top = positionData.top + positionData.height;
+
+// 				tooltip.setAttribute("style", `left: ${left}px; top: ${top}px`);
+// 			}
+// 		});
+
+// 		tooltipTrigger.addEventListener("click", (e) => {
+// 			tooltip.classList.toggle("d-tooltip--active");
+// 		});
+
+// 		window.addEventListener("click", (e) => {
+// 			if (!tooltip.contains(e.target) && !tooltipTrigger.contains(e.target)) tooltip.classList.remove("d-tooltip--active");
+// 		});
+// 	});
+// } catch (e) {
+// 	console.error("Ошибка работы всплывашки: " + e);
+// }
+
+function getCSSVariable(name, isNumber = false) {
+	const root = document.querySelector(":root");
+	const style = getComputedStyle(root);
+	let variable = style.getPropertyValue(name);
+
+	if (isNumber) {
+		variable = +variable.replaceAll(/[^\d]/gi, "");
+	}
+
+	return variable;
 }

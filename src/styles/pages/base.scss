@@ -1,4 +1,4 @@
-@use '../mixins' as *;
+@use "../mixins" as *;
 
 #app {
 	display: flex;
@@ -1924,7 +1924,7 @@ h2 {
 	visibility: hidden;
 	opacity: 0;
 	transition-duration: 0.3s;
-	z-index: 10;
+	z-index: 50;
 
 	&__list {
 		background-color: #ffffff8c;

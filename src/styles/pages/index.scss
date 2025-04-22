@@ -105,7 +105,7 @@
 	&__card {
 		border-radius: 12px;
 		box-shadow: 0px 4px 13.4px 0px #00000042;
-		overflow: hidden;
+		// overflow: hidden;
 		height: 100%;
 		width: 100%;
 
@@ -734,12 +734,12 @@
 		&-actions {
 			display: flex;
 			justify-content: space-between;
-			padding-inline: var(--promo-modal-padding-inline);
+			// padding-inline: var(--promo-modal-padding-inline);
 		}
 
 		&-content {
 			display: flex;
-			padding-inline: var(--promo-modal-padding-inline);
+			// padding-inline: var(--promo-modal-padding-inline);
 		}
 	}
 
