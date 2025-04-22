@@ -1924,6 +1924,11 @@
 
 	&--white {
 		color: #fbfbfb;
+
+		&:hover {
+			background-color: #fbfbfb;
+			color: #282828;
+		}
 	}
 
 	&--big {
@@ -2133,7 +2138,7 @@
 		}
 
 		&--big {
-			height: 64px;
+			height: 58px;
 		}
 	}
 
