@@ -49,6 +49,11 @@
 	--d-tab-crutch-offset: -6.6px;
 	// ________________________________
 
+	// __________Table__________
+	--d-table-head-height: 48px;
+	--d-table-first-col-padding: 24px;
+	// ________________________________
+
 	// __________Tooltip__________
 	//* Элементы: d-tooltip, d-tooltip__container, d-tooltip__content
 	//* Направления: top, bottom, left, right
@@ -2062,12 +2067,23 @@
 	width: 100%;
 
 	&__row {
+		position: relative;
+
 		&:first-child > .d-table__col {
 			padding-top: 8px;
 		}
 
 		&:not(:last-child, :first-child) {
-			border-bottom: #757575 0.5px solid;
+			&::after {
+				content: "";
+				background-color: #757575;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				translate: -50% 0;
+				width: calc(100% - var(--d-table-first-col-padding) * 2);
+				height: 1px;
+			}
 		}
 
 		&:not(:first-child) {
@@ -2097,10 +2113,10 @@
 		position: relative;
 
 		&:first-child {
-			padding-left: 24px;
+			padding-left: var(--d-table-first-col-padding);
 		}
 		&:last-child {
-			padding-right: 24px;
+			padding-right: var(--d-table-first-col-padding);
 		}
 	}
 
@@ -2109,7 +2125,7 @@
 		color: #fbfbfb;
 
 		padding: 4px 8px;
-		height: 48px;
+		height: var(--d-table-head-height);
 
 		&:not(:first-child) {
 			&::before {
@@ -2128,7 +2144,7 @@
 		}
 
 		&--big {
-			height: 58px;
+			--d-table-head-height: 58px;
 		}
 	}
 
@@ -2154,10 +2170,15 @@
 		color: #282828;
 	}
 
-	&__wrapper {
+	&__container {
 		display: flex;
 		flex-direction: column;
 		gap: 40px;
+		position: relative;
+	}
+
+	&__wrapper {
+		position: relative;
 	}
 
 	&__footer {
@@ -2212,6 +2233,44 @@
 
 		padding-inline: 12px;
 		height: 40px;
+	}
+
+	&__decoration {
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		&::before,
+		&::after {
+			content: "";
+
+			background-color: #282828;
+			border-radius: 50%;
+
+			position: absolute;
+			left: 50%;
+			translate: -50% 0;
+
+			width: 10px;
+			height: 10px;
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		&-wrapper {
+			background-color: #282828;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: calc(100% - var(--d-table-head-height) - 32px);
+			width: 2px;
+		}
 	}
 
 	&--small {
@@ -2278,6 +2337,12 @@
 	&--v-top-col {
 		.d-table__col {
 			vertical-align: top;
+		}
+	}
+
+	&--decoration {
+		.d-table__body {
+			position: relative;
 		}
 	}
 }
