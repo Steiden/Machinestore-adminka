@@ -39,6 +39,16 @@
 	--divider-margin: 8px;
 	// ________________________________
 
+	// __________Tab__________
+	--d-tab-primary-color: #fbfbfb;
+	--d-tab-secondary-color: #282828;
+	--d-tab-border-radius: 30px;
+	--d-tab-padding-inline: 20px;
+	--d-tab-padding-block: 8px;
+	--d-tab-border-width: 1px;
+	--d-tab-crutch-offset: -6.6px;
+	// ________________________________
+
 	// __________Tooltip__________
 	//* Элементы: d-tooltip, d-tooltip__container, d-tooltip__content
 	//* Направления: top, bottom, left, right
@@ -1953,24 +1963,23 @@
 }
 
 .d-tab {
-	// TODO Переписать в читаемый вид
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	background-color: var(--tab-primary-color);
-	border: var(--tab-border-width) solid var(--tab-secondary-color);
-	border-bottom: 0;
-	border-top-left-radius: var(--tab-border-radius);
-	border-top-right-radius: var(--tab-border-radius);
-	color: var(--tab-secondary-color);
+	background-color: var(--d-tab-primary-color);
+	border: var(--d-tab-border-width) solid var(--d-tab-secondary-color);
+	border-bottom: none;
+	border-right: none;
+	border-top-left-radius: var(--d-tab-border-radius);
+	border-top-right-radius: var(--d-tab-border-radius);
+	color: var(--d-tab-secondary-color);
 	font-size: 16px;
 
 	position: relative;
 	transition: color linear 0.2s;
 
-	padding: var(--tab-padding-block) var(--tab-padding-inline);
+	padding: var(--d-tab-padding-block) var(--d-tab-padding-inline);
 	width: max-content;
 	height: 100%;
 
@@ -1978,71 +1987,48 @@
 		margin-left: -12px;
 	}
 
-	&:not(:hover, .d-tab--active) {
-		border-right-color: transparent;
-
-		&::before {
-			background-color: transparent;
-			border-left: 1px solid var(--tab-secondary-color);
-			border-bottom: 1px solid var(--tab-secondary-color);
-			border-bottom-left-radius: 30px;
-
-			position: absolute;
-			bottom: -1px;
-			left: 100%;
-
-			width: 11px;
-			height: 15px;
-		}
-
-		&::after {
-			background-color: transparent;
-			border-top: 1px solid var(--tab-secondary-color);
-			border-right: 1px solid var(--tab-secondary-color);
-			border-top-right-radius: 30px;
-
-			bottom: -14px;
-			translate: -100% -100%;
-
-			clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 0);
-			width: 27px;
-			height: 25.3px;
-		}
-	}
-
-	&::before,
-	&::after {
-		content: "";
-		pointer-events: none;
-
-		position: absolute;
-		bottom: 0;
-		left: calc(100% + var(--tab-border-width));
-		// transition: background linear 0.2s;
-
-		width: 16px;
-		height: 9px;
-	}
-
 	&::before {
-		background-color: var(--tab-secondary-color);
+		content: url("/icons/tab-crutch.svg");
+		position: absolute;
+		bottom: -5px;
+		left: calc(100% - 14px);
+		translate: -50% 0;
 	}
-	&::after {
-		background-color: var(--tab-primary-color);
-		border-bottom-left-radius: 30px;
-		z-index: 1;
+
+	&:hover,
+	&--active {
+		background-color: var(--d-tab-secondary-color);
+		color: var(--d-tab-primary-color);
+	}
+
+	&--more {
+		--d-tab-crutch-offset: -7.6px;
+
+		justify-content: flex-end;
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: 0;
+
+		translate: -60% 0;
+
+		margin-left: 0;
+		width: calc(260px - 24px);
+
+		border-top-left-radius: 0;
+		color: #fbfbfb;
+		width: 280px;
+
+		&,
+		&:hover {
+			background-color: #757575;
+			color: #fbfbfb;
+		}
 	}
 
 	&__wrapper {
-		--tab-primary-color: #fbfbfb;
-		--tab-secondary-color: #282828;
-		--tab-border-radius: 30px;
-		--tab-padding-inline: 20px;
-		--tab-padding-block: 8px;
-		--tab-border-width: 1px;
-
 		display: flex;
-		border-bottom: 1px solid var(--tab-secondary-color);
+		border-bottom: 1px solid var(--d-tab-secondary-color);
+		overflow: hidden;
 		width: 100%;
 		height: 40px;
 	}
@@ -2052,49 +2038,22 @@
 		flex-direction: row-reverse;
 	}
 
-	&:hover,
-	&--active {
-		background-color: var(--tab-secondary-color);
-		color: var(--tab-primary-color);
+	&__crutch {
+		pointer-events: none;
 
-		& + & {
-			&::before,
-			&::after {
-				background-color: var(--tab-secondary-color);
-			}
-		}
+		background-color: inherit;
+
+		position: absolute;
+		bottom: -1px;
+		right: var(--d-tab-crutch-offset);
+
+		clip-path: url(#tab-clip-path);
+		height: 22px;
+		width: 10px;
 	}
 
-	&--active {
-		font-weight: 500;
-		z-index: 1;
-	}
-
-	&--more {
-		justify-content: flex-end;
-		flex-grow: 1;
-		flex-shrink: 0;
-		flex-basis: 0;
-
-		background-color: #757575;
-		color: #fbfbfb;
-
-		translate: -50% 0;
-
-		margin-left: 0;
-		width: calc(260px - 24px);
-
-		&:not(:hover, .d-tab--active) {
-			border-right-color: transparent;
-
-			&::before {
-				background-color: #757575;
-			}
-		}
-
-		&:hover {
-			background-color: #757575;
-		}
+	&__more-content {
+		width: 80px;
 	}
 }
 

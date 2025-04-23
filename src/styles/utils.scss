@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 .inliner {
 	display: block;
 	font-size: 0;
@@ -56,8 +58,12 @@
 .contents {
 	display: contents;
 }
-.grow-1 { flex-grow: 1 }
-.grow-0 { flex-grow: 0 }
+.grow-1 {
+	flex-grow: 1;
+}
+.grow-0 {
+	flex-grow: 0;
+}
 .flex-center {
 	display: flex;
 	justify-content: center;
@@ -68,7 +74,7 @@
 	}
 }
 .text-white {
-	color: #FBFBFB;
+	color: #fbfbfb;
 }
 .inline-block {
 	display: inline-block;
@@ -76,7 +82,9 @@
 .hidden {
 	visibility: collapse;
 }
-
+.visually-hidden {
+	@include visually-hidden;
+}
 .show-modal {
 	visibility: visible;
 	opacity: 1;
