@@ -3,6 +3,7 @@
 :root {
 	// __________Input__________
 	--d-input-bg-color: #282828;
+	--d-input-disable-bg-color: #757575;
 	--d-input-border-color: #757575;
 	--d-input-active-border-color: #fbfbfb;
 	--d-input-border-width: 1px;
@@ -563,11 +564,11 @@
 	}
 
 	&:focus-within {
-		border-color: #fbfbfb;
+		border-color: var(--d-input-active-border-color);
 	}
 
 	&:has(.d-input__field:disabled) {
-		background-color: #757575;
+		background-color: var(--d-input-disable-bg-color);
 		border-color: transparent;
 		color: #282828;
 
@@ -1909,7 +1910,8 @@
 	width: 24px;
 	height: 24px;
 
-	&:hover {
+	&:hover,
+	&--active {
 		background-color: #fbfbfb;
 		box-shadow: 0px 4px 13.4px 0px #00000042;
 		color: var(--d-icon-wrapper-color-hover);
@@ -2201,9 +2203,8 @@
 
 	&__footer {
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 20px;
+		flex-direction: column;
+		gap: 40px;
 
 		&-left {
 			display: flex;
@@ -2214,6 +2215,31 @@
 			display: flex;
 			align-items: center;
 			gap: 16px;
+		}
+
+		&-content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+		}
+
+		&-fields {
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+		}
+
+		&-input {
+			max-width: 200px;
+
+			&--value {
+				width: 68px;
+			}
+
+			&--value-type {
+				width: 76px;
+			}
 		}
 	}
 
