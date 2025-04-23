@@ -416,6 +416,8 @@
 			&-right {
 				display: flex;
 				align-items: center;
+				justify-content: flex-end;
+				width: 50%;
 			}
 		}
 
@@ -495,7 +497,7 @@
 
 .products__card {
 	&-content {
-		padding-block: 40px 32px;
+		padding-block: 40px 56px;
 	}
 }
 
