@@ -157,16 +157,25 @@
 	min-height: 38px;
 	max-width: 100%;
 
+	&:disabled {
+		cursor: default;
+	}
+
+	&__container {
+		display: flex;
+		gap: 24px;
+
+		&--vertical {
+			flex-direction: column;
+		}
+	}
+
 	@media (width <= 640px) {
 		font-size: 14px;
 		// height: 32px;
 		min-height: 32px;
 		padding-top: 4px;
 		padding-bottom: 4px;
-	}
-
-	&:disabled {
-		cursor: default;
 	}
 }
 
@@ -815,8 +824,7 @@
 .d-button-primary-small {
 	font-size: 14px;
 
-	padding-left: 24px;
-	padding-right: 24px;
+	padding-inline: 24px;
 
 	width: fit-content;
 	min-height: 32px;
@@ -847,8 +855,7 @@
 	font-size: 14px;
 	border-color: #282828;
 
-	padding-left: 24px;
-	padding-right: 24px;
+	padding-inline: 24px;
 
 	width: fit-content;
 	min-height: 32px;
@@ -879,7 +886,6 @@
 
 .d-button-tertiary-small {
 	font-size: 14px;
-	// border-color: #282828;
 
 	padding: 4px 24px;
 
@@ -887,26 +893,18 @@
 	min-height: 32px;
 
 	&:hover {
-		// background-color: #fbfbfb;
 		border-color: #282828;
-		// color: #f92c0d;
 	}
-
-	// &:active {
-	// 	background-color: #fbfbfb;
-	// 	border-color: #282828;
-	// 	color: #242424;
-	// }
-
-	// &:disabled {
-	// 	background-color: #757575;
-	// 	border-color: transparent;
-	// 	color: #242424;
-	// }
 
 	@media (width <= 640px) {
 		padding: 2px 16px;
 		min-height: 26px;
+	}
+}
+
+.d-button {
+	&--sm-padding {
+		padding-inline: 12px;
 	}
 }
 
