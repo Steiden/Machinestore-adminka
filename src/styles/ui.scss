@@ -2009,6 +2009,10 @@
 	&--more {
 		--d-tab-crutch-offset: -7.6px;
 
+		border-color: #757575;
+		border-top-left-radius: 0;
+		color: #fbfbfb;
+
 		justify-content: flex-end;
 		flex-grow: 1;
 		flex-shrink: 0;
@@ -2018,9 +2022,6 @@
 
 		margin-left: 0;
 		width: calc(260px - 24px);
-
-		border-top-left-radius: 0;
-		color: #fbfbfb;
 		width: 280px;
 
 		&,
