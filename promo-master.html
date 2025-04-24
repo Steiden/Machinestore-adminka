@@ -177,7 +177,7 @@
 										</div>
 
 										<!-- 5 ЭТАП - Условия доставки -->
-										<div class="contents" id="paymentConditions">
+										<div class="contents hidden" id="paymentConditions">
 											<p class="promo-master__title">Условия доставки</p>
 											<div
 												class="d-field-container d-field-container--vertical promo-master__settings promo-master__settings--sm-margin"
@@ -236,6 +236,82 @@
 														<label for="shipment-deadline2" class="d-radio__label"
 															>Определяется по расчету доставки ТК</label
 														>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- 6 ЭТАП - Условия участия в акции: Требования к заказу -->
+										<div class="contents" id="paymentConditions">
+											<p class="promo-master__title">Условия участия в акции: требованя к заказу</p>
+
+											<!-- Минимальная общая сумма заказа товаров акции -->
+											<div
+												class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin"
+											>
+												<div class="promo-master__subtitle-container">
+													<p class="promo-master__subtitle">Минимальная общая сумма заказа товаров акции</p>
+													<p class="d-text">Общая сумма товаров акции должна быть не менее указанной суммы</p>
+												</div>
+												<div class="d-input d-input--light d-input--width-280">
+													<input class="d-input__field" type="text" placeholder="0" name="dateStart" value="30 000 ₽" />
+												</div>
+											</div>
+
+											<!-- Минимальное количество SKU акции -->
+											<div
+												class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin"
+											>
+												<div class="promo-master__subtitle-container">
+													<p class="promo-master__subtitle">Минимальное количество SKU акции</p>
+													<p class="d-text">В заказе должно быть не менее заданного количества SKU товаров акции</p>
+												</div>
+												<div class="d-input d-input--light d-input--width-280">
+													<input class="d-input__field" type="text" placeholder="0" name="dateStart" value="2 SKU" />
+												</div>
+											</div>
+
+											<!-- Минимальное общее количество товаров -->
+											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
+												<div class="promo-master__subtitle-container">
+													<p class="promo-master__subtitle">Минимальное общее количество товаров</p>
+													<p class="d-text">В заказе должно быть не менее заданного общего количества товаров акции</p>
+												</div>
+												<div class="d-input d-input--light d-input--width-280">
+													<input class="d-input__field" type="text" placeholder="Введите количество шт." name="dateStart" />
+												</div>
+											</div>
+
+											<div class="d-radio__container d-radio__container">
+												<div class="d-radio__wrapper">
+													<label class="d-switch" for="negative-promo1">
+														<input type="checkbox" name="negative-promo1" id="negative-promo1" class="d-switch__input" />
+														<div class="d-switch__circle"></div>
+													</label>
+													<div class="d-switch__label-container">
+														<label for="negative-promo1" class="d-switch__label d-switch__label--regular"
+															>Негативная акция</label
+														>
+														<p class="d-description">
+															Условия акции как ухудшают, так и улучшают предложения, например, увеличение цены при
+															увеличении отсрочки. Акция не будет применяться автоматически, а потребует включения
+															покупателем.
+														</p>
+													</div>
+												</div>
+												<div class="d-radio__wrapper">
+													<label class="d-switch" for="negative-promo2">
+														<input type="checkbox" name="negative-promo2" id="negative-promo2" class="d-switch__input" />
+														<div class="d-switch__circle"></div>
+													</label>
+													<div class="d-switch__label-container">
+														<label for="negative-promo2" class="d-switch__label d-switch__label--regular"
+															>Доступна только в Предложениях</label
+														>
+														<p class="d-description">
+															Акция будет видна только в прамках предложения для магазинов, в каталоге и в разделе
+															«Акции поставщиков» выводиться не будет.
+														</p>
 													</div>
 												</div>
 											</div>

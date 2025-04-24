@@ -5,12 +5,23 @@
 	--d-input-bg-color: #282828;
 	--d-input-disable-bg-color: #757575;
 	--d-input-border-color: #757575;
+	--d-input-border-radius: 6px;
 	--d-input-active-border-color: #fbfbfb;
 	--d-input-border-width: 1px;
 	--d-input-shadow: 0px 32px 64px 0px #0000008f;
 	--d-input-color: #ededed;
 	--d-input-placeholder-color: #757575;
 	--d-input-padding: 4px 12px;
+	// ________________________________
+
+	// __________Switch__________
+	--d-switch-padding: 1px;
+	--d-switch-border-width: 1px;
+	--d-switch-border-radius: 50px;
+	--d-switch-width: 40px;
+	--d-switch-thumb-width: 18px;
+	--d-switch-color: #f92c0d;
+	--d-switch-disabled-color: #757575;
 	// ________________________________
 
 	// __________Counter__________
@@ -337,7 +348,7 @@
 	background-color: var(--d-input-bg-color);
 	border: var(--d-input-border-width) solid var(--d-input-border-color);
 	border-bottom-width: 2px;
-	border-radius: 4px;
+	border-radius: var(--d-input-border-radius);
 	box-shadow: 0px 32px 64px 0px var(--d-input-shadow);
 
 	color: var(--d-input-color);
@@ -612,6 +623,10 @@
 		--d-input-padding: 4px 16px;
 
 		font-weight: 500;
+	}
+
+	&--width-280 {
+		width: 280px;
 	}
 
 	@media (width <= 800px) {
@@ -1529,38 +1544,30 @@
 }
 
 .d-switch {
-	--switch-padding: 1px;
-	--switch-border-width: 1px;
-	--switch-border-radius: 50px;
-	--switch-width: 40px;
-	--switch-thumb-width: 18px;
-	--switch-color: #f92c0d;
-	--switch-disabled-color: #757575;
-
 	cursor: pointer;
 
 	display: grid;
 	align-items: center;
 
-	border: var(--switch-border-width) solid var(--switch-disabled-color);
-	border-radius: var(--switch-border-radius);
+	border: var(--d-switch-border-width) solid var(--d-switch-disabled-color);
+	border-radius: var(--d-switch-border-radius);
 
 	position: relative;
 	transition: all 0.1s linear;
 
-	padding: var(--switch-padding);
-	width: var(--switch-width);
-	min-width: var(--switch-width);
+	padding: var(--d-switch-padding);
+	width: var(--d-switch-width);
+	min-width: var(--d-switch-width);
 	height: 22px;
 
 	&:has(.d-switch__input:checked) {
-		border-color: var(--switch-color);
+		border-color: var(--d-switch-color);
 
 		.d-switch__circle {
 			animation-name: switch-animation-in;
 
-			background-color: var(--switch-color);
-			left: calc(100% - var(--switch-thumb-width) - var(--switch-padding));
+			background-color: var(--d-switch-color);
+			left: calc(100% - var(--d-switch-thumb-width) - var(--d-switch-padding));
 		}
 	}
 
@@ -1576,38 +1583,48 @@
 
 		justify-self: flex-start;
 
-		background-color: var(--switch-disabled-color);
+		background-color: var(--d-switch-disabled-color);
 		border-radius: 50%;
 
 		// position: absolute;
 		// top: 50%;
-		// left: calc(var(--switch-padding));
+		// left: calc(var(--d-switch-padding));
 		// translate: 0 -50%;
 		transition: all 0.1s linear;
 
 		aspect-ratio: 1;
-		width: var(--switch-thumb-width);
-		height: var(--switch-thumb-width);
+		width: var(--d-switch-thumb-width);
+		height: var(--d-switch-thumb-width);
 	}
 
 	&__label {
 		font-size: 16px;
 		font-weight: 500;
+
+		&--regular {
+			font-weight: 400;
+		}
+
+		&-container {
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+		}
 	}
 
 	@keyframes switch-animation-in {
 		0% {
-			border-radius: var(--switch-border-radius);
-			width: var(--switch-thumb-width);
+			border-radius: var(--d-switch-border-radius);
+			width: var(--d-switch-thumb-width);
 		}
 		50% {
-			border-radius: var(--switch-border-radius);
+			border-radius: var(--d-switch-border-radius);
 			width: 85%;
 		}
 		100% {
 			justify-self: flex-end;
 			border-radius: 50%;
-			width: var(--switch-thumb-width);
+			width: var(--d-switch-thumb-width);
 		}
 	}
 
@@ -1615,16 +1632,16 @@
 		0% {
 			justify-self: flex-end;
 			border-radius: 50%;
-			width: var(--switch-thumb-width);
+			width: var(--d-switch-thumb-width);
 		}
 		50% {
-			border-radius: var(--switch-border-radius);
+			border-radius: var(--d-switch-border-radius);
 			width: 85%;
 		}
 		100% {
 			justify-self: flex-start;
-			border-radius: var(--switch-border-radius);
-			width: var(--switch-thumb-width);
+			border-radius: var(--d-switch-border-radius);
+			width: var(--d-switch-thumb-width);
 		}
 	}
 }
@@ -2410,7 +2427,7 @@
 
 	&__container {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		gap: 32px;
 
 		&--small {
@@ -2627,7 +2644,11 @@
 
 .d-text {
 	font-size: 14px;
-	font-weight: 400;
+}
+
+.d-description {
+	font-size: 10px;
+	color: #757575;
 }
 
 .d-link {
