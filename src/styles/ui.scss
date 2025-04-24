@@ -33,10 +33,10 @@
 	// ________________________________
 
 	// __________Divider__________
-	--divider-length: 20px;
-	--divider-width: 0.5px;
-	--divider-color: #757575;
-	--divider-margin: 8px;
+	--d-divider-length: 20px;
+	--d-divider-width: 0.5px;
+	--d-divider-color: #757575;
+	--d-divider-margin: 8px;
 	// ________________________________
 
 	// __________Tab__________
@@ -420,8 +420,8 @@
 		}
 	}
 
-	.calendar-button {
-		right: 16px;
+	&__calendar-button {
+		margin-right: 16px;
 		font-size: 14px;
 	}
 
@@ -1674,21 +1674,21 @@
 }
 
 .d-divider {
-	background-color: var(--divider-color);
-	margin-block: var(--divider-margin);
-	width: var(--divider-length);
-	height: var(--divider-width);
+	background-color: var(--d-divider-color);
+	margin-block: var(--d-divider-margin);
+	width: var(--d-divider-length);
+	height: var(--d-divider-width);
 
 	&--semibold {
-		--divider-width: 1px;
+		--d-divider-width: 1px;
 	}
 
 	&--bold {
-		--divider-width: 2px;
+		--d-divider-width: 2px;
 	}
 
 	&--black {
-		--divider-color: #282828;
+		--d-divider-color: #282828;
 	}
 
 	&--full {
@@ -1696,14 +1696,14 @@
 	}
 
 	&--big {
-		--divider-margin: 16px;
+		--d-divider-margin: 16px;
 	}
 
 	&--vertical {
 		margin-block: 0;
-		margin-inline: var(--divider-margin);
-		width: var(--divider-width);
-		height: var(--divider-length);
+		margin-inline: var(--d-divider-margin);
+		width: var(--d-divider-width);
+		height: var(--d-divider-length);
 
 		&.d-divider--full {
 			height: auto;
@@ -2639,6 +2639,8 @@
 }
 
 .d-upload {
+	cursor: pointer;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;

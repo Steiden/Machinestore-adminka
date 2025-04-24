@@ -20,6 +20,7 @@ export default defineConfig({
 				login: "./login.html",
 				registration: "./registration.html",
 				ui: "./ui.html",
+				"promo-master": "./promo-master.html",
 			},
 		},
 	},
