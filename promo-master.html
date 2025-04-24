@@ -38,7 +38,7 @@
 								<div class="promo-master__content">
 									<div class="promo-master__content-left">
 										<!-- 2 ЭТАП Даты проведения акции -->
-										<div class="contents" id="eventDates">
+										<div class="contents hidden" id="eventDates">
 											<p class="promo-master__title promo-master__title--sm-margin">Даты проведения акции</p>
 
 											<div class="d-field-container d-field-container--long">
@@ -124,26 +124,26 @@
 												<p class="promo-master__subtitle">Настройка отсрочки платежа</p>
 												<div class="d-radio__container d-radio__container--small">
 													<div class="d-radio__wrapper">
-														<label for="promo-master-radio1" class="d-radio">
+														<label for="deferred-payment1" class="d-radio">
 															<input
 																type="radio"
-																name="promo-master-radio"
-																id="promo-master-radio1"
+																name="deferred-payment"
+																id="deferred-payment1"
 																class="d-radio__input"
 															/>
 														</label>
-														<label for="promo-master-radio1" class="d-radio__label">Отсрочка (по умолчанию)</label>
+														<label for="deferred-payment1" class="d-radio__label">Отсрочка (по умолчанию)</label>
 													</div>
 													<div class="d-radio__wrapper">
-														<label for="promo-master-radio2" class="d-radio">
+														<label for="deferred-payment2" class="d-radio">
 															<input
 																type="radio"
-																name="promo-master-radio"
-																id="promo-master-radio2"
+																name="deferred-payment"
+																id="deferred-payment2"
 																class="d-radio__input"
 															/>
 														</label>
-														<label for="promo-master-radio2" class="d-radio__label">Под реализацию</label>
+														<label for="deferred-payment2" class="d-radio__label">Под реализацию</label>
 													</div>
 												</div>
 											</div>
@@ -177,59 +177,65 @@
 										</div>
 
 										<!-- 5 ЭТАП - Условия доставки -->
-										<div class="contents hidden" id="paymentConditions">
+										<div class="contents" id="paymentConditions">
 											<p class="promo-master__title">Условия доставки</p>
-											<div class="d-field-container d-field-container--vertical promo-master__settings">
-												<p class="promo-master__subtitle">Настройка отсрочки платежа</p>
+											<div
+												class="d-field-container d-field-container--vertical promo-master__settings promo-master__settings--sm-margin"
+											>
+												<p class="promo-master__subtitle">Кто оплачивает доставку:</p>
 												<div class="d-radio__container d-radio__container--small">
 													<div class="d-radio__wrapper">
-														<label for="promo-master-radio1" class="d-radio">
+														<label for="who-pay-delivery1" class="d-radio">
 															<input
 																type="radio"
-																name="promo-master-radio"
-																id="promo-master-radio1"
+																name="who-pay-delivery"
+																id="who-pay-delivery1"
 																class="d-radio__input"
 															/>
 														</label>
-														<label for="promo-master-radio1" class="d-radio__label">Отсрочка (по умолчанию)</label>
+														<label for="who-pay-delivery1" class="d-radio__label">Поставщик</label>
 													</div>
 													<div class="d-radio__wrapper">
-														<label for="promo-master-radio2" class="d-radio">
+														<label for="who-pay-delivery2" class="d-radio">
 															<input
 																type="radio"
-																name="promo-master-radio"
-																id="promo-master-radio2"
+																name="who-pay-delivery"
+																id="who-pay-delivery2"
 																class="d-radio__input"
 															/>
 														</label>
-														<label for="promo-master-radio2" class="d-radio__label">Под реализацию</label>
+														<label for="who-pay-delivery2" class="d-radio__label">Покупатель</label>
 													</div>
 												</div>
 											</div>
-											<div class="promotions__card promotions__card--small promo-master__card">
-												<div class="promotions__card-header">
-													<div class="promotions__card-header-left">
-														<p class="promotions__card-title">
-															Срок отсрочки платежа: <span class="promotions__card-title-span">19 дней</span>
-														</p>
+											<div class="d-field-container d-field-container--vertical promo-master__settings">
+												<p class="promo-master__subtitle">Сроки отгрузки товаров</p>
+												<div class="d-radio__container d-radio__container--small">
+													<div class="d-radio__wrapper">
+														<label for="shipment-deadline1" class="d-radio">
+															<input
+																type="radio"
+																name="shipment-deadline"
+																id="shipment-deadline1"
+																class="d-radio__input"
+															/>
+														</label>
+														<label for="shipment-deadline1" class="d-radio__label"
+															>Определяется данными из отгрузок</label
+														>
 													</div>
-													<button class="promotions__card-button">
-														<i class="d-icon-pen2 promotions__card-button-icon"></i>
-													</button>
-												</div>
-												<div class="promotions__card-content">
-													<div class="promotions__card-values">
-														<p class="promotions__card-text promotions__card-text--bold promotions__card-text--small">
-															Срок отсрочки платежа:
-														</p>
-														<div class="d-field-container d-field-container--vertical">
-															<p class="promotions__card-text promotions__card-text--dark-gray">
-																— 90% через 10 дней после отгрузки
-															</p>
-															<p class="promotions__card-text promotions__card-text--dark-gray">
-																— 10% через 100 дней после отгрузки
-															</p>
-														</div>
+													<div class="d-radio__wrapper">
+														<label for="shipment-deadline2" class="d-radio">
+															<input
+																type="radio"
+																name="shipment-deadline"
+																id="shipment-deadline2"
+																class="d-radio__input"
+															/>
+														</label>
+														<label for="shipment-deadline2" class="d-radio__label"
+															>Определяется по расчету доставки ТК</label
+														>
 													</div>
 												</div>
 											</div>

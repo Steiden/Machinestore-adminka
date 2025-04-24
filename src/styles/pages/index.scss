@@ -674,7 +674,7 @@
 		&-right {
 			display: flex;
 			flex-direction: column;
-			width: 45%;
+			width: 50%;
 		}
 
 		&-right {
@@ -703,6 +703,10 @@
 
 	&__settings {
 		margin-bottom: 36px;
+
+		&--sm-margin {
+			margin-bottom: 24px;
+		}
 	}
 
 	&__setting {
