@@ -2430,8 +2430,16 @@
 		align-items: flex-start;
 		gap: 32px;
 
+		&--vertical {
+			flex-direction: column;
+		}
+
 		&--small {
 			gap: 24px;
+		}
+
+		&--long {
+			gap: 40px;
 		}
 	}
 

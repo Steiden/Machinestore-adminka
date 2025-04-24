@@ -177,7 +177,7 @@
 										</div>
 
 										<!-- 5 ЭТАП - Условия доставки -->
-										<div class="contents hidden" id="paymentConditions">
+										<div class="contents hidden" id="deliveryConditions">
 											<p class="promo-master__title">Условия доставки</p>
 											<div
 												class="d-field-container d-field-container--vertical promo-master__settings promo-master__settings--sm-margin"
@@ -242,7 +242,7 @@
 										</div>
 
 										<!-- 6 ЭТАП - Условия участия в акции: Требования к заказу -->
-										<div class="contents" id="paymentConditions">
+										<div class="contents hidden" id="promoConditionsRequirements">
 											<p class="promo-master__title">Условия участия в акции: требованя к заказу</p>
 
 											<!-- Минимальная общая сумма заказа товаров акции -->
@@ -312,6 +312,90 @@
 															Акция будет видна только в прамках предложения для магазинов, в каталоге и в разделе
 															«Акции поставщиков» выводиться не будет.
 														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- 7 ЭТАП - Условия участия в акции: Совместимость -->
+										<div class="contents" id="promoConditionsCompatibility">
+											<p class="promo-master__title">Условия участия в акции: совместимость</p>
+
+											<!-- Совместимость -->
+											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
+												<div class="promo-master__subtitle-container">
+													<p class="promo-master__subtitle">Совместимость</p>
+													<p class="d-text">С какими акциями может применяться совместно</p>
+												</div>
+												<div class="d-radio__container d-radio__container--small d-radio__container--vertical">
+													<div class="d-radio__wrapper">
+														<label for="compatibility1" class="d-radio">
+															<input type="radio" name="compatibility" id="compatibility1" class="d-radio__input" />
+														</label>
+														<label for="compatibility1" class="d-radio__label">Совместима со всеми акциями</label>
+													</div>
+													<div class="d-radio__wrapper">
+														<label for="compatibility2" class="d-radio">
+															<input type="radio" name="compatibility" id="compatibility2" class="d-radio__input" />
+														</label>
+														<label for="compatibility2" class="d-radio__label"
+															>Совместима только с выбранными акциями</label
+														>
+													</div>
+													<div class="d-radio__wrapper">
+														<label for="compatibility3" class="d-radio">
+															<input type="radio" name="compatibility" id="compatibility3" class="d-radio__input" />
+														</label>
+														<label for="compatibility3" class="d-radio__label">Не совместима со всеми акциями</label>
+													</div>
+													<div class="d-radio__wrapper">
+														<label for="compatibility4" class="d-radio">
+															<input type="radio" name="compatibility" id="compatibility4" class="d-radio__input" />
+														</label>
+														<label for="compatibility4" class="d-radio__label">Не совместима с выбранными акциями</label>
+													</div>
+												</div>
+											</div>
+
+											<!-- Режим совместимости -->
+											<div
+												class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin"
+											>
+												<div class="promo-master__subtitle-container">
+													<p class="promo-master__subtitle">Режим совместимости</p>
+													<p class="d-text">Как условия совместимых акций сочетаются</p>
+												</div>
+												<div class="d-radio__container d-radio__container--big">
+													<div class="d-radio__wrapper">
+														<label for="compatibilitymode1" class="d-radio">
+															<input
+																type="radio"
+																name="compatibilitymode"
+																id="compatibilitymode1"
+																class="d-radio__input"
+															/>
+														</label>
+														<div class="d-radio__label-container">
+															<label for="compatibilit1" class="d-radio__label">Складываются</label>
+															<p class="d-description">
+																Проценты скидок сначала сложатся, затем сумма<br />
+																процентов отнимется от цены. Отсрочка сложится.
+															</p>
+														</div>
+													</div>
+													<div class="d-radio__wrapper">
+														<label for="compatibilitymode2" class="d-radio">
+															<input
+																type="radio"
+																name="compatibilitymode"
+																id="compatibilitymode2"
+																class="d-radio__input"
+															/>
+														</label>
+														<div class="d-radio__label-container">
+															<label for="compatibilitymode2" class="d-radio__label">Назначаются последовательно</label>
+															<p class="d-description">Скидки применяются по очереди. Отсрочка сложится.</p>
+														</div>
 													</div>
 												</div>
 											</div>
