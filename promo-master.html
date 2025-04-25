@@ -8,9 +8,9 @@
 	</head>
 	<body>
 		<div id="app">
-			<div class="d-modal2__overlay show-modal" data-modal2>
+			<div class="d-modal2__overlay">
 				<div class="content-wrapper promo-modal__wrapper">
-					<div class="d-modal2 promo-modal">
+					<div class="d-modal2 d-modal2--active promo-modal" data-modal2>
 						<div class="promo-modal__header">
 							<div class="promo-modal__header-left">
 								<div class="d-modal2__header promo-modal__header-title">
@@ -38,7 +38,7 @@
 								<div class="promo-master__content">
 									<div class="promo-master__content-left">
 										<!-- 1 ЭТАП - Контент акции -->
-										<div class="contents" id="promoContent">
+										<div class="contents hidden" id="promoContent">
 											<p class="promo-master__title promo-master__title--sm-margin">Контент акции</p>
 
 											<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical promo-master__settings promo-master__settings--sm-margin">
@@ -197,7 +197,7 @@
 										</div>
 
 										<!-- 4 ЭТАП - Условия оплаты -->
-										<div class="contents hidden" id="paymentConditions">
+										<div class="contents" id="paymentConditions">
 											<p class="promo-master__title">Условия оплаты</p>
 											<div class="d-field-container d-field-container--vertical promo-master__settings">
 												<p class="promo-master__subtitle">Настройка отсрочки платежа</p>
@@ -221,7 +221,7 @@
 													<div class="promotions__card-header-left">
 														<p class="promotions__card-title">Срок отсрочки платежа: <span class="promotions__card-title-span">19 дней</span></p>
 													</div>
-													<button class="promotions__card-button">
+													<button class="promotions__card-button" data-modal2-trigger="deferredPayment">
 														<i class="d-icon-pen2 promotions__card-button-icon"></i>
 													</button>
 												</div>
@@ -607,6 +607,68 @@
 								</div>
 							</section>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="d-modal2__overlay">
+			<div class="d-modal2 d-modal2--fit deferred-payment__modal" data-modal2="deferredPayment">
+				<button class="d-modal2__close" data-modal2-close>
+					<i class="d-icon-times d-modal2__close-icon"></i>
+				</button>
+
+				<div class="d-modal2__header">
+					<p class="d-modal2__title">Настройка отсрочки платежа</p>
+				</div>
+
+				<div class="d-modal2__content">
+					<div class="deferred-payment">
+						<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+							<label for="test-dropdown" class="d-dropdown__label">Процент от суммы заказа</label>
+							<div class="d-input d-input--light">
+								<input type="text" name="login" class="d-input__field" value="100 %" />
+							</div>
+						</div>
+						<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+							<label for="test-dropdown" class="d-dropdown__label">Срок отсрочки платежа в календ. днях</label>
+							<div class="d-input d-input--light">
+								<input type="text" name="login" class="d-input__field" value="90" />
+							</div>
+						</div>
+						<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+							<label for="test-dropdown" class="d-dropdown__label">Процент от суммы заказа</label>
+							<div class="d-input d-input--light">
+								<input type="text" name="login" class="d-input__field" value="0 %" />
+							</div>
+						</div>
+						<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+							<label for="test-dropdown" class="d-dropdown__label">Срок отсрочки платежа в календ. днях</label>
+							<div class="d-input d-input--light">
+								<input type="text" name="login" class="d-input__field" value="0" />
+							</div>
+						</div>
+						<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+							<label for="test-dropdown" class="d-dropdown__label">Процент от суммы заказа</label>
+							<div class="d-input d-input--light">
+								<input type="text" name="login" class="d-input__field" value="0 %" />
+							</div>
+						</div>
+						<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+							<label for="test-dropdown" class="d-dropdown__label">Срок отсрочки платежа в календ. днях</label>
+							<div class="d-input d-input--light">
+								<input type="text" name="login" class="d-input__field" value="0" />
+							</div>
+						</div>
+					</div>
+
+					<div class="d-button d-button-tertiary d-button-rounded d-button--sm-shadow">
+						<div class="d-icon-plus"></div>
+					</div>
+
+					<div class="d-modal2__actions">
+						<button class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button">Отмена</button>
+						<button class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button">Ок</button>
 					</div>
 				</div>
 			</div>

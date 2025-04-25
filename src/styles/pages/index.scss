@@ -884,3 +884,15 @@
 		margin-bottom: 32px;
 	}
 }
+
+.deferred-payment {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px;
+	margin-block: 36px 24px;
+
+	&__modal {
+		width: 40%;
+		max-width: 40%;
+	}
+}

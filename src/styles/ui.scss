@@ -2613,12 +2613,24 @@
 	position: relative;
 	overflow-y: auto;
 	overflow-x: hidden;
+	transition-duration: .3s;
 
 	padding: 32px;
 	width: var(--d-modal2-width);
 	min-height: var(--d-modal2-height);
 	max-width: var(--d-modal2-width);
 	max-height: var(--d-modal2-height);
+
+	&:not(&--active) {
+		scale: 1.2;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&--fit {
+		min-height: 0;
+		height: fit-content;
+	}
 
 	&__overlay {
 		display: flex;
@@ -2632,6 +2644,12 @@
 		z-index: 40;
 		visibility: hidden;
 		opacity: 0;
+		transition-duration: .3s;
+
+		&:has(.d-modal2--active) {
+			visibility: visible;
+			opacity: 1;
+		}
 	}
 
 	&__close {
@@ -2683,6 +2701,7 @@
 		color: #757575;
 		font-size: 14px;
 		font-weight: 500;
+		flex-grow: 1;
 	}
 }
 
