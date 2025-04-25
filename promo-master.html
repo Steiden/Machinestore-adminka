@@ -37,6 +37,93 @@
 							<section class="promo-master">
 								<div class="promo-master__content">
 									<div class="promo-master__content-left">
+										<!-- 1 ЭТАП - Контент акции -->
+										<div class="contents" id="promoContent">
+											<p class="promo-master__title promo-master__title--sm-margin">Контент акции</p>
+
+											<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical promo-master__settings promo-master__settings--sm-margin">
+												<label for="dateStart" class="d-dropdown__label">Название акции</label>
+												<div class="d-input d-input--light d-input--width-640 d-textarea">
+													<textarea
+														rows="2"
+														placeholder="Например: “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” Например: “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” "
+														name="dateStart"
+														class="d-input__field d-textarea__field"
+													></textarea>
+												</div>
+											</div>
+
+											<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+												<label for="dateStart" class="d-dropdown__label">Описание акции</label>
+												<div class="d-editor">
+													<div class="d-editor__header">
+														<div class="d-input d-input--light d-editor__search">
+															<input type="text" class="d-input__field d-editor__search-field" placeholder="Placeholder text" />
+															<div class="d-editor__text-tools">
+																<p class="d-editor__font-size">00</p>
+																<div class="d-editor__tool-container">
+																	<button class="d-editor__tool">
+																		<i class="d-icon-b d-editor__tool-icon"></i>
+																	</button>
+																	<button class="d-editor__tool">
+																		<i class="d-icon-i d-editor__tool-icon"></i>
+																	</button>
+																	<button class="d-editor__tool">
+																		<i class="d-icon-u d-editor__tool-icon"></i>
+																	</button>
+																</div>
+
+																<div class="d-divider d-divider--vertical d-divider--gray d-divider--big d-divider--semibold d-divider--semi-full"></div>
+
+																<div class="d-editor__tool-container">
+																	<button class="d-editor__tool">
+																		<i class="d-icon-marker d-editor__tool-icon"></i>
+																	</button>
+																	<button class="d-editor__tool">
+																		<i class="d-icon-a d-editor__tool-icon"></i>
+																	</button>
+																	<button class="d-editor__tool">
+																		<i class="d-icon-upper-case d-editor__tool-icon"></i>
+																	</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="d-editor__tools">
+															<div class="d-editor__tool-container">
+																<button class="d-editor__tool">
+																	<i class="d-icon-list2 d-editor__tool-icon"></i>
+																</button>
+																<button class="d-editor__tool">
+																	<i class="d-icon-number-list d-editor__tool-icon"></i>
+																</button>
+															</div>
+															<div class="d-divider d-divider--vertical d-divider--gray d-divider--big d-divider--semibold d-divider--semi-full"></div>
+															<div class="d-editor__tool-container">
+																<button class="d-editor__tool">
+																	<i class="d-icon-link d-editor__tool-icon"></i>
+																</button>
+																<button class="d-editor__tool">
+																	<i class="d-icon-calendar2 d-editor__tool-icon"></i>
+																</button>
+																<button class="d-editor__tool">
+																	<i class="d-icon-quote d-editor__tool-icon"></i>
+																</button>
+																<button class="d-editor__tool">
+																	<i class="d-icon-grid d-editor__tool-icon"></i>
+																</button>
+															</div>
+														</div>
+													</div>
+													<textarea
+														class="d-editor__field"
+														rows="5"
+														placeholder="Например: “Известный европейский бренд 25 лет в России! Высокая маржинальность до 45%! Широкий ассортимент для любого сегмента рынка. Цены крупного опта при любом заказе! 100% контроль цен. Возврат денег за непроданный товар. Широкая рекламная поддержка.”"
+													></textarea>
+												</div>
+											</div>
+										</div>
+
 										<!-- 2 ЭТАП Даты проведения акции -->
 										<div class="contents hidden" id="eventDates">
 											<p class="promo-master__title promo-master__title--sm-margin">Даты проведения акции</p>
@@ -393,7 +480,7 @@
 										</div>
 
 										<!-- Поздравляем -->
-										<div class="contents" id="congratulations">
+										<div class="contents hidden" id="congratulations">
 											<div class="promo-master__title-container">
 												<p class="promo-master__title promo-master__title--no-margin">Поздравляем!<br />Вы создали акцию «Купи слона»</p>
 												<div class="d-description">Вы прошли 10 из 10 шагов, а это значит, что ваша акция будет максимально эффективной!</div>
