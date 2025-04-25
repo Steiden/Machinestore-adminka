@@ -693,6 +693,17 @@
 		&--sm-margin {
 			margin-bottom: 24px;
 		}
+
+		&--no-margin {
+			margin: 0;
+		}
+
+		&-container {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			margin-bottom: 40px;
+		}
 	}
 
 	&__subtitle {
