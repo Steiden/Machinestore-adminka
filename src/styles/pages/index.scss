@@ -896,3 +896,33 @@
 		max-width: 40%;
 	}
 }
+
+.compatibility-modal {
+	margin-block: 20px 40px;
+
+	&__promos {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 600;
+
+		&-container {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			margin-block: 32px 16px;
+		}
+	}
+
+	&__options {
+		margin-bottom: 32px;
+	}
+
+	&__info {
+		 display: flex;
+		 flex-direction: column;
+		 gap: 20px;
+	}
+}

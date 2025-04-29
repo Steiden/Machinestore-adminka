@@ -612,6 +612,7 @@
 			</div>
 		</div>
 
+		<!-- Настройка отсрочки платежа -->
 		<div class="d-modal2__overlay">
 			<div class="d-modal2 d-modal2--fit deferred-payment__modal" data-modal2="deferredPayment">
 				<button class="d-modal2__close" data-modal2-close>
@@ -664,6 +665,73 @@
 
 					<div class="d-button d-button-tertiary d-button-rounded d-button--sm-shadow">
 						<div class="d-icon-plus"></div>
+					</div>
+
+					<div class="d-modal2__actions">
+						<button class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button">Отмена</button>
+						<button class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button">Ок</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Совместимость -->
+		<div class="d-modal2__overlay">
+			<div class="d-modal2 d-modal2--fit deferred-payment__modal d-modal2--active" data-modal2="deferredPayment">
+				<button class="d-modal2__close" data-modal2-close>
+					<i class="d-icon-times d-modal2__close-icon"></i>
+				</button>
+
+				<div class="d-modal2__header">
+					<div class="d-modal2__title-container">
+						<p class="d-modal2__title">Совместимость</p>
+						<div class="d-modal2__description d-modal2__description--half">У выбранных вами акций установлена совместимость «Не совместима со всеми акциями»:</div>
+					</div>
+				</div>
+
+				<div class="d-modal2__content">
+					<div class="compatibility-modal">
+						<div class="d-badge__container compatibility-modal__promos">
+							<div class="d-badge d-badge--medium d-badge--filled">Распродажа 1+2</div>
+							<div class="d-badge d-badge--medium d-badge--filled">Распродажа всех главных распродаж</div>
+						</div>
+
+						<p class="d-text">Для них будет изменена совместимость на “Совместима только с выбранными акциями” с текущей акцией. Выберите режим совместимости ниже.</p>
+
+						<div class="compatibility-modal__title-container">
+							<p class="compatibility-modal__title">Режим совместимости</p>
+							<p class="d-text">Как условия совместимых акций сочетаются</p>
+						</div>
+
+						<div class="d-radio__container d-radio__container compatibility-modal__options">
+							<div class="d-radio__wrapper">
+								<label for="test-radio1" class="d-radio">
+									<input type="radio" name="test-radios" id="test-radio1" class="d-radio__input" />
+								</label>
+								<div class="d-switch__label-container">
+									<label for="negative-promo1" class="d-radio__label">Складываются</label>
+									<p class="d-description">Проценты скидок сначала сложатся, затем сумма процентов отнимется от цены. Отсрочка сложится.</p>
+								</div>
+							</div>
+							<div class="d-radio__wrapper">
+								<label for="test-radio1" class="d-radio">
+									<input type="radio" name="test-radios" id="test-radio1" class="d-radio__input" />
+								</label>
+								<div class="d-switch__label-container">
+									<label for="negative-promo1" class="d-radio__label">Назначаются последовательно</label>
+									<p class="d-description">Скидки применяются по очереди. Отсрочка сложится.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="compatibility-modal__info">
+							<p class="d-text">У выбранных вами акций установлена совместимость «Не совместима с выбранными акциями» и указана текущая акция:</p>
+							<div class="d-badge__container">
+								<div class="d-badge d-badge--medium d-badge--filled">Распродажа 1+2</div>
+								<div class="d-badge d-badge--medium d-badge--filled">Распродажа всех главных распродаж</div>
+							</div>
+							<p class="d-text">Для них текущая акция будет исключена из списка «Не совместима с выбранными акциями».</p>
+						</div>
 					</div>
 
 					<div class="d-modal2__actions">
