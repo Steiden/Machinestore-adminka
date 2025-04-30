@@ -373,26 +373,3 @@ button {
 		translate: 0 -50%;
 	}
 }
-
-.content-wrapper {
-	padding-inline: 32px;
-	margin-inline: auto;
-	width: 100%;
-	max-width: 1520px;
-
-	@media (width > 1440px) {
-		padding-inline: 80px;
-	}
-
-	@media (width > 1600px) {
-		padding-inline: 0;
-	}
-
-	@media (width <=780px) {
-		padding-inline: 40px 80px;
-	}
-
-	@media (width <= 600px) {
-		padding-inline: 44px;
-	}
-}
