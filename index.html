@@ -398,18 +398,22 @@
 									<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
 										<i class="d-icon-pen2 promotions__icon"></i>
 									</button>
-									<div class="d-divider d-divider--vertical promotions__info-icon-divider hidden-1200"></div>
-									<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-add">
-										<i class="d-icon-plus promotions__icon promotions__icon--plus"></i>
-									</button>
-									<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
-									<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
-										<i class="d-icon-copy promotions__icon"></i>
-									</button>
-									<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
-									<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
-										<i class="d-icon-trash promotions__icon"></i>
-									</button>
+									<div class="promotions__info-primary-actions">
+										<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
+										<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-add">
+											<i class="d-icon-plus promotions__icon promotions__icon--plus"></i>
+										</button>
+									</div>
+									<div class="promotions__info-additional-actions">
+										<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
+										<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
+											<i class="d-icon-copy promotions__icon"></i>
+										</button>
+										<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
+										<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
+											<i class="d-icon-trash promotions__icon"></i>
+										</button>
+									</div>
 								</div>
 							</div>
 
@@ -519,8 +523,8 @@
 													</div>
 												</div>
 												<div class="promotions__card-content">
-													<div class="promotions__card-values">
-														<div class="promotions__card-value-container">
+													<div class="promotions__card-values promotions__card-values--md-horizontal">
+														<div class="promotions__card-value-container d-md-full">
 															<span class="promotions__card-label">Оплата доставки:</span>
 															<p
 																class="promotions__card-value promotions__card-value--bold promotions__card-delivery-conds-value"
@@ -528,7 +532,7 @@
 																Доставка за счет покупателя
 															</p>
 														</div>
-														<div class="promotions__card-value-container">
+														<div class="promotions__card-value-container d-md-full">
 															<span class="promotions__card-label">Срок доставки:</span>
 															<p
 																class="promotions__card-value promotions__card-value--bold promotions__card-delivery-conds-value"
@@ -556,10 +560,12 @@
 													</div>
 												</div>
 												<div class="promotions__card-content">
-													<div class="promotions__card-values">
+													<div
+														class="promotions__card-values promotions__card-values--md-horizontal promotions__card-values--md-long"
+													>
 														<div class="promotions__card-info">
 															<div class="promotions__card-value-container">
-																<span class="promotions__card-label">Под реализацию</span>
+																<span class="promotions__card-label d-md-max-content">Под реализацию</span>
 																<p
 																	class="promotions__card-value promotions__card-value--bold promotions__card-delivery-conds-value"
 																>
@@ -716,7 +722,7 @@
 													</div>
 												</div>
 												<div class="promotions__card-header-right">
-													<div class="d-message promotions__card-message promotions__card-promo-conds-message">
+													<div class="d-message promotions__card-message promotions__card-promo-conds-message hidden-800">
 														<i class="d-icon-danger d-message__icon"></i>
 														<p class="d-message__text">Требуется интеграция склада</p>
 													</div>

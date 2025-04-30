@@ -15,6 +15,10 @@
 		@media (width <= 1200px) {
 			justify-content: space-between;
 			margin-bottom: 24px;
+
+			&-back {
+				gap: 8px;
+			}
 		}
 	}
 
@@ -74,6 +78,14 @@
 			align-items: center;
 		}
 
+		&-additional-actions {
+			display: none;
+		}
+		&-primary-actions {
+			display: flex;
+			align-items: center;
+		}
+
 		&--sticky {
 			background-color: #282828;
 			box-shadow: 0px 4px 13.4px -5px #00000042;
@@ -91,6 +103,13 @@
 			}
 
 			.promotions__info-add {
+				display: none;
+			}
+
+			.promotions__info-additional-actions {
+				display: contents;
+			}
+			.promotions__info-primary-actions {
 				display: none;
 			}
 
@@ -148,6 +167,12 @@
 				.promotions__info-icon-divider {
 					margin-inline: 4px;
 				}
+			}
+		}
+
+		@media (width <= 800px) {
+			&-title {
+				font-size: 14px;
 			}
 		}
 	}
@@ -542,7 +567,7 @@
 			&-banner {
 				border-radius: 8px;
 				margin-bottom: 0;
-				width: 45%;
+				max-width: 45%;
 				height: 140px;
 
 				&-container {
@@ -741,6 +766,88 @@
 					&-wrapper {
 						margin-block: 24px 32px;
 						width: 100%;
+					}
+				}
+			}
+		}
+
+		@media (width <= 800px) {
+			&-header {
+				padding: 1px 16px;
+				min-height: 24px;
+			}
+
+			&-icon {
+				font-size: 14px;
+			}
+
+			&-values {
+				gap: 8px;
+
+				&--md-horizontal {
+					flex-direction: row;
+				}
+
+				&--md-long {
+					gap: 24px;
+				}
+			}
+
+			&-value {
+				font-size: 12px;
+
+				&--bold {
+					font-size: 14px;
+				}
+			}
+
+			&-container {
+				grid-template-columns: 1fr;
+				gap: 24px;
+			}
+
+			&-info {
+				align-items: flex-start;
+			}
+
+			&-label {
+				&--big {
+					font-size: 12px;
+				}
+			}
+
+			&-block {
+				&-title {
+					font-weight: 500;
+				}
+
+				&-value {
+					font-size: 16px;
+					font-weight: 500;
+				}
+
+				&-divider {
+					margin-block: 8px;
+				}
+
+				&-button {
+					font-size: 12px;
+					min-height: 24px;
+				}
+
+				&-container {
+					gap: 16px;
+				}
+			}
+
+			&-banner {
+				&-message {
+					--d-message-text-font-size: 12px;
+
+					height: 24px;
+
+					&-icon {
+						font-size: 11px;
 					}
 				}
 			}

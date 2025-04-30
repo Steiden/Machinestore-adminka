@@ -1,4 +1,5 @@
 @use "mixins" as *;
+@use "variables" as *;
 
 .inliner {
 	display: block;
@@ -185,4 +186,17 @@
 
 .inline-block {
 	display: inline-block;
+}
+
+.d-md-full {
+	@media (width <= $small-tablets) {
+		width: 100%;
+	}
+}
+
+
+.d-md-max-content {
+	@media (width <= $small-tablets) {
+		width: max-content;
+	}
 }

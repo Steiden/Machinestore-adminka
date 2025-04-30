@@ -52,6 +52,7 @@
 
 .sidebar {
 	width: var(--sidebar-width);
+	min-width: var(--sidebar-width);
 	height: 100dvh;
 
 	@keyframes sidebar-in {
