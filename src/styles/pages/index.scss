@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .promotions {
 	margin-block: 20px 80px;
 
@@ -12,13 +14,17 @@
 			height: auto;
 		}
 
-		@media (width <= 1200px) {
+		@media (width <=1200px) {
 			justify-content: space-between;
 			margin-bottom: 24px;
 
 			&-back {
 				gap: 8px;
 			}
+		}
+
+		@media (width <=600px) {
+			display: none;
 		}
 	}
 
@@ -34,8 +40,34 @@
 			align-items: center;
 		}
 
-		@media (width <= 1200px) {
+		&-back {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			margin-bottom: 20px;
+
+			&-icon {
+				font-size: 10px;
+			}
+		}
+
+		@media (width <=1200px) {
 			margin-bottom: 32px;
+		}
+
+		@media (width > 600px) {
+			&-back {
+				display: none;
+			}
+		}
+
+		@media (width <=600px) {
+
+			display: none;
+
+			&-back {
+				padding-inline: $primary-padding;
+			}
 		}
 	}
 
@@ -78,12 +110,21 @@
 			align-items: center;
 		}
 
+		&-additional {
+			display: none;
+		}
+
 		&-additional-actions {
 			display: none;
 		}
+
 		&-primary-actions {
 			display: flex;
 			align-items: center;
+		}
+
+		&-main-actions {
+			display: contents;
 		}
 
 		&--sticky {
@@ -102,6 +143,10 @@
 				}
 			}
 
+			.promotions__info-additional {
+				display: contents;
+			}
+
 			.promotions__info-add {
 				display: none;
 			}
@@ -109,6 +154,7 @@
 			.promotions__info-additional-actions {
 				display: contents;
 			}
+
 			.promotions__info-primary-actions {
 				display: none;
 			}
@@ -118,13 +164,7 @@
 			}
 		}
 
-		&:not(&--sticky) {
-			.promotions__info-additional {
-				display: none;
-			}
-		}
-
-		@media (width <= 1200px) {
+		@media (width <=1200px) {
 			border-radius: 6px;
 			padding: 8px 16px;
 			margin-bottom: 32px;
@@ -170,9 +210,86 @@
 			}
 		}
 
-		@media (width <= 800px) {
+		@media (width <=800px) {
 			&-title {
 				font-size: 14px;
+			}
+		}
+
+		@media (width <=600px) {
+			align-items: flex-start;
+			justify-content: center;
+
+			background-color: #282828;
+			border-radius: 14px 14px 0 0;
+
+			position: fixed;
+			top: auto;
+			bottom: 0;
+			left: 0;
+			translate: 0 -50%;
+
+			padding: 8px 44px;
+			margin-bottom: 0;
+			height: 65px;
+			width: 100%;
+
+			&-edit {
+				color: #ededed;
+
+				&:hover {
+					background-color: #ededed;
+					color: #282828;
+				}
+			}
+
+			&-additional {
+				display: flex;
+			}
+
+			&-switch {
+				background-color: transparent;
+				flex-direction: row-reverse;
+
+				&-label {
+					color: var(--d-switch-disabled-color);
+				}
+			}
+
+			&-add {
+				display: none;
+			}
+
+			&-additional-actions {
+				display: contents;
+			}
+
+			&-primary-actions {
+				display: none;
+			}
+
+			&-title-container {
+				display: none;
+			}
+
+			&-icon-divider {
+				display: none;
+			}
+
+			&-additional {
+				display: flex;
+				justify-content: space-between;
+				order: 1;
+			}
+
+			&-top-actions {
+				justify-content: space-between;
+				width: 100%;
+			}
+
+			&-main-actions {
+				display: flex;
+				align-items: center;
 			}
 		}
 	}
@@ -182,7 +299,7 @@
 		gap: 32px;
 		flex-direction: column;
 
-		@media (width <= 1200px) {
+		@media (width <=1200px) {
 			&-card-container {
 				gap: 24px;
 			}
@@ -372,8 +489,7 @@
 				flex-grow: 1;
 			}
 
-			&-title {
-			}
+			&-title {}
 
 			&-description {
 				flex: 1 0 auto;
@@ -509,13 +625,18 @@
 		}
 
 		@media (width > 1200px) {
+
 			&-header-divider,
 			&-header-add {
 				display: none;
 			}
+
+			&-banner-message--content {
+				display: none;
+			}
 		}
 
-		@media (width <= 1200px) {
+		@media (width <=1200px) {
 			border-radius: 6px;
 
 			&-header {
@@ -595,6 +716,10 @@
 
 					&-text {
 						font-weight: 500;
+					}
+
+					&--banner {
+						display: none;
 					}
 				}
 
@@ -775,7 +900,7 @@
 			}
 		}
 
-		@media (width <= 800px) {
+		@media (width <=800px) {
 			&-header {
 				padding: 1px 16px;
 				min-height: 24px;
@@ -896,6 +1021,152 @@
 				}
 			}
 		}
+
+		@media (width <=600px) {
+			&-icon {
+				font-size: 16px;
+			}
+
+			&-header {
+				padding: 8px $primary-padding;
+				min-height: 40px;
+			}
+	
+			&-content {
+				padding: 24px $primary-padding;
+			}
+
+			&-label {
+				font-size: 14px;
+			}
+
+			&-value {
+				font-size: 14px;
+
+				&--bold {
+					font-size: 16px;
+				}
+			}
+
+			&-banner {
+				max-width: 100%;
+				height: 184px;
+
+				&-container {
+					flex-direction: column;
+					gap: 16px;
+				}
+
+				&-message {
+					justify-content: center;
+
+					background-color: #dbdbdb;
+					border-radius: 0 0 12px 12px;
+					color: #282828;
+
+					position: absolute;
+					top: 0;
+					left: 0;
+
+					width: 100%;
+
+					&--banner {
+						display: flex;
+					}
+
+					&--content {
+						display: none;
+					}
+				}
+			}
+
+			&-promo-conds-content {
+				flex-direction: column;
+				gap: 16px;
+			}
+
+			&-audience-label {
+				margin-bottom: 16px;
+			}
+
+			&-block {
+				&-inner {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 8px;
+				}
+
+				&-title-container,
+				&-description,
+				&-value {
+					width: 100%;
+					text-align: left;
+				}
+
+				&-container {
+					flex-direction: column;
+					gap: 8px;;
+					margin-bottom: 0;
+				}
+
+				&-wrapper {
+					flex-direction: column;
+				}
+
+				&-title {
+					font-weight: 600;
+				}
+
+				&-divider {
+					&--vertical {
+						margin-block: 16px;
+						margin-inline: 0;
+
+						&.d-divider--full {
+							height: 0.5px;
+							width: 100%;
+						}
+					}
+				}
+
+				&-button {
+					font-size: 14px;
+					font-weight: 600;
+					
+					margin-top: 8px;
+					width: 312px;
+					height: 32px;
+					max-width: 100%;
+				}
+			}
+
+			&-warehouse {
+				gap: 16px;
+
+				&-title {
+					font-size: 14px;
+				}
+
+				&-label {
+					font-size: 12px;
+				}
+
+				&-settings {
+					gap: 16px;
+
+					&-choose {
+						align-self: center;
+						width: 312px;
+						max-width: 100%;
+					}
+				}
+
+				&-divider {
+					scale: 1.5 1;
+					margin-block: 32px;
+				}
+			}
+		}
 	}
 
 	&__complects {
@@ -918,7 +1189,7 @@
 			min-height: 40px;
 		}
 
-		@media (width <= 800px) {
+		@media (width <=800px) {
 			&-header {
 				&-right {
 					width: 100%;
@@ -935,6 +1206,7 @@
 }
 
 .product-table-card {
+
 	&__title,
 	&__article {
 		margin-bottom: 2px;
@@ -1003,7 +1275,7 @@
 		padding-block: 40px 56px;
 	}
 
-	@media (width <= 1200px) {
+	@media (width <=1200px) {
 		&-content {
 			padding-block: 24px 12px;
 		}
@@ -1256,6 +1528,7 @@
 		}
 
 		&--disabled {
+
 			&,
 			&:disabled {
 				background-color: #ffffff8c;

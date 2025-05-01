@@ -366,6 +366,8 @@ try {
 	const main = document.querySelector(".main");
 
 	main?.addEventListener("scroll", (e) => {
+		if(window.innerWidth <= 600) return;
+
 		const promotionsInfoTop = Math.floor(promotionsInfo.getClientRects()[0].top);
 		const headerHeight = Math.floor(header.getClientRects()[0].height);
 

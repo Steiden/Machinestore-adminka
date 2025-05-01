@@ -321,7 +321,7 @@
 					</header>
 				</div>
 				<main class="main">
-					<div class="content-wrapper">
+					<div class="content-wrapper main__content-wrapper">
 						<section class="promotions" id="promotions">
 							<div class="promotions__top">
 								<a class="d-back promotions__top-back">
@@ -344,6 +344,11 @@
 									</li>
 								</ul>
 							</div>
+
+							<button class="promotions__header-back">
+								<i class="d-icon-angle-rounded-left promotions__header-back-icon"></i>
+								<h1 class="d-title promotions__header-title">Настройка акции № 454 324 453</h1>
+							</button>
 
 							<div class="promotions__header">
 								<h1 class="d-title promotions__header-title">Настройка акции № 454 324 453</h1>
@@ -379,35 +384,37 @@
 									<div class="d-progress__line"></div>
 								</div>
 
-								<div class="promotions__info-actions">
-									<div class="contents promotions__info-additional">
+								<div class="promotions__info-actions promotions__info-top-actions">
+									<div class="promotions__info-additional">
 										<label class="d-switch-button promotions__info-switch" for="enable-promotion2">
 											<div class="d-switch d-switch--gray">
-												<input type="checkbox" name="enable-promotion2" id="enable-promotion2" class="d-switch__input" />
+												<input type="checkbox" name="enable-promotion2" id="enable-promotion2" class="d-switch__input promotions__info-switch-field" />
 												<div class="d-switch__circle"></div>
 											</div>
-											<span class="d-switch-button__text">Включить акцию</span>
+											<span class="d-switch-button__text promotions__info-switch-label">Включить акцию</span>
 										</label>
 										<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
 									</div>
-									<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
-										<i class="d-icon-pen2 promotions__icon"></i>
-									</button>
-									<div class="promotions__info-primary-actions">
-										<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
-										<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-add">
-											<i class="d-icon-plus promotions__icon promotions__icon--plus"></i>
-										</button>
-									</div>
-									<div class="promotions__info-additional-actions">
-										<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
+									<div class="promotions__info-main-actions">
 										<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
-											<i class="d-icon-copy promotions__icon"></i>
+											<i class="d-icon-pen2 promotions__icon"></i>
 										</button>
-										<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
-										<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
-											<i class="d-icon-trash promotions__icon"></i>
-										</button>
+										<div class="promotions__info-primary-actions">
+											<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
+											<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-add">
+												<i class="d-icon-plus promotions__icon promotions__icon--plus"></i>
+											</button>
+										</div>
+										<div class="promotions__info-additional-actions">
+											<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
+											<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
+												<i class="d-icon-copy promotions__icon"></i>
+											</button>
+											<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
+											<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
+												<i class="d-icon-trash promotions__icon"></i>
+											</button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -470,14 +477,14 @@
 											<div class="promotions__card-content">
 												<div class="promotions__card-banner-container">
 													<div class="promotions__card-banner">
-														<div class="d-message promotions__card-banner-message hidden-1200">
+														<div class="d-message promotions__card-banner-message promotions__card-banner-message--banner">
 															<i class="d-icon-danger d-message__icon"></i>
 															<p class="d-message__text">Баннер не показывается в рекламе</p>
 														</div>
 														<img src="/images/banner.png" alt="Banner image" class="promotions__card-banner-img" />
 													</div>
 													<div class="promotions__card-value-container">
-														<div class="d-message promotions__card-banner-message visible-1200">
+														<div class="d-message promotions__card-banner-message promotions__card-banner-message--content">
 															<i class="d-icon-danger d-message__icon promotions__card-banner-message-icon"></i>
 															<p class="d-message__text promotions__card-banner-message-text">Баннер не показывается в рекламе</p>
 														</div>
@@ -512,7 +519,7 @@
 													</div>
 												</div>
 												<div class="promotions__card-content">
-													<div class="promotions__card-values promotions__card-values--md-horizontal">
+													<div class="promotions__card-values promotions__card-values--md-horizontal promotions__card-promo-conds-content">
 														<div class="promotions__card-value-container d-md-full">
 															<span class="promotions__card-label">Оплата доставки:</span>
 															<p class="promotions__card-value promotions__card-value--bold promotions__card-delivery-conds-value">Доставка за счет покупателя</p>
@@ -524,7 +531,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="promotions__card">
+											<div class="promotions__card hidden-600">
 												<div class="promotions__card-header">
 													<div class="promotions__card-header-left">
 														<i class="d-icon-wallet promotions__card-icon"></i>
@@ -704,7 +711,7 @@
 												</div>
 											</div>
 											<div class="promotions__card-content">
-												<div class="d-badge__container d-badge__container--long promotions__card-promo-conds-badges visible-1200">
+												<div class="d-badge__container d-badge__container--long promotions__card-promo-conds-badges visible-1200 hidden-600">
 													<div class="d-badge d-badge--filled">Негативная акция</div>
 													<div class="d-badge d-badge--filled">Акция доступна только в предложениях</div>
 												</div>
@@ -713,7 +720,7 @@
 														<span class="promotions__card-label hidden-1200">Требования к заказу</span>
 														<div class="promotions__card-block-inner">
 															<div class="promotions__card-block-title-container">
-																<span class="promotions__card-label promotions__card-label--big visible-1200">Требования к заказу</span>
+																<span class="promotions__card-label promotions__card-label--big visible-1200 hidden-600">Требования к заказу</span>
 																<p class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-title">
 																	Минимальная общая сумма заказа товаров акции
 																</p>
@@ -783,7 +790,7 @@
 																		<p class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-title">
 																			Совместима со всеми акциями
 																		</p>
-																		<p class="promotions__card-label promotions__card-block-description"></p>
+																		<p class="promotions__card-label promotions__card-block-description hidden-600"></p>
 																	</div>
 																</div>
 															</div>
@@ -848,8 +855,8 @@
 											<div class="promotions__card-content products__card-content">
 												<div class="promotions__card-warehouse">
 													<div class="promotions__card-value-container promotions__card-warehouse-header">
-														<p class="promotions__card-value promotions__card-value--small promotions__card-value--bold promotions__card-block-title">Склады</p>
-														<span class="promotions__card-label promotions__card-label--big">Укажите скалады, на товары которых распространяется акция</span>
+														<p class="promotions__card-value promotions__card-value--small promotions__card-value--bold promotions__card-block-title promotions__card-warehouse-title">Склады</p>
+														<span class="promotions__card-label promotions__card-label--big promotions__card-warehouse-label">Укажите скалады, на товары которых распространяется акция</span>
 													</div>
 													<div class="promotions__card-warehouse-settings hidden-1200">
 														<div class="d-field-container d-field-container--vertical">
@@ -918,12 +925,12 @@
 
 												<div class="promotions__card-warehouse promotions__card-warehouse-header-container">
 													<div class="promotions__card-value-container promotions__card-warehouse-header">
-														<p class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-title">Товары</p>
-														<span class="promotions__card-label promotions__card-label--big"
+														<p class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-title promotions__card-warehouse-title">Товары</p>
+														<span class="promotions__card-label promotions__card-label--big promotions__card-warehouse-label"
 															>Загрузите список товаров и установите скидки, которые получит клиент при выполнении условий акции</span
 														>
 													</div>
-													<form class="d-search d-search--alt promotions__card-warehouse-search">
+													<form class="d-search d-search--alt promotions__card-warehouse-search hidden-600">
 														<i class="d-icon-search-big d-search__icon promotions__card-warehouse-search-icon"></i>
 														<input type="text" placeholder="Найти товар по артиклу" class="d-search__field" />
 														<button type="button" class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button">
@@ -938,6 +945,11 @@
 															<li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li> -->
 														</ul>
 													</form>
+
+													<button class="d-button d-button-primary d-button-primary-small d-button--sm-shadow promotions__card-warehouse-settings-choose visible-600">
+														<i class="d-icon-search-big"></i>
+														Добавить коллекцию
+													</button>
 												</div>
 
 												<div class="d-table__wrapper promotions__card-products">
