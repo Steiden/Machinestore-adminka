@@ -3446,7 +3446,7 @@
 			&:has(.d-radio),
 			.d-radio {
 				--d-radio-color: #757575;
-				--d-radio-active-color: #757575;
+				--d-radio-active-color: #F92C0D;
 			}
 		}
 
@@ -3704,8 +3704,7 @@
 			.d-product--hovered,
 			&:hover {
 
-				.d-product__header-content,
-				.d-product__options {
+				.d-product__header-content {
 					translate: -22px 0;
 					opacity: 0.5;
 				}
