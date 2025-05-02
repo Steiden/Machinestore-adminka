@@ -2393,7 +2393,7 @@
 		font-size: 12px;
 		font-weight: 400;
 
-		padding: 8px $primary-padding;
+		padding: 8px var(--primary-padding);
 		width: 100%;
 		height: auto;
 
@@ -3421,7 +3421,7 @@
 		&__header {
 			background-color: #EDEDED;
 			border-radius: 0;
-			padding-inline: $primary-padding;
+			padding-inline: var(--primary-padding);
 			height: 30px;
 
 			&-button {
@@ -3676,7 +3676,7 @@
 
 				.d-product__header {
 					translate: -22px 0;
-					padding-right: calc($primary-padding + 8px);
+					padding-right: calc(var(--primary-padding) + 8px);
 				}
 
 				.d-product__delete {
@@ -3689,7 +3689,7 @@
 			--d-product-bg: #FBFBFB;
 
 			.d-product__header {
-				padding: 46px $primary-padding 16px $primary-padding;
+				padding: 46px var(--primary-padding) 16px var(--primary-padding);
 
 				&-content {
 					gap: 8px;
@@ -3719,13 +3719,13 @@
 
 		&__header {
 			position: relative;
-			padding: 16px $primary-padding;
+			padding: 16px var(--primary-padding);
 		}
 
 		&__content {
 			border-bottom: 1px solid #919191;
 			border-radius: 0;
-			padding-inline: $primary-padding;
+			padding-inline: var(--primary-padding);
 		}
 
 		&__price {
@@ -3873,7 +3873,9 @@
 			font-size: 12px;
 			font-weight: 400;
 
+			padding-inline: var(--primary-padding);
 			width: 100%;
+			height: 30px;
 		}
 	}
 }

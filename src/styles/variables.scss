@@ -17,20 +17,22 @@ $phones: "430px"; // from 0	d-col-{1-12}
 // Main settings
 $main-padding: 16px;
 
-$primary-padding: 32px;
+:root {
+    --primary-padding: 32px;
 
-@media (width > 1440px) {
-    $primary-padding: 80px;
-}
+    @media (width > 1440px) {
+        --primary-padding: 80px;
+    }
 
-@media (width > 1600px) {
-    $primary-padding: 0;
-}
+    @media (width > 1600px) {
+        --primary-padding: 0;
+    }
 
-@media (width <=780px) {
-    $primary-padding: 40px 80px;
-}
+    @media (width <=780px) {
+        --primary-padding: 40px 80px;
+    }
 
-@media (width <=600px) {
-    $primary-padding: 44px;
+    @media (width <=600px) {
+        --primary-padding: 44px;
+    }
 }
