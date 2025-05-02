@@ -998,6 +998,23 @@
 			}
 
 			&-block {
+				&-inner {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 8px;
+				}
+
+				&-title-container,
+				&-description,
+				&-value {
+					width: 100%;
+					text-align: left;
+				}
+
+				&-wrapper {
+					flex-direction: column;
+				}
+
 				&-title {
 					font-weight: 500;
 				}
@@ -1009,6 +1026,16 @@
 
 				&-divider {
 					margin-block: 8px;
+
+					&--vertical {
+						margin-block: 16px;
+						margin-inline: 0;
+
+						&.d-divider--full {
+							height: 0.5px;
+							width: 100%;
+						}
+					}
 				}
 
 				&-button {
@@ -1017,7 +1044,9 @@
 				}
 
 				&-container {
+					flex-direction: column;
 					gap: 16px;
+					margin-bottom: 0;
 				}
 			}
 
@@ -1411,7 +1440,7 @@
 			}
 		}
 
-		@media (width <= 600px) {
+		@media (width <=600px) {
 			&-header {
 				margin-bottom: 32px;
 			}
