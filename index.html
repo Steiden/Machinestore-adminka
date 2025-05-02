@@ -399,6 +399,7 @@
 										<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
 											<i class="d-icon-pen2 promotions__icon"></i>
 										</button>
+										<div class="d-divider d-divider--vertical d-divider--white promotions__info-actions-divider"></div>
 										<div class="promotions__info-primary-actions">
 											<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
 											<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-add">
@@ -410,6 +411,7 @@
 											<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
 												<i class="d-icon-copy promotions__icon"></i>
 											</button>
+											<div class="d-divider d-divider--vertical d-divider--white promotions__info-actions-divider"></div>
 											<div class="d-divider d-divider--vertical promotions__info-icon-divider"></div>
 											<button class="d-icon-wrapper d-icon-wrapper--big promotions__info-edit">
 												<i class="d-icon-trash promotions__icon"></i>
@@ -852,11 +854,17 @@
 													</button>
 												</div>
 											</div>
-											<div class="promotions__card-content products__card-content">
+											<div class="promotions__card-content products__card-content promotions__card-content--no-x-padding">
 												<div class="promotions__card-warehouse">
 													<div class="promotions__card-value-container promotions__card-warehouse-header">
-														<p class="promotions__card-value promotions__card-value--small promotions__card-value--bold promotions__card-block-title promotions__card-warehouse-title">Склады</p>
-														<span class="promotions__card-label promotions__card-label--big promotions__card-warehouse-label">Укажите скалады, на товары которых распространяется акция</span>
+														<p
+															class="promotions__card-value promotions__card-value--small promotions__card-value--bold promotions__card-block-title promotions__card-warehouse-title"
+														>
+															Склады
+														</p>
+														<span class="promotions__card-label promotions__card-label--big promotions__card-warehouse-label"
+															>Укажите склады, на товары которых распространяется акция</span
+														>
 													</div>
 													<div class="promotions__card-warehouse-settings hidden-1200">
 														<div class="d-field-container d-field-container--vertical">
@@ -925,7 +933,11 @@
 
 												<div class="promotions__card-warehouse promotions__card-warehouse-header-container">
 													<div class="promotions__card-value-container promotions__card-warehouse-header">
-														<p class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-title promotions__card-warehouse-title">Товары</p>
+														<p
+															class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-title promotions__card-warehouse-title"
+														>
+															Товары
+														</p>
 														<span class="promotions__card-label promotions__card-label--big promotions__card-warehouse-label"
 															>Загрузите список товаров и установите скидки, которые получит клиент при выполнении условий акции</span
 														>
@@ -1289,29 +1301,49 @@
 																		<div class="d-product__header">
 																			<div class="d-product__header-content">
 																				<img src="/images/product2.svg" alt="" class="d-product__img" width="50" height="52" />
-																				<div class="d-product__header-info">
-																					<div class="d-product__top">
-																						<div class="d-product__price">
-																							<p class="d-product__price-value">1 750.00 ₽</p>
-																							<div class="d-product__price-discount">30% ₽</div>
-																						</div>
-
-																						<div class="d-product__options">
-																							<div class="d-radio__wrapper d-product-list__all">
-																								<label class="d-radio d-radio--gray">
-																									<input type="checkbox" name="check1" id="check1" class="d-radio__input" />
-																								</label>
+																				<div class="d-product__header-info-container">
+																					<div class="d-product__header-info">
+																						<div class="d-product__top">
+																							<div class="d-product__price">
+																								<p class="d-product__price-value">1 750.00 ₽</p>
+																								<div class="d-product__price-discount">30% ₽</div>
 																							</div>
-																							<div class="d-divider d-divider--vertical d-divider--black d-product-list__header-divider"></div>
-																							<button
-																								class="d-icon-wrapper d-icon-wrapper d-icon-wrapper--no-hover d-icon-wrapper--gray d-product-list__header-button"
-																							>
-																								<i class="d-icon-angle-rounded-bottom"></i>
+																							<div class="d-product__options">
+																								<div class="d-radio__wrapper d-product-list__all">
+																									<label class="d-radio d-radio--gray">
+																										<input type="checkbox" name="check1" id="check1" class="d-radio__input" />
+																									</label>
+																								</div>
+																								<div class="d-divider d-divider--vertical d-divider--black d-product-list__header-divider"></div>
+																								<button
+																									class="d-icon-wrapper d-icon-wrapper d-icon-wrapper--no-hover d-icon-wrapper--gray d-product-list__header-button"
+																								>
+																									<i class="d-icon-angle-rounded-bottom"></i>
+																								</button>
+																							</div>
+																						</div>
+																						<p class="d-product__title">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</p>
+																						<p class="d-product__article">Арт: 844337</p>
+																					</div>
+																					<div class="d-product__multiple">
+																						<p class="d-product__multiple-label">Кратность</p>
+																						<div class="d-counter" data-counter>
+																							<button class="d-counter__button" data-counter-button="decrement">
+																								<i class="d-icon-minus d-counter__button-icon"></i>
+																							</button>
+																							<input
+																								class="d-counter__input"
+																								type="text"
+																								name="test-counter"
+																								id="test-counter"
+																								value="1"
+																								data-counter-input
+																							/>
+																							<button class="d-counter__button" data-counter-button="increment">
+																								<i class="d-icon-plus d-counter__button-icon"></i>
 																							</button>
 																						</div>
 																					</div>
-																					<p class="d-product__title">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</p>
-																					<p class="d-product__article">Арт: 844337</p>
 																				</div>
 																			</div>
 																		</div>
@@ -1441,6 +1473,10 @@
 																					<i class="d-icon-angle-rounded-bottom"></i>
 																				</button>
 																			</div>
+
+																			<button class="d-product__delete">
+																				<i class="d-icon-trash d-product__delete-icon"></i>
+																			</button>
 																		</div>
 																	</div>
 																</div>
@@ -1471,6 +1507,10 @@
 																					<i class="d-icon-angle-rounded-bottom"></i>
 																				</button>
 																			</div>
+
+																			<button class="d-product__delete">
+																				<i class="d-icon-trash d-product__delete-icon"></i>
+																			</button>
 																		</div>
 																	</div>
 																</div>
@@ -1615,7 +1655,7 @@
 														<i class="d-icon-plus promotions__card-block-button-icon promotions__card-collection-add-icon"></i>
 														Добавить коллекцию
 													</button>
-													<form class="d-search d-search--alt promotions__card-warehouse-search visible-1200">
+													<form class="d-search d-search--alt promotions__card-warehouse-search visible-1200 hidden-600">
 														<i class="d-icon-search-big d-search__icon promotions__card-warehouse-search-icon"></i>
 														<input type="text" placeholder="Найти коллекции" class="d-search__field" />
 														<button type="button" class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button">
@@ -1630,6 +1670,11 @@
 															<li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li> -->
 														</ul>
 													</form>
+
+													<button class="d-button d-button-primary d-button-primary-small d-button--sm-shadow promotions__card-warehouse-settings-choose visible-600">
+														<i class="d-icon-search-big"></i>
+														Добавить коллекцию
+													</button>
 												</div>
 												<div class="promotions__card-collection-header hidden-1200">
 													<h2 class="promotions__card-title">Коллекция “Купить слона”№345 43</h2>
@@ -1640,7 +1685,12 @@
 												</div>
 
 												<div class="promotions__card-block-title-container promotions__card-collection-tabs-wrapper">
-													<span class="promotions__card-label promotions__card-label--big visible-1200">Выберите коллекцию</span>
+													<div class="promotions__card-label promotions__card-label--big promotions__card-collection-tabs-title visible-1200">
+														Выберите коллекцию
+														<button class="d-icon-wrapper d-icon-wrapper--no-hover d-icon-wrapper--gray promotions__card-collection-tabs-toggle">
+															<i class="d-icon-angle-rounded-bottom promotions__card-collection-tabs-icon"></i>
+														</button>
+													</div>
 													<div class="d-tab__wrapper promotions__card-collection-tabs">
 														<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
 															<clipPath id="tab-clip-path">
@@ -1655,26 +1705,44 @@
 															<button class="d-tab d-tab--more">
 																<div class="d-tab__more-content">+8 акций</div>
 																<div class="d-tab__crutch"></div>
+																<label for="test-radio1" class="d-radio d-tab__toggle">
+																	<input type="radio" name="test-radios" id="test-radio1" class="d-radio__input" />
+																</label>
 															</button>
 															<button class="d-tab">
 																Оснастка Интерскол (34332)
 																<div class="d-tab__crutch"></div>
+																<label for="test-radio1" class="d-radio d-tab__toggle">
+																	<input type="radio" name="test-radios" id="test-radio1" class="d-radio__input" />
+																</label>
 															</button>
 															<button class="d-tab">
 																Оснастка Интерскол (34332)
 																<div class="d-tab__crutch"></div>
+																<label for="test-radio1" class="d-radio d-tab__toggle">
+																	<input type="radio" name="test-radios" id="test-radio1" class="d-radio__input" />
+																</label>
 															</button>
 															<button class="d-tab">
 																Оснастка Интерскол (34332)
 																<div class="d-tab__crutch"></div>
+																<label for="test-radio1" class="d-radio d-tab__toggle">
+																	<input type="radio" name="test-radios" id="test-radio1" class="d-radio__input" />
+																</label>
 															</button>
 															<button class="d-tab">
 																Оснастка Интерскол (34332)
 																<div class="d-tab__crutch"></div>
+																<label for="test-radio1" class="d-radio d-tab__toggle">
+																	<input type="radio" name="test-radios" id="test-radio1" class="d-radio__input" />
+																</label>
 															</button>
 															<button class="d-tab d-tab--active">
 																Оснастка Интерскол (34332)
 																<div class="d-tab__crutch"></div>
+																<label for="test-radio1" class="d-radio d-tab__toggle">
+																	<input type="radio" name="test-radios" id="test-radio1" class="d-radio__input" />
+																</label>
 															</button>
 														</div>
 													</div>
@@ -2110,6 +2178,10 @@
 																					<i class="d-icon-angle-rounded-bottom"></i>
 																				</button>
 																			</div>
+																			
+																			<button class="d-product__delete">
+																				<i class="d-icon-trash d-product__delete-icon"></i>
+																			</button>
 																		</div>
 																	</div>
 																</div>
@@ -2186,6 +2258,11 @@
 																<li class="d-pagination__item d-pagination__item--active">4</li>
 																<li class="d-pagination__item">+</li>
 															</ul>
+
+															<button class="d-button d-button-secondary d-button-secondary-small d-button--sm-shadow d-table__mass">
+																Массовые действия
+																<i class="d-icon-plus d-table__mass-icon"></i>
+															</button>
 														</div>
 
 														<div class="d-field-container d-field-container--long d-table__footer-fields hidden-1200">
@@ -2620,6 +2697,10 @@
 																					<i class="d-icon-angle-rounded-bottom"></i>
 																				</button>
 																			</div>
+																			
+																			<button class="d-product__delete">
+																				<i class="d-icon-trash d-product__delete-icon"></i>
+																			</button>
 																		</div>
 																	</div>
 																	<div class="d-accordion__content">
@@ -2747,6 +2828,10 @@
 																					<i class="d-icon-angle-rounded-bottom"></i>
 																				</button>
 																			</div>
+																			
+																			<button class="d-product__delete">
+																				<i class="d-icon-trash d-product__delete-icon"></i>
+																			</button>
 																		</div>
 																	</div>
 																</div>
@@ -2777,6 +2862,10 @@
 																					<i class="d-icon-angle-rounded-bottom"></i>
 																				</button>
 																			</div>
+																			
+																			<button class="d-product__delete">
+																				<i class="d-icon-trash d-product__delete-icon"></i>
+																			</button>
 																		</div>
 																	</div>
 																</div>
@@ -2823,6 +2912,11 @@
 																<li class="d-pagination__item d-pagination__item--active">4</li>
 																<li class="d-pagination__item">+</li>
 															</ul>
+
+															<button class="d-button d-button-secondary d-button-secondary-small d-button--sm-shadow d-table__mass">
+																Массовые действия
+																<i class="d-icon-plus d-table__mass-icon"></i>
+															</button>
 														</div>
 
 														<div class="d-field-container d-field-container--long d-table__footer-fields hidden-1200">

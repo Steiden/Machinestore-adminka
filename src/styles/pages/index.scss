@@ -108,6 +108,11 @@
 		&-actions {
 			display: flex;
 			align-items: center;
+
+			&-divider {
+				margin-inline: 2px;
+				height: 6px;
+			}
 		}
 
 		&-additional {
@@ -126,6 +131,8 @@
 		&-main-actions {
 			display: contents;
 		}
+
+
 
 		&--sticky {
 			background-color: #282828;
@@ -216,6 +223,12 @@
 			}
 		}
 
+		@media (width > 600px) {
+			&-actions-divider {
+				display: none;
+			}
+		}
+
 		@media (width <=600px) {
 			align-items: flex-start;
 			justify-content: center;
@@ -227,9 +240,9 @@
 			top: auto;
 			bottom: 0;
 			left: 0;
-			translate: 0 -50%;
+			translate: 0 calc(-100% + 32px);
 
-			padding: 8px 44px;
+			padding: 4px $primary-padding;
 			margin-bottom: 0;
 			height: 65px;
 			width: 100%;
@@ -1022,9 +1035,25 @@
 			}
 		}
 
+		@media (width > 600px) {
+			&-collection {
+				&-tabs {
+					&-toggle {
+						display: none;
+					}
+				}
+			}
+		}
+
 		@media (width <=600px) {
 			&-icon {
 				font-size: 16px;
+			}
+
+			&-products {
+				&-divider {
+					margin-block: 32px;
+				}
 			}
 
 			&-header {
@@ -1034,6 +1063,10 @@
 	
 			&-content {
 				padding: 24px $primary-padding;
+
+				&--no-x-padding {
+					padding-inline: 0;
+				}
 			}
 
 			&-label {
@@ -1142,6 +1175,7 @@
 
 			&-warehouse {
 				gap: 16px;
+				padding-inline: $primary-padding;
 
 				&-title {
 					font-size: 14px;
@@ -1164,6 +1198,36 @@
 				&-divider {
 					scale: 1.5 1;
 					margin-block: 32px;
+				}
+			}
+
+			&-collection {
+				&-tabs {
+					&-wrapper {
+						gap: 0;
+						background-color: #EDEDED;
+						border-radius: 10px;
+					}
+
+					&-title {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+
+						border-bottom: 1px solid #757575;
+
+						color: #282828;
+						font-size: 14px;
+						font-weight: 600;
+
+						margin-bottom: 0;
+						padding: 4px $primary-padding;
+						height: 30px;
+					}
+
+					&-icon {
+						font-size: 10px;
+					}
 				}
 			}
 		}
@@ -1278,6 +1342,12 @@
 	@media (width <=1200px) {
 		&-content {
 			padding-block: 24px 12px;
+		}
+	}
+
+	@media (width <= 600px) {
+		&-content {
+			padding-bottom: 60px;
 		}
 	}
 }
