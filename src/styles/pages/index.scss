@@ -69,6 +69,12 @@
 				margin-bottom: 16px;
 			}
 		}
+
+		@media (width <=320px) {
+			&-back {
+				margin-bottom: 24px;
+			}
+		}
 	}
 
 	&__info {
@@ -318,7 +324,7 @@
 			}
 		}
 
-		@media (width <= 600px) {
+		@media (width <=600px) {
 			gap: 0;
 
 			&-card-container {
@@ -620,6 +626,30 @@
 
 			&-label {
 				margin-bottom: 16px;
+			}
+		}
+
+		&-note {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 16px;
+
+			background-color: #757575;
+			color: #FBFBFB;
+
+			padding: 8px var(--primary-padding);
+
+			&-label {
+				font-size: 14px;
+				font-weight: 500;
+			}
+
+			&-info {
+				color: #fbfbfb;
+				font-size: 18px;
+				width: 24px;
+				height: 24px;
 			}
 		}
 
@@ -1052,6 +1082,10 @@
 					}
 				}
 			}
+
+			&-note {
+				display: none;
+			}
 		}
 
 		@media (width <=600px) {
@@ -1061,6 +1095,7 @@
 			&--first {
 				margin-top: 0;
 			}
+
 			// &--last {
 			// 	margin-bottom: 0;
 			// }
@@ -1268,6 +1303,57 @@
 				}
 			}
 		}
+
+		@media (width <=320px) {
+			&-icon {
+				font-size: 12px;
+			}
+
+			&-button {
+				&-icon {
+					font-size: 13px;
+				}
+			}
+
+			&-banner {
+				border-radius: 12px;
+
+				&-message {
+					&--banner {
+						margin-bottom: 0;
+						padding-inline: 30px;
+					}
+
+					--d-message-text-font-size: 10px;
+				}
+			}
+
+			&-note {
+				padding-block: 12px;
+			}
+
+			&-block {
+				&-value {
+					font-size: 14px;
+				}
+
+				&-divider {
+					margin-block: 16px;
+
+					&--320-bold {
+						height: 2px;
+					}
+				}
+			}
+
+			&-collection {
+				&-tabs {
+					&-wrapper {
+						margin-block: 40px 24px;
+					}
+				}
+			}
+		}
 	}
 
 	&__complects {
@@ -1280,6 +1366,10 @@
 				justify-content: flex-end;
 				width: 50%;
 			}
+
+			&-search-button {
+				width: 100%;
+			}
 		}
 
 		&-search-button {
@@ -1288,6 +1378,23 @@
 			margin-right: 16px;
 			width: fit-content;
 			min-height: 40px;
+		}
+
+		&-search {
+			display: flex;
+			align-items: center;
+			width: 100%;
+		}
+
+		&-add {
+			&-button {
+				font-size: 14px;
+				padding: 4px;
+				width: 32px;
+				height: 32px;
+				min-width: 32px;
+				min-height: 32px;
+			}
 		}
 
 		@media (width <=800px) {
@@ -1301,6 +1408,12 @@
 				&-wrapper {
 					display: none;
 				}
+			}
+		}
+
+		@media (width <= 600px) {
+			&-header {
+				margin-bottom: 32px;
 			}
 		}
 	}

@@ -35,4 +35,8 @@ $main-padding: 16px;
     @media (width <=600px) {
         --primary-padding: 44px;
     }
+
+    @media (width <= 320px) {
+        --primary-padding: 28px;
+    }
 }
