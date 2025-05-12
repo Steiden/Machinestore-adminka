@@ -1348,12 +1348,13 @@
 				border-radius: 12px;
 
 				&-message {
+					--d-message-text-font-size: 10px;
+
 					&--banner {
 						margin-bottom: 0;
 						padding-inline: 30px;
 					}
 
-					--d-message-text-font-size: 10px;
 				}
 			}
 
