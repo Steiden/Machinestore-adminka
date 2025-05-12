@@ -1,5 +1,5 @@
 @use "mixins" as *;
-@use 'variables' as *;
+@use "variables" as *;
 
 :root {
 	// __________Input__________
@@ -652,6 +652,14 @@
 		width: 280px;
 	}
 
+	@media (width <= 1200px) {
+		height: 34px;
+
+		&__field {
+			--d-input-padding: 8px 16px;
+		}
+	}
+
 	@media (width <=800px) {
 		width: 376px;
 	}
@@ -943,7 +951,6 @@
 	}
 }
 
-
 .d-notion {
 	display: flex;
 	justify-content: space-between;
@@ -1056,7 +1063,6 @@
 	}
 
 	&--disabled {
-
 		.d-notion__category-name,
 		.d-notion__title {
 			color: #282828;
@@ -1765,6 +1771,11 @@
 		--d-switch-width: 32px;
 		--d-switch-height: 18px;
 		--d-switch-thumb-width: 14px;
+
+		&__label {
+			font-size: 12px;
+			font-weight: 400;
+		}
 	}
 
 	@media (width <=800px) {
@@ -1854,7 +1865,7 @@
 	}
 
 	&--white {
-		--d-divider-color: #FBFBFB
+		--d-divider-color: #fbfbfb;
 	}
 
 	&--full {
@@ -2129,6 +2140,10 @@
 	&--long {
 		gap: 16px;
 	}
+
+	@media (width <= 1200px) {
+		gap: 16px;
+	}
 }
 
 .d-field-wrapper {
@@ -2327,7 +2342,7 @@
 	&__row {
 		position: relative;
 
-		&:first-child>.d-table__col {
+		&:first-child > .d-table__col {
 			padding-top: 8px;
 		}
 
@@ -2345,7 +2360,6 @@
 		}
 
 		&:not(:first-child) {
-
 			.d-table__head-col,
 			.d-table__col {
 				&:not(:first-child) {
@@ -2553,7 +2567,6 @@
 	}
 
 	&--small {
-
 		.d-table__head-col,
 		.d-table__col {
 			&:first-child {
@@ -2731,6 +2744,30 @@
 
 		&--long {
 			gap: 40px;
+		}
+	}
+
+	@media (width <= 1200px) {
+		&__container {
+			&--1200 {
+				&-vertical {
+					flex-direction: column;
+				}
+				&-small {
+					gap: 20px;
+				}
+				&-tiny-small {
+					gap: 16px;
+				}
+			}
+		}
+
+		&__wrapper {
+			&--1200 {
+				&-start {
+					align-items: flex-start;
+				}
+			}
 		}
 	}
 
@@ -2995,6 +3032,12 @@
 		font-weight: 500;
 		flex-grow: 1;
 	}
+
+	@media (width <= 1200px) {
+		&__label {
+			font-size: 12px;
+		}
+	}
 }
 
 .d-note {
@@ -3057,6 +3100,23 @@
 
 	&__description {
 		color: #a0a0a0;
+	}
+
+	@media (width <= 1200px) {
+		padding: 8px;
+
+		&__icon {
+			margin-bottom: 8px;
+			width: 50px;
+		}
+
+		&__title {
+			font-size: 12px;
+		}
+
+		&__description {
+			font-size: 12px;
+		}
 	}
 }
 
@@ -3314,7 +3374,7 @@
 
 	@media (width <=600px) {
 		&__header {
-			background-color: #EDEDED;
+			background-color: #ededed;
 			border-radius: 0;
 			padding-inline: var(--primary-padding);
 			height: 30px;
@@ -3330,7 +3390,7 @@
 			&:has(.d-radio),
 			.d-radio {
 				--d-radio-color: #757575;
-				--d-radio-active-color: #F92C0D;
+				--d-radio-active-color: #f92c0d;
 			}
 		}
 
@@ -3343,7 +3403,7 @@
 .d-product {
 	--d-product-bg: inherit;
 
-	transition-duration: .3s;
+	transition-duration: 0.3s;
 
 	&--active {
 		--d-product-bg: #ededed;
@@ -3368,7 +3428,7 @@
 		background-color: var(--d-product-bg);
 		border-bottom: 1px solid #919191;
 		border-radius: 20px 20px 0 0;
-		transition-duration: .3s;
+		transition-duration: 0.3s;
 		padding: 8px 8px 8px 16px;
 
 		&-content {
@@ -3508,16 +3568,16 @@
 		justify-content: center;
 		align-items: center;
 
-		background-color: #F92C0D;
+		background-color: #f92c0d;
 		border-radius: 6px 0 0 6px;
 		font-size: 12px;
-		color: #FBFBFB;
+		color: #fbfbfb;
 
 		position: absolute;
 		left: 100%;
 		top: 50%;
 		translate: 0 -50%;
-		transition-duration: .3s;
+		transition-duration: 0.3s;
 
 		height: 100%;
 		width: 68px;
@@ -3582,12 +3642,9 @@
 	}
 
 	@media (width <=600px) {
-
 		&:not(&--active) {
-
 			.d-product--hovered,
 			&:hover {
-
 				.d-product__header-content {
 					translate: -22px 0;
 					opacity: 0.5;
@@ -3604,7 +3661,7 @@
 		}
 
 		&--active {
-			--d-product-bg: #FBFBFB;
+			--d-product-bg: #fbfbfb;
 
 			.d-product__header {
 				padding: 46px var(--primary-padding) 16px var(--primary-padding);
@@ -3620,12 +3677,12 @@
 			padding: 16px var(--primary-padding);
 
 			&-content {
-				transition-duration: .3s;
+				transition-duration: 0.3s;
 			}
 		}
 
 		&__options {
-			transition-duration: .3s;
+			transition-duration: 0.3s;
 		}
 
 		&__content {
@@ -3673,7 +3730,6 @@
 
 	@media (width <=320px) {
 		&:not(&--active) {
-
 			.d-product--hovered,
 			&:hover {
 				.d-product__delete {
@@ -3835,7 +3891,6 @@
 	}
 
 	@media (width <=320px) {
-
 		&,
 		&:not(:last-child) {
 			width: calc(100% - var(--primary-padding) * 2);
