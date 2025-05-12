@@ -1,5 +1,10 @@
 @use '../variables' as *;
 
+:root {
+	--promotions-card-header-padding: 12px 32px;
+	--promotions-card-padding: 24px 32px;
+}
+
 .promotions {
 	margin-block: 34px 80px;
 
@@ -341,6 +346,24 @@
 		height: 100%;
 		width: 100%;
 
+		&--small {
+			--promotions-card-header-padding: 8px 16px;
+			--promotions-card-padding: 16px;
+
+			.promotions__card-title {
+				font-size: 14px;
+				font-weight: 600;
+
+				&-span {
+					font-weight: 400;
+				}
+			}
+
+			.promotions__card-button {
+				font-size: 16px;
+			}
+		}
+
 		&-container {
 			display: flex;
 			flex-wrap: wrap;
@@ -356,7 +379,7 @@
 			background-color: #ededed;
 			border-bottom: 0.3px solid #757575;
 
-			padding: 12px 32px;
+			padding: var(--promotions-card-header-padding);
 
 			&-left {
 				display: flex;
@@ -389,7 +412,7 @@
 		}
 
 		&-content {
-			padding: 24px 32px;
+			padding: var(--promotions-card-padding);
 		}
 
 		&-values {
@@ -653,29 +676,6 @@
 			}
 		}
 
-		&--small {
-			.promotions__card-header {
-				padding: 8px 16px;
-			}
-
-			.promotions__card-title {
-				font-size: 14px;
-				font-weight: 600;
-
-				&-span {
-					font-weight: 400;
-				}
-			}
-
-			.promotions__card-button {
-				font-size: 16px;
-			}
-
-			.promotions__card-content {
-				padding: 16px;
-			}
-		}
-
 		@media (width > 1200px) {
 
 			&-header-divider,
@@ -692,8 +692,11 @@
 			border-radius: 6px;
 
 			&-header {
-				padding: 8px 16px;
-				min-height: 40px;
+				--promotions-card-header-padding: 8px 16px;
+
+				& {
+					min-height: 40px;
+				}
 			}
 
 			&-icon {
@@ -718,7 +721,7 @@
 			}
 
 			&-content {
-				padding: 16px;
+				--promotions-card-padding: 16px;
 			}
 
 			&-label {
@@ -954,8 +957,11 @@
 
 		@media (width <=800px) {
 			&-header {
-				padding: 1px 16px;
-				min-height: 24px;
+				--promotions-card-header-padding: 1px 16px;
+
+				& {
+					min-height: 24px;
+				}
 			}
 
 			&-icon {
@@ -1130,8 +1136,12 @@
 			// }
 
 			&--collapsed {
-				box-shadow: none;
-				margin-block: 0;
+				--promotions-card-padding: 0;
+
+				& {
+					box-shadow: none;
+					margin-block: 0;
+				}
 
 				.promotions__card-header {
 					background-color: transparent;
@@ -1139,7 +1149,6 @@
 				}
 
 				.promotions__card-content {
-					padding: 0;
 					max-height: 0;
 					opacity: 0;
 					visibility: hidden;
@@ -1157,8 +1166,11 @@
 			}
 
 			&-header {
-				padding: 8px var(--primary-padding);
-				min-height: 40px;
+				--promotions-card-header-padding: 8px var(--primary-padding);
+
+				& {
+					min-height: 40px;
+				}
 			}
 
 			&-content {
@@ -1654,8 +1666,13 @@
 			gap: 32px;
 		}
 
-		&-title {
+		&-title-container {
 			gap: 4px;
+		}
+
+		&-title,
+		&-description {
+			min-width: max-content;
 		}
 
 		&-divider {
@@ -1683,6 +1700,79 @@
 	&__close {
 		font-size: 16px;
 		position: static;
+	}
+
+	@media (width <=1200px) {
+		--promo-modal-padding-block: 8px;
+		--promo-modal-padding-inline: 24px;
+
+		& {
+			border-radius: 8px 8px 0 0;
+			overflow: hidden;
+		}
+
+		&__header {
+			&-right {
+				justify-content: space-between;
+				flex-grow: 1;
+			}
+
+			&-title-container {
+				gap: 0;
+			}
+
+			&-title {
+				font-size: 14px;
+			}
+
+			&-description {
+				color: #757575;
+				font-size: 12px;
+			}
+
+			&-divider {
+				background-color: #757575;
+				margin-inline: 16px;
+				height: 24px;
+			}
+
+			&-button {
+				display: none;
+			}
+		}
+
+		&__content {
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+
+		&__progress {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-inline: 0;
+			margin-bottom: 0;
+			border-bottom: none;
+
+			&-label {
+				margin-bottom: 0;
+			}
+
+			&-line {
+				display: none;
+			}
+		}
+	}
+
+	@media (width <=800px) {
+		--promo-modal-padding-block: 4px;
+		--promo-modal-padding-inline: 16px;
+
+		&__header {
+			&-divider {
+				display: block;
+			}
+		}
 	}
 }
 
@@ -1754,6 +1844,10 @@
 
 	&__card {
 		height: auto;
+
+		&-header {
+			min-height: 40px;
+		}
 	}
 
 	&__settings {
@@ -1914,6 +2008,144 @@
 
 	&__actions {
 		margin-bottom: 32px;
+	}
+
+	@media (width <=1200px) {
+		&__content {
+			padding: 16px var(--promo-modal-padding-inline);
+
+			&-left {
+				width: 100%;
+			}
+
+			&-right {
+				display: none;
+			}
+		}
+
+		&__title {
+			font-size: 14px;
+			font-weight: 600;
+			color: #757575;
+			margin-bottom: 16px;
+		}
+
+		&__subtitle {
+			font-size: 14px;
+			font-weight: 600;
+		}
+
+		&__info {
+			&-block {
+				flex-direction: row;
+				gap: 8px;
+
+				&-wrapper {
+					min-width: 40%;
+				}
+
+				&-text {
+					font-size: 10px;
+				}
+
+				&-icon {
+					font-size: 12px;
+				}
+			}
+		}
+
+		&__settings {
+			margin-bottom: 16px;
+		}
+
+		&__setting {
+			gap: 8px;
+			border-radius: 24px;
+			font-size: 10px;
+			font-weight: 600;
+			padding: 4px 6px;
+			height: 20px;
+			min-height: 20px;
+			min-width: max-content;
+
+			&-container {
+				border-radius: 24px;
+				flex-direction: row;
+				overflow-x: auto;
+			}
+		}
+
+		&__footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+
+			&-content {
+				border-radius: 8px 8px 0 0;
+				padding: 4px 16px;
+				height: auto;
+				min-height: 30px;
+			}
+
+			&-actions {
+				justify-content: flex-end;
+				padding-inline: var(--promo-modal-padding-inline);
+			}
+		}
+
+		&__action {
+			&-button {
+				font-size: 12px;
+				gap: 8px;
+			}
+		}
+
+		&__card {
+
+			& {
+				box-shadow: none;
+				border: 1px solid #757575;
+				border-radius: 6px;
+				overflow: hidden;
+			}
+
+			&-header {
+				border-bottom: none;
+			}
+
+			&-content {
+				--promotions-card-padding: 16px 24px;
+			}
+
+			&-values {
+				gap: 16px;
+			}
+
+			&-text {
+				font-size: 14px;
+			}
+		}
+	}
+
+	@media (width <=800px) {
+		&__footer {
+			&-actions {
+				margin-bottom: 8px;
+			}
+		}
+
+		&__action-button {
+			border: none;
+			font-size: 16px;
+
+			&--back {
+				display: none;
+			}
+
+			&-text {
+				display: none;
+			}
+		}
 	}
 }
 

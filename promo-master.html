@@ -13,9 +13,9 @@
 					<div class="d-modal2 d-modal2--active promo-modal" data-modal2>
 						<div class="promo-modal__header">
 							<div class="promo-modal__header-left">
-								<div class="d-modal2__header promo-modal__header-title">
-									<p class="d-modal2__title">Мастер создания акций</p>
-									<p class="d-modal2__description">Создайте акцию в несколько этапов</p>
+								<div class="d-modal2__header promo-modal__header-title-container">
+									<p class="d-modal2__title promo-modal__header-title">Мастер создания акций</p>
+									<p class="d-modal2__description promo-modal__header-description">Создайте акцию в несколько этапов</p>
 								</div>
 								<div class="d-divider d-divider--vertical d-divider--black promo-modal__header-divider"></div>
 								<button class="d-button d-button-tertiary box-shadow-none promo-modal__header-button">
@@ -26,7 +26,7 @@
 							<div class="promo-modal__header-right">
 								<div class="d-progress promo-modal__progress">
 									<p class="d-progress__label promo-modal__progress-label">Для создания акции пройдите 8 из 10 шагов</p>
-									<div class="d-progress__line"></div>
+									<div class="d-progress__line promo-modal__progress-line"></div>
 								</div>
 								<button class="d-modal2__close promo-modal__close" data-modal2-close>
 									<i class="d-icon-times d-modal2__close-icon"></i>
@@ -217,7 +217,7 @@
 												</div>
 											</div>
 											<div class="promotions__card promotions__card--small promo-master__card">
-												<div class="promotions__card-header">
+												<div class="promotions__card-header promo-master__card-header">
 													<div class="promotions__card-header-left">
 														<p class="promotions__card-title">Срок отсрочки платежа: <span class="promotions__card-title-span">19 дней</span></p>
 													</div>
@@ -225,12 +225,12 @@
 														<i class="d-icon-pen2 promotions__card-button-icon"></i>
 													</button>
 												</div>
-												<div class="promotions__card-content">
-													<div class="promotions__card-values">
+												<div class="promotions__card-content promo-master__card-content">
+													<div class="promotions__card-values promo-master__card-values">
 														<p class="promotions__card-text promotions__card-text--bold promotions__card-text--small">Срок отсрочки платежа:</p>
 														<div class="d-field-container d-field-container--vertical">
-															<p class="promotions__card-text promotions__card-text--dark-gray">— 90% через 10 дней после отгрузки</p>
-															<p class="promotions__card-text promotions__card-text--dark-gray">— 10% через 100 дней после отгрузки</p>
+															<p class="promotions__card-text promotions__card-text--dark-gray promo-master__card-text">— 90% через 10 дней после отгрузки</p>
+															<p class="promotions__card-text promotions__card-text--dark-gray promo-master__card-text">— 10% через 100 дней после отгрузки</p>
 														</div>
 													</div>
 												</div>
@@ -539,12 +539,12 @@
 								</div>
 								<div class="promo-master__footer">
 									<div class="promo-master__footer-actions">
-										<button class="d-button d-button-secondary d-button-secondary-small box-shadow-none promo-master__action-button">
+										<button class="d-button d-button-secondary d-button-secondary-small box-shadow-none promo-master__action-button promo-master__action-button--back">
 											<i class="d-icon-arrow-left promo-master__action-button-icon"></i>
-											Назад
+											<span class="promo-master__action-button-text">Назад</span>
 										</button>
-										<button class="d-button d-button-secondary d-button-secondary-small box-shadow-none promo-master__action-button">
-											Далее
+										<button class="d-button d-button-secondary d-button-secondary-small box-shadow-none promo-master__action-button promo-master__action-button--next">
+											<span class="promo-master__action-button-text">Далее</span>
 											<i class="d-icon-arrow-right promo-master__action-button-icon"></i>
 										</button>
 									</div>
@@ -581,15 +581,15 @@
 										<!-- 2 ЭТАП - Даты проведения акции -->
 
 										<!-- 3 ЭТАП - Баннер акции -->
-										<div class="promo-master__info-block-wrapper">
+										<!-- <div class="promo-master__info-block-wrapper">
 											<div class="promo-master__info-block">
 												<i class="d-icon-message-status promo-master__info-block-icon"></i>
 												<p class="promo-master__info-block-text">На баннере укажите УТП, ваш логотип, артикул, название, изображение продукта.</p>
 											</div>
 											<div class="d-divider d-divider--vertical promo-master__info-block-divider"></div>
-										</div>
+										</div> -->
 
-										<div class="promo-master__banner-container">
+										<!-- <div class="promo-master__banner-container">
 											<div class="promo-master__banner">
 												<div class="promo-master__banner-status">
 													<i class="d-icon-add promo-master__banner-status-icon"></i>
@@ -602,6 +602,57 @@
 												</div>
 												<img src="/images/banner2.png" alt="Распродажа" class="promo-master__banner-image" />
 											</div>
+										</div> -->
+
+										<!-- Универсальная секция для адаптив <1200px -->
+										<div class="promo-master__info-block-wrapper visible-1200">
+											<div class="promo-master__info-block">
+												<i class="d-icon-message-status promo-master__info-block-icon"></i>
+												<p class="promo-master__info-block-text">Отразите в названии суть акции.</p>
+											</div>
+										</div>
+
+										<div class="promo-master__setting-container visible-1200 hidden-800">
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--used">
+												<i class="d-icon-lines"></i>
+												Контент акции
+											</button>
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--used">
+												<i class="d-icon-calendar"></i>
+												Даты проведения акции
+											</button>
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--used">
+												<i class="d-icon-picture"></i>
+												Баннер акции
+											</button>
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting">
+												<i class="d-icon-wallet"></i>
+												Условия оплаты
+											</button>
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+												<i class="d-icon-truck"></i>
+												Условия доставки
+											</button>
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+												<i class="d-icon-percent"></i>
+												Условия участия в акции: Требования к заказу
+											</button>
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+												<i class="d-icon-percent"></i>
+												Условия участия в акции: Совместимость
+											</button>
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+												<i class="d-icon-user-star"></i>
+												Аудитория акции
+											</button>
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+												<i class="d-icon-cube"></i>
+												Товары и скидки: Склады
+											</button>
+											<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+												<i class="d-icon-cube"></i>
+												Товары и скидки: Товары
+											</button>
 										</div>
 									</div>
 								</div>
@@ -677,7 +728,7 @@
 
 		<!-- Совместимость -->
 		<div class="d-modal2__overlay">
-			<div class="d-modal2 d-modal2--fit deferred-payment__modal d-modal2--active" data-modal2="deferredPayment">
+			<div class="d-modal2 d-modal2--fit deferred-payment__modal" data-modal2="deferredPayment">
 				<button class="d-modal2__close" data-modal2-close>
 					<i class="d-icon-times d-modal2__close-icon"></i>
 				</button>
