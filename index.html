@@ -3210,6 +3210,662 @@
 						</section>
 					</div>
 
+					<div class="d-modal2__overlay">
+						<div class="promo-modal__wrapper">
+							<div class="d-modal2 d-modal2--active promo-modal" data-modal2>
+								<div class="promo-modal__header">
+									<div class="promo-modal__header-left">
+										<div class="d-modal2__header promo-modal__header-title-container">
+											<p class="d-modal2__title promo-modal__header-title">Мастер создания акций</p>
+											<p class="d-modal2__description promo-modal__header-description">Создайте акцию в несколько этапов</p>
+										</div>
+										<div class="d-divider d-divider--vertical d-divider--black promo-modal__header-divider"></div>
+										<button class="d-button d-button-tertiary box-shadow-none promo-modal__header-button">
+											<i class="d-icon-wallet"></i>
+											Условия оплаты
+										</button>
+									</div>
+									<div class="promo-modal__header-right">
+										<div class="d-progress promo-modal__progress">
+											<p class="d-progress__label promo-modal__progress-label">Для создания акции пройдите 8 из 10 шагов</p>
+											<div class="d-progress__line promo-modal__progress-line"></div>
+										</div>
+										<button class="d-modal2__close promo-modal__close" data-modal2-close>
+											<i class="d-icon-times d-modal2__close-icon"></i>
+										</button>
+									</div>
+								</div>
+								<div class="d-modal2__content promo-modal__content">
+									<section class="promo-master">
+										<div class="promo-master__content">
+											<div class="promo-master__content-left">
+												<!-- 1 ЭТАП - Контент акции -->
+												<div class="contents hidden" id="promoContent">
+													<p class="promo-master__title promo-master__title--sm-margin">Контент акции</p>
+
+													<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical promo-master__settings promo-master__settings--sm-margin">
+														<label for="dateStart" class="d-dropdown__label">Название акции</label>
+														<div class="d-input d-input--light d-input--width-640 d-textarea">
+															<textarea
+																rows="2"
+																placeholder="Например: “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” Например: “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” "
+																name="dateStart"
+																class="d-input__field d-textarea__field"
+															></textarea>
+														</div>
+													</div>
+
+													<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+														<label for="dateStart" class="d-dropdown__label">Описание акции</label>
+														<div class="d-editor">
+															<div class="d-editor__header">
+																<div class="d-input d-input--light d-editor__search">
+																	<input type="text" class="d-input__field d-editor__search-field" placeholder="Placeholder text" />
+																	<div class="d-editor__text-tools">
+																		<p class="d-editor__font-size">00</p>
+																		<div class="d-editor__tool-container">
+																			<button class="d-editor__tool">
+																				<i class="d-icon-b d-editor__tool-icon"></i>
+																			</button>
+																			<button class="d-editor__tool">
+																				<i class="d-icon-i d-editor__tool-icon"></i>
+																			</button>
+																			<button class="d-editor__tool">
+																				<i class="d-icon-u d-editor__tool-icon"></i>
+																			</button>
+																		</div>
+
+																		<div class="d-divider d-divider--vertical d-divider--gray d-divider--big d-divider--semibold d-divider--semi-full"></div>
+
+																		<div class="d-editor__tool-container">
+																			<button class="d-editor__tool">
+																				<i class="d-icon-marker d-editor__tool-icon"></i>
+																			</button>
+																			<button class="d-editor__tool">
+																				<i class="d-icon-a d-editor__tool-icon"></i>
+																			</button>
+																			<button class="d-editor__tool">
+																				<i class="d-icon-upper-case d-editor__tool-icon"></i>
+																			</button>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="d-editor__tools">
+																	<div class="d-editor__tool-container">
+																		<button class="d-editor__tool">
+																			<i class="d-icon-list2 d-editor__tool-icon"></i>
+																		</button>
+																		<button class="d-editor__tool">
+																			<i class="d-icon-number-list d-editor__tool-icon"></i>
+																		</button>
+																	</div>
+																	<div class="d-divider d-divider--vertical d-divider--gray d-divider--big d-divider--semibold d-divider--semi-full"></div>
+																	<div class="d-editor__tool-container">
+																		<button class="d-editor__tool">
+																			<i class="d-icon-link d-editor__tool-icon"></i>
+																		</button>
+																		<button class="d-editor__tool">
+																			<i class="d-icon-calendar2 d-editor__tool-icon"></i>
+																		</button>
+																		<button class="d-editor__tool">
+																			<i class="d-icon-quote d-editor__tool-icon"></i>
+																		</button>
+																		<button class="d-editor__tool">
+																			<i class="d-icon-grid d-editor__tool-icon"></i>
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<textarea
+																class="d-editor__field"
+																rows="5"
+																placeholder="Например: “Известный европейский бренд 25 лет в России! Высокая маржинальность до 45%! Широкий ассортимент для любого сегмента рынка. Цены крупного опта при любом заказе! 100% контроль цен. Возврат денег за непроданный товар. Широкая рекламная поддержка.”"
+															></textarea>
+														</div>
+													</div>
+												</div>
+
+												<!-- 2 ЭТАП Даты проведения акции -->
+												<div class="contents hidden" id="eventDates">
+													<p class="promo-master__title promo-master__title--sm-margin">Даты проведения акции</p>
+
+													<div class="d-field-container d-field-container--long">
+														<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+															<!-- TODO Вместо этого нужно будет переписать эти стили в компонент какой-нибудь либы, где есть инпут даты -->
+															<label for="dateStart" class="d-dropdown__label">Дата начала акции</label>
+															<div class="d-input d-input--light">
+																<input type="text" placeholder="__ __" name="dateStart" class="d-input__field" />
+																<button class="d-icon-wrapper d-input__calendar-button">
+																	<i class="d-icon-calendar3"></i>
+																</button>
+															</div>
+														</div>
+														<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
+															<label for="dateStart" class="d-dropdown__label">Дата окончания акции</label>
+															<div class="d-input d-input--light">
+																<input type="text" placeholder="__ __" name="dateStart" class="d-input__field" />
+																<button class="d-icon-wrapper d-input__calendar-button">
+																	<i class="d-icon-calendar3"></i>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- 3 ЭТАП Баннер акции -->
+												<div class="contents hidden" id="promoBanner">
+													<p class="promo-master__title">Баннер акции</p>
+													<div class="d-field-container d-field-container--vertical promo-master__upload-header">
+														<p class="promo-master__subtitle">Загрузка баннера</p>
+														<p class="d-text">Загрузите изображение с разрешением 6824х1996, в формате png, jpeg, svg. Размер изображения не должен превышать 5 Мбайт .</p>
+													</div>
+													<label class="d-upload promo-master__upload" for="promo-upload">
+														<input type="file" name="promo-upload" id="promo-upload" class="d-upload__input" />
+
+														<img src="/icons/upload-cloud.svg" alt="Upload icon" class="d-upload__icon" width="80" height="50" />
+														<p class="d-upload__title">Перетащите файл в эту область</p>
+														<p class="d-upload__description">
+															Вы также можете загрузить файлы png, jpeg, svg,
+															<a href="/" class="d-link d-upload__link">нажав сюда</a>
+														</p>
+													</label>
+													<div class="d-field-container d-field-container--vertical promo-master__settings">
+														<p class="promo-master__subtitle">Места размещения</p>
+														<div class="d-radio__container d-radio__container--small">
+															<div class="d-radio__wrapper">
+																<label class="d-switch" for="test-switch">
+																	<input type="checkbox" name="promoHome" id="promoHome" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label class="d-switch-button__text" for="promoHome">На главной странице закупок</label>
+															</div>
+															<div class="d-radio__wrapper">
+																<label class="d-switch" for="promoInCart">
+																	<input type="checkbox" name="promoInCart" id="promoInCart" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="promoInCart" class="d-switch-button__text d-radio__label">В корзине</label>
+															</div>
+															<div class="d-radio__wrapper">
+																<label class="d-switch" for="promoInCatalog">
+																	<input type="checkbox" name="promoInCatalog" id="promoInCatalog" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="promoInCatalog" class="d-switch-button__text d-radio__label">В каталоге</label>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- 4 ЭТАП - Условия оплаты -->
+												<div class="contents" id="paymentConditions">
+													<p class="promo-master__title">Условия оплаты</p>
+													<div class="d-field-container d-field-container--vertical promo-master__settings">
+														<p class="promo-master__subtitle">Настройка отсрочки платежа</p>
+														<div class="d-radio__container d-radio__container--small">
+															<div class="d-radio__wrapper">
+																<label for="deferred-payment1" class="d-radio">
+																	<input type="radio" name="deferred-payment" id="deferred-payment1" class="d-radio__input" />
+																</label>
+																<label for="deferred-payment1" class="d-radio__label">Отсрочка (по умолчанию)</label>
+															</div>
+															<div class="d-radio__wrapper">
+																<label for="deferred-payment2" class="d-radio">
+																	<input type="radio" name="deferred-payment" id="deferred-payment2" class="d-radio__input" />
+																</label>
+																<label for="deferred-payment2" class="d-radio__label">Под реализацию</label>
+															</div>
+														</div>
+													</div>
+													<div class="promotions__card promotions__card--small promo-master__card">
+														<div class="promotions__card-header promo-master__card-header">
+															<div class="promotions__card-header-left">
+																<p class="promotions__card-title">Срок отсрочки платежа: <span class="promotions__card-title-span">19 дней</span></p>
+															</div>
+															<button class="promotions__card-button" data-modal2-trigger="deferredPayment">
+																<i class="d-icon-pen2 promotions__card-button-icon"></i>
+															</button>
+														</div>
+														<div class="promotions__card-content promo-master__card-content">
+															<div class="promotions__card-values promo-master__card-values">
+																<p class="promotions__card-text promotions__card-text--bold promotions__card-text--small">Срок отсрочки платежа:</p>
+																<div class="d-field-container d-field-container--vertical">
+																	<p class="promotions__card-text promotions__card-text--dark-gray promo-master__card-text">— 90% через 10 дней после отгрузки</p>
+																	<p class="promotions__card-text promotions__card-text--dark-gray promo-master__card-text">— 10% через 100 дней после отгрузки</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- 5 ЭТАП - Условия доставки -->
+												<div class="contents hidden" id="deliveryConditions">
+													<p class="promo-master__title">Условия доставки</p>
+													<div class="d-field-container d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
+														<p class="promo-master__subtitle">Кто оплачивает доставку:</p>
+														<div class="d-radio__container d-radio__container--small">
+															<div class="d-radio__wrapper">
+																<label for="who-pay-delivery1" class="d-radio">
+																	<input type="radio" name="who-pay-delivery" id="who-pay-delivery1" class="d-radio__input" />
+																</label>
+																<label for="who-pay-delivery1" class="d-radio__label">Поставщик</label>
+															</div>
+															<div class="d-radio__wrapper">
+																<label for="who-pay-delivery2" class="d-radio">
+																	<input type="radio" name="who-pay-delivery" id="who-pay-delivery2" class="d-radio__input" />
+																</label>
+																<label for="who-pay-delivery2" class="d-radio__label">Покупатель</label>
+															</div>
+														</div>
+													</div>
+													<div class="d-field-container d-field-container--vertical promo-master__settings">
+														<p class="promo-master__subtitle">Сроки отгрузки товаров</p>
+														<div class="d-radio__container d-radio__container--small">
+															<div class="d-radio__wrapper">
+																<label for="shipment-deadline1" class="d-radio">
+																	<input type="radio" name="shipment-deadline" id="shipment-deadline1" class="d-radio__input" />
+																</label>
+																<label for="shipment-deadline1" class="d-radio__label">Определяется данными из отгрузок</label>
+															</div>
+															<div class="d-radio__wrapper">
+																<label for="shipment-deadline2" class="d-radio">
+																	<input type="radio" name="shipment-deadline" id="shipment-deadline2" class="d-radio__input" />
+																</label>
+																<label for="shipment-deadline2" class="d-radio__label">Определяется по расчету доставки ТК</label>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- 6 ЭТАП - Условия участия в акции: Требования к заказу -->
+												<div class="contents hidden" id="promoConditionsRequirements">
+													<p class="promo-master__title">Условия участия в акции: требованя к заказу</p>
+
+													<!-- Минимальная общая сумма заказа товаров акции -->
+													<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
+														<div class="promo-master__subtitle-container">
+															<p class="promo-master__subtitle">Минимальная общая сумма заказа товаров акции</p>
+															<p class="d-text">Общая сумма товаров акции должна быть не менее указанной суммы</p>
+														</div>
+														<div class="d-input d-input--light d-input--width-280">
+															<input class="d-input__field" type="text" placeholder="0" name="dateStart" value="30 000 ₽" />
+														</div>
+													</div>
+
+													<!-- Минимальное количество SKU акции -->
+													<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
+														<div class="promo-master__subtitle-container">
+															<p class="promo-master__subtitle">Минимальное количество SKU акции</p>
+															<p class="d-text">В заказе должно быть не менее заданного количества SKU товаров акции</p>
+														</div>
+														<div class="d-input d-input--light d-input--width-280">
+															<input class="d-input__field" type="text" placeholder="0" name="dateStart" value="2 SKU" />
+														</div>
+													</div>
+
+													<!-- Минимальное общее количество товаров -->
+													<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
+														<div class="promo-master__subtitle-container">
+															<p class="promo-master__subtitle">Минимальное общее количество товаров</p>
+															<p class="d-text">В заказе должно быть не менее заданного общего количества товаров акции</p>
+														</div>
+														<div class="d-input d-input--light d-input--width-280">
+															<input class="d-input__field" type="text" placeholder="Введите количество шт." name="dateStart" />
+														</div>
+													</div>
+
+													<div class="d-radio__container d-radio__container">
+														<div class="d-radio__wrapper">
+															<label class="d-switch" for="negative-promo1">
+																<input type="checkbox" name="negative-promo1" id="negative-promo1" class="d-switch__input" />
+																<div class="d-switch__circle"></div>
+															</label>
+															<div class="d-switch__label-container">
+																<label for="negative-promo1" class="d-switch__label d-switch__label--regular">Негативная акция</label>
+																<p class="d-description">
+																	Условия акции как ухудшают, так и улучшают предложения, например, увеличение цены при увеличении отсрочки. Акция не будет
+																	применяться автоматически, а потребует включения покупателем.
+																</p>
+															</div>
+														</div>
+														<div class="d-radio__wrapper">
+															<label class="d-switch" for="negative-promo2">
+																<input type="checkbox" name="negative-promo2" id="negative-promo2" class="d-switch__input" />
+																<div class="d-switch__circle"></div>
+															</label>
+															<div class="d-switch__label-container">
+																<label for="negative-promo2" class="d-switch__label d-switch__label--regular">Доступна только в Предложениях</label>
+																<p class="d-description">
+																	Акция будет видна только в прамках предложения для магазинов, в каталоге и в разделе «Акции поставщиков» выводиться не будет.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- 7 ЭТАП - Условия участия в акции: Совместимость -->
+												<div class="contents hidden" id="promoConditionsCompatibility">
+													<p class="promo-master__title">Условия участия в акции: совместимость</p>
+
+													<!-- Совместимость -->
+													<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
+														<div class="promo-master__subtitle-container">
+															<p class="promo-master__subtitle">Совместимость</p>
+															<p class="d-text">С какими акциями может применяться совместно</p>
+														</div>
+														<div class="d-radio__container d-radio__container--small d-radio__container--vertical">
+															<div class="d-radio__wrapper">
+																<label for="compatibility1" class="d-radio">
+																	<input type="radio" name="compatibility" id="compatibility1" class="d-radio__input" />
+																</label>
+																<label for="compatibility1" class="d-radio__label">Совместима со всеми акциями</label>
+															</div>
+															<div class="d-radio__wrapper">
+																<label for="compatibility2" class="d-radio">
+																	<input type="radio" name="compatibility" id="compatibility2" class="d-radio__input" />
+																</label>
+																<label for="compatibility2" class="d-radio__label">Совместима только с выбранными акциями</label>
+															</div>
+															<div class="d-radio__wrapper">
+																<label for="compatibility3" class="d-radio">
+																	<input type="radio" name="compatibility" id="compatibility3" class="d-radio__input" />
+																</label>
+																<label for="compatibility3" class="d-radio__label">Не совместима со всеми акциями</label>
+															</div>
+															<div class="d-radio__wrapper">
+																<label for="compatibility4" class="d-radio">
+																	<input type="radio" name="compatibility" id="compatibility4" class="d-radio__input" />
+																</label>
+																<label for="compatibility4" class="d-radio__label">Не совместима с выбранными акциями</label>
+															</div>
+														</div>
+													</div>
+
+													<!-- Режим совместимости -->
+													<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
+														<div class="promo-master__subtitle-container">
+															<p class="promo-master__subtitle">Режим совместимости</p>
+															<p class="d-text">Как условия совместимых акций сочетаются</p>
+														</div>
+														<div class="d-radio__container d-radio__container--big">
+															<div class="d-radio__wrapper">
+																<label for="compatibilitymode1" class="d-radio">
+																	<input type="radio" name="compatibilitymode" id="compatibilitymode1" class="d-radio__input" />
+																</label>
+																<div class="d-radio__label-container">
+																	<label for="compatibilit1" class="d-radio__label">Складываются</label>
+																	<p class="d-description">
+																		Проценты скидок сначала сложатся, затем сумма<br />
+																		процентов отнимется от цены. Отсрочка сложится.
+																	</p>
+																</div>
+															</div>
+															<div class="d-radio__wrapper">
+																<label for="compatibilitymode2" class="d-radio">
+																	<input type="radio" name="compatibilitymode" id="compatibilitymode2" class="d-radio__input" />
+																</label>
+																<div class="d-radio__label-container">
+																	<label for="compatibilitymode2" class="d-radio__label">Назначаются последовательно</label>
+																	<p class="d-description">Скидки применяются по очереди. Отсрочка сложится.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- 8 ЭТАП - Аудитория акции -->
+												<div class="contents hidden" id="promoAudience">
+													<p class="promo-master__title promo-master__title--ms-margin">Аудитория акции</p>
+
+													<div class="d-button__container promo-master__actions">
+														<button class="d-button d-button-primary d-button-primary-small d-button--sm-padding box-shadow-none">Аудитория акции</button>
+														<button class="d-button d-button-secondary d-button-secondary-small d-button--sm-padding box-shadow-none">
+															Исключения участников из акции
+														</button>
+													</div>
+
+													<!-- Участники акции -->
+													<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
+														<div class="promo-master__subtitle-container">
+															<p class="promo-master__subtitle">Участники акции</p>
+															<p class="d-text">Кому будет доступна акция</p>
+														</div>
+													</div>
+
+													<!-- Участники по географии -->
+													<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
+														<p class="promo-master__subtitle promo-master__subtitle--small">Участники по географии</p>
+														<div class="d-radio__container d-radio__container--small d-radio__container--vertical">
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="all-regions">
+																	<input type="checkbox" name="all-regions" id="all-regions" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="all-regions" class="d-switch__label">Все регионы</label>
+															</div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="change-region">
+																	<input type="checkbox" name="change-region" id="change-region" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="change-region" class="d-switch__label">Регионы по выбору</label>
+															</div>
+														</div>
+													</div>
+
+													<!-- Участники по типу компании -->
+													<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
+														<p class="promo-master__subtitle promo-master__subtitle--small">Участники по типу компании</p>
+														<div class="d-radio__container d-radio__container--small d-radio__container--vertical">
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="shops">
+																	<input type="checkbox" name="shops" id="shops" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="shops" class="d-switch__label">Магазины</label>
+															</div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="wholesale-company">
+																	<input type="checkbox" name="wholesale-company" id="wholesale-company" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="wholesale-company" class="d-switch__label">Оптовые компании</label>
+															</div>
+															<div class="d-field-wrapper">
+																<label class="d-switch" for="wholesale-company">
+																	<input type="checkbox" name="wholesale-company" id="wholesale-company" class="d-switch__input" />
+																	<div class="d-switch__circle"></div>
+																</label>
+																<label for="wholesale-company" class="d-switch__label">Производители</label>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<!-- Поздравляем -->
+												<div class="contents hidden" id="congratulations">
+													<div class="promo-master__title-container">
+														<p class="promo-master__title promo-master__title--no-margin">Поздравляем!<br />Вы создали акцию «Купи слона»</p>
+														<div class="d-description">Вы прошли 10 из 10 шагов, а это значит, что ваша акция будет максимально эффективной!</div>
+													</div>
+
+													<div class="d-button__container d-button__container--small promo-master__actions">
+														<button class="d-button d-button-secondary d-button-secondary-small d-button--sm-padding d-button--sm-shadow">Смотреть релиз акции</button>
+														<button class="d-button d-button-primary d-button-primary-small d-button--sm-padding d-button--sm-shadow">Включить акцию</button>
+													</div>
+												</div>
+											</div>
+											<div class="promo-master__content-right">
+												<div class="promo-master__setting-container">
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--used">
+														<i class="d-icon-lines"></i>
+														Контент акции
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--used">
+														<i class="d-icon-calendar"></i>
+														Даты проведения акции
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--used">
+														<i class="d-icon-picture"></i>
+														Баннер акции
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting">
+														<i class="d-icon-wallet"></i>
+														Условия оплаты
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-truck"></i>
+														Условия доставки
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-percent"></i>
+														Условия участия в акции: Требования к заказу
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-percent"></i>
+														Условия участия в акции: Совместимость
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-user-star"></i>
+														Аудитория акции
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-cube"></i>
+														Товары и скидки: Склады
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-cube"></i>
+														Товары и скидки: Товары
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="promo-master__footer">
+											<div class="promo-master__footer-actions">
+												<button class="d-button d-button-secondary d-button-secondary-small box-shadow-none promo-master__action-button promo-master__action-button--back">
+													<i class="d-icon-arrow-left promo-master__action-button-icon"></i>
+													<span class="promo-master__action-button-text">Назад</span>
+												</button>
+												<button class="d-button d-button-secondary d-button-secondary-small box-shadow-none promo-master__action-button promo-master__action-button--next">
+													<span class="promo-master__action-button-text">Далее</span>
+													<i class="d-icon-arrow-right promo-master__action-button-icon"></i>
+												</button>
+											</div>
+
+											<div class="promo-master__footer-content promo-master__footer-content--between">
+												<!-- <div class="promo-master__info-block">
+                                            <i class="d-icon-lines promo-master__info-block-icon"></i>
+                                            <p class="promo-master__info-block-text">Отразите в названии суть акции</p>
+                                        </div>
+                                        <div class="d-divider d-divider--vertical promo-master__info-block-divider"></div>
+                                        <div class="promo-master__info-block">
+                                            <i class="d-icon-percent promo-master__info-block-icon"></i>
+                                            <p class="promo-master__info-block-text">
+                                                Дополнительная скидка 5% при покупке МиниМАКС от 5 штук!
+                                            </p>
+                                        </div>
+                                        <div class="d-divider d-divider--vertical promo-master__info-block-divider"></div>
+                                        <div class="promo-master__info-block">
+                                            <i class="d-icon-doc-plus promo-master__info-block-icon"></i>
+                                            <p class="promo-master__info-block-text">Оптовый прайс</p>
+                                        </div>
+                                        <div class="d-divider d-divider--vertical promo-master__info-block-divider"></div>
+                                        <div class="promo-master__description-block">
+                                            <p class="promo-master__description-block-title">
+                                                Подробно опишите условия акции, расскажите о вашей продукции
+                                            </p>
+                                            <p class="promo-master__description-block-text">
+                                                Известный европейский бренд 25 лет в России! Высокая маржинальность до 45%! Широкий
+                                                ассортимент для любого сегмента рынка. Цены крупного опта при любом заказе! 100% контроль цен.
+                                                Возврат денег за непроданный товар. Широкая рекламная поддержка.
+                                            </p>
+                                        </div> -->
+
+												<!-- 2 ЭТАП - Даты проведения акции -->
+
+												<!-- 3 ЭТАП - Баннер акции -->
+												<!-- <div class="promo-master__info-block-wrapper">
+											<div class="promo-master__info-block">
+												<i class="d-icon-message-status promo-master__info-block-icon"></i>
+												<p class="promo-master__info-block-text">На баннере укажите УТП, ваш логотип, артикул, название, изображение продукта.</p>
+											</div>
+											<div class="d-divider d-divider--vertical promo-master__info-block-divider"></div>
+										</div> -->
+
+												<!-- <div class="promo-master__banner-container">
+											<div class="promo-master__banner">
+												<div class="promo-master__banner-status">
+													<i class="d-icon-add promo-master__banner-status-icon"></i>
+												</div>
+												<img src="/images/banner1.png" alt="УШМ + 25 дисков в подарок" class="promo-master__banner-image" />
+											</div>
+											<div class="promo-master__banner">
+												<div class="promo-master__banner-status">
+													<i class="d-icon-delete promo-master__banner-status-icon"></i>
+												</div>
+												<img src="/images/banner2.png" alt="Распродажа" class="promo-master__banner-image" />
+											</div>
+										</div> -->
+
+												<!-- Универсальная секция для адаптив <1200px -->
+												<div class="promo-master__info-block-wrapper visible-1200">
+													<div class="promo-master__info-block">
+														<i class="d-icon-message-status promo-master__info-block-icon"></i>
+														<p class="promo-master__info-block-text">Отразите в названии суть акции.</p>
+													</div>
+												</div>
+
+												<div class="promo-master__setting-container visible-1200 hidden-800">
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--used">
+														<i class="d-icon-lines"></i>
+														Контент акции
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--used">
+														<i class="d-icon-calendar"></i>
+														Даты проведения акции
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--used">
+														<i class="d-icon-picture"></i>
+														Баннер акции
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting">
+														<i class="d-icon-wallet"></i>
+														Условия оплаты
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-truck"></i>
+														Условия доставки
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-percent"></i>
+														Условия участия в акции: Требования к заказу
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-percent"></i>
+														Условия участия в акции: Совместимость
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-user-star"></i>
+														Аудитория акции
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-cube"></i>
+														Товары и скидки: Склады
+													</button>
+													<button class="d-button d-button-tertiary box-shadow-none promo-master__setting promo-master__setting--disabled" disabled>
+														<i class="d-icon-cube"></i>
+														Товары и скидки: Товары
+													</button>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="d-modal2__overlay" data-modal2>
 						<div class="d-modal2">
 							<button class="d-modal2__close" data-modal2-close>

@@ -1641,9 +1641,12 @@
 		justify-content: center;
 		align-items: center;
 
+		padding: 5%;
 		height: 100%;
 		min-height: var(--d-modal2-height);
 		max-height: var(--d-modal2-height);
+		width: 100%;
+		max-width: 1520px;
 	}
 
 	&__header {
@@ -1712,6 +1715,9 @@
 		}
 
 		&__header {
+			gap: 0;
+			height: 50px;
+
 			&-right {
 				justify-content: space-between;
 				flex-grow: 1;
@@ -1762,6 +1768,10 @@
 				display: none;
 			}
 		}
+
+		&__close {
+			font-size: 11px;
+		}
 	}
 
 	@media (width <=800px) {
@@ -1769,8 +1779,28 @@
 		--promo-modal-padding-inline: 16px;
 
 		&__header {
+			height: 40px;
+
+			&-title {
+				font-size: 12px;
+			}
+
+			&-description {
+				font-size: 10px;
+			}
+
 			&-divider {
 				display: block;
+			}
+		}
+
+		&__close {
+			font-size: 9px;
+		}
+
+		&__progress {
+			&-label {
+				font-size: 10px;
 			}
 		}
 	}
@@ -2078,6 +2108,7 @@
 		&__footer {
 			position: fixed;
 			bottom: 0;
+			left: 0;
 			width: 100%;
 
 			&-content {
