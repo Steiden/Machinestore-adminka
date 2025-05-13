@@ -43,7 +43,7 @@
 
 											<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical promo-master__settings promo-master__settings--sm-margin">
 												<label for="dateStart" class="d-dropdown__label">Название акции</label>
-												<div class="d-input d-input--light d-input--width-640 d-textarea">
+												<div class="d-input d-input--light d-input--width-640 d-textarea promo-master__textarea">
 													<textarea
 														rows="2"
 														placeholder="Например: “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” Например: “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” “4+1 на дрели” "
@@ -55,7 +55,7 @@
 
 											<div class="d-field-wrapper d-field-wrapper--small d-field-wrapper--vertical">
 												<label for="dateStart" class="d-dropdown__label">Описание акции</label>
-												<div class="d-editor">
+												<div class="d-editor promo-master__editor">
 													<div class="d-editor__header">
 														<div class="d-input d-input--light d-editor__search">
 															<input type="text" class="d-input__field d-editor__search-field" placeholder="Placeholder text" />
@@ -156,7 +156,7 @@
 											<p class="promo-master__title">Баннер акции</p>
 											<div class="d-field-container d-field-container--vertical promo-master__upload-header">
 												<p class="promo-master__subtitle">Загрузка баннера</p>
-												<p class="d-text">Загрузите изображение с разрешением 6824х1996, в формате png, jpeg, svg. Размер изображения не должен превышать 5 Мбайт .</p>
+												<p class="d-text promo-master__description">Загрузите изображение с разрешением 6824х1996, в формате png, jpeg, svg. Размер изображения не должен превышать 5 Мбайт .</p>
 											</div>
 											<label class="d-upload promo-master__upload" for="promo-upload">
 												<input type="file" name="promo-upload" id="promo-upload" class="d-upload__input" />
@@ -170,49 +170,49 @@
 											</label>
 											<div class="d-field-container d-field-container--vertical promo-master__settings">
 												<p class="promo-master__subtitle">Места размещения</p>
-												<div class="d-radio__container d-radio__container--small">
-													<div class="d-radio__wrapper">
+												<div class="d-radio__container d-radio__container--small promo-master__radio-container">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label class="d-switch" for="test-switch">
 															<input type="checkbox" name="promoHome" id="promoHome" class="d-switch__input" />
 															<div class="d-switch__circle"></div>
 														</label>
-														<label class="d-switch-button__text" for="promoHome">На главной странице закупок</label>
+														<label for="promoHome" class="d-switch__label">На главной странице закупок</label>
 													</div>
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label class="d-switch" for="promoInCart">
 															<input type="checkbox" name="promoInCart" id="promoInCart" class="d-switch__input" />
 															<div class="d-switch__circle"></div>
 														</label>
-														<label for="promoInCart" class="d-switch-button__text d-radio__label">В корзине</label>
+														<label for="promoInCart" class="d-switch__label">В корзине</label>
 													</div>
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label class="d-switch" for="promoInCatalog">
 															<input type="checkbox" name="promoInCatalog" id="promoInCatalog" class="d-switch__input" />
 															<div class="d-switch__circle"></div>
 														</label>
-														<label for="promoInCatalog" class="d-switch-button__text d-radio__label">В каталоге</label>
+														<label for="promoInCatalog" class="d-switch__label">В каталоге</label>
 													</div>
 												</div>
 											</div>
 										</div>
 
 										<!-- 4 ЭТАП - Условия оплаты -->
-										<div class="contents" id="paymentConditions">
+										<div class="contents hidden" id="paymentConditions">
 											<p class="promo-master__title">Условия оплаты</p>
 											<div class="d-field-container d-field-container--vertical promo-master__settings">
 												<p class="promo-master__subtitle">Настройка отсрочки платежа</p>
 												<div class="d-radio__container d-radio__container--small">
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="deferred-payment1" class="d-radio">
 															<input type="radio" name="deferred-payment" id="deferred-payment1" class="d-radio__input" />
 														</label>
-														<label for="deferred-payment1" class="d-radio__label">Отсрочка (по умолчанию)</label>
+														<label for="deferred-payment1" class="d-radio__label promo-master__radio-label">Отсрочка (по умолчанию)</label>
 													</div>
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="deferred-payment2" class="d-radio">
 															<input type="radio" name="deferred-payment" id="deferred-payment2" class="d-radio__input" />
 														</label>
-														<label for="deferred-payment2" class="d-radio__label">Под реализацию</label>
+														<label for="deferred-payment2" class="d-radio__label promo-master__radio-label">Под реализацию</label>
 													</div>
 												</div>
 											</div>
@@ -243,34 +243,34 @@
 											<div class="d-field-container d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
 												<p class="promo-master__subtitle">Кто оплачивает доставку:</p>
 												<div class="d-radio__container d-radio__container--small">
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="who-pay-delivery1" class="d-radio">
 															<input type="radio" name="who-pay-delivery" id="who-pay-delivery1" class="d-radio__input" />
 														</label>
-														<label for="who-pay-delivery1" class="d-radio__label">Поставщик</label>
+														<label for="who-pay-delivery1" class="d-radio__label promo-master__radio-label">Поставщик</label>
 													</div>
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="who-pay-delivery2" class="d-radio">
 															<input type="radio" name="who-pay-delivery" id="who-pay-delivery2" class="d-radio__input" />
 														</label>
-														<label for="who-pay-delivery2" class="d-radio__label">Покупатель</label>
+														<label for="who-pay-delivery2" class="d-radio__label promo-master__radio-label">Покупатель</label>
 													</div>
 												</div>
 											</div>
 											<div class="d-field-container d-field-container--vertical promo-master__settings">
 												<p class="promo-master__subtitle">Сроки отгрузки товаров</p>
 												<div class="d-radio__container d-radio__container--small">
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="shipment-deadline1" class="d-radio">
 															<input type="radio" name="shipment-deadline" id="shipment-deadline1" class="d-radio__input" />
 														</label>
-														<label for="shipment-deadline1" class="d-radio__label">Определяется данными из отгрузок</label>
+														<label for="shipment-deadline1" class="d-radio__label promo-master__radio-label">Определяется данными из отгрузок</label>
 													</div>
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="shipment-deadline2" class="d-radio">
 															<input type="radio" name="shipment-deadline" id="shipment-deadline2" class="d-radio__input" />
 														</label>
-														<label for="shipment-deadline2" class="d-radio__label">Определяется по расчету доставки ТК</label>
+														<label for="shipment-deadline2" class="d-radio__label promo-master__radio-label">Определяется по расчету доставки ТК</label>
 													</div>
 												</div>
 											</div>
@@ -283,8 +283,8 @@
 											<!-- Минимальная общая сумма заказа товаров акции -->
 											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
 												<div class="promo-master__subtitle-container">
-													<p class="promo-master__subtitle">Минимальная общая сумма заказа товаров акции</p>
-													<p class="d-text">Общая сумма товаров акции должна быть не менее указанной суммы</p>
+													<p class="promo-master__subtitle promo-master__subtitle--1200-small">Минимальная общая сумма заказа товаров акции</p>
+													<p class="d-text promo-master__description">Общая сумма товаров акции должна быть не менее указанной суммы</p>
 												</div>
 												<div class="d-input d-input--light d-input--width-280">
 													<input class="d-input__field" type="text" placeholder="0" name="dateStart" value="30 000 ₽" />
@@ -294,8 +294,8 @@
 											<!-- Минимальное количество SKU акции -->
 											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
 												<div class="promo-master__subtitle-container">
-													<p class="promo-master__subtitle">Минимальное количество SKU акции</p>
-													<p class="d-text">В заказе должно быть не менее заданного количества SKU товаров акции</p>
+													<p class="promo-master__subtitle promo-master__subtitle--1200-small">Минимальное количество SKU акции</p>
+													<p class="d-text promo-master__description">В заказе должно быть не менее заданного количества SKU товаров акции</p>
 												</div>
 												<div class="d-input d-input--light d-input--width-280">
 													<input class="d-input__field" type="text" placeholder="0" name="dateStart" value="2 SKU" />
@@ -305,16 +305,16 @@
 											<!-- Минимальное общее количество товаров -->
 											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
 												<div class="promo-master__subtitle-container">
-													<p class="promo-master__subtitle">Минимальное общее количество товаров</p>
-													<p class="d-text">В заказе должно быть не менее заданного общего количества товаров акции</p>
+													<p class="promo-master__subtitle promo-master__subtitle--1200-small">Минимальное общее количество товаров</p>
+													<p class="d-text promo-master__description">В заказе должно быть не менее заданного общего количества товаров акции</p>
 												</div>
 												<div class="d-input d-input--light d-input--width-280">
 													<input class="d-input__field" type="text" placeholder="Введите количество шт." name="dateStart" />
 												</div>
 											</div>
 
-											<div class="d-radio__container d-radio__container">
-												<div class="d-radio__wrapper">
+											<div class="d-radio__container d-radio__container d-radio__container--1200-vertical d-radio__container--1200-small">
+												<div class="d-radio__wrapper d-radio__wrapper--1200-start promo-master__radio-wrapper">
 													<label class="d-switch" for="negative-promo1">
 														<input type="checkbox" name="negative-promo1" id="negative-promo1" class="d-switch__input" />
 														<div class="d-switch__circle"></div>
@@ -327,7 +327,7 @@
 														</p>
 													</div>
 												</div>
-												<div class="d-radio__wrapper">
+												<div class="d-radio__wrapper d-radio__wrapper--1200-start promo-master__radio-wrapper">
 													<label class="d-switch" for="negative-promo2">
 														<input type="checkbox" name="negative-promo2" id="negative-promo2" class="d-switch__input" />
 														<div class="d-switch__circle"></div>
@@ -350,32 +350,32 @@
 											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
 												<div class="promo-master__subtitle-container">
 													<p class="promo-master__subtitle">Совместимость</p>
-													<p class="d-text">С какими акциями может применяться совместно</p>
+													<p class="d-text promo-master__description">С какими акциями может применяться совместно</p>
 												</div>
 												<div class="d-radio__container d-radio__container--small d-radio__container--vertical">
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="compatibility1" class="d-radio">
 															<input type="radio" name="compatibility" id="compatibility1" class="d-radio__input" />
 														</label>
-														<label for="compatibility1" class="d-radio__label">Совместима со всеми акциями</label>
+														<label for="compatibility1" class="d-radio__label promo-master__radio-label">Совместима со всеми акциями</label>
 													</div>
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="compatibility2" class="d-radio">
 															<input type="radio" name="compatibility" id="compatibility2" class="d-radio__input" />
 														</label>
-														<label for="compatibility2" class="d-radio__label">Совместима только с выбранными акциями</label>
+														<label for="compatibility2" class="d-radio__label promo-master__radio-label">Совместима только с выбранными акциями</label>
 													</div>
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="compatibility3" class="d-radio">
 															<input type="radio" name="compatibility" id="compatibility3" class="d-radio__input" />
 														</label>
-														<label for="compatibility3" class="d-radio__label">Не совместима со всеми акциями</label>
+														<label for="compatibility3" class="d-radio__label promo-master__radio-label">Не совместима со всеми акциями</label>
 													</div>
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="compatibility4" class="d-radio">
 															<input type="radio" name="compatibility" id="compatibility4" class="d-radio__input" />
 														</label>
-														<label for="compatibility4" class="d-radio__label">Не совместима с выбранными акциями</label>
+														<label for="compatibility4" class="d-radio__label promo-master__radio-label">Не совместима с выбранными акциями</label>
 													</div>
 												</div>
 											</div>
@@ -384,27 +384,27 @@
 											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
 												<div class="promo-master__subtitle-container">
 													<p class="promo-master__subtitle">Режим совместимости</p>
-													<p class="d-text">Как условия совместимых акций сочетаются</p>
+													<p class="d-text promo-master__description">Как условия совместимых акций сочетаются</p>
 												</div>
-												<div class="d-radio__container d-radio__container--big">
-													<div class="d-radio__wrapper">
+												<div class="d-radio__container d-radio__container--big d-radio__container--1200-vertical d-radio__container--1200-tiny-small">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="compatibilitymode1" class="d-radio">
 															<input type="radio" name="compatibilitymode" id="compatibilitymode1" class="d-radio__input" />
 														</label>
 														<div class="d-radio__label-container">
-															<label for="compatibilit1" class="d-radio__label">Складываются</label>
+															<label for="compatibilit1" class="d-radio__label promo-master__radio-label">Складываются</label>
 															<p class="d-description">
 																Проценты скидок сначала сложатся, затем сумма<br />
 																процентов отнимется от цены. Отсрочка сложится.
 															</p>
 														</div>
 													</div>
-													<div class="d-radio__wrapper">
+													<div class="d-radio__wrapper promo-master__radio-wrapper">
 														<label for="compatibilitymode2" class="d-radio">
 															<input type="radio" name="compatibilitymode" id="compatibilitymode2" class="d-radio__input" />
 														</label>
 														<div class="d-radio__label-container">
-															<label for="compatibilitymode2" class="d-radio__label">Назначаются последовательно</label>
+															<label for="compatibilitymode2" class="d-radio__label promo-master__radio-label">Назначаются последовательно</label>
 															<p class="d-description">Скидки применяются по очереди. Отсрочка сложится.</p>
 														</div>
 													</div>
@@ -413,67 +413,68 @@
 										</div>
 
 										<!-- 8 ЭТАП - Аудитория акции -->
-										<div class="contents hidden" id="promoAudience">
+										<div class="contents" id="promoAudience">
 											<p class="promo-master__title promo-master__title--ms-margin">Аудитория акции</p>
 
-											<div class="d-button__container promo-master__actions">
-												<button class="d-button d-button-primary d-button-primary-small d-button--sm-padding box-shadow-none">Аудитория акции</button>
-												<button class="d-button d-button-secondary d-button-secondary-small d-button--sm-padding box-shadow-none">Исключения участников из акции</button>
+											<div class="d-button__container promo-master__actions promo-master__audience-button-container">
+												<button class="d-button d-button-primary d-button-primary-small d-button--sm-padding box-shadow-none promo-master__audience-button">Аудитория акции</button>
+												<button class="d-button d-button-secondary d-button-secondary-small d-button--sm-padding box-shadow-none promo-master__audience-button">Исключения участников из акции</button>
 											</div>
 
 											<!-- Участники акции -->
 											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings promo-master__settings--sm-margin">
 												<div class="promo-master__subtitle-container">
 													<p class="promo-master__subtitle">Участники акции</p>
-													<p class="d-text">Кому будет доступна акция</p>
+													<p class="d-text promo-master__description">Кому будет доступна акция</p>
 												</div>
 											</div>
 
-											<!-- Участники по географии -->
-											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
-												<p class="promo-master__subtitle promo-master__subtitle--small">Участники по географии</p>
-												<div class="d-radio__container d-radio__container--small d-radio__container--vertical">
-													<div class="d-field-wrapper">
-														<label class="d-switch" for="all-regions">
-															<input type="checkbox" name="all-regions" id="all-regions" class="d-switch__input" />
-															<div class="d-switch__circle"></div>
-														</label>
-														<label for="all-regions" class="d-switch__label">Все регионы</label>
-													</div>
-													<div class="d-field-wrapper">
-														<label class="d-switch" for="change-region">
-															<input type="checkbox" name="change-region" id="change-region" class="d-switch__input" />
-															<div class="d-switch__circle"></div>
-														</label>
-														<label for="change-region" class="d-switch__label">Регионы по выбору</label>
+											<div class="promo-master__audience-changes">
+												<!-- Участники по географии -->
+												<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
+													<p class="promo-master__subtitle promo-master__subtitle--small">Участники по географии</p>
+													<div class="d-radio__container d-radio__container--small d-radio__container--vertical promo-master__audience-change">
+														<div class="d-field-wrapper">
+															<label class="d-switch" for="all-regions">
+																<input type="checkbox" name="all-regions" id="all-regions" class="d-switch__input" />
+																<div class="d-switch__circle"></div>
+															</label>
+															<label for="all-regions" class="d-switch__label">Все регионы</label>
+														</div>
+														<div class="d-field-wrapper">
+															<label class="d-switch" for="change-region">
+																<input type="checkbox" name="change-region" id="change-region" class="d-switch__input" />
+																<div class="d-switch__circle"></div>
+															</label>
+															<label for="change-region" class="d-switch__label">Регионы по выбору</label>
+														</div>
 													</div>
 												</div>
-											</div>
-
-											<!-- Участники по типу компании -->
-											<div class="d-field-container d-field-container--long d-field-container--vertical promo-master__settings">
-												<p class="promo-master__subtitle promo-master__subtitle--small">Участники по типу компании</p>
-												<div class="d-radio__container d-radio__container--small d-radio__container--vertical">
-													<div class="d-field-wrapper">
-														<label class="d-switch" for="shops">
-															<input type="checkbox" name="shops" id="shops" class="d-switch__input" />
-															<div class="d-switch__circle"></div>
-														</label>
-														<label for="shops" class="d-switch__label">Магазины</label>
-													</div>
-													<div class="d-field-wrapper">
-														<label class="d-switch" for="wholesale-company">
-															<input type="checkbox" name="wholesale-company" id="wholesale-company" class="d-switch__input" />
-															<div class="d-switch__circle"></div>
-														</label>
-														<label for="wholesale-company" class="d-switch__label">Оптовые компании</label>
-													</div>
-													<div class="d-field-wrapper">
-														<label class="d-switch" for="wholesale-company">
-															<input type="checkbox" name="wholesale-company" id="wholesale-company" class="d-switch__input" />
-															<div class="d-switch__circle"></div>
-														</label>
-														<label for="wholesale-company" class="d-switch__label">Производители</label>
+												<!-- Участники по типу компании -->
+												<div class="d-field-container d-field-container--long d-field-container--vertical">
+													<p class="promo-master__subtitle promo-master__subtitle--small">Участники по типу компании</p>
+													<div class="d-radio__container d-radio__container--small d-radio__container--verticalpromo-master__settings promo-master__audience-change">
+														<div class="d-field-wrapper">
+															<label class="d-switch" for="shops">
+																<input type="checkbox" name="shops" id="shops" class="d-switch__input" />
+																<div class="d-switch__circle"></div>
+															</label>
+															<label for="shops" class="d-switch__label">Магазины</label>
+														</div>
+														<div class="d-field-wrapper">
+															<label class="d-switch" for="wholesale-company">
+																<input type="checkbox" name="wholesale-company" id="wholesale-company" class="d-switch__input" />
+																<div class="d-switch__circle"></div>
+															</label>
+															<label for="wholesale-company" class="d-switch__label">Оптовые компании</label>
+														</div>
+														<div class="d-field-wrapper">
+															<label class="d-switch" for="wholesale-company">
+																<input type="checkbox" name="wholesale-company" id="wholesale-company" class="d-switch__input" />
+																<div class="d-switch__circle"></div>
+															</label>
+															<label for="wholesale-company" class="d-switch__label">Производители</label>
+														</div>
 													</div>
 												</div>
 											</div>
