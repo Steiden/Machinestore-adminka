@@ -2,7 +2,7 @@
 @use "variables" as *;
 
 :root {
-	// __________Input__________
+	// __________Input___________
 	--d-input-bg-color: #282828;
 	--d-input-disable-bg-color: #757575;
 	--d-input-border-color: #757575;
@@ -13,16 +13,18 @@
 	--d-input-color: #ededed;
 	--d-input-placeholder-color: #757575;
 	--d-input-padding: 4px 12px;
-	// ________________________________
+	// ___________________________
 
-	// __________Radio__________
+	// __________Radio____________
 	--d-radio-color: #757575;
 	--d-radio-active-color: #f92c0d;
 	--d-radio-width: 22px;
 	--d-radio-padding: 2px;
-	// ________________________________
+	--d-radio-align-y: center;
+	--d-radio-align-x: flex-start;
+	// ___________________________
 
-	// __________Switch__________
+	// __________Switch___________
 	--d-switch-padding: 1px;
 	--d-switch-border-width: 1px;
 	--d-switch-border-radius: 50px;
@@ -31,35 +33,35 @@
 	--d-switch-thumb-width: 18px;
 	--d-switch-color: #f92c0d;
 	--d-switch-disabled-color: #757575;
-	// ________________________________
+	// ___________________________
 
 	// __________Counter__________
 	--d-counter-border-color: #757575;
 	--d-counter-button-color: #f92c0d;
 	--d-counter-input-background: #ffffff;
-	// ________________________________
+	// ___________________________
 
 	// __________Modal 2__________
 	--d-modal2-width: 36%;
 	--d-modal2-height: 70%;
-	// ________________________________
+	// ___________________________
 
-	// __________Dropdown__________
+	// __________Dropdown_________
 	--d-dropdown-bg-color: #fbfbfb;
-	// ________________________________
+	// ___________________________
 
-	// __________Icon wrapper__________
+	// _______Icon wrapper________
 	--d-icon-wrapper-color-hover: inherit;
-	// ________________________________
+	// ___________________________
 
 	// __________Divider__________
 	--d-divider-length: 20px;
 	--d-divider-width: 0.5px;
 	--d-divider-color: #757575;
 	--d-divider-margin: 8px;
-	// ________________________________
+	// ___________________________
 
-	// __________Tab__________
+	// __________Tab______________
 	--d-tab-primary-color: #fbfbfb;
 	--d-tab-secondary-color: #282828;
 	--d-tab-border-radius: 30px;
@@ -67,12 +69,30 @@
 	--d-tab-padding-block: 8px;
 	--d-tab-border-width: 1px;
 	--d-tab-crutch-offset: -6.6px;
-	// ________________________________
+	// ___________________________
 
-	// __________Table__________
+	// __________Table____________
 	--d-table-head-height: 48px;
 	--d-table-first-col-padding: 24px;
-	// ________________________________
+	// ___________________________
+
+
+	// __________Field____________
+	--d-field-bg-color: #fafafa;
+	--d-field-border-width: 1px;
+	--d-field-border-radius: 6px;
+	--d-field-primary-color: #757575;
+	--d-field-color: #282828;
+	--d-field-font-size: 14px;
+	--d-field-font-weight: 400;
+	--d-field-padding-y: 4px;
+	--d-field-padding-x: 16px;
+	--d-field-height: 30px;
+
+	--d-field-label-font-size: 14px;
+	--d-field-label-font-weight: 500;
+	--d-field-label-color: #757575;
+	// ___________________________
 
 	// __________Tooltip__________
 	//* Элементы: d-tooltip, d-tooltip__container, d-tooltip__content
@@ -252,6 +272,35 @@
 	&:hover {
 		background-color: #fbfbfb;
 		color: #282828;
+	}
+
+	&:active {
+		background-color: #282828;
+		color: #fbfbfb;
+		font-weight: 600;
+	}
+
+	&:focus-visible {
+		background-color: #fbfbfb;
+		border-color: #282828;
+		color: #282828;
+	}
+
+	&:disabled {
+		cursor: default;
+		background-color: #757575;
+		color: #282828;
+		font-weight: 700;
+	}
+}
+
+.d-button-quaternary {
+	background-color: #EDEDED;
+	color: #282828;
+
+	&:hover {
+		background-color: #282828;
+		color: #FBFBFB;
 	}
 
 	&:active {
@@ -652,7 +701,7 @@
 		width: 280px;
 	}
 
-	@media (width <= 1200px) {
+	@media (width <=1200px) {
 		height: 34px;
 
 		&__field {
@@ -927,6 +976,18 @@
 	}
 }
 
+.d-button-quaternary-small {
+	font-size: 14px;
+	padding: 4px 24px;
+	width: fit-content;
+	min-height: 32px;
+
+	@media (width <=640px) {
+		padding: 2px 16px;
+		min-height: 26px;
+	}
+}
+
 .d-button {
 	&--sm-padding {
 		padding-inline: 12px;
@@ -1063,6 +1124,7 @@
 	}
 
 	&--disabled {
+
 		.d-notion__category-name,
 		.d-notion__title {
 			color: #282828;
@@ -2141,7 +2203,7 @@
 		gap: 16px;
 	}
 
-	@media (width <= 1200px) {
+	@media (width <=1200px) {
 		gap: 16px;
 	}
 }
@@ -2342,7 +2404,7 @@
 	&__row {
 		position: relative;
 
-		&:first-child > .d-table__col {
+		&:first-child>.d-table__col {
 			padding-top: 8px;
 		}
 
@@ -2360,6 +2422,7 @@
 		}
 
 		&:not(:first-child) {
+
 			.d-table__head-col,
 			.d-table__col {
 				&:not(:first-child) {
@@ -2567,6 +2630,7 @@
 	}
 
 	&--small {
+
 		.d-table__head-col,
 		.d-table__col {
 			&:first-child {
@@ -2709,7 +2773,8 @@
 
 	&__wrapper {
 		display: flex;
-		align-items: center;
+		align-items: var(--d-radio-align-y, center);
+		justify-content: var(--d-radio-align-x, flex-start);
 		gap: 16px;
 		width: 100%;
 
@@ -2726,6 +2791,14 @@
 		&:has(.d-radio--gray) {
 			--d-radio-color: #757575;
 			--d-radio-active-color: #757575;
+		}
+
+		&--align-start {
+			--d-radio-align-y: flex-start;
+		}
+
+		&--fit {
+			width: fit-content;
 		}
 	}
 
@@ -2747,15 +2820,17 @@
 		}
 	}
 
-	@media (width <= 1200px) {
+	@media (width <=1200px) {
 		&__container {
 			&--1200 {
 				&-vertical {
 					flex-direction: column;
 				}
+
 				&-small {
 					gap: 20px;
 				}
+
 				&-tiny-small {
 					gap: 16px;
 				}
@@ -3033,7 +3108,7 @@
 		flex-grow: 1;
 	}
 
-	@media (width <= 1200px) {
+	@media (width <=1200px) {
 		&__label {
 			font-size: 12px;
 		}
@@ -3102,7 +3177,7 @@
 		color: #a0a0a0;
 	}
 
-	@media (width <= 1200px) {
+	@media (width <=1200px) {
 		padding: 8px;
 
 		&__icon {
@@ -3643,6 +3718,7 @@
 
 	@media (width <=600px) {
 		&:not(&--active) {
+
 			.d-product--hovered,
 			&:hover {
 				.d-product__header-content {
@@ -3730,6 +3806,7 @@
 
 	@media (width <=320px) {
 		&:not(&--active) {
+
 			.d-product--hovered,
 			&:hover {
 				.d-product__delete {
@@ -3772,6 +3849,75 @@
 		}
 	}
 }
+
+.d-field {
+	border: var(--d-field-border-width) solid var(--d-field-primary-color);
+	border-radius: var(--d-field-border-radius);
+	color: var(--d-field-color);
+	font-size: var(--d-field-font-size);
+	font-weight: var(--d-field-font-weight);
+
+	position: relative;
+	transition-duration: .3s;
+	overflow: hidden;
+
+	width: 100%;
+	height: var(--d-field-height);
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		width: 100%;
+
+		&--vertical {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+
+		&--align-start {
+			align-items: flex-start;
+		}
+		
+		&--fit {
+			width: fit-content;
+		}
+	}
+
+	&__input {
+		background-color: var(--d-field-bg-color);
+		padding: var(--d-field-padding-y) var(--d-field-padding-x);
+		width: 100%;
+		height: 100%;
+	}
+
+	&__label {
+		color: var(--d-field-label-color);
+		font-size: var(--d-field-label-font-size);
+		font-weight: var(--d-field-label-font-weight);
+	}
+
+	&__suffix {
+		align-content: center;
+
+		background-color: var(--d-field-bg-color);
+		color: var(--d-field-primary-color, #757575);
+		font-size: var(--d-field-font-size);
+		font-weight: var(--d-field-font-weight);
+
+		position: absolute;
+		top: 50%;
+		right: 0;
+		translate: 0 -50%;
+
+		padding-inline: 4px var(--d-field-padding-x);
+		height: 100%;
+		width: max-content;
+	}
+}
+
+
+// __________Other adaptive__________
 
 // Tab adaptive
 .d-tab {
@@ -3891,6 +4037,7 @@
 	}
 
 	@media (width <=320px) {
+
 		&,
 		&:not(:last-child) {
 			width: calc(100% - var(--primary-padding) * 2);
@@ -4019,3 +4166,5 @@
 		}
 	}
 }
+
+// ___________________________________

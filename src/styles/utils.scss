@@ -106,6 +106,14 @@
 	opacity: 1;
 }
 
+.show {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
 // Steiden
 .visible-1920 {
 	@media (width > 1920px) {

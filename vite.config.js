@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import autoprefixer from "autoprefixer";
-import { resolve } from 'path'
+import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,11 +17,12 @@ export default defineConfig({
 	build: {
 		rollupOptions: {
 			input: {
-				grid: resolve(__dirname, 'views/grid.html'),
-				login: resolve(__dirname, 'views/login.html'),
-				registration: resolve(__dirname, 'views/registration.html'),
-				ui: resolve(__dirname, 'views/ui.html'),
-				"promo-master": resolve(__dirname, 'views/promo-master.html'),
+				grid: resolve(__dirname, "views/grid.html"),
+				login: resolve(__dirname, "views/login.html"),
+				registration: resolve(__dirname, "views/registration.html"),
+				ui: resolve(__dirname, "views/ui.html"),
+				"promo-master": resolve(__dirname, "views/promo-master.html"),
+				products: resolve(__dirname, "views/products/index.html"),
 			},
 		},
 	},

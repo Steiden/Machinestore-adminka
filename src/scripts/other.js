@@ -366,7 +366,7 @@ try {
 	const main = document.querySelector(".main");
 
 	main?.addEventListener("scroll", (e) => {
-		if(window.innerWidth <= 600) return;
+		if (window.innerWidth <= 600) return;
 
 		const promotionsInfoTop = Math.floor(promotionsInfo.getClientRects()[0].top);
 		const headerHeight = Math.floor(header.getClientRects()[0].height);
@@ -399,6 +399,27 @@ try {
 	});
 } catch (e) {
 	console.error("Ошибка работы модалки2: " + e);
+}
+
+try {
+	// Функционал кнопок показать/скрыть
+
+	const buttons = document.querySelectorAll("[data-show-hide]");
+	buttons.forEach((button) => {
+		const target = document.getElementById(button.getAttribute("data-show-hide"));
+		button.addEventListener("click", () => {
+			const isShown = target.classList.contains("show");
+			if (isShown) {
+				target.classList.add("hidden");
+				target.classList.remove("show");
+			} else {
+				target.classList.add("show");
+				target.classList.remove("hidden");
+			}
+		});
+	});
+} catch (e) {
+	console.error("Ошибка работы показать/скрыть: " + e);
 }
 
 function getCSSVariable(name, isNumber = false) {
