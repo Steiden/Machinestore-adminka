@@ -157,6 +157,13 @@
 	--d-message-text-font-size: 14px;
 	--d-message-text-font-weight: 600;
 	// ________________________________
+
+	// __________Message__________
+	--d-badge2-bg-color: #EDEDED;
+	--d-badge2-size: 16px;
+	--d-badge2-font-size: 12px;
+	--d-badge2-color: #757575;
+	// ________________________________
 }
 
 .d-button {
@@ -3878,7 +3885,7 @@
 		&--align-start {
 			align-items: flex-start;
 		}
-		
+
 		&--fit {
 			width: fit-content;
 		}
@@ -3914,6 +3921,27 @@
 		height: 100%;
 		width: max-content;
 	}
+}
+
+.d-badge2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--d-badge2-bg-color, #EDEDED);
+	border-radius: 50%;
+
+	color: var(--d-badge2-color, #757575);
+	font-size: var(--d-badge2-font-size, 12px);
+	font-weight: 400;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	padding: 1px;
+	aspect-ratio: 1;
+	width: var(--d-badge2-size, 16px);
+	height: var(--d-badge2-size, 16px);
 }
 
 
