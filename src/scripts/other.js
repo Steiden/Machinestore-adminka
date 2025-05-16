@@ -368,13 +368,13 @@ try {
 	main?.addEventListener("scroll", (e) => {
 		if (window.innerWidth <= 600) return;
 
-		const promotionsInfoTop = Math.floor(promotionsInfo.getClientRects()[0].top);
-		const headerHeight = Math.floor(header.getClientRects()[0].height);
+		const promotionsInfoTop = Math.floor(promotionsInfo?.getClientRects()[0].top);
+		const headerHeight = Math.floor(header?.getClientRects()[0].height);
 
 		if (promotionsInfoTop === headerHeight) {
-			promotionsInfo.classList.add("promotions__info--sticky");
+			promotionsInfo?.classList.add("promotions__info--sticky");
 		} else {
-			promotionsInfo.classList.remove("promotions__info--sticky");
+			promotionsInfo?.classList.remove("promotions__info--sticky");
 		}
 	});
 } catch (e) {
@@ -395,6 +395,7 @@ try {
 	const modalTriggers = document.querySelectorAll("[data-modal2-trigger]");
 	modalTriggers.forEach((trigger) => {
 		const modal = document.querySelector(`[data-modal2="${trigger.getAttribute("data-modal2-trigger")}"]`);
+		console.log(modal)
 		trigger.addEventListener("click", () => modal.classList.add("d-modal2--active"));
 	});
 } catch (e) {
