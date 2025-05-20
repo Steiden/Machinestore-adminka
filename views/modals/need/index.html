@@ -2117,187 +2117,84 @@
 						</section>
 					</div>
 
-					<!-- Модалка смены организации -->
+					<!-- Модалка "Настройка потребности" -->
 					<div class="d-modal2__overlay">
 						<div class="d-modal2__wrapper">
-							<div class="d-modal2 d-modal2--active change-organization__modal" data-modal2="changeOrganization">
-								<button class="d-modal2__close change-organization__modal-close" data-modal2-close="changeOrganization">
-									<i class="d-icon-times-flat d-modal2__close-icon"></i>
+							<div class="d-modal2 d-modal2--active change-organization__modal" data-modal2="need">
+								<button class="d-modal2__close" data-modal2-close="need">
+									<i class="d-icon-times-flat"></i>
 								</button>
 								<div class="d-modal2__header">
-									<!-- Карточка организации -->
-									<div class="change-organization__item change-organization__item--big">
-										<!-- Верхушка -->
-										<div class="change-organization__item-header">
-											<div class="change-organization__item-image-container">
-												<img src="/icons/logo.svg" alt="" class="change-organization__item-image" />
-											</div>
-											<p class="change-organization__item-title">МСТ</p>
+									<h3 class="d-modal2__title">Потребности</h3>
 
-											<!-- Статус "активно" -->
-											<div class="change-organization__item-active-container">
-												<div
-													class="d-divider d-divider--vertical d-divider--big change-organization__item-active-divider"
-												></div>
-												<div class="d-badge2 d-badge2--fit change-organization__item-active">Сейчас активно</div>
-											</div>
+									<div class="d-badge2 d-badge2--fit need__notice">
+										Обратите внимание. Здесь отображаются только те потребности, которые привязаны к складу доставки.
+									</div>
+
+									<div class="need__header">
+										<div class="need__subtitle-container">
+											<h4 class="need__subtitle">Потребности организцаии</h4>
+											<div class="d-badge2 need__subtitle-badge">9</div>
 										</div>
-										<!-- Контент -->	
-										<div class="change-organization__item-content">
-											<div class="change-organization__item-data">
-												<i class="d-icon-location change-organization__item-data-icon"></i>
-												<p class="change-organization__item-data-text">г. Екатеринбург, ул. Предельная, 57/3</p>
-											</div>
+
+										<div class="d-button box-shadow-none d-button-primary need__header-button">
+											<i class="d-icon-plus-flat need__header-button-icon"></i>
+											Создать потребность
 										</div>
 									</div>
+
+									<!-- Поиск -->
+									<form class="d-search d-search--alt need__search">
+										<input type="text" placeholder="Поиск по наименованию" class="d-search__field need__search-field" />
+										<button
+											type="button"
+											class="d-button d-button-primary d-button-primary-small d-search__button box-shadow-none"
+										>
+											Найти
+										</button>
+
+										<ul class="d-search__suggestions">
+											<!-- <li class="d-search__suggestion">
+												Россия, Москва, Большой Предтеченский переулок, 13с4
+											</li>
+											<li class="d-search__suggestion">
+												Россия, Москва, Большой Предтеченский переулок, 13с4
+											</li>
+											<li class="d-search__suggestion">
+												Россия, Москва, Большой Предтеченский переулок, 13с4
+											</li> -->
+										</ul>
+									</form>
 								</div>
-								<div class="d-modal2__content change-organization__modal-content">
-									<!-- Список организаций -->
-									<div class="change-organization__item-list">
-										<!-- Карточка организации -->
-										<div class="change-organization__item">
-											<!-- Верхушка -->
-											<div class="change-organization__item-header">
-												<div class="change-organization__item-image-container">
-													<div class="change-organization__item-image-fallback"></div>
-												</div>
-												<p class="change-organization__item-title">МСТ</p>
-											</div>
-											<!-- Контент -->
-											<div class="change-organization__item-content">
-												<div class="change-organization__item-data">
-													<i class="d-icon-location change-organization__item-data-icon"></i>
-													<p class="change-organization__item-data-text">г. Екатеринбург, ул. Предельная, 57/3</p>
-												</div>
-											</div>
-										</div>
-
-										<!-- Карточка организации -->
-										<div class="change-organization__item">
-											<!-- Верхушка -->
-											<div class="change-organization__item-header">
-												<div class="change-organization__item-image-container">
-													<div class="change-organization__item-image-fallback"></div>
-												</div>
-												<p class="change-organization__item-title">МСТ</p>
-											</div>
-											<!-- Контент -->
-											<div class="change-organization__item-content">
-												<div class="change-organization__item-data">
-													<i class="d-icon-location change-organization__item-data-icon"></i>
-													<p class="change-organization__item-data-text">г. Екатеринбург, ул. Предельная, 57/3</p>
-												</div>
-											</div>
-										</div>
-
-										<!-- Карточка организации -->
-										<div class="change-organization__item">
-											<!-- Верхушка -->
-											<div class="change-organization__item-header">
-												<div class="change-organization__item-image-container">
-													<div class="change-organization__item-image-fallback"></div>
-												</div>
-												<p class="change-organization__item-title">МСТ</p>
-											</div>
-											<!-- Контент -->
-											<div class="change-organization__item-content">
-												<div class="change-organization__item-data">
-													<i class="d-icon-location change-organization__item-data-icon"></i>
-													<p class="change-organization__item-data-text">г. Екатеринбург, ул. Предельная, 57/3</p>
-												</div>
-											</div>
-										</div>
-
-										<!-- Карточка организации -->
-										<div class="change-organization__item">
-											<!-- Верхушка -->
-											<div class="change-organization__item-header">
-												<div class="change-organization__item-image-container">
-													<div class="change-organization__item-image-fallback"></div>
-												</div>
-												<p class="change-organization__item-title">МСТ</p>
-											</div>
-											<!-- Контент -->
-											<div class="change-organization__item-content">
-												<div class="change-organization__item-data">
-													<i class="d-icon-location change-organization__item-data-icon"></i>
-													<p class="change-organization__item-data-text">г. Екатеринбург, ул. Предельная, 57/3</p>
-												</div>
-											</div>
-										</div>
-
-										<!-- Карточка организации -->
-										<div class="change-organization__item">
-											<!-- Верхушка -->
-											<div class="change-organization__item-header">
-												<div class="change-organization__item-image-container">
-													<div class="change-organization__item-image-fallback"></div>
-												</div>
-												<p class="change-organization__item-title">МСТ</p>
-											</div>
-											<!-- Контент -->
-											<div class="change-organization__item-content">
-												<div class="change-organization__item-data">
-													<i class="d-icon-location change-organization__item-data-icon"></i>
-													<p class="change-organization__item-data-text">г. Екатеринбург, ул. Предельная, 57/3</p>
-												</div>
-											</div>
-										</div>
-
-										<!-- Карточка организации -->
-										<div class="change-organization__item">
-											<!-- Верхушка -->
-											<div class="change-organization__item-header">
-												<div class="change-organization__item-image-container">
-													<div class="change-organization__item-image-fallback"></div>
-												</div>
-												<p class="change-organization__item-title">МСТ</p>
-											</div>
-											<!-- Контент -->
-											<div class="change-organization__item-content">
-												<div class="change-organization__item-data">
-													<i class="d-icon-location change-organization__item-data-icon"></i>
-													<p class="change-organization__item-data-text">г. Екатеринбург, ул. Предельная, 57/3</p>
-												</div>
-											</div>
-										</div>
-
-										<!-- Карточка организации -->
-										<div class="change-organization__item">
-											<!-- Верхушка -->
-											<div class="change-organization__item-header">
-												<div class="change-organization__item-image-container">
-													<div class="change-organization__item-image-fallback"></div>
-												</div>
-												<p class="change-organization__item-title">МСТ</p>
-											</div>
-											<!-- Контент -->
-											<div class="change-organization__item-content">
-												<div class="change-organization__item-data">
-													<i class="d-icon-location change-organization__item-data-icon"></i>
-													<p class="change-organization__item-data-text">г. Екатеринбург, ул. Предельная, 57/3</p>
-												</div>
-											</div>
-										</div>
-
-										<!-- Карточка организации -->
-										<div class="change-organization__item">
-											<!-- Верхушка -->
-											<div class="change-organization__item-header">
-												<div class="change-organization__item-image-container">
-													<div class="change-organization__item-image-fallback"></div>
-												</div>
-												<p class="change-organization__item-title">МСТ</p>
-											</div>
-											<!-- Контент -->
-											<div class="change-organization__item-content">
-												<div class="change-organization__item-data">
-													<i class="d-icon-location change-organization__item-data-icon"></i>
-													<p class="change-organization__item-data-text">г. Екатеринбург, ул. Предельная, 57/3</p>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="d-modal2__content need__modal-content">
+									<table class="d-table d-table--small d-table--full d-table--head-col-divider">
+										<thead class="d-table__head">
+											<tr class="d-table__row">
+												<th class="d-table__head-col">№</th>
+												<th class="d-table__head-col">Наименование</th>
+												<th class="d-table__head-col">Тип</th>
+												<th class="d-table__head-col"></th>
+											</tr>
+										</thead>
+										<tbody class="d-table__body">
+											<tr class="d-table__row">
+												<td class="d-table__col need__table-col">48</td>
+												<td class="d-table__col need__table-col">Заказ МСТ 09.04</td>
+												<td class="d-table__col need__table-col">Загружен на портале</td>
+												<td class="d-table__col need__table-col">
+													<div class="need__table-button-container">
+														<button class="need__table-button">
+															<span class="d-icon-eye need__table-button-icon"></span>
+														</button>
+														<div class="d-divider d-divider--vertica d-divider--big need__table-button-divider"></div>
+														<button class="need__table-button">
+															<i class="d-icon-trash need__table-button-icon"></i>
+														</button>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>

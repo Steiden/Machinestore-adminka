@@ -25,6 +25,7 @@ export default defineConfig({
 				products: resolve(__dirname, "views/products/index.html"),
 				vendor: resolve(__dirname, "views/modals/vendor/index.html"),
 				organization: resolve(__dirname, "views/modals/organization/index.html"),
+				need: resolve(__dirname, "views/modals/need/index.html"),
 			},
 		},
 	},
