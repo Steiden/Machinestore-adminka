@@ -24,6 +24,7 @@ export default defineConfig({
 				"promo-master": resolve(__dirname, "views/promo-master.html"),
 				products: resolve(__dirname, "views/products/index.html"),
 				vendor: resolve(__dirname, "views/modals/vendor/index.html"),
+				organization: resolve(__dirname, "views/modals/organization/index.html"),
 			},
 		},
 	},

@@ -3948,6 +3948,13 @@
 	aspect-ratio: 1;
 	width: var(--d-badge2-size, 16px);
 	height: var(--d-badge2-size, 16px);
+
+	&--fit {
+		border-radius: 24px;
+		aspect-ratio: unset;
+		width: fit-content;
+		height: fit-content;
+	}
 }
 
 .d-sheet {
