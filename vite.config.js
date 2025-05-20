@@ -23,6 +23,7 @@ export default defineConfig({
 				ui: resolve(__dirname, "views/ui.html"),
 				"promo-master": resolve(__dirname, "views/promo-master.html"),
 				products: resolve(__dirname, "views/products/index.html"),
+				vendor: resolve(__dirname, "views/modals/vendor/index.html"),
 			},
 		},
 	},

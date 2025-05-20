@@ -3950,6 +3950,48 @@
 	height: var(--d-badge2-size, 16px);
 }
 
+.d-sheet {
+	background-color: #FFFFFF8C;
+	backdrop-filter: blur(22px);
+	border-radius: 12px 0 / 0 12px;
+
+	translate: 100% 0;
+	transition-duration: .3s;
+
+	padding-block: 32px;
+	padding-inline: 18px 32px;
+	height: 100%;
+	width: 1070px;
+	max-width: 100%;
+
+	&--active {
+		translate: 0;
+	}
+
+	&__overlay {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		background-color: transparent;
+		position: absolute;
+		inset: 0;
+		transition-duration: .3s;
+		height: 100%;
+		width: 100%;
+
+		&:not(:has(.d-sheet--active)) {
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+
+	&__wrapper {
+		position: relative;
+		height: 100%;
+		width: fit-content;
+	}
+}
+
 // __________Other adaptive__________
 
 // Tab adaptive

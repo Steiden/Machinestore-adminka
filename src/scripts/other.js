@@ -415,12 +415,25 @@ try {
 				target.classList.remove("show");
 			} else {
 				target.classList.add("show");
-				target.classList.remove("hidden");
+				target.classList.remove("hidden");g
 			}
 		});
 	});
 } catch (e) {
 	console.error("Ошибка работы показать/скрыть: " + e);
+}
+
+try {
+	// Функционал работыв sheet
+
+	const sheets = document.querySelectorAll("[data-sheet]");
+	sheets.forEach(sheet => {
+		const closeButton = document.querySelector(`[data-sheet-close="${sheet.getAttribute("data-sheet")}"]`);
+		closeButton.addEventListener("click", () => sheet.classList.remove("d-sheet--active"));
+	})
+}
+catch (e) {
+	console.error("Ошибка работы sheet: " + e);
 }
 
 function getCSSVariable(name, isNumber = false) {
