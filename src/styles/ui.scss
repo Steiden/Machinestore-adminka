@@ -77,7 +77,6 @@
 	--d-table-first-col-padding: 24px;
 	// ___________________________
 
-
 	// __________Field____________
 	--d-field-bg-color: #fafafa;
 	--d-field-border-width: 1px;
@@ -160,7 +159,7 @@
 	// ________________________________
 
 	// __________Message__________
-	--d-badge2-bg-color: #EDEDED;
+	--d-badge2-bg-color: #ededed;
 	--d-badge2-size: 16px;
 	--d-badge2-font-size: 12px;
 	--d-badge2-color: #757575;
@@ -303,12 +302,12 @@
 }
 
 .d-button-quaternary {
-	background-color: #EDEDED;
+	background-color: #ededed;
 	color: #282828;
 
 	&:hover {
 		background-color: #282828;
-		color: #FBFBFB;
+		color: #fbfbfb;
 	}
 
 	&:active {
@@ -1132,7 +1131,6 @@
 	}
 
 	&--disabled {
-
 		.d-notion__category-name,
 		.d-notion__title {
 			color: #282828;
@@ -2412,7 +2410,7 @@
 	&__row {
 		position: relative;
 
-		&:first-child>.d-table__col {
+		&:first-child > .d-table__col {
 			padding-top: 8px;
 		}
 
@@ -2430,7 +2428,6 @@
 		}
 
 		&:not(:first-child) {
-
 			.d-table__head-col,
 			.d-table__col {
 				&:not(:first-child) {
@@ -2638,7 +2635,6 @@
 	}
 
 	&--small {
-
 		.d-table__head-col,
 		.d-table__col {
 			&:first-child {
@@ -3002,15 +2998,12 @@
 }
 
 .d-modal2 {
-	@include scrollbar;
-
 	display: flex;
 	flex-direction: column;
 
 	overflow-y: auto;
 	overflow-x: hidden;
 
-	padding: var(--d-modal2-padding);
 	max-height: 100%;
 
 	&--fit {
@@ -3069,6 +3062,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
+		padding: var(--d-modal2-padding);
+		padding-bottom: 0;
 	}
 
 	&__title {
@@ -3091,12 +3086,18 @@
 	}
 
 	&__content {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		flex-grow: 1;
-		overflow-y: auto;
-		position: relative;
+		@include scrollbar;
+
+		& {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			flex-grow: 1;
+			overflow-y: auto;
+			position: relative;
+			padding: var(--d-modal2-padding);
+			padding-top: 0;
+		}
 	}
 
 	&__actions {
@@ -3732,7 +3733,6 @@
 
 	@media (width <=600px) {
 		&:not(&--active) {
-
 			.d-product--hovered,
 			&:hover {
 				.d-product__header-content {
@@ -3820,7 +3820,6 @@
 
 	@media (width <=320px) {
 		&:not(&--active) {
-
 			.d-product--hovered,
 			&:hover {
 				.d-product__delete {
@@ -3872,7 +3871,7 @@
 	font-weight: var(--d-field-font-weight);
 
 	position: relative;
-	transition-duration: .3s;
+	transition-duration: 0.3s;
 	overflow: hidden;
 
 	width: 100%;
@@ -3935,7 +3934,7 @@
 	justify-content: center;
 	align-items: center;
 
-	background-color: var(--d-badge2-bg-color, #EDEDED);
+	background-color: var(--d-badge2-bg-color, #ededed);
 	border-radius: 50%;
 
 	color: var(--d-badge2-color, #757575);
@@ -3950,7 +3949,6 @@
 	width: var(--d-badge2-size, 16px);
 	height: var(--d-badge2-size, 16px);
 }
-
 
 // __________Other adaptive__________
 
@@ -4072,7 +4070,6 @@
 	}
 
 	@media (width <=320px) {
-
 		&,
 		&:not(:last-child) {
 			width: calc(100% - var(--primary-padding) * 2);

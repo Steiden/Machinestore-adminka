@@ -161,6 +161,17 @@
             }
         }
     }
+
+    @media (width <= 1200px) {
+        &__back {
+            font-size: 10px;
+            gap: 4px;
+        }
+
+        &__breadcrumbs {
+            display: none;
+        }
+    }
 }
 
 // Карточка товара
@@ -240,6 +251,10 @@
         }
 
         &-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             aspect-ratio: 1;
             width: 24px;
             height: 24px;
