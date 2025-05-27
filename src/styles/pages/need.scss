@@ -2,7 +2,11 @@
 
     &__modal {
         width: 1132px;
-        height: 800px;   
+        height: 800px;
+
+        &-content {
+            // justify-content: start;
+        }
     }
 
     &__title,
@@ -72,9 +76,30 @@
             font-weight: 400;
             padding-left: 24px;
         }
+
+        &-button {
+            width: 140px;
+        }
     }
 
     &__table {
+
+        .d-table--small &-head-col {
+            height: 30px;
+        }
+
+        .d-table__row:not(:first-child) &-col {
+            &:not(:first-child)::before {
+                content: "";
+                background-color: #757575;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                translate: 0 -50%;
+                width: 0.5px;
+                height: 20px;
+            }
+        }
 
         &-col {
             font-size: 14px;
@@ -94,12 +119,127 @@
 
             &-container {
                 display: flex;
+                justify-content: center;
                 align-items: center;
             }
 
             &-divider {
                 --d-divider-length: 15px;
             }
+        }
+    }
+}
+
+.need-create {
+
+    &__modal {
+        width: 1040px;
+        height: 700px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
+
+    &__description {
+        color: #757575;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__input {
+        margin-bottom: 40px;
+    }
+
+    &__template {
+        color: #FBFBFB;
+        font-size: 16px;
+        font-weight: 600;
+
+        margin-bottom: 24px;
+        padding: 8px 16px;
+        height: 40px;
+        min-height: 40px;
+
+        &-icon {
+            font-size: 24px;
+        }
+    }
+
+    &__upload {
+        padding: 16px;
+    }
+
+    &__create {
+        align-self: center;
+
+        padding: 8px 12px;
+        height: 40px;
+        min-height: 40px;
+        min-width: 100px;
+    }
+}
+
+.need-part {
+    &__input {
+        margin-bottom: 32px;
+    }
+
+    &__doc {
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            font-size: 24px;
+            margin-right: 16px;
+        }
+
+        &-text {
+            flex-grow: 1;
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 16px;
+        }
+
+        &-actions {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.need-vendor {
+
+    &__modal {
+        width: 1040px;
+        height: 362px;
+    }
+
+    &__notice {
+        margin-bottom: 32px;
+    }
+
+    &__input {
+        margin-bottom: 16px;
+
+        &-container {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__radio {
+        &-label {
+            color: #282828;
+            font-size: 16px;
+            font-weight: 500;
         }
     }
 }
