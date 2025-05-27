@@ -135,7 +135,7 @@ try {
 	async function getAddress(coordinates) {
 		// Обратное геокодирование через Яндекс API
 
-		const response = await fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=0d8c71de-8c91-4122-b738-3d97ebe7846c&geocode=${coordinates.join(",")}&format=json&results=1`).catch((err) => {
+		const response = await fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=c7c05179-cdf5-46be-b199-f7b91008a531&geocode=${coordinates.join(",")}&format=json&results=1`).catch((err) => {
 			console.error("Ошибка получения адреса по координатам: " + err);
 		});
 
@@ -146,7 +146,7 @@ try {
 	async function getCoordinates(address) {
 		// Обратное геокодирование через Яндекс API
 
-		const response = await fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=0d8c71de-8c91-4122-b738-3d97ebe7846c&geocode=${address}&format=json&results=1`).catch((err) => {
+		const response = await fetch(`https://geocode-maps.yandex.ru/1.x/?apikey=c7c05179-cdf5-46be-b199-f7b91008a531&geocode=${address}&format=json&results=1`).catch((err) => {
 			console.error("Ошибка получения адреса по координатам: " + err);
 		});
 

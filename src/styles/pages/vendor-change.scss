@@ -13,6 +13,7 @@
 
 	&__map {
 		border-radius: 8px;
+		overflow: hidden;
 		width: 400px;
 		height: 100%;
 
@@ -240,6 +241,21 @@
 			align-items: center;
 			gap: 16px;
 			width: 100%;
+		}
+	}
+
+	@media (width <= 1920px) {
+		&__sheet {
+			padding: 16px;
+			width: 940px;
+		}
+
+		&__title {
+			font-size: 16px;
+
+			&-container {
+				margin-bottom: 20px;
+			}
 		}
 	}
 }
