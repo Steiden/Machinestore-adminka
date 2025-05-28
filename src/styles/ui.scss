@@ -1446,6 +1446,7 @@
 
 .d-search {
 	--d-search-font-size: 14px;
+	--d-search-button-height: 100%;
 
 	display: flex;
 	align-items: center;
@@ -1536,6 +1537,8 @@
 	}
 
 	&__button {
+		min-height: var(--d-search-button-height);
+		height: var(--d-search-button-height);
 		max-height: 100%;
 	}
 
@@ -1615,13 +1618,10 @@
 	@media (width <=1200px) {
 		&--alt {
 			--d-search-font-size: 12px;
+			--d-search-button-height: 32px;
 
 			& {
 				height: 32px;
-			}
-
-			.d-search-button {
-				min-height: 32px;
 			}
 
 			.d-search__icon {
@@ -1632,8 +1632,12 @@
 
 	@media (width <=800px) {
 		&--alt {
-			padding-left: 16px;
-			height: 26px;
+			--d-search-button-height: 26px;
+
+			& {
+				padding-left: 16px;
+				height: 26px;
+			}
 
 			.d-search__icon {
 				display: none;
@@ -1642,7 +1646,6 @@
 			.d-search__button {
 				font-size: 11px;
 				padding-inline: 12px;
-				min-height: 26px;
 			}
 		}
 	}
