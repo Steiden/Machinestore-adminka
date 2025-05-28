@@ -245,6 +245,8 @@
 			display: flex;
 			align-items: center;
 			gap: 16px;
+			border-bottom: 0.5px solid #757575;
+			padding-bottom: 16px;
 			width: 100%;
 		}
 	}
@@ -295,6 +297,12 @@
 			&-title {
 				&--1280 {
 					display: none;
+				}
+			}
+
+			&-search {
+				&-button {
+					min-height: 35px;
 				}
 			}
 		}
@@ -383,10 +391,33 @@
 
 		&__connected {
 			&-title {
-				
+				display: none;
 
 				&--1280 {
+					display: block;
 					margin-bottom: 12px;
+				}
+			}
+
+			&-search {
+				--d-search-font-size: 12px;
+
+				& {
+					margin-top: 8px;
+					margin-bottom: 24px;
+					height: 32px;
+				}
+
+				&-button {
+					min-height: 28px;
+				}
+			}
+
+			&-item {
+				gap: 8px;
+
+				&-radio {
+					--d-radio-width: 18px;
 				}
 			}
 		}
