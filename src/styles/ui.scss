@@ -1131,6 +1131,7 @@
 	}
 
 	&--disabled {
+
 		.d-notion__category-name,
 		.d-notion__title {
 			color: #282828;
@@ -1613,7 +1614,11 @@
 
 	@media (width <=1200px) {
 		&--alt {
-			height: 32px;
+			--d-search-font-size: 12px;
+
+			& {
+				height: 32px;
+			}
 
 			.d-search-button {
 				min-height: 32px;
@@ -1621,10 +1626,6 @@
 
 			.d-search__icon {
 				margin-left: 6px;
-			}
-
-			.d-search__field {
-				font-size: 12px;
 			}
 		}
 	}
@@ -2406,7 +2407,7 @@
 	&__row {
 		position: relative;
 
-		&:first-child > .d-table__col {
+		&:first-child>.d-table__col {
 			padding-top: 8px;
 		}
 
@@ -2424,6 +2425,7 @@
 		}
 
 		&:not(:first-child) {
+
 			.d-table__head-col,
 			.d-table__col {
 				&:not(:first-child) {
@@ -2631,6 +2633,7 @@
 	}
 
 	&--small {
+
 		.d-table__head-col,
 		.d-table__col {
 			&:first-child {
@@ -3731,6 +3734,7 @@
 
 	@media (width <=600px) {
 		&:not(&--active) {
+
 			.d-product--hovered,
 			&:hover {
 				.d-product__header-content {
@@ -3818,6 +3822,7 @@
 
 	@media (width <=320px) {
 		&:not(&--active) {
+
 			.d-product--hovered,
 			&:hover {
 				.d-product__delete {
@@ -4117,6 +4122,7 @@
 	}
 
 	@media (width <=320px) {
+
 		&,
 		&:not(:last-child) {
 			width: calc(100% - var(--primary-padding) * 2);
