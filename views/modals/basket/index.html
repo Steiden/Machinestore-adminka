@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -3507,10 +3507,27 @@
 
 							<button
 								class="d-button d-button-primary d-button-primary-small cart__buy"
+								data-sheet-trigger="order"
 							>
 								<span> Перейти к заказу </span>
 								<span> 2 500.00 ₽ </span>
 							</button>
+						</div>
+					</div>
+
+					<!-- Модалка оформления заказа -->
+					<div class="d-sheet__overlay order__sheet-overlay">
+						<div class="d-sheet__wrapper order__sheet-wrapper">
+							<div class="d-sheet d-sheet--active order__sheet" data-sheet="order">
+								<div class="d-sheet__content order">
+									<div class="order__header">
+										<p class="order__title">Оформление заказа</p>
+										<button class="order__close">
+											<i class="d-icon-times-flat"></i>
+										</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</main>
