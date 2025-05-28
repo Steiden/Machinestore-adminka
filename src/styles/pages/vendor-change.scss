@@ -45,6 +45,7 @@
 			align-items: center;
 			gap: 8px;
 
+			margin-top: 4px;
 			margin-bottom: 28px;
 			width: 100%;
 		}
@@ -147,6 +148,10 @@
 				height: 100%;
 
 				&-container {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
 					background-color: #757575;
 					border-radius: 50%;
 					overflow: hidden;
@@ -156,6 +161,10 @@
 			}
 
 			&-delete-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
 				font-size: 12px;
 				aspect-ratio: 1;
 				width: 16px;
@@ -477,6 +486,148 @@
 
 			&-item {
 				padding-bottom: 8px;
+			}
+		}
+	}
+
+	@media (width <=1024px) {
+		gap: 24px;
+
+		&__sheet {
+			border-radius: 8px;
+			box-shadow: 0px 4px 13.4px -5px #00000042;
+			width: 100%;
+			height: 100%;
+
+			&-overlay {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				position: fixed;
+				inset: 0;
+				backdrop-filter: blur(16px);
+				z-index: 100;
+			}
+
+			&-wrapper {
+				height: fit-content;
+				height: 88%;
+				width: 80%;
+			}
+		}
+
+		&__title {
+			&-container {
+				margin-bottom: 8px;
+			}
+		}
+
+		&__selected {
+			margin-bottom: 16px;
+
+			&-title,
+			&-list {
+				padding-inline: 4px 12px;
+			}
+
+			&-item {
+				&-image {
+					&-container {
+						width: 12px;
+						height: 12px;
+					}
+				}
+
+				&-title {
+					font-size: 10px;
+
+					&-container {
+						gap: 4px;
+					}
+				}
+
+				&-delete-button {
+					font-size: 9px;
+					width: 12px;
+					height: 12px;
+				}
+
+				&-data {
+					&-icon {
+						font-size: 10px;
+					}
+
+					&-text {
+						font-size: 9px;
+						font-weight: 500;
+					}
+
+					&-divider {
+						--d-divider-margin: 8px;
+					}
+				}
+
+				&-content {
+					margin-bottom: 4px;
+				}
+
+				&-radio {
+					--d-radio-width: 12px;
+
+					&-wrapper {
+						gap: 4px;
+					}
+
+					&-label {
+						font-size: 9px;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+
+		&__connected {
+			&-title {
+				&--1280 {
+					margin-bottom: 8px;
+				}
+			}
+
+			&-search {
+				--d-search-font-size: 9px;
+
+				& {
+					padding-right: 1px;
+					height: 20px;
+				}
+
+				&-field {
+					font-weight: 500;
+					padding-left: 8px;
+				}
+
+				&-button {
+					min-height: 18px;
+
+					&-icon {
+						font-size: 10px;
+					}
+				}
+			}
+
+			&-item {
+				gap: 4px;
+
+				&-radio {
+					--d-radio-width: 12px;
+				}
+
+				&-title {
+					&-container {
+						gap: 8px;
+					}
+				}
 			}
 		}
 	}
