@@ -1976,12 +1976,18 @@
 	position: fixed;
 	bottom: 0;
 	right: 10%;
+	transition-duration: .3s;
+	translate: 0 calc(100% - 40px);	// Высота шапки корзины
 
 	overflow: hidden;
 
 	padding-bottom: 24px;
 	width: 368px;
 	max-height: 80dvh;
+
+	&--active {
+		translate: 0;
+	}
 
 	&__header {
 		display: flex;
@@ -2018,6 +2024,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
+		transition-duration: .3s;
 		max-height: calc(80dvh - 40px - 24px);
 	}
 

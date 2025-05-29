@@ -5,6 +5,7 @@
 	flex-direction: column;
 
 	padding: 32px;
+    max-height: 100%;
 
 	// Sheet
 	&__sheet {
@@ -365,4 +366,57 @@
 			height: 24px;
 		}
 	}
+
+    // Подвал
+    &__footer {
+        display: flex;
+        flex-direction: column;
+
+        &-divider {
+            --d-divider-margin: 48px;
+        }
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        &-left {
+            display: flex;
+        }
+
+        &-right {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &-label,
+        &-value {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        &-actions {
+            display: flex;
+            align-items: center;
+
+            &-buy {
+                font-size: 16px;
+                font-weight: 600;
+
+                padding: 4px 16px;
+                height: 32px;
+                min-height: 32px;
+            }
+
+            &-upload {
+                font-size: 24px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
 }

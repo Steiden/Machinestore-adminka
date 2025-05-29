@@ -456,7 +456,7 @@ try {
 }
 
 try {
-	// Функционал работыв sheet
+	// Функционал работы sheet
 
 	const sheets = document.querySelectorAll("[data-sheet]");
 	sheets.forEach((sheet) => {
@@ -486,4 +486,17 @@ function getCSSVariable(name, isNumber = false) {
 	}
 
 	return variable;
+}
+
+try {
+	// Функционал работы корзины
+
+	const cart = document.querySelector(".cart");
+	const cartHeader = cart.querySelector(".cart__header");
+	cartHeader.addEventListener("click", () => {
+		cart.classList.toggle("cart--active");
+	})
+
+} catch (e) {
+	console.error("Ошибка работы корзины: " + e);
 }
