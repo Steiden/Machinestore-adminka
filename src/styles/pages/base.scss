@@ -2373,6 +2373,36 @@
 			min-height: 24px;
 		}
 	}
+
+	@media (width <= 1024px) {
+		--cart-header-height: 24px;
+
+		& {
+			border-radius: 6px 6px 0 0;
+		}
+
+		&__header {
+			padding: 4px 10px;
+
+			&-title {
+				font-size: 10px;
+				font-weight: 400;
+			}
+		}
+
+		&__tools {
+			padding-block: 8px;
+
+			&-button {
+				height: 20px;
+				min-height: 20px;
+
+				&-icon {
+					font-size: 10px;
+				}
+			}
+		}
+	}
 }
 
 h2 {
