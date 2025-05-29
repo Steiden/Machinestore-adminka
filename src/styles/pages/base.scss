@@ -2096,7 +2096,8 @@
 			flex-direction: column;
 			gap: 16px;
 
-			overflow-y: auto;
+			border-radius: 6px;
+			overflow: hidden auto;
 
 			padding: 16px var(--cart-padding-x);
 			max-height: 70%;
@@ -2163,6 +2164,22 @@
 			margin-bottom: 8px;
 		}
 
+		&-counter {
+			border: none;
+			height: 24px;
+			max-width: 108px;
+
+			&-button {
+				width: 24px;
+				height: 24px;
+			}
+
+			&-input {
+				font-size: 12px;
+				font-weight: 500;
+			}
+		}
+
 		&-footer {
 			display: flex;
 			align-items: center;
@@ -2176,22 +2193,6 @@
 		}
 	}
 
-	&__counter {
-		border: none;
-		height: 24px;
-		max-width: 108px;
-
-		&-button {
-			width: 24px;
-			height: 24px;
-		}
-
-		&-input {
-			font-size: 12px;
-			font-weight: 500;
-		}
-	}
-
 	&__buy {
 		align-self: center;
 		justify-content: space-between;
@@ -2199,6 +2200,7 @@
 		font-size: 16px;
 		font-weight: 600;
 
+		margin-top: 8px;
 		margin-bottom: 24px;
 		width: calc(100% - 16px * 2);
 		height: 36px;
@@ -2209,7 +2211,7 @@
 	// 	display: none;
 	// }
 
-	@media (width <= 1920px) {
+	@media (width <=1920px) {
 		--cart-header-height: 38px;
 
 		&__list {
@@ -2217,7 +2219,7 @@
 		}
 	}
 
-	@media (width <= 1536px) {
+	@media (width <=1536px) {
 		border-radius: 8px 8px 0 0;
 
 		&__header {
@@ -2268,6 +2270,12 @@
 					height: 12px;
 				}
 			}
+
+			&-header {
+				&-button {
+					display: none;
+				}
+			}
 		}
 
 		&__buy {
@@ -2278,6 +2286,91 @@
 			height: 32px;
 			min-height: 32px;
 			width: calc(100% - 8px * 2);
+		}
+	}
+
+	@media (width <=1280px) {
+		--cart-header-height: 32px;
+
+		& {
+			width: 304px;
+		}
+
+		&__header {
+			border-radius: 12px 12px 0 0;
+
+			&-icon {
+				font-size: 14px;
+			}
+		}
+
+		&__tools {
+			padding-block: 16px 8px;
+
+			&-button {
+				font-size: 9px;
+				font-weight: 500;
+
+				padding: 4px 8px;
+				height: 24px;
+				min-height: 24px;
+			}
+		}
+
+		&__list {
+			padding-top: 16px;
+		}
+
+		&__item {
+			&-badge {
+				font-size: 9px;
+				font-weight: 500;
+
+				padding: 1px 4px;
+				height: 16px;
+
+				&-image {
+					width: 14px;
+					height: 14px;
+				}
+			}
+
+			&-article {
+				font-size: 9px;
+				font-weight: 500;
+				margin-bottom: 16px;
+			}
+
+			&-counter {
+				border: 1px solid #757575;
+				border-radius: 30px;
+				height: 18px;
+				max-width: 100px;
+
+				&-button {
+					width: 20px;
+					height: 20px;
+				}
+
+				&-input {
+					font-size: 9px;
+					font-weight: 600;
+				}
+			}
+
+			&-footer {
+				&-value {
+					font-size: 10px;
+				}
+			}
+		}
+
+		&__buy {
+			font-size: 10px;
+			padding: 4px 12px;
+			margin-bottom: 12px;
+			height: 24px;
+			min-height: 24px;
 		}
 	}
 }
