@@ -10,6 +10,7 @@
 
 	&__item {
 		--change-organization-item-image-size: 32px;
+		--change-organization-item-image-margin-right: 16px;
 		--change-organization-item-title: 24px;
 		--change-organization-item-data-text-size: 16px;
 
@@ -25,7 +26,8 @@
         }
 
 		&--big {
-			--change-organization-item-image-size: 48px;
+			--change-organization-item-image-size: 36px;
+			--change-organization-item-image-margin-right: 20px;
 			--change-organization-item-title: 32px;
 			--change-organization-item-data-text-size: 20px;
 
@@ -55,7 +57,7 @@
 				border-radius: 50%;
 				overflow: hidden;
 				aspect-ratio: 1;
-                margin-right: 16px;
+                margin-right: var(--change-organization-item-image-margin-right);
 				width: var(--change-organization-item-image-size);
 				height: var(--change-organization-item-image-size);
 			}
@@ -82,10 +84,6 @@
 				display: flex;
 				align-items: center;
 			}
-
-			&-divider {
-				--d-divider-length: 15px;
-			}
 		}
 
 		&-content {
@@ -100,7 +98,7 @@
 			color: #757575;
 
 			&-icon {
-				font-size: 20px;
+				font-size: 24px;
 			}
 
 			&-text {
