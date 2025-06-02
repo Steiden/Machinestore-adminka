@@ -9,6 +9,7 @@
 	}
 
 	&__item {
+		--change-organization-item-image-container-size: 32px;
 		--change-organization-item-image-size: 32px;
 		--change-organization-item-image-margin-right: 16px;
 		--change-organization-item-title: 24px;
@@ -27,8 +28,9 @@
 		}
 
 		&--big {
+			--change-organization-item-image-container-size: 48px;
 			--change-organization-item-image-size: 36px;
-			--change-organization-item-image-margin-right: 20px;
+			--change-organization-item-image-margin-right: 16px;
 			--change-organization-item-title: 32px;
 			--change-organization-item-data-text-size: 20px;
 			--change-organization-item-data-icon-size: 24px;
@@ -55,6 +57,9 @@
 			width: 100%;
 			height: 100%;
 
+			width: var(--change-organization-item-image-size);
+			height: var(--change-organization-item-image-size);
+
 			&-container {
 				display: flex;
 				justify-content: center;
@@ -64,8 +69,8 @@
 				overflow: hidden;
 				aspect-ratio: 1;
 				margin-right: var(--change-organization-item-image-margin-right);
-				width: var(--change-organization-item-image-size);
-				height: var(--change-organization-item-image-size);
+				width: var(--change-organization-item-image-container-size);
+				height: var(--change-organization-item-image-container-size);
 			}
 
 			&-fallback {
@@ -137,7 +142,7 @@
 
 			&--big {
 				--change-organization-item-image-size: 23px;
-				--change-organization-item-image-margin-right: 12px;
+				--change-organization-item-image-margin-right: 8px;
 				--change-organization-item-title: 20px;
 				--change-organization-item-data-text-size: 14px;
 				--change-organization-item-data-icon-size: 16px;
@@ -178,6 +183,7 @@
 		}
 
 		&__item {
+			--change-organization-item-image-container-size: 24px;
 			--change-organization-item-image-size: 24px;
 			--change-organization-item-image-margin-right: 16px;
 			--change-organization-item-title: 16px;
@@ -185,8 +191,9 @@
 			--change-organization-item-data-icon-size: 20px;
 
 			&--big {
+				--change-organization-item-image-container-size: 30px;
 				--change-organization-item-image-size: 20px;
-				--change-organization-item-image-margin-right: 16px;
+				--change-organization-item-image-margin-right: 8px;
 				--change-organization-item-title: 14px;
 				--change-organization-item-data-text-size: 12px;
 				--change-organization-item-data-icon-size: 13px;
@@ -225,6 +232,7 @@
 		}
 
 		&__item {
+			--change-organization-item-image-container-size: 20px;
 			--change-organization-item-image-size: 20px;
 			--change-organization-item-image-margin-right: 16px;
 			--change-organization-item-title: 16px;
@@ -232,8 +240,9 @@
 			--change-organization-item-data-icon-size: 18px;
 
 			&--big {
+				--change-organization-item-image-container-size: 20px;
 				--change-organization-item-image-size: 15px;
-				--change-organization-item-image-margin-right: 10px;
+				--change-organization-item-image-margin-right: 8px;
 				--change-organization-item-title: 14px;
 				--change-organization-item-data-text-size: 12px;
 				--change-organization-item-data-icon-size: 16px;
@@ -259,6 +268,7 @@
 		}
 
 		&__item {
+			--change-organization-item-image-container-size: 20px;
 			--change-organization-item-image-size: 16px;
 			--change-organization-item-image-margin-right: 8px;
 			--change-organization-item-title: 14px;
@@ -270,8 +280,9 @@
 			}
 
 			&--big {
+				--change-organization-item-image-container-size: 20px;
 				--change-organization-item-image-size: 15px;
-				--change-organization-item-image-margin-right: 6px;
+				--change-organization-item-image-margin-right: 4px;
 				--change-organization-item-title: 14px;
 				--change-organization-item-data-text-size: 10px;
 				--change-organization-item-data-icon-size: 16px;
@@ -301,6 +312,7 @@
 		}
 
 		&__item {
+			--change-organization-item-image-container-size: 14px;
 			--change-organization-item-image-size: 14px;
 			--change-organization-item-image-margin-right: 8px;
 			--change-organization-item-title: 10px;
@@ -312,8 +324,9 @@
 			}
 
 			&--big {
+				--change-organization-item-image-container-size: 14px;
 				--change-organization-item-image-size: 10px;
-				--change-organization-item-image-margin-right: 10px;
+				--change-organization-item-image-margin-right: 8px;
 				--change-organization-item-title: 10px;
 				--change-organization-item-data-text-size: 9px;
 				--change-organization-item-data-icon-size: 14px;
