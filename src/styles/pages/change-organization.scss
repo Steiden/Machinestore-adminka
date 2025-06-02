@@ -3,9 +3,9 @@
 		width: 1132px;
 		height: 800px;
 
-        &-content {
-            margin-top: 32px;
-        }
+		&-content {
+			margin-top: 32px;
+		}
 	}
 
 	&__item {
@@ -13,6 +13,7 @@
 		--change-organization-item-image-margin-right: 16px;
 		--change-organization-item-title: 24px;
 		--change-organization-item-data-text-size: 16px;
+		--change-organization-item-data-icon-size: 24px;
 
 		& {
 			display: flex;
@@ -20,28 +21,29 @@
 			gap: 8px;
 		}
 
-        &:not(:last-child) {
-            border-bottom: 0.5px solid #757575;
-            padding-bottom: 16px;
-        }
+		&:not(:last-child) {
+			border-bottom: 0.5px solid #757575;
+			padding-bottom: 16px;
+		}
 
 		&--big {
 			--change-organization-item-image-size: 36px;
 			--change-organization-item-image-margin-right: 20px;
 			--change-organization-item-title: 32px;
 			--change-organization-item-data-text-size: 20px;
+			--change-organization-item-data-icon-size: 24px;
 
-            & {
-                border-bottom: 1px solid #757575;
-                padding-bottom: 16px;
-            }
+			& {
+				border-bottom: 1px solid #757575;
+				padding-bottom: 16px;
+			}
 		}
 
-        &-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
+		&-list {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
 
 		&-header {
 			display: flex;
@@ -57,16 +59,16 @@
 				border-radius: 50%;
 				overflow: hidden;
 				aspect-ratio: 1;
-                margin-right: var(--change-organization-item-image-margin-right);
+				margin-right: var(--change-organization-item-image-margin-right);
 				width: var(--change-organization-item-image-size);
 				height: var(--change-organization-item-image-size);
 			}
 
-            &-fallback {
-                background-color: #757575;
-                width: 100%;
-                height: 100%;
-            }
+			&-fallback {
+				background-color: #757575;
+				width: 100%;
+				height: 100%;
+			}
 		}
 
 		&-title {
@@ -98,12 +100,56 @@
 			color: #757575;
 
 			&-icon {
-				font-size: 24px;
+				font-size: var(--change-organization-item-data-icon-size);
 			}
 
 			&-text {
 				font-size: var(--change-organization-item-data-text-size);
 				font-weight: 400;
+			}
+		}
+	}
+
+	@media (width <=1920px) {
+		&__modal {
+			width: 878px;
+			height: 690px;
+
+			&-content {
+				margin-top: 16px;
+			}
+		}
+
+		&__item {
+			--change-organization-item-image-size: 24px;
+			--change-organization-item-image-margin-right: 16px;
+			--change-organization-item-title: 16px;
+			--change-organization-item-data-text-size: 14px;
+			--change-organization-item-data-icon-size: 20px;
+
+			&:not(:last-child) {
+				padding-bottom: 8px;
+			}
+
+			&--big {
+				--change-organization-item-image-size: 23px;
+				--change-organization-item-image-margin-right: 12px;
+				--change-organization-item-title: 20px;
+				--change-organization-item-data-text-size: 14px;
+				--change-organization-item-data-icon-size: 16px;
+			}
+
+			&-list {
+				gap: 8px;
+			}
+
+			&-active {
+				font-size: 12px;
+				height: 24px;
+			}
+
+			&-data {
+				gap: 12px;
 			}
 		}
 	}
