@@ -271,6 +271,44 @@
             }
         }
     }
+
+    @media (width <= 1024px) {
+        &__modal {
+            width: 632px;
+            height: 434px;
+        }
+
+        &__title {
+            font-size: 12px;
+        }
+
+        &__header {
+            &-button {
+                display: none;
+            }
+        }
+
+        &__subtitle {
+            font-size: 10px;
+
+            &-container {
+                gap: 4px;
+            }
+
+            &-badge {
+                --d-badge2-size: 14px;
+                --d-badge2-font-size: 9px;
+            }
+        }
+
+        &__notice {
+            font-size: 12px;
+        }
+        
+        &__search {
+            margin-bottom: 16px;
+        }
+    }
 }
 
 .need-create {
