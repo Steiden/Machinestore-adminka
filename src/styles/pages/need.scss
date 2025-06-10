@@ -129,7 +129,7 @@
         }
     }
 
-    @media (width <= 1920px) {
+    @media (width <=1920px) {
         &__modal {
             width: 878px;
             height: 690px;
@@ -221,7 +221,7 @@
         min-width: 100px;
     }
 
-    @media (width <= 1920px) {
+    @media (width <=1920px) {
         &__modal {
             width: 784px;
             height: 600px;
@@ -249,6 +249,12 @@
 }
 
 .need-part {
+
+    &__modal {
+        width: 1040px;
+        height: 700px;
+    }
+
     &__input {
         margin-bottom: 32px;
     }
@@ -272,6 +278,31 @@
         &-actions {
             display: flex;
             align-items: center;
+        }
+    }
+
+    &__create {
+        align-self: center;
+    }
+
+    @media (width <=1920px) {
+        &__modal {
+            width: 784px;
+            height: 600px;
+
+            &-header {
+                gap: 16px;
+            }
+        }
+
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__create {
+            min-height: 38px;
+            height: 38px;
         }
     }
 }
