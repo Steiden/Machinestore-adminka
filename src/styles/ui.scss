@@ -1447,6 +1447,8 @@
 .d-search {
 	--d-search-font-size: 14px;
 	--d-search-button-height: 100%;
+	--d-search-button-font-size: 14px;
+	--d-search-button-font-weight: 600;
 
 	display: flex;
 	align-items: center;
@@ -1473,8 +1475,8 @@
 		}
 
 		.d-search__button {
-			font-size: 16px;
-			font-weight: 600;
+			--d-search-button-font-size: 16px;
+			--d-search-button-font-weight: 600;
 		}
 	}
 
@@ -1537,6 +1539,9 @@
 	}
 
 	&__button {
+		font-size: var(--d-search-button-font-size);
+		font-weight: var(--d-search-button-font-weight);
+
 		min-height: var(--d-search-button-height);
 		height: var(--d-search-button-height);
 		max-height: 100%;
