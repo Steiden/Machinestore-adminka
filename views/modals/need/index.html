@@ -3151,7 +3151,7 @@
 					<div class="d-modal2__overlay">
 						<div class="d-modal2__wrapper">
 							<div
-								class="d-modal2 d-modal2--active change-organization__modal"
+								class="d-modal2 change-organization__modal"
 								data-modal2="need"
 							>
 								<button class="d-modal2__close" data-modal2-close="need">
@@ -3687,10 +3687,7 @@
 					<!-- Модалка "Создание потребности" -->
 					<div class="d-modal2__overlay need-create__modal-overlay">
 						<div class="d-modal2__wrapper">
-							<div
-								class="d-modal2 need-create__modal"
-								data-modal2="need"
-							>
+							<div class="d-modal2 need-create__modal" data-modal2="need">
 								<button class="d-modal2__close" data-modal2-close="need">
 									<i class="d-icon-times-flat"></i>
 								</button>
@@ -3720,6 +3717,8 @@
 												data-input-id="need"
 											/>
 										</div>
+
+										<!-- Файл не выбран -->
 										<button
 											class="d-button d-button--sm-shadow d-button-tertiary d-button-tertiary-small need-create__template"
 										>
@@ -3755,55 +3754,9 @@
 												>
 											</p>
 										</label>
-									</div>
 
-									<button
-										class="d-button d-button--sm-shadow d-button-primary d-button-primary-small need-create__create"
-									>
-										Создать потребность
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Модалка "Потребности" -->
-					<div class="d-modal2__overlay need-create__modal-overlay">
-						<div class="d-modal2__wrapper">
-							<div
-								class="d-modal2 d-modal2--active need-part__modal"
-								data-modal2="need"
-							>
-								<button class="d-modal2__close" data-modal2-close="need">
-									<i class="d-icon-times-flat"></i>
-								</button>
-								<div class="d-modal2__header need-part__modal-header">
-									<h3 class="d-modal2__title need-part__title">Потребности</h3>
-
-									<div class="d-badge2 d-badge2--fit need__notice">
-										Обратите внимание. Здесь отображаются только те потребности,
-										которые привязаны к складу доставки.
-									</div>
-								</div>
-								<div class="d-modal2__content need__modal-content">
-									<div class="need-create__content">
-										<div class="need-create__title-container">
-											<h4 class="need__subtitle">Наименование потребности</h4>
-											<p class="need-create__description">
-												Введите наименование, которое будет отражать смысл
-												вашей потребности.
-											</p>
-										</div>
-										<div class="d-input d-input--light need-part__input">
-											<input
-												type="text"
-												placeholder="Укажите наименование потребности"
-												name="need"
-												class="d-input__field"
-												data-input-id="need"
-											/>
-										</div>
-										<div class="need-part__doc">
+										<!-- Файл выбран -->
+										<!-- <div class="need-part__doc">
 											<i class="d-icon-doc need-part__doc-icon"></i>
 											<p class="need-part__doc-text">
 												Потребность супер важная. xlsx
@@ -3823,13 +3776,13 @@
 													></i>
 												</button>
 											</div>
-										</div>
+										</div> -->
 									</div>
 
 									<button
-										class="d-button d-button--sm-shadow d-button-primary d-button-primary-small need-part__create"
+										class="d-button d-button--sm-shadow d-button-primary d-button-primary-small need-create__create"
 									>
-										ОК
+										Создать потребность
 									</button>
 								</div>
 							</div>
@@ -3839,15 +3792,12 @@
 					<!-- Модалка "Выбор поставщика" -->
 					<div class="d-modal2__overlay">
 						<div class="d-modal2__wrapper">
-							<div
-								class="d-modal2 need-vendor__modal"
-								data-modal2="need"
-							>
+							<div class="d-modal2 d-modal2--active need-vendor__modal" data-modal2="need">
 								<button class="d-modal2__close" data-modal2-close="need">
 									<i class="d-icon-times-flat"></i>
 								</button>
-								<div class="d-modal2__header">
-									<h3 class="d-modal2__title">Выберите поставщика</h3>
+								<div class="d-modal2__header need-vendor__modal-header">
+									<h3 class="d-modal2__title need-vendor__title">Выберите поставщика</h3>
 
 									<div
 										class="d-badge2 d-badge2--fit need__notice need-vendor__notice"
@@ -3884,8 +3834,11 @@
 														checked
 													/>
 												</label>
-												<label for="test-radio1" class="d-radio__label need-vendor__radio-label"
-													>Склад #48, г. Екатеринбург, ул. Предельная, 57/3</label
+												<label
+													for="test-radio1"
+													class="d-radio__label need-vendor__radio-label"
+													>Склад #48, г. Екатеринбург, ул. Предельная,
+													57/3</label
 												>
 											</div>
 										</div>

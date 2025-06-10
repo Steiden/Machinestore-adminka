@@ -245,60 +245,6 @@
             min-height: 38px;
             height: 38px;
         }
-    }
-}
-
-.need-part {
-
-    &__modal {
-        width: 1040px;
-        height: 700px;
-    }
-
-    &__input {
-        margin-bottom: 32px;
-    }
-
-    &__doc {
-        display: flex;
-        align-items: center;
-
-        &-icon {
-            font-size: 24px;
-            margin-right: 16px;
-        }
-
-        &-text {
-            flex-grow: 1;
-            font-size: 16px;
-            font-weight: 400;
-            margin-right: 16px;
-        }
-
-        &-actions {
-            display: flex;
-            align-items: center;
-        }
-    }
-
-    &__create {
-        align-self: center;
-    }
-
-    @media (width <=1920px) {
-        &__modal {
-            width: 784px;
-            height: 600px;
-
-            &-header {
-                gap: 16px;
-            }
-        }
-
-
-        &__title {
-            font-size: 16px;
-        }
 
         &__create {
             min-height: 38px;
@@ -331,6 +277,21 @@
             color: #282828;
             font-size: 16px;
             font-weight: 500;
+        }
+    }
+
+    @media (width <= 1920px) {
+        &__modal {
+            width: 784px;
+            height: 348px;
+
+            &-header {
+                gap: 16px;
+            }
+        }
+
+        &__title {
+            font-size: 16px;
         }
     }
 }
