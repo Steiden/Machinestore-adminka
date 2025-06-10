@@ -309,6 +309,50 @@
             margin-bottom: 16px;
         }
     }
+
+    @media (width <= 800px) {
+        &__modal {
+            width: 472px;
+            height: 398px;
+        }
+
+        &__title {
+            font-size: 9px;
+            margin-bottom: 8px;
+        }
+
+        &__notice {
+            border-radius: 4px;
+            font-size: 9px;
+            padding: 2px 8px;
+        }
+
+        &__header {
+            margin-bottom: 8px;
+        }
+
+        &__subtitle {
+            font-size: 9px;
+        }
+
+        &__search {
+            height: 18px;
+            padding-left: 8px;
+            margin-bottom: 28px;
+
+            &-field {
+                font-size: 8px;
+                padding-left: 0;
+            }
+
+            &-button {
+                font-size: 9px;
+                padding: 2px 16px;
+                height: 16px;
+                min-height: 16px;
+            }
+        }
+    }
 }
 
 .need-create {
