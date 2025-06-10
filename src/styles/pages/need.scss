@@ -471,18 +471,41 @@
         }
     }
 
+    &__show {
+        align-self: center;
+    }
+
     @media (width <=1920px) {
         &__modal {
             width: 784px;
             height: 348px;
-
-            &-header {
-                gap: 16px;
-            }
         }
 
         &__title {
             font-size: 16px;
+        }
+    }
+
+    @media (width <= 1536px) {
+        &__notice {
+            margin-bottom: 24px;
+        }
+
+        &__input {
+            margin-bottom: 20px;
+        }
+
+        &__radio {
+            --d-radio-width: 14px;
+
+            &-label {
+                font-size: 12px;
+            }
+        }
+
+        &__show {
+            height: 32px;
+            min-height: 32px;
         }
     }
 }
