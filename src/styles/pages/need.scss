@@ -487,6 +487,15 @@
     }
 
     @media (width <= 1536px) {
+        &__modal {
+            --d-modal2-padding: 16px;
+
+            & {
+                width: 656px;
+                height: 276px;
+            }
+        }
+
         &__notice {
             margin-bottom: 24px;
         }
