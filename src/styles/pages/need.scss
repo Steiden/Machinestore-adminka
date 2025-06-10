@@ -3,6 +3,10 @@
     &__modal {
         width: 1132px;
         height: 800px;
+
+        &-header {
+            gap: 0;
+        }
     }
 
     &__title,
@@ -162,6 +166,55 @@
             padding: 12px 20px;
         }
     }
+
+    @media (width <=1536px) {
+        &__modal {
+            --d-modal2-padding: 16px;
+
+            & {
+                width: 656px;
+                height: 516px;
+            }
+
+            &-close {
+                right: 16px;
+                top: 16px;
+            }
+        }
+
+        &__notice {
+            font-size: 12px;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        &__header {
+            margin-bottom: 24px;
+
+            &-button {
+                font-size: 14px;
+                height: 32px;
+                min-height: 32px;
+
+                &-icon {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &__subtitle {
+            font-size: 14px;
+
+            &-badge {
+                --d-badge2-size: 20px;
+                --d-badge2-font-size: 12px;
+            }
+        }
+
+        &__search {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .need-create {
@@ -280,7 +333,7 @@
         }
     }
 
-    @media (width <= 1920px) {
+    @media (width <=1920px) {
         &__modal {
             width: 784px;
             height: 348px;
