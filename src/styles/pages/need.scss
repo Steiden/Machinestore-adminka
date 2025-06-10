@@ -3,10 +3,6 @@
     &__modal {
         width: 1132px;
         height: 800px;
-
-        &-content {
-            // justify-content: start;
-        }
     }
 
     &__title,
@@ -47,6 +43,10 @@
             width: fit-content;
             height: 40px;
             min-height: 40px;
+
+            &:hover {
+                font-weight: 500;
+            }
 
             &-icon {
                 font-size: 14px;
@@ -128,6 +128,40 @@
             }
         }
     }
+
+    @media (width <= 1920px) {
+        &__modal {
+            width: 878px;
+            height: 690px;
+        }
+
+        &__title,
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__header {
+            margin-bottom: 16px;
+
+            &-button {
+                font-size: 16px;
+                min-height: 38px;
+                height: 38px;
+            }
+        }
+
+        &__subtitle {
+            &-badge {
+                --d-badge2-size: 24px;
+            }
+        }
+
+        &__notice {
+            border-radius: 6px;
+            font-size: 14px;
+            padding: 12px 20px;
+        }
+    }
 }
 
 .need-create {
@@ -185,6 +219,32 @@
         height: 40px;
         min-height: 40px;
         min-width: 100px;
+    }
+
+    @media (width <= 1920px) {
+        &__modal {
+            width: 784px;
+            height: 600px;
+        }
+
+        &__title {
+            &-container {
+                margin-bottom: 16px;
+            }
+        }
+
+        &__description {
+            font-size: 12px;
+        }
+
+        &__input {
+            margin-bottom: 32px;
+        }
+
+        &__tempalte {
+            min-height: 38px;
+            height: 38px;
+        }
     }
 }
 
