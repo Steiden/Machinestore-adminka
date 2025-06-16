@@ -349,6 +349,7 @@
 			}
 
 			&-overlay {
+				align-items: flex-end;
 				z-index: 15;
 			}
 
@@ -363,12 +364,16 @@
 			}
 
 			&-content {
-				padding-bottom: calc(var(--sidebar-height) + 24px);
+				padding-bottom: calc(var(--sidebar-height) + 16px);
 			}
 
 			&-close {
 				top: 24px;
 				right: 44px;
+			}
+
+			&-actions {
+				margin-top: 16px;
 			}
 		}
 
@@ -402,6 +407,27 @@
 
 			&-data {
 				gap: 8px;
+			}
+		}
+	}
+
+	@media (width <= 400px) {
+		&__modal {
+			--d-modal2-padding: 24px 28px;
+
+			&-content {
+				margin-top: 16px;
+			}
+
+			&-close {
+				top: 25px;
+				right: 28px;
+			}
+		}
+
+		&__item {
+			&-list {
+				gap: 16px;
 			}
 		}
 	}
