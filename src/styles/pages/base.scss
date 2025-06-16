@@ -10,6 +10,7 @@
 	--sidebar-full-padding-inline: 16px;
 	--sidebar-full-width: 356px;
 	--sidebar-width: 84px;
+	--sidebar-height: 100dvh;
 
 	@media (width <=1024px) {
 		--sidebar-full-width: 300px;
@@ -24,6 +25,7 @@
 	@media (width <=600px) {
 		--sidebar-full-width: 100%;
 		--sidebar-width: 100%;
+		--sidebar-height: 56px;
 	}
 }
 
@@ -53,7 +55,7 @@
 .sidebar {
 	width: var(--sidebar-width);
 	min-width: var(--sidebar-width);
-	height: 100dvh;
+	height: var(--sidebar-height);
 
 	@keyframes sidebar-in {
 		0% {
@@ -1068,20 +1070,7 @@
 		}
 	}
 
-	@media (width <=1024px) {
-		--sidebar-full-width: 300px;
-		--sidebar-width: 54px;
-	}
-
-	@media (width <=780px) {
-		--sidebar-full-width: 276px;
-		--sidebar-width: 40px;
-	}
-
 	@media (width <=600px) {
-		--sidebar-full-width: 100%;
-		--sidebar-width: 100%;
-
 		background-color: #ededed;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
@@ -1090,8 +1079,6 @@
 		bottom: 0;
 		overflow: hidden;
 		z-index: 20;
-
-		height: 56px;
 	}
 }
 
@@ -1164,6 +1151,7 @@
 		}
 
 		@media (width <=600px) {
+
 			&-container,
 			&-divider {
 				display: none;
@@ -1538,6 +1526,7 @@
 			}
 
 			&--left {
+
 				&::before,
 				&::after {
 					left: -43px;
@@ -1574,6 +1563,7 @@
 
 		&:not(&--active) {
 			.header__design-block {
+
 				&::before,
 				&::after {
 					visibility: hidden;
@@ -1588,6 +1578,7 @@
 			}
 
 			.header__design-block {
+
 				&::before,
 				&::after {
 					display: none;
@@ -2370,7 +2361,7 @@
 		}
 	}
 
-	@media (width <= 1024px) {
+	@media (width <=1024px) {
 		--cart-header-height: 24px;
 
 		& {
@@ -2630,6 +2621,7 @@ h2 {
 		}
 
 		@media (width > 600px) {
+
 			&:not(:is(.catalog__head-item--back, .catalog__head-item--sub)):hover,
 			&--active {
 				.catalog__head-item-text {
