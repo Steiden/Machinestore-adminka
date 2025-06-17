@@ -1,0 +1,234 @@
+@use "../mixins" as *;
+
+.basket {
+
+    &__modal {
+        --d-modal2-padding: 16px;
+        --basket-tools-height: 18px;
+        --basket-tools-margin-bottom: 16px;
+
+        & {
+            width: 472px;
+            height: 398px;
+        }
+
+        &-close {
+            font-size: 10px;
+
+            top: 16px;
+            right: 16px;
+
+            width: 14px;
+            height: 14px;
+        }
+
+        &-header {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        &-content {
+            padding-top: 16px;
+            // overflow: hidden;
+        }
+    }
+
+    &__header {
+        display: flex;
+        gap: 8px;
+
+        &-icon {
+            color: #757575;
+            font-size: 12px;
+        }
+
+        &-title {
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        &-divider {
+            --d-divider-margin: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: var(--basket-tools-margin-bottom);
+        height: var(--basket-tools-height);
+
+        &-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            font-size: 9px;
+            font-weight: 500;
+
+            padding: 0 8px;
+            height: 18px;
+            min-height: 18px;
+
+            &-icon {
+                color: #757575;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__clear {
+        display: flex;
+        align-items: center;
+
+        font-size: 9px;
+        font-weight: 500;
+
+        &-divider {
+            --d-divider-length: 13px;
+        }
+
+        &-icon {
+            color: #757575;
+            font-size: 14px;
+        }
+    }
+
+    &__list {
+        // @include scrollbar;
+
+        & {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            // overflow-y: auto;
+            // max-height: calc(100% - (var(--basket-tools-height) + var(--basket-tools-margin-bottom)));
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        background-color: #FBFBFB;
+        border-radius: 6px;
+        box-shadow: 0px 4px 13.4px -5px #00000042;
+
+        padding: 8px;
+        width: 100%;
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+
+            margin-bottom: 8px;
+
+            &-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                color: #757575;
+
+                aspect-ratio: 1;
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &-badge {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            background-color: #EDEDED;
+            border-radius: 24px;
+
+            font-size: 8px;
+            font-weight: 500;
+
+            padding: 0 4px;
+            height: 16px;
+
+            &-image {
+                aspect-ratio: 1;
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &-title {
+            font-size: 9px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        &-article {
+            font-size: 9px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        &-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+
+            &-value {
+                font-size: 10px;
+                font-weight: 600;
+            }
+        }
+
+        &-counter {
+            height: 18px;
+            max-width: 102px;
+
+            &-button {
+                width: 20px;
+                height: 20px;
+            }
+
+            &-input {
+                font-size: 9px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__buy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+
+        font-size: 9px;
+        font-weight: 500;
+
+        min-height: 18px;
+        height: 18px;
+        width: 220px;
+
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #FFFFFF8C;
+            backdrop-filter: blur(40px);
+            padding: 8px;
+            width: 100%;
+        }
+    }
+}

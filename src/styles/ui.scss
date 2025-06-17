@@ -3023,12 +3023,15 @@
 
 		backdrop-filter: blur(22.8px);
 
-		position: absolute;
+		position: sticky;
 		inset: 0;
 		z-index: 40;
 		visibility: hidden;
 		opacity: 0;
 		transition-duration: 0.3s;
+
+		height: 100%;
+		width: 100%;
 
 		&:has(.d-modal2--active) {
 			visibility: visible;
@@ -3990,8 +3993,9 @@
 		justify-content: flex-end;
 		align-items: center;
 		background-color: transparent;
-		position: absolute;
+		position: sticky;
 		inset: 0;
+		z-index: 40;
 		transition-duration: .3s;
 		height: 100%;
 		width: 100%;
