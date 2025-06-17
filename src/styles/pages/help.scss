@@ -652,4 +652,39 @@
 			margin-top: 16px;
 		}
 	}
+
+	@media (width > 400px) {
+		&__actions {
+			&--320 {
+				display: none;
+			}
+		}
+	}
+
+	@media (width <= 400px) {
+		--help-padding-inline: 28px;
+
+		&__title {
+			&-container {
+				padding-top: 16px;
+			}
+		}
+
+		&__block {
+			&-image {
+				&-container {
+					max-height: 83px;
+				}
+			}
+		}
+
+		&__actions {
+			position: sticky;
+			bottom: 0;
+
+			&--400 {
+				display: none;
+			}
+		}
+	}
 }
