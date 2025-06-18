@@ -433,6 +433,21 @@
 		padding: 16px;
 	}
 
+	@media (width <=1536px) {
+		&__footer {
+			background-color: #FFFFFF8C;
+			backdrop-filter: blur(8px);
+
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			translate: -50% 0;
+
+			padding: 0 32px 24px;
+			width: 100%;
+		}
+	}
+
 	@media (width <=1280px) {
 		&__sheet {
 			width: 622px;
@@ -534,6 +549,7 @@
 			}
 
 			&-prop {
+
 				&-label,
 				&-value {
 					font-size: 10px;
@@ -580,16 +596,7 @@
 	}
 
 	&__footer {
-		background-color: #FFFFFF8C;
-		backdrop-filter: blur(8px);
-
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		translate: -50% 0;
-		
 		padding: 0 16px 16px;
-		width: 100%;
 
 		&-divider {
 			--d-divider-margin: 0 16px;
