@@ -199,6 +199,14 @@
 				height: 22px;
 			}
 
+			&-icon {
+				font-size: 20px;
+				width: 24px;
+				height: 24px;
+				color: #757575;
+				margin-right: 8px;
+			}
+
 			&-address {
 				display: flex;
 				align-items: center;
@@ -423,5 +431,174 @@
 
 	@media (width <=1920px) {
 		padding: 16px;
+	}
+
+	@media (width <=1280px) {
+		&__sheet {
+			width: 622px;
+		}
+
+		&__header {
+			margin-bottom: 16px;
+
+			&-title {
+				font-size: 16px;
+			}
+
+			&-close {
+				color: #282828;
+				font-size: 10px;
+				width: 14px;
+				height: 14px;
+			}
+		}
+
+		&__info {
+			margin-bottom: 16px;
+
+			&-item {
+				&-label {
+					font-size: 14px;
+					font-weight: 400;
+				}
+
+				&-value {
+					font-size: 14px;
+					font-weight: 500;
+				}
+			}
+
+			&-edit {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		&__item {
+			&-list {
+				border-radius: 8px;
+				gap: 12px;
+				padding-bottom: 120px;
+			}
+
+			&-header {
+				&-badge {
+					height: 24px;
+
+					&-image {
+						&-container {
+							width: 18px;
+							height: 18px;
+						}
+					}
+
+					&-text {
+						font-size: 12px;
+					}
+				}
+
+				&-warehouse {
+					&-label {
+						font-size: 14px;
+					}
+
+					&-value {
+						font-size: 14px;
+					}
+				}
+
+				&-delete {
+					display: none;
+				}
+			}
+
+			&-product {
+				gap: 8px;
+
+				&-title,
+				&-article {
+					font-size: 14px;
+				}
+
+				&-additional {
+					gap: 8px;
+				}
+
+				&-price {
+					font-size: 16px;
+				}
+
+				&-counter {
+					height: 24px;
+				}
+			}
+
+			&-prop {
+				&-label,
+				&-value {
+					font-size: 10px;
+				}
+
+				&-divider {
+					display: none;
+				}
+			}
+
+			&-content {
+				&-top {
+					&-right {
+						align-items: center;
+					}
+				}
+
+				&-bottom {
+					&-left {
+						align-items: flex-start;
+						gap: 4px;
+						flex-direction: column;
+					}
+				}
+			}
+
+			&-buy {
+				font-size: 14px;
+				padding: 4px 12px;
+				height: 30px;
+				min-height: 30px;
+			}
+
+			&-divider {
+				--d-divider-margin: 8px 16px;
+			}
+
+			&-upload {
+				font-size: 15px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+
+	&__footer {
+		background-color: #FFFFFF8C;
+		backdrop-filter: blur(8px);
+
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		translate: -50% 0;
+		
+		padding: 0 16px 16px;
+		width: 100%;
+
+		&-divider {
+			--d-divider-margin: 0 16px;
+		}
+
+		&-actions {
+			&-upload {
+				font-size: 18px;
+			}
+		}
 	}
 }

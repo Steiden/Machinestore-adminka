@@ -3021,9 +3021,11 @@
 		justify-content: center;
 		align-items: center;
 
+		background-color: rgba(255, 255, 255, 0.5);
 		backdrop-filter: blur(22.8px);
+		will-change: transform;
 
-		position: sticky;
+		position: absolute;
 		inset: 0;
 		z-index: 40;
 		visibility: hidden;
@@ -3993,7 +3995,7 @@
 		justify-content: flex-end;
 		align-items: center;
 		background-color: transparent;
-		position: sticky;
+		position: absolute;
 		inset: 0;
 		z-index: 40;
 		transition-duration: .3s;
