@@ -266,6 +266,12 @@
 					display: flex;
 					align-items: center;
 				}
+
+				&-right {
+					&-divider {
+						--d-divider-length: 15px;
+					}
+				}
 			}
 		}
 
@@ -767,15 +773,17 @@
 				}
 
 				&-counter {
-					font-size: 10px;
-					font-weight: 400;
-
 					height: 20px;
 					width: 85px;
 					max-width: 85px;
 
 					&-button {
 						width: 15px;
+					}
+
+					&-input {
+						font-size: 10px;
+						font-weight: 400;
 					}
 				}
 			}
@@ -846,6 +854,112 @@
 					height: 14px;
 				}
 			}
+		}
+	}
+
+	@media (width <= 800px) {
+		padding: 16px;
+
+		&__sheet {
+			width: 472px;
+			height: 400px;
+
+			&-overlay {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				background-color: rgba(255, 255, 255, 0.5);
+				backdrop-filter: blur(22.8px);
+				will-change: transform;
+			}
+
+			&-wrapper {
+				height: auto;
+				max-height: 95%;
+			}
+		}
+
+		&__header {
+			border-bottom: 0.5px solid #757575;
+			padding-bottom: 8px;
+			margin-bottom: 4px;
+
+			&-title {
+				font-size: 10px;
+			}
+
+			&-close {
+				font-size: 8px;
+				font-size: 8px;
+				width: 12px;
+				height: 12px;
+			}
+		}
+
+		&__info {
+			padding: 4px 8px;
+
+			&-iten {
+				&-label,
+				&-value {
+					font-size: 9px;
+					font-weight: 500;
+				}
+			}
+		}
+
+		&__item {
+			&-header {
+				margin-bottom: 16px;
+
+				&-badge {
+					&-text {
+						font-size: 9px;
+					}
+				}
+
+				&-warehouse {
+					&-label,
+					&-value {
+						font-size: 9px;
+						font-weight: 500;
+					}
+				}
+
+				&-address {
+					&-label,
+					&-value {
+						font-size: 9px;
+						font-weight: 500;
+					}
+				}
+			}
+
+			&-divider {
+				display: none;
+			}
+
+			&-prop {
+				&-label,
+				&-value {
+					font-size: 8px;
+				}
+			}
+
+			&-buy {
+				font-size: 8px;
+				padding: 4px 8px;
+				min-height: 18px;
+				height: 18px;
+			}
+		}
+
+		&__footer {
+			background-color: transparent;
+			backdrop-filter: inherit;
+			position: static;
+			translate: 0;
 		}
 	}
 }
