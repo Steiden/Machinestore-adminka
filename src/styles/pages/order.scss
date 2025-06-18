@@ -437,7 +437,7 @@
 		padding: 16px;
 
 		&__footer {
-			background-color: #FFFFFF8C;
+			background-color: #ffffff8c;
 			backdrop-filter: blur(8px);
 
 			position: absolute;
@@ -551,7 +551,6 @@
 			}
 
 			&-prop {
-
 				&-label,
 				&-value {
 					font-size: 10px;
@@ -642,6 +641,8 @@
 	}
 
 	@media (width <= 1024px) {
+		padding: 12px;
+
 		&__header {
 			margin-bottom: 8px;
 
@@ -678,10 +679,10 @@
 
 			&-list {
 				gap: 8px;
+				padding-bottom: 80px;
 			}
 
 			&-header {
-
 				&-left {
 					flex-wrap: wrap;
 					gap: 4px;
@@ -748,6 +749,101 @@
 				&-title,
 				&-article {
 					font-size: 10px;
+				}
+
+				&-discount {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					font-size: 10px;
+					padding: 2px 4px;
+					height: 16px;
+				}
+
+				&-price {
+					font-size: 12px;
+					font-weight: 500;
+				}
+
+				&-counter {
+					font-size: 10px;
+					font-weight: 400;
+
+					height: 20px;
+					width: 85px;
+					max-width: 85px;
+
+					&-button {
+						width: 15px;
+					}
+				}
+			}
+
+			&-content {
+				gap: 16px;
+
+				&-top {
+					&-right {
+						gap: 4px;
+					}
+				}
+			}
+
+			&-prop {
+				&-label,
+				&-value {
+					font-size: 9px;
+				}
+			}
+
+			&-buy {
+				font-size: 9px;
+				font-weight: 600;
+
+				padding: 4px 12px;
+				height: 24px;
+				min-height: 24px;
+			}
+
+			&-upload {
+				font-size: 10px;
+				width: 14px;
+				height: 14px;
+			}
+		}
+
+		&__footer {
+			padding: 0 12px 12px;
+
+			&-divider {
+				--d-divider-margin: 0 12px;
+			}
+
+			&-label,
+			&-value {
+				font-size: 12px;
+				font-weight: 600;
+			}
+
+			&-right {
+				gap: 8px;
+			}
+
+			&-actions {
+				&-buy {
+					font-size: 9px;
+					font-weight: 600;
+
+					padding: 4px 12px;
+					height: 24px;
+					min-height: 24px;
+				}
+
+				&-upload {
+					font-size: 10px;
+					width: 14px;
+					height: 14px;
 				}
 			}
 		}
