@@ -231,4 +231,12 @@
             width: 100%;
         }
     }
+
+    @media (width > 640px) or (width <= 480px) {
+        &__modal {
+            &-overlay {
+                display: none;
+            }
+        }
+    }
 }

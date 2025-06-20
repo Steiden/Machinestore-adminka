@@ -8,7 +8,7 @@ try {
 	inputs.forEach((input) => {
 		const inputField = input.querySelector(".d-input__field");
 		inputField.addEventListener("input", (e) => {
-			console.log(inputField.value);
+			// console.log(inputField.value);
 			if (inputField.value) input.classList.add("d-input--active");
 			else input.classList.remove("d-input--active");
 		});
@@ -51,9 +51,7 @@ try {
 	showPasswordButtons?.forEach((showButton) => {
 		const inputId = showButton.getAttribute("data-for-input");
 		const inputs = document.querySelectorAll(`[data-input-id='${inputId}']`);
-		const hideButtons = document.querySelectorAll(
-			`[data-input='hide'][data-for-input='${inputId}']`
-		);
+		const hideButtons = document.querySelectorAll(`[data-input='hide'][data-for-input='${inputId}']`);
 
 		inputs.forEach((input) => {
 			const inputType = input.getAttribute("type");
@@ -61,8 +59,7 @@ try {
 
 			input.addEventListener("input", (e) => {
 				const inputType = input.getAttribute("type");
-				showButton.style.display =
-					input.value && inputType === "password" ? "flex" : "none";
+				showButton.style.display = input.value && inputType === "password" ? "flex" : "none";
 			});
 		});
 
@@ -81,9 +78,7 @@ try {
 	hidePasswordButtons?.forEach((hideButton) => {
 		const inputId = hideButton.getAttribute("data-for-input");
 		const inputs = document.querySelectorAll(`[data-input-id='${inputId}']`);
-		const showButtons = document.querySelectorAll(
-			`[data-input='show'][data-for-input='${inputId}']`
-		);
+		const showButtons = document.querySelectorAll(`[data-input='show'][data-for-input='${inputId}']`);
 
 		inputs?.forEach((input) => {
 			const inputType = input.getAttribute("type");
@@ -141,16 +136,13 @@ try {
 		// Обратное геокодирование через Яндекс API
 
 		const response = await fetch(
-			`https://geocode-maps.yandex.ru/1.x/?apikey=c7c05179-cdf5-46be-b199-f7b91008a531&geocode=${coordinates.join(
-				","
-			)}&format=json&results=1`
+			`https://geocode-maps.yandex.ru/1.x/?apikey=c7c05179-cdf5-46be-b199-f7b91008a531&geocode=${coordinates.join(",")}&format=json&results=1`
 		).catch((err) => {
 			console.error("Ошибка получения адреса по координатам: " + err);
 		});
 
 		const data = await response.json();
-		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.metaDataProperty
-			?.GeocoderMetaData?.text;
+		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.metaDataProperty?.GeocoderMetaData?.text;
 	}
 
 	async function getCoordinates(address) {
@@ -163,22 +155,17 @@ try {
 		});
 
 		const data = await response.json();
-		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.Point?.pos?.split(
-			" "
-		);
+		return data?.response?.GeoObjectCollection?.featureMember[0]?.GeoObject?.Point?.pos?.split(" ");
 	}
 
 	async function initMap() {
 		await ymaps3.ready;
-		const { YMap, YMapListener, YMapMarker, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } =
-			ymaps3;
+		const { YMap, YMapListener, YMapMarker, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
 
 		// Creating maps
 		const yandexMapContainers = document.querySelectorAll(".yandex-map");
 		yandexMapContainers?.forEach((yandexMapContainer) => {
-			const addressInput = document.querySelector(
-				`[data-input-id='${yandexMapContainer.getAttribute("data-for-input")}']`
-			);
+			const addressInput = document.querySelector(`[data-input-id='${yandexMapContainer.getAttribute("data-for-input")}']`);
 
 			// Create marker element
 			const markerHtml = `
@@ -198,8 +185,7 @@ try {
 				const markerText = markerElement.querySelector(".marker__text");
 				markerContent.classList.contains("marker__content--visible")
 					? markerContent.classList.remove("marker__content--visible")
-					: markerText.textContent &&
-					  markerContent.classList.add("marker__content--visible");
+					: markerText.textContent && markerContent.classList.add("marker__content--visible");
 			});
 
 			// Create marker
@@ -207,8 +193,7 @@ try {
 				{
 					coordinates: [37.588144, 55.733842],
 					draggable: true,
-					onDragEnd: async (coordinates) =>
-						refreshAddress(addressInput, markerElement, coordinates),
+					onDragEnd: async (coordinates) => refreshAddress(addressInput, markerElement, coordinates),
 				},
 				markerElement
 			);
@@ -322,12 +307,8 @@ try {
 
 	catalogToggles?.forEach((catalogToggle) => {
 		catalogToggle.addEventListener("click", (e) => {
-			const catalogIsActive = Array.from(catalogs).reduce(
-				(result, catalog) => catalog.classList.contains("catalog--active") || result,
-				false
-			);
-			const catalogDesignIsActive =
-				catalogDesign.classList.contains("header__design--active");
+			const catalogIsActive = Array.from(catalogs).reduce((result, catalog) => catalog.classList.contains("catalog--active") || result, false);
+			const catalogDesignIsActive = catalogDesign.classList.contains("header__design--active");
 
 			if (catalogIsActive) {
 				catalogs.forEach((catalog) => catalog.classList.remove("catalog--active"));
@@ -345,14 +326,8 @@ try {
 
 	window.addEventListener("click", (e) => {
 		let isAvailable =
-			Array.from(catalogs).reduce(
-				(result, catalog) => !catalog.contains(e.target) && result,
-				true
-			) &&
-			Array.from(catalogToggles).reduce(
-				(result, toggle) => !toggle.contains(e.target) & result,
-				true
-			);
+			Array.from(catalogs).reduce((result, catalog) => !catalog.contains(e.target) && result, true) &&
+			Array.from(catalogToggles).reduce((result, toggle) => !toggle.contains(e.target) & result, true);
 
 		if (isAvailable) {
 			catalogs?.forEach((catalog) => catalog.classList.remove("catalog--active"));
@@ -423,10 +398,8 @@ try {
 
 	const modalTriggers = document.querySelectorAll("[data-modal2-trigger]");
 	modalTriggers.forEach((trigger) => {
-		const modal = document.querySelector(
-			`[data-modal2="${trigger.getAttribute("data-modal2-trigger")}"]`
-		);
-		console.log(modal);
+		const modal = document.querySelector(`[data-modal2="${trigger.getAttribute("data-modal2-trigger")}"]`);
+		// console.log(modal);
 		trigger.addEventListener("click", () => modal.classList.add("d-modal2--active"));
 	});
 } catch (e) {
@@ -460,17 +433,11 @@ try {
 
 	const sheets = document.querySelectorAll("[data-sheet]");
 	sheets.forEach((sheet) => {
-		const closeButton = document.querySelector(
-			`[data-sheet-close="${sheet.getAttribute("data-sheet")}"]`
-		);
+		const closeButton = document.querySelector(`[data-sheet-close="${sheet.getAttribute("data-sheet")}"]`);
 		closeButton.addEventListener("click", () => sheet.classList.remove("d-sheet--active"));
 
-		const triggers = document.querySelectorAll(
-			`[data-sheet-trigger=${sheet.getAttribute("data-sheet")}`
-		);
-		triggers.forEach((trigger) =>
-			trigger.addEventListener("click", () => sheet.classList.add("d-sheet--active"))
-		);
+		const triggers = document.querySelectorAll(`[data-sheet-trigger=${sheet.getAttribute("data-sheet")}`);
+		triggers.forEach((trigger) => trigger.addEventListener("click", () => sheet.classList.add("d-sheet--active")));
 	});
 } catch (e) {
 	console.error("Ошибка работы sheet: " + e);
@@ -492,11 +459,13 @@ try {
 	// Функционал работы корзины
 
 	const cart = document.querySelector(".cart");
-	const cartHeader = cart.querySelector(".cart__header");
-	cartHeader.addEventListener("click", () => {
-		cart.classList.toggle("cart--active");
-	})
+	const cartToggles = document.querySelectorAll("[data-cart-toggle]");
 
+	cartToggles?.forEach((cartToggle) => {
+		cartToggle.addEventListener("click", () => {
+			cart?.classList.toggle("cart--active");
+		});
+	});
 } catch (e) {
 	console.error("Ошибка работы корзины: " + e);
 }
