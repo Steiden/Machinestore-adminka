@@ -960,6 +960,28 @@
 			backdrop-filter: inherit;
 			position: static;
 			translate: 0;
+
+			&-label,
+			&-value {
+				font-size: 10px;
+			}
+
+			&-right {
+				gap: 12px;
+			}
+
+			&-actions {
+				&-buy {
+					font-size: 8px;
+					padding: 4px 8px;
+					min-height: 18px;
+					height: 18px;
+				}
+
+				&-divider {
+					--d-divider-length: 15px;
+				}
+			}
 		}
 	}
 }
