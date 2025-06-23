@@ -2532,6 +2532,10 @@
 				padding: 8px 44px;
 				height: 38px;
 
+				&-wrapper {
+					width: 100%;
+				}
+
 				&-icon {
 					font-size: 14px;
 				}
@@ -2645,6 +2649,29 @@
 			width: calc(100% - var(--cart-padding-x) * 2);
 			height: 38px;
 			min-height: 38px;
+		}
+	}
+
+	@media (width <= 400px) {
+		--cart-header-height: 40px;
+		--cart-padding-x: 28px;
+
+		&__tools {
+			background-color: transparent;
+			padding: 0;
+
+			&-button {
+				padding: 8px 20px;
+
+				&-wrapper {
+					padding: 16px var(--cart-padding-x);
+				}
+			}
+
+			&-bottom {
+				background-color: #EDEDED;
+				padding: 8px var(--cart-padding-x);
+			}
 		}
 	}
 }
