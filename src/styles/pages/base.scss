@@ -2455,7 +2455,7 @@
 		}
 	}
 
-	@media (width > 640px) {
+	@media (width > 600px) {
 		&__header {
 			&-toggle {
 				&--close {
@@ -2471,7 +2471,7 @@
 		}
 	}
 
-	@media (width <=640px) {
+	@media (width <=600px) {
 		--cart-padding-x: 44px;
 		--cart-header-height: 40px;
 

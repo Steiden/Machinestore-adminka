@@ -557,6 +557,7 @@
 			}
 
 			&-prop {
+
 				&-label,
 				&-value {
 					font-size: 10px;
@@ -646,7 +647,7 @@
 		}
 	}
 
-	@media (width <= 1024px) {
+	@media (width <=1024px) {
 		padding: 12px;
 
 		&__header {
@@ -672,6 +673,7 @@
 			}
 
 			&-item {
+
 				&-label,
 				&-value {
 					font-size: 10px;
@@ -717,6 +719,7 @@
 				}
 
 				&-warehouse {
+
 					&-label,
 					&-value {
 						font-size: 10px;
@@ -733,6 +736,7 @@
 				}
 
 				&-address {
+
 					&-label,
 					&-value {
 						font-size: 10px;
@@ -799,6 +803,7 @@
 			}
 
 			&-prop {
+
 				&-label,
 				&-value {
 					font-size: 9px;
@@ -857,7 +862,7 @@
 		}
 	}
 
-	@media (width <= 800px) {
+	@media (width <=800px) {
 		padding: 16px;
 
 		&__sheet {
@@ -901,6 +906,7 @@
 			padding: 4px 8px;
 
 			&-iten {
+
 				&-label,
 				&-value {
 					font-size: 9px;
@@ -920,6 +926,7 @@
 				}
 
 				&-warehouse {
+
 					&-label,
 					&-value {
 						font-size: 9px;
@@ -928,6 +935,7 @@
 				}
 
 				&-address {
+
 					&-label,
 					&-value {
 						font-size: 9px;
@@ -941,6 +949,7 @@
 			}
 
 			&-prop {
+
 				&-label,
 				&-value {
 					font-size: 8px;
@@ -980,6 +989,343 @@
 
 				&-divider {
 					--d-divider-length: 15px;
+				}
+			}
+		}
+	}
+
+	@media (width > 600px) {
+		&__item {
+			&-price {
+				display: none;
+			}
+
+			&-buy {
+				&-value {
+					display: none;
+				}
+			}
+
+			&-footer {
+				display: none;
+
+				&-top,
+				&-bottom {
+					display: none;
+				}
+			}
+		}
+	}
+
+	@media (width <=600px) {
+		--order-padding-x: 44px;
+
+		border-radius: 10px 10px 0 0;
+		overflow: hidden;
+		padding: 0;
+		padding-bottom: var(--sidebar-height);
+
+		&__sheet {
+			width: 100%;
+			height: 100%;
+			max-height: none;
+
+			&-overlay {
+				align-items: flex-end;
+				align-self: flex-end;
+				position: fixed;
+				z-index: 15;
+				height: 100dvh;
+			}
+
+			&-wrapper {
+				width: 100%;
+				height: 100%;
+				max-width: 100%;
+				max-height: 95%;
+			}
+		}
+
+		&__header {
+			background-color: #282828;
+			margin-bottom: 16px;
+			padding: 8px var(--order-padding-x);
+			height: 40px;
+
+			&-title {
+				color: #fbfbfb;
+				font-size: 16px;
+				font-weight: 600;
+			}
+
+			&-close {
+				color: #fbfbfb;
+				font-size: 11px;
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+		&__info {
+			padding: 8px var(--order-padding-x);
+
+			&-item {
+
+				&-label,
+				&-value {
+					color: #757575;
+					font-size: 12px;
+					font-weight: 400;
+				}
+
+				&-value {
+					color: #282828;
+				}
+			}
+
+			&-edit {
+				font-size: 18px;
+				width: 22px;
+				height: 22px;
+			}
+		}
+
+		&__item {
+			padding: 8px 0 12px;
+
+			&-list {
+				gap: 16px;
+				padding-bottom: 40px;
+			}
+
+			&-header {
+				border-bottom: 0.5px solid #757575;
+				margin-bottom: 12px;
+				padding-inline: var(--order-padding-x);
+				padding-bottom: 12px;
+
+				&-left {
+					align-items: flex-start;
+					flex-direction: column;
+					gap: 8;
+				}
+
+				&-badge {
+					gap: 8px;
+
+					padding: 4px 12px;
+					height: 28px;
+
+					&-image {
+						&-container {
+							width: 20px;
+							height: 20px;
+						}
+					}
+
+					&-text {
+						font-size: 12px;
+						font-weight: 500;
+					}
+				}
+
+				&-divider {
+					display: none;
+				}
+
+				&-icon {
+					font-size: 10px;
+					margin-right: 4px;
+					width: 12px;
+					height: 12px;
+				}
+
+				&-address {
+
+					&-label,
+					&-value {
+						color: #757575;
+						font-size: 10px;
+						font-weight: 400;
+					}
+
+					&-value {
+						color: #282828;
+					}
+				}
+			}
+
+			&-content {
+				border-bottom: 0.5px solid #757575;
+				;
+				margin-bottom: 12px;
+				padding-inline: var(--order-padding-x);
+				padding-bottom: 12px;
+
+				&-top {
+					&-right {
+						display: none;
+					}
+				}
+
+				&-bottom {
+					&-left {
+						justify-content: flex-start;
+						align-items: center;
+						flex-direction: row;
+						gap: 24px;
+					}
+
+					&-right {
+						display: none;
+
+						&-divider {
+							--d-divider-length: 15px;
+							--d-divider-margin: 12px;
+						}
+					}
+				}
+			}
+
+			&-product {
+				&-image {
+					&-container {
+						width: 40px;
+						height: 40px;
+					}
+				}
+
+				&-title,
+				&-article {
+					font-size: 12px;
+					font-weight: 500;
+				}
+
+				&-counter {
+					background-color: transparent;
+					border: 0.5px solid #757575;
+
+					width: 124px;
+					height: 30px;
+					max-width: 124px;
+
+					&-button {
+						width: 20px;
+					}
+
+					&-input {
+						font-size: 14px;
+						font-weight: 500;
+					}
+				}
+
+				&-price {
+					font-size: 14px;
+					font-weight: 500;
+				}
+			}
+
+			&-price {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 12px;
+				width: 100%;
+			}
+
+			&-prop {
+
+				&-label,
+				&-value {
+					color: #757575;
+					font-size: 10px;
+					font-weight: 400;
+				}
+
+				&-value {
+					color: #282828;
+				}
+			}
+
+			&-footer {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				padding-inline: var(--order-padding-x);
+				width: 100%;
+			}
+
+			&-buy {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 32px;
+
+				font-size: 14px;
+				font-weight: 500;
+
+				padding: 4px 8px;
+				height: 32px;
+			}
+
+			&-upload {
+				font-size: 16px;
+				width: 22px;
+				height: 22px;
+			}
+		}
+
+		&__footer {
+			border-top: 1px solid #757575;
+			padding: 16px var(--order-padding-x) 12px;
+
+			&-divider {
+				display: none;
+			}
+
+			&-left,
+			&-right {
+				display: none;
+			}
+
+			&-label,
+			&-value {
+				font-size: 14px;
+				font-weight: 700;
+			}
+
+			&-content {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+			}
+
+			&-top {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 12px;
+				width: 100%;
+			}
+
+			&-actions {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+
+				&-buy {
+					font-size: 14px;
+					font-weight: 500;
+					height: 38px;
+					width: 100%;
+					max-width: 270px;
+				}
+
+				&-upload {
+					font-size: 16px;
+					width: 22px;
+					height: 22px;
 				}
 			}
 		}
