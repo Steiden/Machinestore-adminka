@@ -180,6 +180,7 @@
 			&-warehouse {
 				display: flex;
 				align-items: center;
+				flex-wrap: wrap;
 
 				&-label,
 				&-value {
@@ -1107,7 +1108,7 @@
 				&-left {
 					align-items: flex-start;
 					flex-direction: column;
-					gap: 8;
+					gap: 8px;
 				}
 
 				&-badge {
@@ -1326,6 +1327,96 @@
 					font-size: 16px;
 					width: 22px;
 					height: 22px;
+				}
+			}
+		}
+	}
+
+	@media (width <=400px) {
+		--order-padding-x: 28px;
+
+		&__info {
+			&-edit {
+				font-size: 16px;
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+
+		&__item {
+			padding: 8px 0 8px;
+
+			&-list {
+				gap: 8px;
+				padding-bottom: 20px;
+			}
+
+			&-header {
+
+				&-badge {
+					padding: 2px 8px;
+					height: 18px;
+
+					&-image {
+						&-container {
+							width: 14px;
+							height: 14px;
+						}
+					}
+
+					&-text {
+						font-size: 9px;
+						font-weight: 600;
+					}
+				}
+			}
+
+			&-product {
+				&-title,
+				&-article {
+					font-size: 10px;
+					font-weight: 600;
+				}
+
+				&-counter {
+					height: 24px;
+
+					&-input {
+						font-size: 12px;
+					}
+				}
+			}
+
+			&-content {
+				margin-bottom: 16px;
+
+				&-bottom {
+					&-left {
+						align-items: flex-start;
+						flex-direction: column;
+						gap: 4px;
+					}
+				}
+			}
+
+			&-buy {
+				justify-content: center;
+				padding: 8px 12px;
+				height: 38px;
+				width: 100%;
+				max-width: 100%;
+
+				&-value {
+					display: none;
+				}
+			}
+		}
+
+		&__footer {
+			&-actions {
+				&-divider {
+					--d-dividier-margin: 16px;
 				}
 			}
 		}
