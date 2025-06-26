@@ -437,10 +437,12 @@
 		&__modal {
 			--need-padding-x: 44px;
 
-			background-color: #fbfbfb;
-			padding: calc(var(--header-height) + 24px) 0 calc(var(--sidebar-height) + 24px);
-			height: 100%;
-			width: 100%;
+			& {
+				background-color: #fbfbfb;
+				padding: calc(var(--header-height) + 24px) 0 calc(var(--sidebar-height) + 24px);
+				height: 100%;
+				width: 100%;
+			}
 
 			&-overlay {
 				align-self: flex-end;
@@ -549,6 +551,7 @@
 			display: flex;
 			border-bottom: 0.5px solid #757575;
 			justify-content: space-between;
+			gap: 12px;
 			padding-bottom: 8px;
 			width: 100%;
 
@@ -596,6 +599,20 @@
 					height: 12px;
 				}
 			}
+		}
+	}
+
+	@media (width <= 400px) {
+		&__modal {
+			--need-padding-x: 28px;
+
+			& {
+				padding: calc(var(--header-height) + 24px) 0 calc(var(--sidebar-height));
+			}
+		}
+
+		&__notice {
+			margin-bottom: 40px;
 		}
 	}
 }
