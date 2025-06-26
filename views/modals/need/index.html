@@ -2120,7 +2120,7 @@
 					<!-- Модалка "Настройка потребности" -->
 					<div class="d-modal2__overlay need__modal-overlay">
 						<div class="d-modal2__wrapper need__modal-wrapper">
-							<div class="d-modal2 d-modal2--active need__modal" data-modal2="need">
+							<div class="d-modal2 need__modal" data-modal2="need">
 								<button class="d-modal2__close need__modal-close" data-modal2-close="need">
 									<i class="d-icon-times-flat"></i>
 								</button>
@@ -2588,21 +2588,21 @@
 					<!-- Модалка "Создание потребности" -->
 					<div class="d-modal2__overlay need-create__modal-overlay">
 						<div class="d-modal2__wrapper">
-							<div class="d-modal2 need-create__modal" data-modal2="need">
-								<button class="d-modal2__close" data-modal2-close="need">
+							<div class="d-modal2 d-modal2--active need-create__modal" data-modal2="need">
+								<button class="d-modal2__close need-create__modal-close" data-modal2-close="need">
 									<i class="d-icon-times-flat"></i>
 								</button>
-								<div class="d-modal2__header">
-									<h3 class="d-modal2__title">Потребности</h3>
+								<div class="d-modal2__header need-create__modal-header">
+									<h3 class="d-modal2__title need-create__title">Потребности</h3>
 
-									<div class="d-badge2 d-badge2--fit need__notice">
+									<div class="d-badge2 d-badge2--fit need__notice need-create__notice">
 										Обратите внимание. Здесь отображаются только те потребности, которые привязаны к складу доставки.
 									</div>
 								</div>
 								<div class="d-modal2__content need__modal-content">
 									<div class="need-create__content">
-										<div class="need-create__title-container">
-											<h4 class="need__subtitle">Наименование потребности</h4>
+										<div class="need-create__subtitle-container">
+											<h4 class="need__subtitle need-create__subtitle">Наименование потребности</h4>
 											<p class="need-create__description">
 												Введите наименование, которое будет отражать смысл вашей потребности.
 											</p>
@@ -2612,7 +2612,7 @@
 												type="text"
 												placeholder="Укажите наименование потребности"
 												name="need"
-												class="d-input__field"
+												class="d-input__field need-create__input-field"
 												data-input-id="need"
 											/>
 										</div>
@@ -2624,11 +2624,11 @@
 										</button>
 										<label class="d-upload need-create__upload" for="promo-upload">
 											<input type="file" name="promo-upload" id="promo-upload" class="d-upload__input" />
-											<img src="/icons/upload-cloud.svg" alt="Upload icon" class="d-upload__icon" width="80" height="50" />
-											<p class="d-upload__title">Перетащите файл в эту область</p>
-											<p class="d-upload__description">
+											<img src="/icons/upload-cloud.svg" alt="Upload icon" class="d-upload__icon need-create__upload-icon" width="80" height="50" />
+											<p class="d-upload__title need-create__upload-title">Перетащите файл в эту область</p>
+											<p class="d-upload__description need-create__upload-description">
 												Вы также можете загрузить файлы png, jpeg, svg,
-												<a href="/" class="d-link d-upload__link">нажав сюда</a>
+												<a href="/" class="d-link d-upload__link need-create__upload-link">нажав сюда</a>
 											</p>
 										</label>
 
