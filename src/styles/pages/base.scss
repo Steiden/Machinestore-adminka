@@ -27,6 +27,7 @@
 		--sidebar-full-width: 100%;
 		--sidebar-width: 100%;
 		--sidebar-height: 56px;
+		--header-height: 96px;
 	}
 }
 
@@ -1101,10 +1102,6 @@
 		@media (width > 600px) {
 			display: contents;
 		}
-
-		@media (width <=600px) {
-			--header-height: 125px;
-		}
 	}
 
 	&__catalog-content {
@@ -1927,7 +1924,7 @@
 		z-index: 10;
 
 		padding-block: 16px 24px;
-		height: auto;
+		// height: auto;
 	}
 }
 
@@ -2652,7 +2649,7 @@
 		}
 	}
 
-	@media (width <= 400px) {
+	@media (width <=400px) {
 		--cart-header-height: 40px;
 		--cart-padding-x: 28px;
 

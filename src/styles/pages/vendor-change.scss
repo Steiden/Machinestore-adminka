@@ -694,4 +694,195 @@
 			}
 		}
 	}
+
+	@media (width > 600px) {
+		&__title {
+			&-back {
+				display: none;
+			}
+		}
+
+		&__more {
+			display: none;
+		}
+	}
+
+	@media (width <=600px) {
+		--vendor-padding-x: 44px;
+
+		&__sheet {
+			background-color: #FFFFFF8C;
+			backdrop-filter: blur(15px);
+			padding: calc(var(--header-height) + 24px) 0 calc(var(--sidebar-height));
+
+			&-overlay {
+				align-items: flex-end;
+				z-index: 5;
+			}
+
+			&-wrapper {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&__map {
+			display: none; // Временно, пока нет дизайна на карту
+		}
+
+		&__title {
+			font-size: 16px;
+			font-weight: 600;
+
+			&-container {
+				justify-content: flex-end;
+				flex-direction: row-reverse;
+				padding-inline: var(--vendor-padding-x);
+			}
+		}
+
+		&__close {
+			&-button {
+				font-size: 10px;
+				width: 24px;
+				height: 24px;
+
+				&-icon {
+					display: none;
+				}
+			}
+		}
+
+		&__content {
+			max-height: none;
+			overflow: auto;
+		}
+
+		&__selected {
+			padding: 8px var(--vendor-padding-x);
+
+			&-list {
+				padding: 0;
+			}
+
+			&-item {
+				&:not(:last-child) {
+					padding-bottom: 8px;
+				}
+
+				&-title {
+					font-size: 12px;
+					font-weight: 600;
+				}
+
+				&-delete {
+					&-button {
+						font-size: 16px;
+						width: 20px;
+						height: 20px;
+					}
+				}
+
+				&-content {
+					margin-bottom: 8px;
+				}
+
+				&-data {
+					&-text {
+						font-size: 10px;
+						font-weight: 400;
+					}
+
+					&-divider {
+						--d-divider-length: 8px;
+					}
+				}
+
+				&-radio {
+					&-label {
+						font-size: 10px;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+
+		&__block {
+			overflow: visible;
+		}
+
+		&__connected {
+			padding: 8px var(--vendor-padding-x);
+
+			&-title {
+				font-size: 14px;
+				font-weight: 600;
+				margin-bottom: 16px;
+				padding-inline: var(--vendor-padding-x);
+			}
+
+			&-search {
+				margin: 0;
+				margin-bottom: 16px;
+				padding: 8px 16px;
+				height: 32px;
+				min-height: 32px;
+
+				&-field {
+					font-size: 12px;
+					font-weight: 400;
+				}
+
+				&-button {
+					background-color: transparent;
+					color: #757575;
+					font-size: 16px;
+					padding: 0;
+					width: 24px;
+					height: 24px;
+
+					&:hover,
+					&:active,
+					&:focus {
+						background-color: transparent;
+						color: #757575;
+					}
+				}
+			}
+
+			&-item {
+				gap: 8px;
+				padding-bottom: 0;
+
+				&-radio {
+					--d-radio-width: 22px;
+				}
+			}
+		}
+
+		&__more {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-self: center;
+			gap: 8px;
+
+			font-size: 14px;
+			font-weight: 600;
+
+			margin-block: 16px 32px;
+			width: 228px;
+			height: 2px;
+
+			&-icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				font-size: 10px;
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
 }
