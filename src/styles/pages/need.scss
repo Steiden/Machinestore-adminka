@@ -1,3 +1,5 @@
+@use "../mixins" as *;
+
 .need {
 	&__modal {
 		width: 1132px;
@@ -213,7 +215,6 @@
 		}
 
 		&__table {
-
 			&-head-col,
 			&-col {
 				font-size: 12px;
@@ -416,10 +417,27 @@
 				display: none;
 			}
 		}
+
+		&__search {
+			&-button {
+				&-icon {
+					display: none;
+				}
+			}
+		}
+
+		&__item {
+			&-list {
+				display: none;
+			}
+		}
 	}
 
 	@media (width <=600px) {
 		&__modal {
+			--need-padding-x: 44px;
+
+			background-color: #fbfbfb;
 			padding: calc(var(--header-height) + 24px) 0 calc(var(--sidebar-height) + 24px);
 			height: 100%;
 			width: 100%;
@@ -453,12 +471,130 @@
 				align-items: center;
 				gap: 4px;
 				margin-bottom: 16px;
+				padding-inline: var(--need-padding-x);
 			}
 
 			&-back {
 				font-size: 10px;
 				width: 24px;
 				height: 24px;
+			}
+		}
+
+		&__notice {
+			color: #282828;
+			font-size: 12px;
+			font-weight: 400;
+			margin-bottom: 24px;
+			padding: 8px var(--need-padding-x);
+		}
+
+		&__header {
+			margin-bottom: 16px;
+			padding-inline: var(--need-padding-x);
+		}
+
+		&__subtitle {
+			font-size: 14px;
+			font-weight: 600;
+
+			&-container {
+				gap: 8px;
+			}
+
+			&-badge {
+				--d-badge2-size: 16px;
+				--d-badge2-font-size: 12px;
+			}
+		}
+
+		&__search {
+			margin-inline: var(--need-padding-x);
+			margin-bottom: 24px;
+			padding: 8px 16px;
+			width: auto;
+			height: 32px;
+
+			&-field {
+				font-size: 12px;
+				font-weight: 400;
+			}
+
+			&-button {
+				background-color: transparent;
+				color: #757575;
+				font-size: 16px;
+				padding: 0;
+				width: 24px;
+				height: 24px;
+
+				&:hover,
+				&:active,
+				&:focus {
+					background-color: transparent;
+					color: #757575;
+				}
+
+				&-text {
+					display: none;
+				}
+			}
+		}
+
+		&__table {
+			display: none;
+		}
+
+		&__item {
+			display: flex;
+			border-bottom: 0.5px solid #757575;
+			justify-content: space-between;
+			padding-bottom: 8px;
+			width: 100%;
+
+			&-list {
+				@include scrollbar;
+
+				& {
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+					background-color: #ffffff8c;
+					box-shadow: 0px 4px 13.4px -5px #00000042;
+					padding: 16px var(--need-padding-x) 24px;
+					overflow-y: auto;
+					max-height: 100%;
+				}
+			}
+
+			&-content {
+				display: flex;
+				flex-direction: column;
+				gap: 4px;
+			}
+
+			&-info {
+				font-size: 12px;
+				font-weight: 400;
+			}
+
+			&-label {
+				color: #757575;
+			}
+			&-value {
+				color: #282828;
+			}
+
+			&-actions {
+				display: flex;
+				align-items: center;
+				height: fit-content;
+
+				&-button {
+					font-size: 9px;
+					width: 12px;
+					height: 12px;
+				}
 			}
 		}
 	}
