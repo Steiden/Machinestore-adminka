@@ -75,6 +75,8 @@
 	// __________Table____________
 	--d-table-head-height: 48px;
 	--d-table-first-col-padding: 24px;
+	--d-table-col-divider-height: 20px;
+	--d-table-head-col-divider-height: 20px;
 	// ___________________________
 
 	// __________Field____________
@@ -2444,7 +2446,15 @@
 						translate: 0 -50%;
 
 						width: 0.5px;
-						height: 20px;
+						height: var(--d-table-col-divider-height);
+					}
+				}
+			}
+
+			.d-table__head-col {
+				&:not(:first-child) {
+					&::before {
+						height: var(--d-table-head-col-divider-height);
 					}
 				}
 			}
@@ -2639,6 +2649,7 @@
 	}
 
 	&--small {
+		--d-table-head-height: 38px;
 
 		.d-table__head-col,
 		.d-table__col {
@@ -2652,7 +2663,7 @@
 		}
 
 		.d-table__head-col {
-			height: 38px;
+			// height: 38px;
 			padding: 2px 4px;
 		}
 	}
@@ -2710,6 +2721,55 @@
 	&--decoration {
 		.d-table__body {
 			position: relative;
+		}
+	}
+
+	&--full-row-divider {
+		.d-table__row {
+			&:not(:not(:last-child, :first-child)) {
+				&::after {
+					content: "";
+					background-color: #757575;
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					translate: -50% 0;
+					width: calc(100% - var(--d-table-first-col-padding) * 2);
+					height: 0.5px;
+				}
+			}
+		}
+	}
+
+	&--first-col-divider {
+		.d-table__row {
+			&:not(:not(:first-child)) {
+
+				.d-table__head-col,
+				.d-table__col {
+					&:not(:first-child) {
+						&::before {
+							content: "";
+
+							position: absolute;
+							top: 50%;
+							left: 0;
+							translate: 0 -50%;
+
+							width: 0.5px;
+							height: var(--d-table-col-divider-height);
+						}
+					}
+				}
+
+				.d-table__head-col {
+					&:not(:first-child) {
+						&::before {
+							height: var(--d-table-head-col-divider-height);
+						}
+					}
+				}
+			}
 		}
 	}
 }

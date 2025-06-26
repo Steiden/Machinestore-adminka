@@ -85,22 +85,22 @@
 	}
 
 	&__table {
-		.d-table--small &-head-col {
-			height: 30px;
-		}
+		--d-table-head-height: 30px;
+		--d-table-col-divider-height: 15px;
+		--d-table-head-col-divider-height: 15px;
 
-		.d-table__row:not(:first-child) &-col {
-			&:not(:first-child)::before {
-				content: "";
-				background-color: #757575;
-				position: absolute;
-				top: 50%;
-				left: 0;
-				translate: 0 -50%;
-				width: 0.5px;
-				height: 20px;
-			}
-		}
+		// .d-table__row:not(:first-child) &-col {
+		// 	&:not(:first-child)::before {
+		// 		content: "";
+		// 		background-color: #757575;
+		// 		position: absolute;
+		// 		top: 50%;
+		// 		left: 0;
+		// 		translate: 0 -50%;
+		// 		width: 0.5px;
+		// 		height: 20px;
+		// 	}
+		// }
 
 		&-col {
 			font-size: 14px;
@@ -211,9 +211,32 @@
 		&__search {
 			margin-bottom: 40px;
 		}
+
+		&__table {
+
+			&-head-col,
+			&-col {
+				font-size: 12px;
+				font-weight: 400;
+			}
+
+			&-col {
+				padding: 8px 8px 4px;
+			}
+
+			&-button {
+				font-size: 12px;
+				width: 16px;
+				height: 16px;
+
+				&-divider {
+					--d-divider-margin: 8px;
+				}
+			}
+		}
 	}
 
-	@media (width <= 1280px) {
+	@media (width <=1280px) {
 		&__title {
 			font-size: 14px;
 		}
@@ -266,9 +289,30 @@
 				width: auto;
 			}
 		}
+
+		&__table {
+			--d-table-head-height: 24px;
+
+			&-head-col,
+			&-col {
+				font-size: 10px;
+			}
+
+			&-row {
+				&:first-child {
+					.need__table-col {
+						padding-top: 8px;
+					}
+				}
+			}
+
+			&-col {
+				padding: 4px 8px;
+			}
+		}
 	}
 
-	@media (width <= 1024px) {
+	@media (width <=1024px) {
 		&__modal {
 			width: 632px;
 			height: 434px;
@@ -306,7 +350,7 @@
 		}
 	}
 
-	@media (width <= 800px) {
+	@media (width <=800px) {
 		&__modal {
 			width: 472px;
 			height: 398px;
@@ -346,6 +390,21 @@
 				padding: 2px 16px;
 				height: 16px;
 				min-height: 16px;
+			}
+		}
+
+		&__table {
+			--d-table-head-height: 18px;
+			--d-table-col-divider-height: 8px;
+
+			&-col {
+				font-size: 8px;
+			}
+
+			&-button {
+				font-size: 9px;
+				width: 12px;
+				height: 12px;
 			}
 		}
 	}
@@ -480,7 +539,7 @@
 		}
 	}
 
-	@media (width <= 1536px) {
+	@media (width <=1536px) {
 		&__modal {
 			--d-modal2-padding: 16px;
 
@@ -512,7 +571,7 @@
 		}
 	}
 
-	@media (width <= 1280px) {
+	@media (width <=1280px) {
 		&__modal {
 			width: 656px;
 			height: 229px;
@@ -523,22 +582,22 @@
 			height: 24px;
 
 			&-field {
-                font-size: 10px;
-                font-weight: 400;
+				font-size: 10px;
+				font-weight: 400;
 				padding: 4px 8px;
 			}
 
-            &-dropdown {
-                right: 8px;
-                width: 16px;
-                height: 16px;
-            }
+			&-dropdown {
+				right: 8px;
+				width: 16px;
+				height: 16px;
+			}
 		}
 
-        &__radio {
-            &-label {
-                font-size: 10px;
-            }
-        }
+		&__radio {
+			&-label {
+				font-size: 10px;
+			}
+		}
 	}
 }
