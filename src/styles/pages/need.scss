@@ -911,6 +911,109 @@
 			margin-bottom: 16px;
 		}
 	}
+
+	@media (width <= 800px) {
+		&__modal {
+			--d-modal2-padding: 16px;
+
+			& {
+				width: 472px;
+				height: 360px;
+			}
+
+			&-close {
+				font-size: 9px;
+				top: 16px;
+				right: 16px;
+				width: 14px;
+				height: 14px;
+			}
+		}
+
+		&__title {
+			font-size: 9px;
+			font-weight: 600;
+		}
+
+		&__notice {
+			font-size: 9px;
+			font-weight: 400;
+			margin-bottom: 24px;
+			padding: 2px 8px;
+		}
+
+		&__subtitle {
+			font-size: 9px;
+			font-weight: 600;
+
+			&-container {
+				gap: 4px;
+				margin-bottom: 8px;
+			}
+		}
+
+		&__description {
+			font-size: 9px;
+			font-weight: 400;
+		}
+
+		&__input {
+			border: 0.2px solid #757575;
+			border-bottom: 2px solid #757575;
+			border-radius: 3px;
+			margin-bottom: 16px;
+			width: 100%;
+			height: 18px;
+			min-height: 18px;
+
+			&-field {
+				font-size: 8px;
+				font-weight: 400;
+				padding: 4px 8px;
+			}
+		}
+		
+		&__template {
+			font-size: 9px;
+			font-weight: 500;
+			margin-bottom: 24px;
+			padding: 2px 6px;
+			height: 18px;
+			min-height: 18px;
+
+			&-icon {
+				font-size: 10px;
+				width: 13px;
+				height: 13px;
+			}
+		}
+
+		&__upload {
+			padding: 8px 24px;
+
+			&-icon {
+				width: 40px;
+			}
+
+			&-title {
+				font-size: 10px;
+				font-weight: 600;
+			}
+
+			&-description {
+				font-size: 9px;
+				font-weight: 500;
+			}
+		}
+
+		&__create {
+			font-size: 9px;
+			font-weight: 500;
+			padding: 4px 12px;
+			height: 20px;
+			min-height: 20px;
+		}
+	}
 }
 
 .need-vendor {
