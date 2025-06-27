@@ -1368,6 +1368,10 @@
 	&__modal {
 		width: 1040px;
 		height: 362px;
+
+		&-header {
+			gap: 16px;
+		}
 	}
 
 	&__notice {
@@ -1392,6 +1396,10 @@
 
 	&__show {
 		align-self: center;
+		font-size: 16px;
+		font-weight: 500;
+		height: 38px;
+		min-height: 38px;
 	}
 
 	@media (width <=1920px) {
@@ -1411,7 +1419,11 @@
 
 			& {
 				width: 656px;
-				height: 276px;
+				height: auto;
+			}
+
+			&-close {
+				display: none;
 			}
 		}
 
@@ -1432,6 +1444,8 @@
 		}
 
 		&__show {
+			font-size: 14px;
+			font-weight: 500;
 			height: 32px;
 			min-height: 32px;
 		}
@@ -1440,7 +1454,6 @@
 	@media (width <=1280px) {
 		&__modal {
 			width: 656px;
-			height: 229px;
 		}
 
 		&__input {
@@ -1464,6 +1477,89 @@
 			&-label {
 				font-size: 10px;
 			}
+		}
+
+		&__show {
+			font-size: 10px;
+			font-weight: 400;
+			padding: 4px 24px;
+			height: 24px;
+			min-height: 24px;
+		}
+	}
+
+	@media (width <= 1024px) {
+		&__modal {
+			--d-modal2-padding: 24px;
+
+			& {
+				width: 632px;
+			}
+
+			&-header {
+				gap: 8px;
+			}
+
+			&-close {
+				display: flex;
+				top: 24px;
+				right: 24px;
+			}
+		}
+
+		&__title {
+			font-size: 12px;
+			font-weight: 600;
+		}
+
+		&__input {
+			border-radius: 4px;
+		}
+	}
+
+	@media (width <= 800px) {
+		&__modal {
+			--d-modal2-padding: 16px;
+
+			& {
+				width: 472px;
+			}
+
+			&-close {
+				top: 16px;
+				right: 16px;
+			}
+		}
+
+		&__input {
+			border-radius: 3px;
+			width: 100%;
+			height: 18px;
+
+			&-field {
+				font-size: 8px;
+				font-weight: 400;
+				padding: 4px 8px;
+			}
+		}
+
+		&__radio {
+			&-wrapper {
+				gap: 8px;
+			}
+
+			&-label {
+				font-size: 9px;
+				font-weight: 600;
+			}
+		}
+
+		&__show {
+			font-size: 9px;
+			font-weight: 500;
+			padding: 4px 12px;
+			height: 20px;
+			min-height: 20px;
 		}
 	}
 }
