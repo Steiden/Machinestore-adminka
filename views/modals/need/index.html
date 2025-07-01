@@ -3805,7 +3805,7 @@
 					<div class="d-modal2__overlay need-create__modal-overlay">
 						<div class="d-modal2__wrapper need-create__modal-wrapper">
 							<div
-								class="d-modal2 d-modal2--active need-create__modal"
+								class="d-modal2 need-create__modal"
 								data-modal2="need"
 							>
 								<button
@@ -3853,7 +3853,7 @@
 										</div>
 
 										<!-- Файл не выбран -->
-										<button
+										<!-- <button
 											class="d-button d-button--sm-shadow d-button-tertiary d-button-tertiary-small need-create__template"
 										>
 											<i
@@ -3901,30 +3901,32 @@
 													>нажав сюда</a
 												>
 											</p>
-										</label>
+										</label> -->
 
 										<!-- Файл выбран -->
-										<!-- <div class="need-part__doc">
-											<i class="d-icon-doc need-part__doc-icon"></i>
-											<p class="need-part__doc-text">
-												Потребность супер важная. xlsx
-											</p>
-											<div class="need-part__doc-actions">
-												<button class="need__table-button">
-													<span
-														class="d-icon-eye need__table-button-icon"
-													></span>
+										<div class="need-create__doc">
+											<div class="need-create__doc-content">
+												<i class="d-icon-doc need-create__doc-icon"></i>
+												<p class="need-create__doc-text">
+													Потребность супер важная. xlsx
+												</p>
+											</div>
+											<div class="need-create__doc-actions">
+												<button class="need-create__doc-actions-button">
+													<i
+														class="d-icon-eye"
+													></i>
 												</button>
 												<div
-													class="d-divider d-divider--vertical need__table-button-divider"
+													class="d-divider d-divider--vertical need-create__doc-actions-divider"
 												></div>
-												<button class="need__table-button">
+												<button class="need-create__doc-actions-button">
 													<i
-														class="d-icon-trash need__table-button-icon"
+														class="d-icon-trash"
 													></i>
 												</button>
 											</div>
-										</div> -->
+										</div>
 									</div>
 
 									<button
@@ -3932,6 +3934,15 @@
 									>
 										Создать потребность
 									</button>
+
+									<div class="need-create__footer">
+										<button class="d-button d-button--sm-shadow d-button-secondary need-create__footer-button need-create__footer-button--cancel">
+											<i class="d-icon-times"></i>
+										</button>
+										<button class="d-button d-button--sm-shadow d-button-primary need-create__footer-button need-create__footer-button--confirm">
+											Ок
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -3940,7 +3951,7 @@
 					<!-- Модалка "Выбор поставщика" -->
 					<div class="d-modal2__overlay">
 						<div class="d-modal2__wrapper">
-							<div class="d-modal2 need-vendor__modal" data-modal2="need">
+							<div class="d-modal2 d-modal2--active need-vendor__modal" data-modal2="need">
 								<button
 									class="d-modal2__close need-vendor__modal-close"
 									data-modal2-close="need"
@@ -3948,7 +3959,7 @@
 									<i class="d-icon-times-flat"></i>
 								</button>
 								<div class="d-modal2__header need-vendor__modal-header">
-									<h3 class="d-modal2__title need__title need-vendor__title">
+									<h3 class="d-modal2__title need-vendor__title">
 										Выберите поставщика
 									</h3>
 
@@ -3979,7 +3990,7 @@
 												</button>
 											</div>
 
-											<div class="d-radio__wrapper">
+											<div class="d-radio__wrapper need-vendor__radio-wrapper">
 												<label
 													for="test-radio1"
 													class="d-radio need-vendor__radio"
