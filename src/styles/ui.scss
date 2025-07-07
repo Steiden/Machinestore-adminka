@@ -1762,6 +1762,21 @@
 		--d-switch-color: #757575;
 	}
 
+	&--decoration {
+		--d-switch-color: #282828;
+		--d-switch-disabled-color: #282828;
+
+		& {
+			cursor: default;
+		}
+
+		.d-switch__circle {
+			animation-name: switch-animation-in;
+			background-color: var(--d-switch-color);
+			//left: calc(100% - var(--d-switch-thumb-width) - var(--d-switch-padding));
+		}
+	}
+
 	&__input {
 		@include visually-hidden;
 	}
@@ -2415,7 +2430,7 @@
 	&__row {
 		position: relative;
 
-		&:first-child>.d-table__col {
+		&:first-child > .d-table__col {
 			padding-top: 8px;
 		}
 

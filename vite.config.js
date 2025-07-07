@@ -28,6 +28,7 @@ export default defineConfig({
 				need: resolve(__dirname, "views/modals/need/index.html"),
 				basket: resolve(__dirname, "views/modals/basket/index.html"),
 				address: resolve(__dirname, "views/modals/address/index.html"),
+				aviasales: resolve(__dirname, "views/modals/aviasales/index.html")
 			},
 		},
 	},

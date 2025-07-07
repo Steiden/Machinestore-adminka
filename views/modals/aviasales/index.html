@@ -3151,1279 +3151,533 @@
 						</section>
 					</div>
 
-					<!-- Модалка выбора поставщика -->
-					<div class="d-sheet__overlay vendor-change__sheet-overlay">
-						<div class="d-sheet__wrapper vendor-change__sheet-wrapper">
-							<div
-								class="d-sheet d-sheet--active vendor-change__sheet"
-								data-sheet="vendor-change"
-							>
-								<div class="d-sheet__content vendor-change">
-									<!-- Яндекс карта -->
-									<div class="vendor-change__map">
-										<img
-											src="/images/map.png"
-											alt=""
-											class="vendor-change__map-image"
-										/>
-										<!-- <div class="yandex-map vendor-change__map-image"></div> -->
+					<!-- Модалка акций -->
+					<div class="d-modal2__overlay aviasales__modal-overlay">
+						<div class="d-modal2__wrapper aviasales__modal-wrapper">
+							<div class="d-modal2 aviasales__modal" data-modal2="aviasales">
+								<div class="d-modal2__header aviasales__modal-header">
+									<div class="aviasales__tab-container">
+										<button class="aviasales__tab aviasales__tab--active">
+											Активные акции
+											<div class="d-badge2 aviasales__tab-badge">+9</div>
+										</button>
+										<button class="aviasales__tab">
+											Возможные акции
+											<div class="d-badge2 aviasales__tab-badge">+9</div>
+										</button>
 									</div>
 
-									<div class="vendor-change__content">
-										<!-- Заголовок модалки -->
-										<div class="vendor-change__title-container">
-											<h3 class="vendor-change__title">Выбора поставщиков</h3>
-											<button
-												class="vendor-change__close-button"
-												data-sheet-close="vendor-change"
-											>
-												<i
-													class="d-icon-times vendor-change__close-button-icon"
-												></i>
-												<i
-													class="d-icon-angle-rounded-left vendor-change__title-back"
-												></i>
-											</button>
+									<div
+										class="d-divider d-divider--full aviasales__modal-divider"
+									></div>
+
+									<button
+										class="d-modal2__close aviasales__modal-close"
+										data-modal2-close="aviasales"
+									>
+										<i class="d-icon-times-flat d-modal2__close-icon"></i>
+									</button>
+								</div>
+								<div class="d-modal2__content aviasales__modal-content">
+									<div class="aviasales__card-container">
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
+														<i
+															class="d-icon-percent-rounded aviasales__card-title-icon"
+														></i>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
+													</div>
+												</div>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+											</div>
 										</div>
-
-										<!-- Выбранные поставщики -->
-										<div class="vendor-change__block vendor-change__selected">
-											<p
-												class="vendor-change__block-title vendor-change__selected-title"
-											>
-												Выбранные поставщики
-											</p>
-
-											<div class="vendor-change__selected-list">
-												<!-- Карточка выбранного поставщика -->
-												<div class="vendor-change__selected-item">
-													<!-- Верхушка -->
-													<div
-														class="vendor-change__selected-item-header"
-													>
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
 														<div
-															class="vendor-change__selected-item-title-container"
+															class="d-switch d-switch--decoration aviasales__card-switch"
 														>
-															<div
-																class="vendor-change__selected-item-image-container"
-															>
-																<img
-																	src="/icons/spo-logo.svg"
-																	alt=""
-																	class="vendor-change__selected-item-image"
-																/>
-															</div>
-															<p
-																class="vendor-change__selected-item-title"
-															>
-																Спец Проф Оборудование
-															</p>
+															<input
+																type="checkbox"
+																name="test-switch"
+																id="test-switch"
+																class="d-switch__input"
+															/>
+															<div class="d-switch__circle"></div>
 														</div>
-
-														<button
-															class="vendor-change__selected-item-delete-button"
-														>
-															<i
-																class="d-icon-trash vendor-change__selected-item-delete-icon"
-															></i>
-														</button>
-													</div>
-
-													<!-- Контент с данными -->
-													<div
-														class="vendor-change__selected-item-content"
-													>
-														<div
-															class="vendor-change__selected-item-data"
-														>
-															<i
-																class="d-icon-location vendor-change__selected-item-data-icon"
-															></i>
-															<p
-																class="vendor-change__selected-item-data-text"
-															>
-																г. Екатеринбург, ул. Предельная,
-																57/3
-															</p>
-														</div>
-
-														<div
-															class="vendor-change__selected-item-data-container"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-phone vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-
-															<div
-																class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-															></div>
-
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-mail vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-														</div>
-													</div>
-
-													<!-- Данные склада -->
-													<div
-														class="vendor-change__selected-item-footer"
-													>
-														<div
-															class="d-radio__wrapper vendor-change__selected-item-radio-wrapper"
-														>
-															<label
-																for="warehouse1"
-																class="d-radio vendor-change__selected-item-radio"
-															>
-																<input
-																	type="checkbox"
-																	name="warehouse1"
-																	id="warehouse1"
-																	class="d-radio__input"
-																/>
-															</label>
-															<label
-																for="warehouse1"
-																class="d-radio__label vendor-change__selected-item-radio-label"
-																>Склад #48, г. Екатеринбург, ул.
-																Предельная, 57/3</label
-															>
-														</div>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
 													</div>
 												</div>
-
-												<!-- Карточка выбранного поставщика -->
-												<div class="vendor-change__selected-item">
-													<!-- Верхушка -->
-													<div
-														class="vendor-change__selected-item-header"
-													>
-														<div
-															class="vendor-change__selected-item-title-container"
-														>
-															<div
-																class="vendor-change__selected-item-image-container"
-															>
-																<img
-																	src="/icons/spo-logo.svg"
-																	alt=""
-																	class="vendor-change__selected-item-image"
-																/>
-															</div>
-															<p
-																class="vendor-change__selected-item-title"
-															>
-																Спец Проф Оборудование
-															</p>
-														</div>
-
-														<button
-															class="vendor-change__selected-item-delete-button"
-														>
-															<i
-																class="d-icon-trash vendor-change__selected-item-delete-icon"
-															></i>
-														</button>
-													</div>
-
-													<!-- Контент с данными -->
-													<div
-														class="vendor-change__selected-item-content"
-													>
-														<div
-															class="vendor-change__selected-item-data"
-														>
-															<i
-																class="d-icon-location vendor-change__selected-item-data-icon"
-															></i>
-															<p
-																class="vendor-change__selected-item-data-text"
-															>
-																г. Екатеринбург, ул. Предельная,
-																57/3
-															</p>
-														</div>
-
-														<div
-															class="vendor-change__selected-item-data-container"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-phone vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-
-															<div
-																class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-															></div>
-
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-mail vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-														</div>
-													</div>
-
-													<!-- Данные склада -->
-													<div
-														class="vendor-change__selected-item-footer"
-													>
-														<div
-															class="d-radio__wrapper vendor-change__selected-item-radio-wrapper"
-														>
-															<label
-																for="warehouse1"
-																class="d-radio vendor-change__selected-item-radio"
-															>
-																<input
-																	type="checkbox"
-																	name="warehouse1"
-																	id="warehouse1"
-																	class="d-radio__input"
-																/>
-															</label>
-															<label
-																for="warehouse1"
-																class="d-radio__label vendor-change__selected-item-radio-label"
-																>Склад #48, г. Екатеринбург, ул.
-																Предельная, 57/3</label
-															>
-														</div>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+											</div>
+										</div>
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
+														<i
+															class="d-icon-percent-rounded aviasales__card-title-icon"
+														></i>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
 													</div>
 												</div>
-
-												<!-- Карточка выбранного поставщика -->
-												<div class="vendor-change__selected-item">
-													<!-- Верхушка -->
-													<div
-														class="vendor-change__selected-item-header"
-													>
-														<div
-															class="vendor-change__selected-item-title-container"
-														>
-															<div
-																class="vendor-change__selected-item-image-container"
-															>
-																<img
-																	src="/icons/spo-logo.svg"
-																	alt=""
-																	class="vendor-change__selected-item-image"
-																/>
-															</div>
-															<p
-																class="vendor-change__selected-item-title"
-															>
-																Спец Проф Оборудование
-															</p>
-														</div>
-
-														<button
-															class="vendor-change__selected-item-delete-button"
-														>
-															<i
-																class="d-icon-trash vendor-change__selected-item-delete-icon"
-															></i>
-														</button>
-													</div>
-
-													<!-- Контент с данными -->
-													<div
-														class="vendor-change__selected-item-content"
-													>
-														<div
-															class="vendor-change__selected-item-data"
-														>
-															<i
-																class="d-icon-location vendor-change__selected-item-data-icon"
-															></i>
-															<p
-																class="vendor-change__selected-item-data-text"
-															>
-																г. Екатеринбург, ул. Предельная,
-																57/3
-															</p>
-														</div>
-
-														<div
-															class="vendor-change__selected-item-data-container"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-phone vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-
-															<div
-																class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-															></div>
-
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-mail vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-														</div>
-													</div>
-
-													<!-- Данные склада -->
-													<div
-														class="vendor-change__selected-item-footer"
-													>
-														<div
-															class="d-radio__wrapper vendor-change__selected-item-radio-wrapper"
-														>
-															<label
-																for="warehouse1"
-																class="d-radio vendor-change__selected-item-radio"
-															>
-																<input
-																	type="checkbox"
-																	name="warehouse1"
-																	id="warehouse1"
-																	class="d-radio__input"
-																/>
-															</label>
-															<label
-																for="warehouse1"
-																class="d-radio__label vendor-change__selected-item-radio-label"
-																>Склад #48, г. Екатеринбург, ул.
-																Предельная, 57/3</label
-															>
-														</div>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+											</div>
+										</div>
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
+														<i
+															class="d-icon-percent-rounded aviasales__card-title-icon"
+														></i>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
 													</div>
 												</div>
-
-												<!-- Карточка выбранного поставщика -->
-												<div class="vendor-change__selected-item">
-													<!-- Верхушка -->
-													<div
-														class="vendor-change__selected-item-header"
-													>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+											</div>
+										</div>
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
 														<div
-															class="vendor-change__selected-item-title-container"
+															class="d-switch d-switch--decoration aviasales__card-switch"
 														>
-															<div
-																class="vendor-change__selected-item-image-container"
-															>
-																<img
-																	src="/icons/spo-logo.svg"
-																	alt=""
-																	class="vendor-change__selected-item-image"
-																/>
-															</div>
-															<p
-																class="vendor-change__selected-item-title"
-															>
-																Спец Проф Оборудование
-															</p>
+															<input
+																type="checkbox"
+																name="test-switch"
+																id="test-switch"
+																class="d-switch__input"
+															/>
+															<div class="d-switch__circle"></div>
 														</div>
-
-														<button
-															class="vendor-change__selected-item-delete-button"
-														>
-															<i
-																class="d-icon-trash vendor-change__selected-item-delete-icon"
-															></i>
-														</button>
-													</div>
-
-													<!-- Контент с данными -->
-													<div
-														class="vendor-change__selected-item-content"
-													>
-														<div
-															class="vendor-change__selected-item-data"
-														>
-															<i
-																class="d-icon-location vendor-change__selected-item-data-icon"
-															></i>
-															<p
-																class="vendor-change__selected-item-data-text"
-															>
-																г. Екатеринбург, ул. Предельная,
-																57/3
-															</p>
-														</div>
-
-														<div
-															class="vendor-change__selected-item-data-container"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-phone vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-
-															<div
-																class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-															></div>
-
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-mail vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-														</div>
-													</div>
-
-													<!-- Данные склада -->
-													<div
-														class="vendor-change__selected-item-footer"
-													>
-														<div
-															class="d-radio__wrapper vendor-change__selected-item-radio-wrapper"
-														>
-															<label
-																for="warehouse1"
-																class="d-radio vendor-change__selected-item-radio"
-															>
-																<input
-																	type="checkbox"
-																	name="warehouse1"
-																	id="warehouse1"
-																	class="d-radio__input"
-																/>
-															</label>
-															<label
-																for="warehouse1"
-																class="d-radio__label vendor-change__selected-item-radio-label"
-																>Склад #48, г. Екатеринбург, ул.
-																Предельная, 57/3</label
-															>
-														</div>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
 													</div>
 												</div>
-
-												<!-- Карточка выбранного поставщика -->
-												<div class="vendor-change__selected-item">
-													<!-- Верхушка -->
-													<div
-														class="vendor-change__selected-item-header"
-													>
-														<div
-															class="vendor-change__selected-item-title-container"
-														>
-															<div
-																class="vendor-change__selected-item-image-container"
-															>
-																<img
-																	src="/icons/spo-logo.svg"
-																	alt=""
-																	class="vendor-change__selected-item-image"
-																/>
-															</div>
-															<p
-																class="vendor-change__selected-item-title"
-															>
-																Спец Проф Оборудование
-															</p>
-														</div>
-
-														<button
-															class="vendor-change__selected-item-delete-button"
-														>
-															<i
-																class="d-icon-trash vendor-change__selected-item-delete-icon"
-															></i>
-														</button>
-													</div>
-
-													<!-- Контент с данными -->
-													<div
-														class="vendor-change__selected-item-content"
-													>
-														<div
-															class="vendor-change__selected-item-data"
-														>
-															<i
-																class="d-icon-location vendor-change__selected-item-data-icon"
-															></i>
-															<p
-																class="vendor-change__selected-item-data-text"
-															>
-																г. Екатеринбург, ул. Предельная,
-																57/3
-															</p>
-														</div>
-
-														<div
-															class="vendor-change__selected-item-data-container"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-phone vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-
-															<div
-																class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-															></div>
-
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-mail vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-														</div>
-													</div>
-
-													<!-- Данные склада -->
-													<div
-														class="vendor-change__selected-item-footer"
-													>
-														<div
-															class="d-radio__wrapper vendor-change__selected-item-radio-wrapper"
-														>
-															<label
-																for="warehouse1"
-																class="d-radio vendor-change__selected-item-radio"
-															>
-																<input
-																	type="checkbox"
-																	name="warehouse1"
-																	id="warehouse1"
-																	class="d-radio__input"
-																/>
-															</label>
-															<label
-																for="warehouse1"
-																class="d-radio__label vendor-change__selected-item-radio-label"
-																>Склад #48, г. Екатеринбург, ул.
-																Предельная, 57/3</label
-															>
-														</div>
-													</div>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
 												</div>
-
-												<!-- Карточка выбранного поставщика -->
-												<div class="vendor-change__selected-item">
-													<!-- Верхушка -->
-													<div
-														class="vendor-change__selected-item-header"
-													>
-														<div
-															class="vendor-change__selected-item-title-container"
-														>
-															<div
-																class="vendor-change__selected-item-image-container"
-															>
-																<img
-																	src="/icons/spo-logo.svg"
-																	alt=""
-																	class="vendor-change__selected-item-image"
-																/>
-															</div>
-															<p
-																class="vendor-change__selected-item-title"
-															>
-																Спец Проф Оборудование
-															</p>
-														</div>
-
-														<button
-															class="vendor-change__selected-item-delete-button"
-														>
-															<i
-																class="d-icon-trash vendor-change__selected-item-delete-icon"
-															></i>
-														</button>
-													</div>
-
-													<!-- Контент с данными -->
-													<div
-														class="vendor-change__selected-item-content"
-													>
-														<div
-															class="vendor-change__selected-item-data"
-														>
-															<i
-																class="d-icon-location vendor-change__selected-item-data-icon"
-															></i>
-															<p
-																class="vendor-change__selected-item-data-text"
-															>
-																г. Екатеринбург, ул. Предельная,
-																57/3
-															</p>
-														</div>
-
-														<div
-															class="vendor-change__selected-item-data-container"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-phone vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-
-															<div
-																class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-															></div>
-
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-mail vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	+ 7 (000) 000-00-00
-																</p>
-															</div>
-														</div>
-													</div>
-
-													<!-- Данные склада -->
-													<div
-														class="vendor-change__selected-item-footer"
-													>
-														<div
-															class="d-radio__wrapper vendor-change__selected-item-radio-wrapper"
-														>
-															<label
-																for="warehouse1"
-																class="d-radio vendor-change__selected-item-radio"
-															>
-																<input
-																	type="checkbox"
-																	name="warehouse1"
-																	id="warehouse1"
-																	class="d-radio__input"
-																/>
-															</label>
-															<label
-																for="warehouse1"
-																class="d-radio__label vendor-change__selected-item-radio-label"
-																>Склад #48, г. Екатеринбург, ул.
-																Предельная, 57/3</label
-															>
-														</div>
-													</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
 												</div>
 											</div>
 										</div>
 
-										<button
-											class="d-button d-button-primary vendor-change__more"
-										>
-											<span>Еще +8</span>
-											<i class="d-icon-angle-rounded-right vendor-change__more-icon"></i>
-										</button>
-
-										<!-- Список подключенных поставщиков -->
-										<p
-											class="vendor-change__block-title vendor-change__connected-title vendor-change__connected-title--1280"
-										>
-											Список подключенных поставщиков
-										</p>
-										<div class="vendor-change__block vendor-change__connected">
-											<!-- Заголовок -->
-											<p
-												class="vendor-change__block-title vendor-change__connected-title"
-											>
-												Список подключенных поставщиков
-											</p>
-
-											<!-- Поиск -->
-											<form
-												class="d-search d-search--alt vendor-change__connected-search"
-											>
-												<input
-													type="text"
-													placeholder="Найти по адресу или наименованию склада / поставщика"
-													class="d-search__field vendor-change__connected-search-field"
-												/>
-												<button
-													type="button"
-													class="d-button d-button-primary d-button-primary-small d-search__button box-shadow-none vendor-change__connected-search-button"
-												>
-													<i
-														class="d-icon-search-big header__icon-button-icon vendor-change__connected-search-button-icon"
-													></i>
-												</button>
-
-												<ul class="d-search__suggestions">
-													<!-- <li class="d-search__suggestion">
-														Россия, Москва, Большой Предтеченский переулок, 13с4
-													</li>
-													<li class="d-search__suggestion">
-														Россия, Москва, Большой Предтеченский переулок, 13с4
-													</li>
-													<li class="d-search__suggestion">
-														Россия, Москва, Большой Предтеченский переулок, 13с4
-													</li> -->
-												</ul>
-											</form>
-
-											<!-- Список -->
-											<div class="vendor-change__selected-list">
-												<!-- Карточка подключенного поставщика -->
-												<div class="vendor-change__connected-item">
-													<!-- Выбор -->
-													<label
-														for="warehouse1"
-														class="d-radio vendor-change__connected-item-radio"
-													>
-														<input
-															type="checkbox"
-															name="warehouse1"
-															id="warehouse1"
-															class="d-radio__input"
-														/>
-													</label>
-
-													<div
-														class="vendor-change__connected-item-content"
-													>
-														<!-- Верхушка -->
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
 														<div
-															class="vendor-change__selected-item-header"
+															class="d-switch d-switch--decoration aviasales__card-switch"
 														>
-															<div
-																class="vendor-change__selected-item-title-container vendor-change__connected-item-title-container"
-															>
-																<div
-																	class="vendor-change__selected-item-image-container"
-																>
-																	<img
-																		src="/icons/spo-logo.svg"
-																		alt=""
-																		class="vendor-change__selected-item-image"
-																	/>
-																</div>
-																<p
-																	class="vendor-change__selected-item-title vendor-change__connected-item-title"
-																>
-																	Спец Проф Оборудование
-																</p>
-															</div>
+															<input
+																type="checkbox"
+																name="test-switch"
+																id="test-switch"
+																class="d-switch__input"
+															/>
+															<div class="d-switch__circle"></div>
 														</div>
-
-														<!-- Контент с данными -->
-														<div
-															class="vendor-change__selected-item-content"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-location vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	г. Екатеринбург, ул. Предельная,
-																	57/3
-																</p>
-															</div>
-															<div
-																class="vendor-change__selected-item-data-container"
-															>
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-phone vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-																<div
-																	class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-																></div>
-
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-mail vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-															</div>
-														</div>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
 													</div>
 												</div>
-
-												<!-- Карточка подключенного поставщика -->
-												<div class="vendor-change__connected-item">
-													<!-- Выбор -->
-													<label
-														for="warehouse1"
-														class="d-radio vendor-change__connected-item-radio"
-													>
-														<input
-															type="checkbox"
-															name="warehouse1"
-															id="warehouse1"
-															class="d-radio__input"
-														/>
-													</label>
-
-													<div
-														class="vendor-change__connected-item-content"
-													>
-														<!-- Верхушка -->
-														<div
-															class="vendor-change__selected-item-header"
-														>
-															<div
-																class="vendor-change__selected-item-title-container vendor-change__connected-item-title-container"
-															>
-																<div
-																	class="vendor-change__selected-item-image-container"
-																>
-																	<img
-																		src="/icons/spo-logo.svg"
-																		alt=""
-																		class="vendor-change__selected-item-image"
-																	/>
-																</div>
-																<p
-																	class="vendor-change__selected-item-title vendor-change__connected-item-title"
-																>
-																	Спец Проф Оборудование
-																</p>
-															</div>
-														</div>
-
-														<!-- Контент с данными -->
-														<div
-															class="vendor-change__selected-item-content"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-location vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	г. Екатеринбург, ул. Предельная,
-																	57/3
-																</p>
-															</div>
-															<div
-																class="vendor-change__selected-item-data-container"
-															>
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-phone vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-																<div
-																	class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-																></div>
-
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-mail vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-															</div>
-														</div>
-													</div>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
 												</div>
-
-												<!-- Карточка подключенного поставщика -->
-												<div class="vendor-change__connected-item">
-													<!-- Выбор -->
-													<label
-														for="warehouse1"
-														class="d-radio vendor-change__connected-item-radio"
-													>
-														<input
-															type="checkbox"
-															name="warehouse1"
-															id="warehouse1"
-															class="d-radio__input"
-														/>
-													</label>
-
-													<div
-														class="vendor-change__connected-item-content"
-													>
-														<!-- Верхушка -->
-														<div
-															class="vendor-change__selected-item-header"
-														>
-															<div
-																class="vendor-change__selected-item-title-container vendor-change__connected-item-title-container"
-															>
-																<div
-																	class="vendor-change__selected-item-image-container"
-																>
-																	<img
-																		src="/icons/spo-logo.svg"
-																		alt=""
-																		class="vendor-change__selected-item-image"
-																	/>
-																</div>
-																<p
-																	class="vendor-change__selected-item-title vendor-change__connected-item-title"
-																>
-																	Спец Проф Оборудование
-																</p>
-															</div>
-														</div>
-
-														<!-- Контент с данными -->
-														<div
-															class="vendor-change__selected-item-content"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-location vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	г. Екатеринбург, ул. Предельная,
-																	57/3
-																</p>
-															</div>
-															<div
-																class="vendor-change__selected-item-data-container"
-															>
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-phone vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-																<div
-																	class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-																></div>
-
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-mail vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-															</div>
-														</div>
-													</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
 												</div>
-
-												<!-- Карточка подключенного поставщика -->
-												<div class="vendor-change__connected-item">
-													<!-- Выбор -->
-													<label
-														for="warehouse1"
-														class="d-radio vendor-change__connected-item-radio"
-													>
-														<input
-															type="checkbox"
-															name="warehouse1"
-															id="warehouse1"
-															class="d-radio__input"
-														/>
-													</label>
-
-													<div
-														class="vendor-change__connected-item-content"
-													>
-														<!-- Верхушка -->
-														<div
-															class="vendor-change__selected-item-header"
-														>
-															<div
-																class="vendor-change__selected-item-title-container vendor-change__connected-item-title-container"
-															>
-																<div
-																	class="vendor-change__selected-item-image-container"
-																>
-																	<img
-																		src="/icons/spo-logo.svg"
-																		alt=""
-																		class="vendor-change__selected-item-image"
-																	/>
-																</div>
-																<p
-																	class="vendor-change__selected-item-title vendor-change__connected-item-title"
-																>
-																	Спец Проф Оборудование
-																</p>
-															</div>
-														</div>
-
-														<!-- Контент с данными -->
-														<div
-															class="vendor-change__selected-item-content"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-location vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	г. Екатеринбург, ул. Предельная,
-																	57/3
-																</p>
-															</div>
-															<div
-																class="vendor-change__selected-item-data-container"
-															>
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-phone vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-																<div
-																	class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-																></div>
-
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-mail vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-
-												<!-- Карточка подключенного поставщика -->
-												<div class="vendor-change__connected-item">
-													<!-- Выбор -->
-													<label
-														for="warehouse1"
-														class="d-radio vendor-change__connected-item-radio"
-													>
-														<input
-															type="checkbox"
-															name="warehouse1"
-															id="warehouse1"
-															class="d-radio__input"
-														/>
-													</label>
-
-													<div
-														class="vendor-change__connected-item-content"
-													>
-														<!-- Верхушка -->
-														<div
-															class="vendor-change__selected-item-header"
-														>
-															<div
-																class="vendor-change__selected-item-title-container vendor-change__connected-item-title-container"
-															>
-																<div
-																	class="vendor-change__selected-item-image-container"
-																>
-																	<img
-																		src="/icons/spo-logo.svg"
-																		alt=""
-																		class="vendor-change__selected-item-image"
-																	/>
-																</div>
-																<p
-																	class="vendor-change__selected-item-title vendor-change__connected-item-title"
-																>
-																	Спец Проф Оборудование
-																</p>
-															</div>
-														</div>
-
-														<!-- Контент с данными -->
-														<div
-															class="vendor-change__selected-item-content"
-														>
-															<div
-																class="vendor-change__selected-item-data"
-															>
-																<i
-																	class="d-icon-location vendor-change__selected-item-data-icon"
-																></i>
-																<p
-																	class="vendor-change__selected-item-data-text"
-																>
-																	г. Екатеринбург, ул. Предельная,
-																	57/3
-																</p>
-															</div>
-															<div
-																class="vendor-change__selected-item-data-container"
-															>
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-phone vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-																<div
-																	class="d-divider d-divider--vertical d-divider--big vendor-change__selected-item-data-divider"
-																></div>
-
-																<div
-																	class="vendor-change__selected-item-data"
-																>
-																	<i
-																		class="d-icon-mail vendor-change__selected-item-data-icon"
-																	></i>
-																	<p
-																		class="vendor-change__selected-item-data-text"
-																	>
-																		+ 7 (000) 000-00-00
-																	</p>
-																</div>
-															</div>
-														</div>
-													</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
 												</div>
 											</div>
 										</div>
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
+														<i
+															class="d-icon-percent-rounded aviasales__card-title-icon"
+														></i>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
+													</div>
+												</div>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+											</div>
+										</div>
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
+														<i
+															class="d-icon-percent-rounded aviasales__card-title-icon"
+														></i>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
+													</div>
+												</div>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+											</div>
+										</div>
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
+														<div
+															class="d-switch d-switch--decoration aviasales__card-switch"
+														>
+															<input
+																type="checkbox"
+																name="test-switch"
+																id="test-switch"
+																class="d-switch__input"
+															/>
+															<div class="d-switch__circle"></div>
+														</div>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
+													</div>
+												</div>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+											</div>
+										</div>
+										<div class="aviasales__card">
+											<div class="aviasales__card-header">
+												<div class="aviasales__card-title-container">
+													<div class="aviasales__card-title-wrapper">
+														<i
+															class="d-icon-percent-rounded aviasales__card-title-icon"
+														></i>
+														<h3 class="aviasales__card-title">
+															Индивидуальная скидка
+														</h3>
+													</div>
+												</div>
+												<div class="aviasales__card-header-block"></div>
+											</div>
+											<div class="aviasales__card-content">
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													14 дней отсрочки
+												</div>
+												<div class="aviasales__card-item">25% Скидка</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+												<div class="aviasales__card-item">
+													Бесплатная доставка
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-										<button
-											class="d-button d-button-primary vendor-change__more"
-										>
-											<span>Еще +8</span>
-											<i class="d-icon-angle-rounded-right vendor-change__more-icon"></i>
-										</button>
+					<!-- Модалка коллекций -->
+					<div class="d-modal2__overlay aviasales-collection__modal-overlay">
+						<div class="d-modal2__wrapper aviasales-collection__modal-wrapper">
+							<div
+								class="d-modal2 d-modal2--active aviasales-collection__modal"
+								data-modal2="aviasales-collection"
+							>
+								<div class="d-modal2__header aviasales-collection__modal-header">
+									<h3 class="aviasales-collection__title">Коллекции</h3>
+
+									<button
+										class="d-modal2__close aviasales-collection__modal-close"
+										data-modal2-close="aviasales"
+									>
+										<i class="d-icon-times-flat d-modal2__close-icon"></i>
+									</button>
+								</div>
+								<div class="d-modal2__content aviasales-collection__modal-content">
+									<div class="aviasales-collection__item-list">
+										<div class="aviasales-collection__item">
+											<div class="aviasales-collection__item-image-container">
+                                                <img
+                                                    src="/images/product3.svg"
+                                                    alt="Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э"
+                                                    class="aviasales-collection__item-image"
+                                                />
+                                            </div>
+                                            <div class="aviasales-collection__item-content">
+                                                <p class="aviasales-collection__item-title">Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э</p>
+                                                <p class="aviasales-collection__item-article">Арт: 101.1.1.00</p>
+                                            </div>
+                                            <div class="d-divider d-divider--vertical aviasales-collection__item-divider"></div>
+                                            <div class="aviasales-collection__item-price">
+                                                <div class="aviasales-collection__item-price-formula">
+                                                    <span class="aviasales-collection__item-price-formula-value">2 600 ₽</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">х</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">12 шт.</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">=</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">31 200 ₽</span>
+                                                </div>
+                                                <span class="aviasales-collection__item-price-formula-label">за единицу</span>
+                                                <div class="aviasales-collection__item-price-discount">Скидка 23%</div>
+                                            </div>
+										</div>
+                                        <div class="aviasales-collection__item">
+											<div class="aviasales-collection__item-image-container">
+                                                <img
+                                                    src="/images/product3.svg"
+                                                    alt="Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э"
+                                                    class="aviasales-collection__item-image"
+                                                />
+                                            </div>
+                                            <div class="aviasales-collection__item-content">
+                                                <p class="aviasales-collection__item-title">Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э</p>
+                                                <p class="aviasales-collection__item-article">Арт: 101.1.1.00</p>
+                                            </div>
+                                            <div class="d-divider d-divider--vertical aviasales-collection__item-divider"></div>
+                                            <div class="aviasales-collection__item-price">
+                                                <div class="aviasales-collection__item-price-formula">
+                                                    <span class="aviasales-collection__item-price-formula-value">2 600 ₽</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">х</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">12 шт.</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">=</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">31 200 ₽</span>
+                                                </div>
+                                                <span class="aviasales-collection__item-price-formula-label">за единицу</span>
+                                                <div class="aviasales-collection__item-price-discount">Скидка 23%</div>
+                                            </div>
+										</div>
+                                        <div class="aviasales-collection__item">
+											<div class="aviasales-collection__item-image-container">
+                                                <img
+                                                    src="/images/product3.svg"
+                                                    alt="Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э"
+                                                    class="aviasales-collection__item-image"
+                                                />
+                                            </div>
+                                            <div class="aviasales-collection__item-content">
+                                                <p class="aviasales-collection__item-title">Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э</p>
+                                                <p class="aviasales-collection__item-article">Арт: 101.1.1.00</p>
+                                            </div>
+                                            <div class="d-divider d-divider--vertical aviasales-collection__item-divider"></div>
+                                            <div class="aviasales-collection__item-price">
+                                                <div class="aviasales-collection__item-price-formula">
+                                                    <span class="aviasales-collection__item-price-formula-value">2 600 ₽</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">х</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">12 шт.</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">=</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">31 200 ₽</span>
+                                                </div>
+                                                <span class="aviasales-collection__item-price-formula-label">за единицу</span>
+                                                <div class="aviasales-collection__item-price-discount">Скидка 23%</div>
+                                            </div>
+										</div>
+                                        <div class="aviasales-collection__item">
+											<div class="aviasales-collection__item-image-container">
+                                                <img
+                                                    src="/images/product3.svg"
+                                                    alt="Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э"
+                                                    class="aviasales-collection__item-image"
+                                                />
+                                            </div>
+                                            <div class="aviasales-collection__item-content">
+                                                <p class="aviasales-collection__item-title">Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э</p>
+                                                <p class="aviasales-collection__item-article">Арт: 101.1.1.00</p>
+                                            </div>
+                                            <div class="d-divider d-divider--vertical aviasales-collection__item-divider"></div>
+                                            <div class="aviasales-collection__item-price">
+                                                <div class="aviasales-collection__item-price-formula">
+                                                    <span class="aviasales-collection__item-price-formula-value">2 600 ₽</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">х</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">12 шт.</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">=</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">31 200 ₽</span>
+                                                </div>
+                                                <span class="aviasales-collection__item-price-formula-label">за единицу</span>
+                                                <div class="aviasales-collection__item-price-discount">Скидка 23%</div>
+                                            </div>
+										</div>
+                                                      <div class="aviasales-collection__item">
+											<div class="aviasales-collection__item-image-container">
+                                                <img
+                                                    src="/images/product3.svg"
+                                                    alt="Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э"
+                                                    class="aviasales-collection__item-image"
+                                                />
+                                            </div>
+                                            <div class="aviasales-collection__item-content">
+                                                <p class="aviasales-collection__item-title">Лобзик электрический (электролобзик) ИНТЕРСКОЛ МП-65/550Э</p>
+                                                <p class="aviasales-collection__item-article">Арт: 101.1.1.00</p>
+                                            </div>
+                                            <div class="d-divider d-divider--vertical aviasales-collection__item-divider"></div>
+                                            <div class="aviasales-collection__item-price">
+                                                <div class="aviasales-collection__item-price-formula">
+                                                    <span class="aviasales-collection__item-price-formula-value">2 600 ₽</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">х</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">12 шт.</span>
+                                                    <span class="aviasales-collection__item-price-formula-symbol">=</span>
+                                                    <span class="aviasales-collection__item-price-formula-value">31 200 ₽</span>
+                                                </div>
+                                                <span class="aviasales-collection__item-price-formula-label">за единицу</span>
+                                                <div class="aviasales-collection__item-price-discount">Скидка 23%</div>
+                                            </div>
+										</div>
+									</div>
+
+                                    <div class="d-modal2__actions aviasales-collection__actions">
+										<button class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button aviasales-collection__actions-button">Отмена</button>
+										<button class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button aviasales-collection__actions-button">Ок</button>
 									</div>
 								</div>
 							</div>
