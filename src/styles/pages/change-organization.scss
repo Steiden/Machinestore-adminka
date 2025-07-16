@@ -1,434 +1,434 @@
 .change-organization {
-	&__modal {
-		width: 1132px;
-		height: 800px;
-
-		&-content {
-			margin-top: 32px;
-		}
-	}
-
-	&__item {
-		--change-organization-item-image-container-size: 32px;
-		--change-organization-item-image-size: 32px;
-		--change-organization-item-image-margin-right: 16px;
-		--change-organization-item-title: 24px;
-		--change-organization-item-data-text-size: 16px;
-		--change-organization-item-data-icon-size: 24px;
-
-		& {
-			display: flex;
-			flex-direction: column;
-			gap: 8px;
-		}
-
-		&:not(:last-child) {
-			border-bottom: 0.5px solid #757575;
-			padding-bottom: 16px;
-		}
-
-		&--big {
-			--change-organization-item-image-container-size: 48px;
-			--change-organization-item-image-size: 36px;
-			--change-organization-item-image-margin-right: 16px;
-			--change-organization-item-title: 32px;
-			--change-organization-item-data-text-size: 20px;
-			--change-organization-item-data-icon-size: 24px;
-
-			& {
-				border-bottom: 1px solid #757575;
-				padding-bottom: 16px;
-			}
-		}
-
-		&-list {
-			display: flex;
-			flex-direction: column;
-			gap: 16px;
-		}
-
-		&-header {
-			display: flex;
-			align-items: center;
-		}
-
-		&-image {
-			object-fit: cover;
-			width: 100%;
-			height: 100%;
-
-			width: var(--change-organization-item-image-size);
-			height: var(--change-organization-item-image-size);
-
-			&-container {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				border-radius: 50%;
-				overflow: hidden;
-				aspect-ratio: 1;
-				margin-right: var(--change-organization-item-image-margin-right);
-				width: var(--change-organization-item-image-container-size);
-				height: var(--change-organization-item-image-container-size);
-			}
-
-			&-fallback {
-				background-color: #757575;
-				width: 100%;
-				height: 100%;
-			}
-		}
-
-		&-title {
-			font-size: var(--change-organization-item-title);
-			font-weight: 600;
-		}
-
-		&-active {
-			font-size: 14px;
-			font-weight: 500;
-			padding: 4px 12px;
-			height: 30px;
-
-			&-container {
-				display: flex;
-				align-items: center;
-			}
-		}
-
-		&-content {
-			display: flex;
-			flex-direction: column;
-		}
-
-		&-data {
-			display: flex;
-			align-items: center;
-			gap: 8px;
-			color: #757575;
-
-			&-icon {
-				font-size: var(--change-organization-item-data-icon-size);
-			}
-
-			&-text {
-				font-size: var(--change-organization-item-data-text-size);
-				font-weight: 400;
-			}
-		}
-	}
-
-	@media (width <=1920px) {
-		&__modal {
-			width: 878px;
-			height: 690px;
-
-			&-content {
-				margin-top: 16px;
-			}
-		}
-
-		&__item {
-			--change-organization-item-image-size: 24px;
-			--change-organization-item-image-margin-right: 16px;
-			--change-organization-item-title: 16px;
-			--change-organization-item-data-text-size: 14px;
-			--change-organization-item-data-icon-size: 20px;
-
-			&:not(:last-child) {
-				padding-bottom: 8px;
-			}
-
-			&--big {
-				--change-organization-item-image-size: 23px;
-				--change-organization-item-image-margin-right: 8px;
-				--change-organization-item-title: 20px;
-				--change-organization-item-data-text-size: 14px;
-				--change-organization-item-data-icon-size: 16px;
-			}
-
-			&-list {
-				gap: 8px;
-			}
-
-			&-active {
-				font-size: 12px;
-				height: 24px;
-			}
-
-			&-data {
-				gap: 12px;
-			}
-		}
-	}
-
-	@media (width <=1536px) {
-		&__modal {
-			--d-modal2-padding: 16px;
-
-			& {
-				width: 656px;
-				height: 516px;
-			}
-
-			&-content {
-				margin-top: 16px;
-			}
-
-			&-close {
-				top: 18px;
-				right: 18px;
-			}
-		}
-
-		&__item {
-			--change-organization-item-image-container-size: 24px;
-			--change-organization-item-image-size: 24px;
-			--change-organization-item-image-margin-right: 16px;
-			--change-organization-item-title: 16px;
-			--change-organization-item-data-text-size: 14px;
-			--change-organization-item-data-icon-size: 20px;
-
-			&--big {
-				--change-organization-item-image-container-size: 30px;
-				--change-organization-item-image-size: 20px;
-				--change-organization-item-image-margin-right: 8px;
-				--change-organization-item-title: 14px;
-				--change-organization-item-data-text-size: 12px;
-				--change-organization-item-data-icon-size: 13px;
-
-				& {
-					padding-bottom: 4px;
-				}
-			}
-
-			&-active {
-				font-size: 10px;
-				font-weight: 400;
-				padding: 2px 12px;
-				height: 20px;
-
-				&-divider {
-					--d-divider-margin: 8px;
-					--d-divider-length: 15px;
-				}
-			}
-		}
-	}
-
-	@media (width <=1280px) {
-		&__modal {
-			& {
-				width: 656px;
-				height: 516px;
-			}
-
-			&-content {
-				margin-top: 16px;
-			}
-		}
-
-		&__item {
-			--change-organization-item-image-container-size: 20px;
-			--change-organization-item-image-size: 20px;
-			--change-organization-item-image-margin-right: 16px;
-			--change-organization-item-title: 16px;
-			--change-organization-item-data-text-size: 14px;
-			--change-organization-item-data-icon-size: 18px;
-
-			&--big {
-				--change-organization-item-image-container-size: 20px;
-				--change-organization-item-image-size: 15px;
-				--change-organization-item-image-margin-right: 8px;
-				--change-organization-item-title: 14px;
-				--change-organization-item-data-text-size: 12px;
-				--change-organization-item-data-icon-size: 16px;
-			}
-
-			&-active {
-				font-size: 10px;
-				font-weight: 400;
-				padding: 2px 12px;
-				height: 20px;
-			}
-		}
-	}
-
-	@media (width <=1024px) {
-		&__modal {
-			--d-modal2-padding: 16px 24px;
-
-			& {
-				width: 632px;
-				height: 434px;
-			}
-		}
-
-		&__item {
-			--change-organization-item-image-container-size: 20px;
-			--change-organization-item-image-size: 16px;
-			--change-organization-item-image-margin-right: 8px;
-			--change-organization-item-title: 14px;
-			--change-organization-item-data-text-size: 10px;
-			--change-organization-item-data-icon-size: 18px;
-
-			&:not(:last-child) {
-				padding-bottom: 4px;
-			}
-
-			&--big {
-				--change-organization-item-image-container-size: 20px;
-				--change-organization-item-image-size: 15px;
-				--change-organization-item-image-margin-right: 4px;
-				--change-organization-item-title: 14px;
-				--change-organization-item-data-text-size: 10px;
-				--change-organization-item-data-icon-size: 16px;
-			}
-
-			&-active {
-				font-size: 10px;
-				font-weight: 400;
-				padding: 2px 12px;
-				height: 20px;
-			}
-		}
-	}
-
-	@media (width <=800px) {
-		&__modal {
-			--d-modal2-padding: 16px;
-
-			& {
-				width: 472px;
-				height: 398px;
-			}
-
-			&-content {
-				margin-top: 8px;
-			}
-		}
-
-		&__item {
-			--change-organization-item-image-container-size: 14px;
-			--change-organization-item-image-size: 14px;
-			--change-organization-item-image-margin-right: 8px;
-			--change-organization-item-title: 10px;
-			--change-organization-item-data-text-size: 9px;
-			--change-organization-item-data-icon-size: 14px;
-
-			& {
-				gap: 4px;
-			}
-
-			&--big {
-				--change-organization-item-image-container-size: 14px;
-				--change-organization-item-image-size: 10px;
-				--change-organization-item-image-margin-right: 8px;
-				--change-organization-item-title: 10px;
-				--change-organization-item-data-text-size: 9px;
-				--change-organization-item-data-icon-size: 14px;
-			}
-
-			&-active {
-				font-size: 8px;
-				font-weight: 400;
-				padding: 2px 4px;
-				height: 14px;
-			}
-		}
-	}
-
-	@media (width <=640px) {
-		&__modal {
-			--d-modal2-padding: 24px 44px;
-
-			& {
-				width: 100%;
-				height: 100%;
-			}
-
-			&-overlay {
-				align-items: flex-end;
-				z-index: 15;
-			}
-
-			&-wrapper {
-				width: 100%;
-				height: 100%;
-				max-width: 100%;
-			}
-
-			&-header {
-				gap: 0;
-			}
-
-			&-content {
-				padding-bottom: calc(var(--sidebar-height) + 16px);
-			}
-
-			&-close {
-				top: 24px;
-				right: 44px;
-			}
-
-			&-actions {
-				margin-top: 16px;
-			}
-		}
-
-		&__title {
-			font-size: 16px;
-			font-weight: 600;
-			margin-bottom: 20px;
-		}
-
-		&__item {
-			--change-organization-item-image-container-size: 14px;
-			--change-organization-item-image-margin-right: 8px;
-			--change-organization-item-title: 14px;
-			--change-organization-item-data-text-size: 12px;
-			--change-organization-item-data-icon-size: 14px;
-
-			&--big {
-				--change-organization-item-image-container-size: 20px;
-				--change-organization-item-image-size: 15px;
-				--change-organization-item-image-margin-right: 8px;
-				--change-organization-item-title: 14px;
-				--change-organization-item-data-text-size: 12px;
-				--change-organization-item-data-icon-size: 14px;
-			}
-
-			&-active {
-				background-color: #282828;
-				color: #FBFBFB;
-				padding: 2px 4px;
-			}
-
-			&-data {
-				gap: 8px;
-			}
-		}
-	}
-
-	@media (width <= 400px) {
-		&__modal {
-			--d-modal2-padding: 24px 28px;
-
-			&-content {
-				margin-top: 16px;
-			}
-
-			&-close {
-				top: 25px;
-				right: 28px;
-			}
-		}
-
-		&__item {
-			&-list {
-				gap: 16px;
-			}
-		}
-	}
+  &__modal {
+    width: 1132px;
+    height: 800px;
+
+    &-content {
+      margin-top: 32px;
+    }
+  }
+
+  &__item {
+    --change-organization-item-image-container-size: 32px;
+    --change-organization-item-image-size: 32px;
+    --change-organization-item-image-margin-right: 16px;
+    --change-organization-item-title: 24px;
+    --change-organization-item-data-text-size: 16px;
+    --change-organization-item-data-icon-size: 24px;
+
+    & {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 0.5px solid #757575;
+      padding-bottom: 16px;
+    }
+
+    &--big {
+      --change-organization-item-image-container-size: 48px;
+      --change-organization-item-image-size: 36px;
+      --change-organization-item-image-margin-right: 16px;
+      --change-organization-item-title: 32px;
+      --change-organization-item-data-text-size: 20px;
+      --change-organization-item-data-icon-size: 24px;
+
+      & {
+        border-bottom: 1px solid #757575;
+        padding-bottom: 16px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+    }
+
+    &-image {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+
+      width: var(--change-organization-item-image-size);
+      height: var(--change-organization-item-image-size);
+
+      &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+        overflow: hidden;
+        aspect-ratio: 1;
+        margin-right: var(--change-organization-item-image-margin-right);
+        width: var(--change-organization-item-image-container-size);
+        height: var(--change-organization-item-image-container-size);
+      }
+
+      &-fallback {
+        background-color: #757575;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-title {
+      font-size: var(--change-organization-item-title);
+      font-weight: 600;
+    }
+
+    &-active {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 4px 12px;
+      height: 30px;
+
+      &-container {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-data {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #757575;
+
+      &-icon {
+        font-size: var(--change-organization-item-data-icon-size);
+      }
+
+      &-text {
+        font-size: var(--change-organization-item-data-text-size);
+        font-weight: 400;
+      }
+    }
+  }
+
+  @media (width <=1920px) {
+    &__modal {
+      width: 878px;
+      height: 690px;
+
+      &-content {
+        margin-top: 16px;
+      }
+    }
+
+    &__item {
+      --change-organization-item-image-size: 24px;
+      --change-organization-item-image-margin-right: 16px;
+      --change-organization-item-title: 16px;
+      --change-organization-item-data-text-size: 14px;
+      --change-organization-item-data-icon-size: 20px;
+
+      &:not(:last-child) {
+        padding-bottom: 8px;
+      }
+
+      &--big {
+        --change-organization-item-image-size: 23px;
+        --change-organization-item-image-margin-right: 8px;
+        --change-organization-item-title: 20px;
+        --change-organization-item-data-text-size: 14px;
+        --change-organization-item-data-icon-size: 16px;
+      }
+
+      &-list {
+        gap: 8px;
+      }
+
+      &-active {
+        font-size: 12px;
+        height: 24px;
+      }
+
+      &-data {
+        gap: 12px;
+      }
+    }
+  }
+
+  @media (width <=1536px) {
+    &__modal {
+      --d-modal2-padding: 16px;
+
+      & {
+        width: 656px;
+        height: 516px;
+      }
+
+      &-content {
+        margin-top: 16px;
+      }
+
+      &-close {
+        top: 18px;
+        right: 18px;
+      }
+    }
+
+    &__item {
+      --change-organization-item-image-container-size: 24px;
+      --change-organization-item-image-size: 24px;
+      --change-organization-item-image-margin-right: 16px;
+      --change-organization-item-title: 16px;
+      --change-organization-item-data-text-size: 14px;
+      --change-organization-item-data-icon-size: 20px;
+
+      &--big {
+        --change-organization-item-image-container-size: 30px;
+        --change-organization-item-image-size: 20px;
+        --change-organization-item-image-margin-right: 8px;
+        --change-organization-item-title: 14px;
+        --change-organization-item-data-text-size: 12px;
+        --change-organization-item-data-icon-size: 13px;
+
+        & {
+          padding-bottom: 4px;
+        }
+      }
+
+      &-active {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 2px 12px;
+        height: 20px;
+
+        &-divider {
+          --d-divider-margin: 8px;
+          --d-divider-length: 15px;
+        }
+      }
+    }
+  }
+
+  @media (width <=1280px) {
+    &__modal {
+      & {
+        width: 656px;
+        height: 516px;
+      }
+
+      &-content {
+        margin-top: 16px;
+      }
+    }
+
+    &__item {
+      --change-organization-item-image-container-size: 20px;
+      --change-organization-item-image-size: 20px;
+      --change-organization-item-image-margin-right: 16px;
+      --change-organization-item-title: 16px;
+      --change-organization-item-data-text-size: 14px;
+      --change-organization-item-data-icon-size: 18px;
+
+      &--big {
+        --change-organization-item-image-container-size: 20px;
+        --change-organization-item-image-size: 15px;
+        --change-organization-item-image-margin-right: 8px;
+        --change-organization-item-title: 14px;
+        --change-organization-item-data-text-size: 12px;
+        --change-organization-item-data-icon-size: 16px;
+      }
+
+      &-active {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 2px 12px;
+        height: 20px;
+      }
+    }
+  }
+
+  @media (width <=1024px) {
+    &__modal {
+      --d-modal2-padding: 16px 24px;
+
+      & {
+        width: 632px;
+        height: 434px;
+      }
+    }
+
+    &__item {
+      --change-organization-item-image-container-size: 20px;
+      --change-organization-item-image-size: 16px;
+      --change-organization-item-image-margin-right: 8px;
+      --change-organization-item-title: 14px;
+      --change-organization-item-data-text-size: 10px;
+      --change-organization-item-data-icon-size: 18px;
+
+      &:not(:last-child) {
+        padding-bottom: 4px;
+      }
+
+      &--big {
+        --change-organization-item-image-container-size: 20px;
+        --change-organization-item-image-size: 15px;
+        --change-organization-item-image-margin-right: 4px;
+        --change-organization-item-title: 14px;
+        --change-organization-item-data-text-size: 10px;
+        --change-organization-item-data-icon-size: 16px;
+      }
+
+      &-active {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 2px 12px;
+        height: 20px;
+      }
+    }
+  }
+
+  @media (width <=800px) {
+    &__modal {
+      --d-modal2-padding: 16px;
+
+      & {
+        width: 472px;
+        height: 398px;
+      }
+
+      &-content {
+        margin-top: 8px;
+      }
+    }
+
+    &__item {
+      --change-organization-item-image-container-size: 14px;
+      --change-organization-item-image-size: 14px;
+      --change-organization-item-image-margin-right: 8px;
+      --change-organization-item-title: 10px;
+      --change-organization-item-data-text-size: 9px;
+      --change-organization-item-data-icon-size: 14px;
+
+      & {
+        gap: 4px;
+      }
+
+      &--big {
+        --change-organization-item-image-container-size: 14px;
+        --change-organization-item-image-size: 10px;
+        --change-organization-item-image-margin-right: 8px;
+        --change-organization-item-title: 10px;
+        --change-organization-item-data-text-size: 9px;
+        --change-organization-item-data-icon-size: 14px;
+      }
+
+      &-active {
+        font-size: 8px;
+        font-weight: 400;
+        padding: 2px 4px;
+        height: 14px;
+      }
+    }
+  }
+
+  @media (width <=640px) {
+    &__modal {
+      --d-modal2-padding: 24px 44px;
+
+      & {
+        width: 100%;
+        height: 100%;
+      }
+
+      &-overlay {
+        align-items: flex-end;
+        z-index: 15;
+      }
+
+      &-wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+      }
+
+      &-header {
+        gap: 0;
+      }
+
+      &-content {
+        padding-bottom: calc(var(--sidebar-height) + 16px);
+      }
+
+      &-close {
+        top: 24px;
+        right: 44px;
+      }
+
+      &-actions {
+        margin-top: 16px;
+      }
+    }
+
+    &__title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      --change-organization-item-image-container-size: 14px;
+      --change-organization-item-image-margin-right: 8px;
+      --change-organization-item-title: 14px;
+      --change-organization-item-data-text-size: 12px;
+      --change-organization-item-data-icon-size: 14px;
+
+      &--big {
+        --change-organization-item-image-container-size: 20px;
+        --change-organization-item-image-size: 15px;
+        --change-organization-item-image-margin-right: 8px;
+        --change-organization-item-title: 14px;
+        --change-organization-item-data-text-size: 12px;
+        --change-organization-item-data-icon-size: 14px;
+      }
+
+      &-active {
+        background-color: #282828;
+        color: #FBFBFB;
+        padding: 2px 4px;
+      }
+
+      &-data {
+        gap: 8px;
+      }
+    }
+  }
+
+  @media (width <= 400px) {
+    &__modal {
+      --d-modal2-padding: 24px 28px;
+
+      &-content {
+        margin-top: 16px;
+      }
+
+      &-close {
+        top: 25px;
+        right: 28px;
+      }
+    }
+
+    &__item {
+      &-list {
+        gap: 16px;
+      }
+    }
+  }
 }

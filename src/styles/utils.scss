@@ -2,252 +2,252 @@
 @use "variables" as *;
 
 .inliner {
-	display: block;
-	font-size: 0;
+  display: block;
+  font-size: 0;
 
-	&>* {
-		display: inline-block;
-		float: none;
-	}
+  & > * {
+    display: inline-block;
+    float: none;
+  }
 
-	&.inliner-vam>* {
-		vertical-align: middle;
-	}
+  &.inliner-vam > * {
+    vertical-align: middle;
+  }
 
-	&.inliner-top>* {
-		vertical-align: top;
-	}
+  &.inliner-top > * {
+    vertical-align: top;
+  }
 
-	&.inliner-bottom>* {
-		vertical-align: bottom;
-	}
+  &.inliner-bottom > * {
+    vertical-align: bottom;
+  }
 }
 
 @for $i from 1 to 5 {
-	.dart-mb-#{$i} {
-		margin-bottom: #{$i}rem;
-	}
+  .dart-mb-#{$i} {
+    margin-bottom: #{$i}rem;
+  }
 
-	.dart-mt-#{$i} {
-		margin-top: #{$i}rem;
-	}
+  .dart-mt-#{$i} {
+    margin-top: #{$i}rem;
+  }
 }
 
 @for $i from 1 to 128 {
-	.mb-#{$i} {
-		margin-bottom: #{$i}px;
-	}
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
 
-	.mt-#{$i} {
-		margin-top: #{$i}px;
-	}
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
 
-	.ml-#{$i} {
-		margin-left: #{$i}px;
-	}
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
 
-	.mr-#{$i} {
-		margin-right: #{$i}px;
-	}
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
 }
 
 .w-full {
-	width: 100%;
+  width: 100%;
 }
 
 .shadow {
-	box-shadow: 0px 4px 13.4px 0px #00000042;
+  box-shadow: 0px 4px 13.4px 0px #00000042;
 }
 
 .box-shadow-none {
-	box-shadow: none;
+  box-shadow: none;
 }
 
 .contents {
-	display: contents;
+  display: contents;
 }
 
 .grow-1 {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 .grow-0 {
-	flex-grow: 0;
+  flex-grow: 0;
 }
 
 .flex-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	&--vertical {
-		flex-direction: column;
-	}
+  &--vertical {
+    flex-direction: column;
+  }
 }
 
 .text-white {
-	color: #fbfbfb;
+  color: #fbfbfb;
 }
 
 .inline-block {
-	display: inline-block;
+  display: inline-block;
 }
 
 .hidden {
-	visibility: collapse;
+  visibility: collapse;
 }
 
 .visually-hidden {
-	@include visually-hidden;
+  @include visually-hidden;
 }
 
 .show-modal {
-	visibility: visible;
-	opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .show {
-	display: block;
+  display: block;
 }
 
 .hidden {
-	display: none;
+  display: none;
 }
 
 // Steiden
 .visible-1920 {
-	@media (width > 1920px) {
-		display: none !important;
-	}
+  @media (width > 1920px) {
+    display: none !important;
+  }
 }
 
 .hidden-1920 {
-	@media (width <=1920px) {
-		display: none !important;
-	}
+  @media (width <=1920px) {
+    display: none !important;
+  }
 }
 
 .visible-1536 {
-	@media (width > 1535px) {
-		display: none !important;
-	}
+  @media (width > 1535px) {
+    display: none !important;
+  }
 }
 
 .hidden-1536 {
-	@media (width <=1535px) {
-		display: none !important;
-	}
+  @media (width <=1535px) {
+    display: none !important;
+  }
 }
 
 .visible-1280 {
-	@media (width > 1280px) {
-		display: none !important;
-	}
+  @media (width > 1280px) {
+    display: none !important;
+  }
 }
 
 .hidden-1280 {
-	@media (width <=1280px) {
-		display: none !important;
-	}
+  @media (width <=1280px) {
+    display: none !important;
+  }
 }
 
 .visible-1200 {
-	@media (width > 1200px) {
-		display: none !important;
-	}
+  @media (width > 1200px) {
+    display: none !important;
+  }
 }
 
 .hidden-1200 {
-	@media (width <=1200px) {
-		display: none !important;
-	}
+  @media (width <=1200px) {
+    display: none !important;
+  }
 }
 
 .visible-1024 {
-	@media (width > 1024px) {
-		display: none !important;
-	}
+  @media (width > 1024px) {
+    display: none !important;
+  }
 }
 
 .hidden-1024 {
-	@media (width <=1024px) {
-		display: none !important;
-	}
+  @media (width <=1024px) {
+    display: none !important;
+  }
 }
 
 .visible-800 {
-	@media (width > 800px) {
-		display: none !important;
-	}
+  @media (width > 800px) {
+    display: none !important;
+  }
 }
 
 .hidden-800 {
-	@media (width <=800px) {
-		display: none !important;
-	}
+  @media (width <=800px) {
+    display: none !important;
+  }
 }
 
 .visible-640 {
-	@media (width > 640px) {
-		display: none !important;
-	}
+  @media (width > 640px) {
+    display: none !important;
+  }
 }
 
 .hidden-640 {
-	@media (width <=640px) {
-		display: none !important;
-	}
+  @media (width <=640px) {
+    display: none !important;
+  }
 }
 
 .visible-600 {
-	@media (width > 600px) {
-		display: none !important;
-	}
+  @media (width > 600px) {
+    display: none !important;
+  }
 }
 
 .hidden-600 {
-	@media (width <=600px) {
-		display: none !important;
-	}
+  @media (width <=600px) {
+    display: none !important;
+  }
 }
 
 .visible-400 {
-	@media (width > 400px) {
-		display: none !important;
-	}
+  @media (width > 400px) {
+    display: none !important;
+  }
 }
 
 .hidden-400 {
-	@media (width <=400px) {
-		display: none !important;
-	}
+  @media (width <=400px) {
+    display: none !important;
+  }
 }
 
 .visible-320 {
-	@media (width > 320px) {
-		display: none !important;
-	}
+  @media (width > 320px) {
+    display: none !important;
+  }
 }
 
 .hidden-320 {
-	@media (width <=320px) {
-		display: none !important;
-	}
+  @media (width <=320px) {
+    display: none !important;
+  }
 }
 
 .inline-block {
-	display: inline-block;
+  display: inline-block;
 }
 
 .d-md-full {
-	@media (width <=$small-tablets) {
-		width: 100%;
-	}
+  @media (width <=$small-tablets) {
+    width: 100%;
+  }
 }
 
 
 .d-md-max-content {
-	@media (width <=$small-tablets) {
-		width: max-content;
-	}
+  @media (width <=$small-tablets) {
+    width: max-content;
+  }
 }

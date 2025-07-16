@@ -1,239 +1,379 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Регистрация</title>
-		<link href="https://dev.iconly.io/public/NrjD5MCn0Lux/iconly.css" rel="stylesheet" />
-		<script src="https://api-maps.yandex.ru/v3/?apikey=c7c05179-cdf5-46be-b199-f7b91008a531&lang=ru_RU" type="text/javascript"></script>
-	</head>
-	<body>
-		<section class="dart_wrapper auth registration">
-			<form class="auth__form registration__form">
-				<a class="d-back registration__back">
-					<i class="d-icon-arrow d-back__icon"></i>
-					<span class="d-back__text hidden-640">Назад</span>
-				</a>
-				<a href="/" class="auth__logo registration__logo">
-					<picture>
-						<source media="(max-width: 1920px)" srcset="./src/assets/icons/logo-1920.svg" />
-						<source media="(max-width: 800px)" srcset="./src/assets/icons/logo-800.svg" />
-						<source media="(max-width: 640px)" srcset="./src/assets/icons/logo-640.svg" />
-						<source media="(max-width: 400px)" srcset="./src/assets/icons/logo-400.svg" />
-						<source media="(max-width: 320px)" srcset="./src/assets/icons/logo-320.svg" />
-						<img src="./src/assets/icons/logo-1920.svg" loading="lazy" width="368" height="79" />
-					</picture>
-				</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Регистрация</title>
+  <link
+    href="https://dev.iconly.io/public/NrjD5MCn0Lux/iconly.css"
+    rel="stylesheet"
+  />
+  <script
+    src="https://api-maps.yandex.ru/v3/?apikey=c7c05179-cdf5-46be-b199-f7b91008a531&lang=ru_RU"
+    type="text/javascript"
+  ></script>
+</head>
+<body>
+<section class="dart_wrapper auth registration">
+  <form class="auth__form registration__form">
+    <a class="d-back registration__back">
+      <i class="d-icon-arrow d-back__icon"></i>
+      <span class="d-back__text hidden-640">Назад</span>
+    </a>
+    <a
+      href="/"
+      class="auth__logo registration__logo"
+    >
+      <picture>
+        <source
+          media="(max-width: 1920px)"
+          srcset="./src/assets/icons/logo-1920.svg"
+        />
+        <source
+          media="(max-width: 800px)"
+          srcset="./src/assets/icons/logo-800.svg"
+        />
+        <source
+          media="(max-width: 640px)"
+          srcset="./src/assets/icons/logo-640.svg"
+        />
+        <source
+          media="(max-width: 400px)"
+          srcset="./src/assets/icons/logo-400.svg"
+        />
+        <source
+          media="(max-width: 320px)"
+          srcset="./src/assets/icons/logo-320.svg"
+        />
+        <img
+          src="./src/assets/icons/logo-1920.svg"
+          loading="lazy"
+          width="368"
+          height="79"
+        />
+      </picture>
+    </a>
 
-				<!-- <div class="auth__loading">
-					<canvas class="d-loader" style="width: 60px; height: 60px"></canvas>
-					<p class="text">Пожалуйста, подождите,<br>идет загрузка контента</p>
-				</div> -->
+    <!-- <div class="auth__loading">
+      <canvas class="d-loader" style="width: 60px; height: 60px"></canvas>
+      <p class="text">Пожалуйста, подождите,<br>идет загрузка контента</p>
+    </div> -->
 
-				<div class="registration__fields">
-					<div class="d-input__group">
-						<div class="d-input__wrapper">
-							<div class="d-input">
-								<input type="text" placeholder="Логин" name="login" class="d-input__field" data-input-id="login" required />
-								<button type="button" class="d-close d-input__button" data-input="clear" data-for-input="login">
-									<i class="d-icon-times d-close__icon"></i>
-								</button>
-							</div>
-						</div>
-						<div class="d-input__wrapper">
-							<div class="d-input d-input--error">
-								<input
-									type="password"
-									placeholder="Пароль"
-									name="password"
-									class="d-input__field"
-									data-input-id="password"
-									required
-								/>
-								<button type="button" class="d-show-alt d-input__button" data-input="show" data-for-input="password">
-									<i class="d-icon-eye d-show-alt__icon"></i>
-								</button>
-								<div class="d-show__wrapper d-input__button" data-input="hide" data-for-input="password">
-									<button type="button" class="d-show d-input__show">
-										<i class="d-icon-eye d-show__icon"></i>
-									</button>
-								</div>
-							</div>
-							<div class="d-input-error">
-								<i class="d-icon-warning d-input-error__icon"></i>
-								<span class="d-input-error__text">Password must contain 8 characters and include letters, numbers, and symbols.</span>
-							</div>
-						</div>
-					</div>
+    <div class="registration__fields">
+      <div class="d-input__group">
+        <div class="d-input__wrapper">
+          <div class="d-input">
+            <input
+              type="text"
+              placeholder="Логин"
+              name="login"
+              class="d-input__field"
+              data-input-id="login"
+              required
+            />
+            <button
+              type="button"
+              class="d-close d-input__button"
+              data-input="clear"
+              data-for-input="login"
+            >
+              <i class="d-icon-times d-close__icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="d-input__wrapper">
+          <div class="d-input d-input--error">
+            <input
+              type="password"
+              placeholder="Пароль"
+              name="password"
+              class="d-input__field"
+              data-input-id="password"
+              required
+            />
+            <button
+              type="button"
+              class="d-show-alt d-input__button"
+              data-input="show"
+              data-for-input="password"
+            >
+              <i class="d-icon-eye d-show-alt__icon"></i>
+            </button>
+            <div
+              class="d-show__wrapper d-input__button"
+              data-input="hide"
+              data-for-input="password"
+            >
+              <button
+                type="button"
+                class="d-show d-input__show"
+              >
+                <i class="d-icon-eye d-show__icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="d-input-error">
+            <i class="d-icon-warning d-input-error__icon"></i>
+            <span class="d-input-error__text">Password must contain 8 characters and include letters, numbers, and symbols.</span>
+          </div>
+        </div>
+      </div>
 
-					<fieldset class="d-input__group">
-						<legend class="d-input__label">Данные контактного лица:</legend>
-						<div class="d-input__wrapper">
-							<div class="d-input">
-								<input
-									type="text"
-									placeholder="ФИО контактного лица"
-									name="contact_fio"
-									class="d-input__field"
-									data-input-id="contact_fio"
-									required
-								/>
-								<button type="button" class="d-close d-input__button" data-input="clear" data-for-input="contact_fio">
-									<i class="d-icon-times d-close__icon"></i>
-								</button>
-							</div>
-						</div>
-						<div class="d-input__wrapper">
-							<div class="d-input">
-								<input type="tel" placeholder="Телефон" name="phone" class="d-input__field" data-input-id="phone" required />
-							</div>
-						</div>
-						<div class="d-input__wrapper">
-							<div class="d-input">
-								<input type="email" placeholder="Email" name="email" class="d-input__field" data-input-id="email" required />
-								<button type="button" class="d-close d-input__button" data-input="clear" data-for-input="email">
-									<i class="d-icon-times d-close__icon"></i>
-								</button>
-							</div>
-						</div>
-					</fieldset>
+      <fieldset class="d-input__group">
+        <legend class="d-input__label">Данные контактного лица:</legend>
+        <div class="d-input__wrapper">
+          <div class="d-input">
+            <input
+              type="text"
+              placeholder="ФИО контактного лица"
+              name="contact_fio"
+              class="d-input__field"
+              data-input-id="contact_fio"
+              required
+            />
+            <button
+              type="button"
+              class="d-close d-input__button"
+              data-input="clear"
+              data-for-input="contact_fio"
+            >
+              <i class="d-icon-times d-close__icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="d-input__wrapper">
+          <div class="d-input">
+            <input
+              type="tel"
+              placeholder="Телефон"
+              name="phone"
+              class="d-input__field"
+              data-input-id="phone"
+              required
+            />
+          </div>
+        </div>
+        <div class="d-input__wrapper">
+          <div class="d-input">
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              class="d-input__field"
+              data-input-id="email"
+              required
+            />
+            <button
+              type="button"
+              class="d-close d-input__button"
+              data-input="clear"
+              data-for-input="email"
+            >
+              <i class="d-icon-times d-close__icon"></i>
+            </button>
+          </div>
+        </div>
+      </fieldset>
 
-					<fieldset class="d-input__group">
-						<legend class="d-input__label">Данные компании:</legend>
-						<div class="d-input__wrapper">
-							<div class="d-input">
-								<input
-									type="text"
-									placeholder="Наименование организации"
-									name="organization_name"
-									class="d-input__field"
-									data-input-id="organization_name"
-									required
-								/>
-								<button type="button" class="d-close d-input__button" data-input="clear" data-for-input="organization_name">
-									<i class="d-icon-angle-rounded d-close__icon"></i>
-								</button>
+      <fieldset class="d-input__group">
+        <legend class="d-input__label">Данные компании:</legend>
+        <div class="d-input__wrapper">
+          <div class="d-input">
+            <input
+              type="text"
+              placeholder="Наименование организации"
+              name="organization_name"
+              class="d-input__field"
+              data-input-id="organization_name"
+              required
+            />
+            <button
+              type="button"
+              class="d-close d-input__button"
+              data-input="clear"
+              data-for-input="organization_name"
+            >
+              <i class="d-icon-angle-rounded d-close__icon"></i>
+            </button>
 
-								<ul class="d-input__suggestions">
-									<!-- <div class="d-input__suggestion d-input__suggestion--none">Нет данных результата</div> -->
-									<li class="d-input__suggestion d-input__suggestion--disable">ООО «МСТ» Технологический завод заводов</li>
-									<li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
-									<li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
-									<li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
-									<li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
-									<li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
-								</ul>
-							</div>
-						</div>
-						<div class="d-input__wrapper">
-							<div class="d-input">
-								<input type="text" placeholder="ИНН" name="inn" class="d-input__field" data-input-id="inn" required />
-							</div>
-						</div>
+            <ul class="d-input__suggestions">
+              <!-- <div class="d-input__suggestion d-input__suggestion--none">Нет данных результата</div> -->
+              <li class="d-input__suggestion d-input__suggestion--disable">ООО «МСТ» Технологический завод заводов</li>
+              <li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
+              <li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
+              <li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
+              <li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
+              <li class="d-input__suggestion">ООО «МСТ» Технологический завод заводов</li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-input__wrapper">
+          <div class="d-input">
+            <input
+              type="text"
+              placeholder="ИНН"
+              name="inn"
+              class="d-input__field"
+              data-input-id="inn"
+              required
+            />
+          </div>
+        </div>
 
-						<div class="address-map__wrapper">
-							<div class="d-input__wrapper">
-								<div class="d-input">
-									<input
-										type="text"
-										placeholder="Адрес доставки"
-										name="address"
-										class="d-input__field"
-										data-input-id="address1"
-										required
-									/>
-								</div>
-							</div>
-							<div class="address-map">
-								<div class="yandex-map" style="width: 100%; height: 100%" data-for-input="address1"></div>
-								<button type="button" class="d-window-button address-map__button">
-									<i class="d-icon-window d-window-button__icon"></i>
-								</button>
-							</div>
-						</div>
-					</fieldset>
+        <div class="address-map__wrapper">
+          <div class="d-input__wrapper">
+            <div class="d-input">
+              <input
+                type="text"
+                placeholder="Адрес доставки"
+                name="address"
+                class="d-input__field"
+                data-input-id="address1"
+                required
+              />
+            </div>
+          </div>
+          <div class="address-map">
+            <div
+              class="yandex-map"
+              style="width: 100%; height: 100%"
+              data-for-input="address1"
+            ></div>
+            <button
+              type="button"
+              class="d-window-button address-map__button"
+            >
+              <i class="d-icon-window d-window-button__icon"></i>
+            </button>
+          </div>
+        </div>
+      </fieldset>
 
-					<button class="d-button d-button-secondary registration__add-button">
-						<i class="d-icon-plus"></i>
-						Добавить адрес доставки
-					</button>
-				</div>
-				<button type="button" class="d-button d-button-primary box-shadow-none">Зарегистрироваться</button>
-			</form>
+      <button class="d-button d-button-secondary registration__add-button">
+        <i class="d-icon-plus"></i>
+        Добавить адрес доставки
+      </button>
+    </div>
+    <button
+      type="button"
+      class="d-button d-button-primary box-shadow-none"
+    >Зарегистрироваться
+    </button>
+  </form>
 
-			<div class="auth__footer">
-				<div class="feedback visible-800">
-					<div class="feedback__content">
-						<p class="feedback__title">Не получается войти в ЛК?</p>
-						<p class="feedback__text">
-							Свяжитесь с нами через почту
-							<a href="mailto:client.ms@yandex.ru" class="inline-block link">client.ms@yandex.ru</a>
-							или по номеру телефона
-							<a href="tel:88003501519" class="inline-block link">+7 (800) 350-15-19</a>
-						</p>
-					</div>
-				</div>
-				<div class="copyright visible-800">
-					<span class="copyright__text">© МСТ, 2024</span>
-				</div>
-			</div>
+  <div class="auth__footer">
+    <div class="feedback visible-800">
+      <div class="feedback__content">
+        <p class="feedback__title">Не получается войти в ЛК?</p>
+        <p class="feedback__text">
+          Свяжитесь с нами через почту
+          <a
+            href="mailto:client.ms@yandex.ru"
+            class="inline-block link"
+          >client.ms@yandex.ru
+          </a>
+          или по номеру телефона
+          <a
+            href="tel:88003501519"
+            class="inline-block link"
+          >+7 (800) 350-15-19
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="copyright visible-800">
+      <span class="copyright__text">© МСТ, 2024</span>
+    </div>
+  </div>
 
-			<div class="copyright hidden-800">
-				<span class="copyright__text">© МСТ, 2024</span>
-			</div>
+  <div class="copyright hidden-800">
+    <span class="copyright__text">© МСТ, 2024</span>
+  </div>
 
-			<div class="feedback hidden-800">
-				<div class="feedback__content">
-					<p class="feedback__title">Не получается войти в ЛК?</p>
-					<p class="feedback__text">Свяжитесь с нами через обратную связь, кликнув на кнопку, расположенную справа.</p>
-				</div>
+  <div class="feedback hidden-800">
+    <div class="feedback__content">
+      <p class="feedback__title">Не получается войти в ЛК?</p>
+      <p class="feedback__text">Свяжитесь с нами через обратную связь, кликнув на кнопку, расположенную справа.</p>
+    </div>
 
-				<div class="feedback__button-wrapper">
-					<button type="button" class="d-button d-button-primary d-button-rounded">
-						<i class="d-icon-messages d-button-rounded__icon"></i>
-					</button>
-				</div>
-			</div>
-		</section>
+    <div class="feedback__button-wrapper">
+      <button
+        type="button"
+        class="d-button d-button-primary d-button-rounded"
+      >
+        <i class="d-icon-messages d-button-rounded__icon"></i>
+      </button>
+    </div>
+  </div>
+</section>
 
-		<div class="d-modal__wrapper">
-			<div class="d-modal registration-address">
-				<button class="d-modal__close">
-					<i class="d-icon-times d-modal__icon"></i>
-				</button>
-				<div class="d-modal__content">
-					<div class="registration-address__header">
-						<i class="d-icon-location registration-address__icon"></i>
-						<p class="d-modal__title">Выберите адрес доставки</p>
-					</div>
-					<div class="registration-address__map">
-						<div class="yandex-map" data-for-input="address1" style="width: 100%; height: 100%"></div>
-					</div>
-					<form class="d-search registration-address__search">
-						<i class="d-icon-search d-search__icon"></i>
-						<input type="text" placeholder="Найти адрес доставки" class="d-search__field" />
-						<button type="button" class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button">Найти</button>
+<div class="d-modal__wrapper">
+  <div class="d-modal registration-address">
+    <button class="d-modal__close">
+      <i class="d-icon-times d-modal__icon"></i>
+    </button>
+    <div class="d-modal__content">
+      <div class="registration-address__header">
+        <i class="d-icon-location registration-address__icon"></i>
+        <p class="d-modal__title">Выберите адрес доставки</p>
+      </div>
+      <div class="registration-address__map">
+        <div
+          class="yandex-map"
+          data-for-input="address1"
+          style="width: 100%; height: 100%"
+        ></div>
+      </div>
+      <form class="d-search registration-address__search">
+        <i class="d-icon-search d-search__icon"></i>
+        <input
+          type="text"
+          placeholder="Найти адрес доставки"
+          class="d-search__field"
+        />
+        <button
+          type="button"
+          class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button"
+        >Найти
+        </button>
 
-						<ul class="d-search__suggestions">
-							<li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
-							<li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
-							<li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
-							<li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
-						</ul>
-					</form>
+        <ul class="d-search__suggestions">
+          <li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
+          <li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
+          <li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
+          <li class="d-search__suggestion">Россия, Москва, Большой Предтеченский переулок, 13с4</li>
+        </ul>
+      </form>
 
-					<p class="registration-address__address">Россия, Москва, Большой Предтеченский переулок, 13с4</p>
+      <p class="registration-address__address">Россия, Москва, Большой Предтеченский переулок, 13с4</p>
 
-					<div class="registration-address__buttons">
-						<button type="button" class="d-button d-button-secondary d-button-secondary-small box-shadow-none">Отмена</button>
-						<button type="button" class="d-button d-button-primary d-button-primary-small box-shadow-none">Выбрать</button>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div class="registration-address__buttons">
+        <button
+          type="button"
+          class="d-button d-button-secondary d-button-secondary-small box-shadow-none"
+        >Отмена
+        </button>
+        <button
+          type="button"
+          class="d-button d-button-primary d-button-primary-small box-shadow-none"
+        >Выбрать
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
-		<script type="module" src="../src/main.js"></script>
-		<script type="module" src="../src/scripts/other.js"></script>
-		<script src="https://unpkg.com/imask"></script>
-	</body>
+<script
+  type="module"
+  src="../src/main.js"
+></script>
+<script
+  type="module"
+  src="../src/scripts/other.js"
+></script>
+<script src="https://unpkg.com/imask"></script>
+</body>
 </html>

@@ -2,307 +2,471 @@
 @use 'sass:math';
 
 .aviasales {
-	&__modal {
-		--d-modal2-padding: 28px 32px 32px;
-		--aviasales-card-container-gap: 20px;
+  &__modal {
+    --d-modal2-padding: 28px 32px 32px;
+    --aviasales-card-container-gap: 20px;
 
-		& {
-			width: 890px;
-			height: 480px;
-		}
+    & {
+      width: 890px;
+      height: 480px;
+    }
 
-		&-header {
-			padding-bottom: 16px;
-		}
+    &-header {
+      gap: 0;
+    }
 
-		&-content {
-			display: flex;
-			gap: 20px;
-		}
+    &-content {
+      gap: 24px;
+    }
 
-		&-close {
-			font-size: 11px;
+    &-close {
+      font-size: 11px;
+      position: static;
+      width: 16px;
+      height: 16px;
+    }
 
-			top: 36px;
-			right: 32px;
+    &-divider {
+      --d-divider-margin: 16px 20px;
+    }
+  }
 
-			width: 16px;
-			height: 16px;
-		}
-	}
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
 
-	&__tab {
-		--aviasales-tab-primary-color: #282828;
-		--aviasales-tab-secondary-color: #FBFBFB;
+  &__tab {
+    --aviasales-tab-primary-color: #282828;
+    --aviasales-tab-secondary-color: #FBFBFB;
 
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 
-		background: var(--aviasales-tab-secondary-color);
-		border: 1px solid var(--aviasales-tab-primary-color);
-		border-radius: 35px;
+    background: var(--aviasales-tab-secondary-color);
+    border: 1px solid var(--aviasales-tab-primary-color);
+    border-radius: 35px;
 
-		color: var(--aviasales-tab-primary-color);
-		font-size: 16px;
-		font-weight: 500;
+    color: var(--aviasales-tab-primary-color);
+    font-size: 16px;
+    font-weight: 500;
 
-		transition-duration: .2s;
+    transition-duration: .2s;
 
-		padding: 4px 12px;
-		height: 32px;
-		min-width: max-content;
+    padding: 4px 12px;
+    height: 32px;
+    min-width: max-content;
 
-		&--active {
-			--aviasales-tab-primary-color: #FBFBFB;
-			--aviasales-tab-secondary-color: #282828;
+    &--active {
+      --aviasales-tab-primary-color: #FBFBFB;
+      --aviasales-tab-secondary-color: #282828;
 
-			border-color: transparent;
-		}
+      border-color: transparent;
+    }
 
-		&-container {
-			@include scrollbar;
+    &-container {
+      @include scrollbar;
 
-			& {
-				display: flex;
-				align-items: center;
-				gap: 16px;
-				overflow-x: auto;
-				max-width: 100%;
-			}
-		}
+      & {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        overflow-x: auto;
+        max-width: 100%;
+      }
+    }
 
-		&-badge {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			background: var(--aviasales-tab-primary-color);
-			font-size: 12px;
-			font-weight: 500;
-			color: var(--aviasales-tab-secondary-color);
-			width: 19px;
-			height: 19px;
-		}
-	}
+    &-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--aviasales-tab-primary-color);
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--aviasales-tab-secondary-color);
+      width: 19px;
+      height: 19px;
+    }
+  }
 
-	&__card {
-		break-inside: avoid;
+  &__card {
+    break-inside: avoid;
 
-		background: #FBFBFB;
-		border-radius: 8px;
-		overflow: hidden;
-		margin-bottom: var(--aviasales-card-container-gap);
-		//width: calc(50% - math.div(var(--aviasales-card-container-gap), 2));
-		height: fit-content;
+    background: #FBFBFB;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: var(--aviasales-card-container-gap);
+    //width: calc(50% - math.div(var(--aviasales-card-container-gap), 2));
+    height: fit-content;
 
-		&-container {
-			//display: flex;
-			//flex-wrap: wrap;
-			column-count: 2;
-			gap: var(--aviasales-card-container-gap);
-		}
+    &-container {
+      //display: flex;
+      //flex-wrap: wrap;
+      column-count: 2;
+      gap: var(--aviasales-card-container-gap);
+    }
 
-		&-header {
-			display: flex;
-			align-items: center;
-			height: 26px;
+    &-header {
+      display: flex;
+      align-items: center;
+      height: 26px;
 
-			&-block {
-				flex-grow: 1;
-				background: #EDEDED;
-				border-radius: 7px 0 0 0;
-				height: 100%;
-			}
-		}
+      &-block {
+        flex-grow: 1;
+        background: #EDEDED;
+        border-radius: 7px 0 0 0;
+        height: 100%;
+      }
+    }
 
-		&-title {
-			font-size: 12px;
-			font-weight: 500;
+    &-title {
+      font-size: 12px;
+      font-weight: 500;
 
-			&-container {
-				background: #ededed;
-				height: 100%;
-			}
+      &-container {
+        background: #ededed;
+        height: 100%;
+      }
 
-			&-wrapper {
-				display: flex;
-				align-items: center;
-				gap: 8px;
-				background: #FBFBFB;
-				border-radius: 0 0 7px 0;
-				padding: 4px 8px;
-				height: 100%;
-			}
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #FBFBFB;
+        border-radius: 0 0 7px 0;
+        padding: 4px 8px;
+        height: 100%;
+      }
 
-			&-icon {
-				font-size: 16px;
-			}
-		}
+      &-icon {
+        font-size: 16px;
+      }
+    }
 
-		&-content {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 8px;
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
 
-			background: #EDEDED;
-			border-radius: 7px 0 0 0;
-			padding: 8px 12px;
-		}
+      background: #EDEDED;
+      border-radius: 7px 0 0 0;
+      padding: 8px 12px;
+    }
 
-		&-item {
-			background: #FFFFFF8C;
-			border: 0.5px solid #757575;
-			border-radius: 24px;
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-			font-size: 12px;
-			font-weight: 500;
+      background: #FFFFFF8C;
+      border: 0.5px solid #757575;
+      border-radius: 24px;
 
-			padding: 2px 8px;
-			height: 22px;
-		}
+      font-size: 12px;
+      font-weight: 500;
 
-		&-switch {
-			--d-switch-padding: 1px;
-			--d-switch-border-width: 0.5px;
-			--d-switch-border-radius: 120px;
-			--d-switch-width: 23px;
-			--d-switch-height: 12px;
-			--d-switch-thumb-width: 10px;
-		}
-	}
+      padding: 2px 8px;
+      height: 22px;
+    }
+
+    &-switch {
+      --d-switch-padding: 1px;
+      --d-switch-border-width: 0.5px;
+      --d-switch-border-radius: 120px;
+      --d-switch-width: 23px;
+      --d-switch-height: 12px;
+      --d-switch-thumb-width: 10px;
+    }
+  }
+
+  @media (width > 1280px) {
+    &__modal {
+      &-actions {
+        display: none;
+      }
+    }
+  }
+
+  @media (width <= 1280px) {
+    &__modal {
+      --d-modal2-padding: 32px 20px 0;
+      --aviasales-card-container-gap: 16px;
+
+      width: 752px;
+      height: 510px;
+
+      &-divider {
+        --d-divider-margin: 16px;
+      }
+
+      &-actions {
+        padding: 24px 32px;
+
+        &-button {
+          font-size: 10px;
+          font-weight: 400;
+          padding: 4px 16px;
+          height: 24px;
+          min-height: 24px;
+          min-width: 65px;
+        }
+      }
+    }
+
+    &__tab {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 4px 12px;
+      height: 24px;
+
+      &-badge {
+        font-size: 10px;
+        font-weight: 600;
+      }
+    }
+
+    &__card {
+      &-container {
+        gap: 24px;
+      }
+
+      &-title {
+        font-size: 10px;
+        font-weight: 600;
+
+        &-wrapper {
+          padding: 4px 12px 4px 8px;
+        }
+
+        &-icon {
+          font-size: 14px;
+        }
+      }
+
+      &-item {
+        font-size: 10px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  @media (width > 1024px) {
+    &__modal {
+      &-actions {
+        &-button {
+          &-text {
+            &--delete {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (width <= 1024px) {
+    &__modal {
+      --aviasales-footer-height: 44px;
+      --d-modal2-padding: 24px 24px calc(var(--aviasales-footer-height) + 24px);
+      --aviasales-card-container-gap: 16px;
+
+      width: 632px;
+      height: 434px;
+
+      &-close {
+        font-size: 7px;
+        width: 10px;
+        height: 10px;
+      }
+
+      &-divider {
+        --d-divider-margin: 8px 24px;
+      }
+
+      &-actions {
+        background: #FFFFFF8C;
+        backdrop-filter: blur(12px);
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        translate: -50% 0;
+
+        padding: 10px;
+        height: 44px;
+        width: 100%;
+
+        &-button {
+          &-text {
+            &--cancel {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &__tab {
+      padding: 2px 8px;
+
+      &-container {
+        gap: 8px;
+      }
+    }
+
+    &__card {
+      margin-bottom: 0;
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        column-count: auto;
+        gap: 16px;
+      }
+
+      &-title {
+        &-wrapper {
+          padding: 4px 8px;
+        }
+      }
+    }
+  }
 }
 
 .aviasales-collection {
-	&__modal {
-		width: 890px;
-		height: 600px;
+  &__modal {
+    width: 890px;
+    height: 600px;
 
-		&-header {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			flex-direction: row;
-			gap: 20px;
-		}
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      gap: 20px;
+    }
 
-		&-close {
-			position: static;
-		}
+    &-close {
+      position: static;
+    }
 
-		&-content {
-			padding-top: 36px;
-			overflow: hidden;
-		}
-	}
+    &-content {
+      padding-top: 36px;
+      overflow: hidden;
+    }
+  }
 
-	&__title {
-		font-size: 20px;
-		font-weight: 600;
-	}
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+  }
 
-	&__item {
-		--aviasales-collection-image-size: 76px;
+  &__item {
+    --aviasales-collection-image-size: 76px;
 
-		display: flex;
-		align-items: center;
+    display: flex;
+    align-items: center;
 
-		background-color: #EDEDED;
-		border-radius: 16px;
+    background-color: #EDEDED;
+    border-radius: 16px;
 
-		padding: 4px 16px;
-		width: 100%;
+    padding: 4px 16px;
+    width: 100%;
 
-		&-list {
-			@include scrollbar;
+    &-list {
+      @include scrollbar;
 
-			& {
-				display: flex;
-				flex-direction: column;
-				gap: 8px;
-				overflow-y: auto;
-			}
-		}
+      & {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        overflow-y: auto;
+      }
+    }
 
-		&-image {
-			object-fit: contain;
-			width: 100%;
-			height: 100%;
+    &-image {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
 
-			&-container {
-				border-radius: 3px;
-				overflow: hidden;
-				margin-right: 20px;
-				aspect-ratio: 1;
-				width: var(--aviasales-collection-image-size);
-				height: var(--aviasales-collection-image-size);
-				min-width: var(--aviasales-collection-image-size);
-				min-height: var(--aviasales-collection-image-size);
-			}
-		}
+      &-container {
+        border-radius: 3px;
+        overflow: hidden;
+        margin-right: 20px;
+        aspect-ratio: 1;
+        width: var(--aviasales-collection-image-size);
+        height: var(--aviasales-collection-image-size);
+        min-width: var(--aviasales-collection-image-size);
+        min-height: var(--aviasales-collection-image-size);
+      }
+    }
 
-		&-content {
-			display: flex;
-			flex-direction: column;
-		}
+    &-content {
+      display: flex;
+      flex-direction: column;
+    }
 
-		&-title {
-			font-size: 16px;
-			font-weight: 500;
-		}
+    &-title {
+      font-size: 16px;
+      font-weight: 500;
+    }
 
-		&-article {
-			font-size: 14px;
-			font-weight: 500;
-			color: #757575;
-		}
+    &-article {
+      font-size: 14px;
+      font-weight: 500;
+      color: #757575;
+    }
 
-		&-divider {
-			--d-divider-margin: 36px;
-			--d-divider-length: 70px;
-		}
+    &-divider {
+      --d-divider-margin: 36px;
+      --d-divider-length: 70px;
+    }
 
-		&-price {
-			display: flex;
-			align-items: flex-start;
-			flex-direction: column;
+    &-price {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
 
-			&-formula {
-				display: flex;
-				align-items: center;
-				gap: 8px;
+      &-formula {
+        display: flex;
+        align-items: center;
+        gap: 8px;
 
-				&-value {
-					font-size: 16px;
-					font-weight: 700;
-					min-width: max-content;
-				}
+        &-value {
+          font-size: 16px;
+          font-weight: 700;
+          min-width: max-content;
+        }
 
-				&-symbol {
-					font-size: 16px;
-					font-weight: 500;
-				}
+        &-symbol {
+          font-size: 16px;
+          font-weight: 500;
+        }
 
-				&-label {
-					color: #757575;
-					font-size: 12px;
-					font-weight: 500;
-					margin-bottom: 8px;
-				}
-			}
+        &-label {
+          color: #757575;
+          font-size: 12px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+      }
 
-			&-discount {
-				background-color: #282828;
-				border-radius: 14px;
-				color: #FBFBFB;
-				font-size: 12px;
-				font-weight: 500;
-				padding: 2px 8px;
-			}
-		}
-	}
+      &-discount {
+        background-color: #282828;
+        border-radius: 14px;
+        color: #FBFBFB;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 2px 8px;
+      }
+    }
+  }
 
-	&__actions {
-		margin-top: 48px;
-	}
+  &__actions {
+    margin-top: 48px;
+  }
 }

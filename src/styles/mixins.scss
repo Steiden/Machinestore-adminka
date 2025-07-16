@@ -1,62 +1,140 @@
 // Media mixins
-@mixin width-1920 { @media (width <= 1920px) { @content; } }
-@mixin width-1536 { @media (width <= 1536px) { @content; } }
-@mixin width-1280 { @media (width <= 1280px) { @content; } }
-@mixin width-1024 { @media (width <= 1024px) { @content; } }
-@mixin width-800 { @media (width <= 800px) { @content; } }
-@mixin width-640 { @media (width <= 640px) { @content; } }
-@mixin width-400 { @media (width <= 400px) { @content; } }
-@mixin width-320 { @media (width <= 320px) { @content; } }
+@mixin width-1920 {
+  @media (width <= 1920px) {
+    @content;
+  }
+}
 
-@mixin width-1920-above { @media (width > 1920px) { @content; } }
-@mixin width-1536-above { @media (width > 1536px) { @content; } }
-@mixin width-1280-above { @media (width > 1280px) { @content; } }
-@mixin width-1024-above { @media (width > 1024px) { @content; } }
-@mixin width-800-above { @media (width > 800px) { @content; } }
-@mixin width-640-above { @media (width > 640px) { @content; } }
-@mixin width-400-above { @media (width > 400px) { @content; } }
-@mixin width-320-above { @media (width > 320px) { @content; } }
+@mixin width-1536 {
+  @media (width <= 1536px) {
+    @content;
+  }
+}
+
+@mixin width-1280 {
+  @media (width <= 1280px) {
+    @content;
+  }
+}
+
+@mixin width-1024 {
+  @media (width <= 1024px) {
+    @content;
+  }
+}
+
+@mixin width-800 {
+  @media (width <= 800px) {
+    @content;
+  }
+}
+
+@mixin width-640 {
+  @media (width <= 640px) {
+    @content;
+  }
+}
+
+@mixin width-400 {
+  @media (width <= 400px) {
+    @content;
+  }
+}
+
+@mixin width-320 {
+  @media (width <= 320px) {
+    @content;
+  }
+}
+
+@mixin width-1920-above {
+  @media (width > 1920px) {
+    @content;
+  }
+}
+
+@mixin width-1536-above {
+  @media (width > 1536px) {
+    @content;
+  }
+}
+
+@mixin width-1280-above {
+  @media (width > 1280px) {
+    @content;
+  }
+}
+
+@mixin width-1024-above {
+  @media (width > 1024px) {
+    @content;
+  }
+}
+
+@mixin width-800-above {
+  @media (width > 800px) {
+    @content;
+  }
+}
+
+@mixin width-640-above {
+  @media (width > 640px) {
+    @content;
+  }
+}
+
+@mixin width-400-above {
+  @media (width > 400px) {
+    @content;
+  }
+}
+
+@mixin width-320-above {
+  @media (width > 320px) {
+    @content;
+  }
+}
 
 
 // Utility mixins
 @mixin visually-hidden {
-	position: absolute !important;
-	width: 1px !important;
-	height: 1px !important;
-	margin: -1px !important;
-	border: 0 !important;
-	padding: 0 !important;
-	white-space: nowrap !important;
-	clip-path: inset(100%) !important;
-	clip: rect(0 0 0 0) !important;
-	overflow: hidden !important;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
 }
 
 @mixin scrollbar(
-	$width: 3px,
-	$height: auto,
-	$border-radius: 999px,
-	$bg-thumb-color: #2828287e,
-	$bg-track-color: transparent
+  $width: 3px,
+  $height: auto,
+  $border-radius: 999px,
+  $bg-thumb-color: #2828287e,
+  $bg-track-color: transparent
 ) {
-	&:-moz-any(&) {
-	  scrollbar-width: thin;
-	  scrollbar-color: $bg-thumb-color $bg-track-color;
-	}
+  &:-moz-any(&) {
+    scrollbar-width: thin;
+    scrollbar-color: $bg-thumb-color $bg-track-color;
+  }
 
-	&::-webkit-scrollbar {
-		width: $width;
-		height: $height;
-	}
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $height;
+  }
 
-	&::-webkit-scrollbar-thumb {
-		background: $bg-thumb-color;
-		border-radius: $border-radius;
-	}
+  &::-webkit-scrollbar-thumb {
+    background: $bg-thumb-color;
+    border-radius: $border-radius;
+  }
 
-	&::-webkit-scrollbar-track {
-		background-color: $bg-track-color;
-	}
+  &::-webkit-scrollbar-track {
+    background-color: $bg-track-color;
+  }
 }
 
 @mixin dark-theme {
