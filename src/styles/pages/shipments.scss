@@ -787,13 +787,17 @@
 .shipments-delete {
     &__modal {
         width: 786px;
+
+        &-wrapper {
+            background-color: #FFFFFF8C;
+        }
     }
 
     &__content {
         display: flex;
         flex-direction: column;
         gap: 16px;
-        margin-block: 24px 40px;
+        padding-block: 24px 40px;
     }
 
     &__text {
@@ -818,6 +822,289 @@
 
         &-icon {
             font-size: 20px;
+        }
+    }
+
+    @media (width <=1920px) {
+        &__modal {
+            width: 752px;
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+        &__content {
+            padding-block: 32px 40px;
+        }
+
+        &__contact {
+            font-size: 12px;
+        }
+    }
+
+    @media (width > 1536px) {
+        &__actions {
+            &-button {
+                &--cancel {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media (width <=1536px) {
+        &__modal {
+            width: 656px;
+        }
+
+        &__title {
+            font-size: 14px;
+        }
+
+        &__content {
+            gap: 24px;
+            padding-block: 16px 32px;
+        }
+
+        &__actions {
+            &-button {
+                height: 32px;
+                min-height: 32px;
+            }
+        }
+    }
+
+    @media (width > 1280px) {
+        &__actions {
+            &-button {
+                &-text {
+
+                    &--cancel-delete,
+                    &--ok-cancel {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (width <=1280px) {
+        &__modal {
+            width: 434px;
+
+            &-close {
+                top: 16px;
+                right: 16px;
+            }
+        }
+
+        &__title {
+            font-size: 12px;
+        }
+
+        &__text {
+            font-size: 10px;
+        }
+
+        &__content {
+            gap: 16px;
+            padding-block: 24px 40px;
+        }
+
+        &__contact {
+            gap: 8px;
+            font-size: 10px;
+
+            &-container {
+                gap: 32px;
+            }
+
+            &-icon {
+                font-size: 14px;
+            }
+        }
+
+        &__actions {
+            &-button {
+                font-size: 10px;
+                font-weight: 600;
+                padding: 4px 16px;
+                height: 24px;
+                min-height: 24px;
+                min-width: 0;
+
+                &-text {
+
+                    &--cancel-cancel,
+                    &--ok-ok {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (width <=1024px) {
+        &__modal {
+            --d-modal2-padding: 24px;
+
+            & {
+                width: 376px;
+            }
+
+            &-close {
+                top: 24px;
+                right: 24px;
+            }
+        }
+
+        &__content {
+            gap: 8px;
+            padding-block: 24px 32px;
+        }
+
+        &__actions {
+            gap: 16px;
+
+            &-button {
+                padding: 4px 12px;
+            }
+        }
+    }
+
+    @media (width <=800px) {
+        &__modal {
+            --d-modal2-padding: 16px;
+
+            & {
+                width: 472px;
+            }
+
+            &-close {
+                top: 16px;
+                right: 16px;
+            }
+        }
+
+        &__title,
+        &__text {
+            font-size: 9px;
+        }
+
+        &__content {
+            padding-block: 16px 24px;
+        }
+
+        &__contact {
+            font-size: 9px;
+            font-weight: 500;
+        }
+
+        &__actions {
+            &-button {
+                padding: 4px 24px;
+                height: 20px;
+                min-height: 20px;
+
+                &--cancel {
+                    display: none;
+                }
+
+                &-text {
+
+                    &--cancel-cancel,
+                    &--cancel-delete,
+                    &--ok-cancel {
+                        display: none;
+                    }
+
+                    &--ok-ok {
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (width <=600px) {
+
+        &__modal {
+            --d-modal2-padding: 24px 44px calc(var(--sidebar-height) + 8px);
+
+            width: 100%;
+            height: 100%;
+
+            &-overlay {
+                z-index: 15;
+            }
+
+            &-wrapper {
+                align-self: flex-end;
+                width: 100%;
+                height: 100dvh;
+                max-width: 100%;
+                max-height: 98dvh;
+            }
+
+            &-close {
+                top: 24px;
+                right: 44px;
+            }
+
+            &-header {
+                gap: 24px;
+            }
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__content {
+            gap: 24px;
+            padding-block: 32px 40px;
+        }
+
+        &__contact {
+            font-size: 14px;
+            font-weight: 500;
+
+            &-container {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            &-icon {
+                font-size: 20px;
+            }
+        }
+
+        &__actions {
+            &-button {
+                font-size: 14px;
+                font-weight: 500;
+                padding: 8px 36px;
+                height: 38px;
+                min-height: 38px;
+            }
+        }
+    }
+
+    @media (width <=400px) {
+        &__modal {
+            --d-modal2-padding: 24px 28px calc(var(--sidebar-height) + 8px);
+
         }
     }
 }

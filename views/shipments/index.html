@@ -440,7 +440,9 @@
 							<!-- Верхушка страницы -->
 							<div class="shipments__top">
 								<a class="d-back shipments__top-back">
-									<i class="d-icon-arrow d-back__icon shipments__top-back-icon"></i>
+									<i
+										class="d-icon-arrow d-back__icon shipments__top-back-icon"
+									></i>
 									<span class="d-back__text">Назад</span>
 								</a>
 								<ul class="d-breadcrumbs shipments__top-breadcrumbs">
@@ -450,7 +452,9 @@
 									<li class="d-breadcrumbs__item shipments__top-breadcrumbs-item">
 										<button class="d-breadcrumbs__button">Акции</button>
 									</li>
-									<li class="d-breadcrumbs__item d-breadcrumbs__item--active shipments__top-breadcrumbs-item">
+									<li
+										class="d-breadcrumbs__item d-breadcrumbs__item--active shipments__top-breadcrumbs-item"
+									>
 										<button class="d-breadcrumbs__button">
 											Насторойка акции
 										</button>
@@ -1210,7 +1214,7 @@
 					<div class="d-modal2__overlay shipments-delete__modal-overlay">
 						<div class="d-modal2__wrapper shipments-delete__modal-wrapper">
 							<div
-								class="d-modal2 shipments-delete__modal"
+								class="d-modal2 d-modal2--active shipments-delete__modal"
 								data-modal2="productComplects"
 							>
 								<button
@@ -1256,11 +1260,19 @@
 											</a>
 										</div>
 									</div>
-									<div class="d-modal2__actions">
+									<div class="d-modal2__actions shipments-delete__actions">
 										<button
-											class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button"
+											class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button shipments-delete__actions-button shipments-delete__actions-button--cancel"
 										>
-											Ок
+											<span class="shipments-delete__actions-button-text shipments-delete__actions-button-text--cancel-cancel">Отмена</span>
+											<span class="shipments-delete__actions-button-text shipments-delete__actions-button-text--cancel-delete">Удалить</span>
+										</button>
+
+										<button
+											class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button shipments-delete__actions-button shipments-delete__actions-button--ok"
+										>
+											<span class="shipments-delete__actions-button-text shipments-delete__actions-button-text--ok-ok">Ок</span>
+											<span class="shipments-delete__actions-button-text shipments-delete__actions-button-text--ok-cancel">Отменить</span>
 										</button>
 									</div>
 								</div>
