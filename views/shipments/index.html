@@ -1295,10 +1295,7 @@
 					<!-- Модалка "Отгрузка" -->
 					<div class="d-modal2__overlay shipment__modal-overlay">
 						<div class="d-modal2__wrapper shipment__modal-wrapper">
-							<div
-								class="d-modal2 d-modal2--active shipment__modal"
-								data-modal2="shipment"
-							>
+							<div class="d-modal2 shipment__modal" data-modal2="shipment">
 								<div class="d-modal2__header shipment__header">
 									<p class="d-modal2__title shipment__header-title">
 										Отгрузка № 4343
@@ -1355,7 +1352,11 @@
 												class="shipment__info-item shipment__info-item--row"
 											>
 												<p class="shipment__info-item-label">Статус:</p>
-												<div class="shipments__table-badge shipment__info-item-badge">В пути</div>
+												<div
+													class="shipments__table-badge shipment__info-item-badge"
+												>
+													В пути
+												</div>
 											</div>
 										</div>
 
@@ -1572,7 +1573,7 @@
 					<div class="d-modal2__overlay shipment-create__modal-overlay">
 						<div class="d-modal2__wrapper shipment-create__modal-wrapper">
 							<div
-								class="d-modal2 shipment-create__modal"
+								class="d-modal2 d-modal2--active shipment-create__modal"
 								data-modal2="shipment-create"
 							>
 								<div class="d-modal2__header shipment-create__header">
@@ -1611,7 +1612,7 @@
 															type="text"
 															placeholder="__ __"
 															name="dateStart"
-															class="d-input__field shipment-create__input"
+															class="d-input__field shipment-create__input-field"
 														/>
 														<button
 															class="d-icon-wrapper d-input__calendar-button shipments__header-input-button"
@@ -1636,7 +1637,7 @@
 															type="text"
 															placeholder="__ __"
 															name="dateEnd"
-															class="d-input__field shipment-create__input"
+															class="d-input__field shipment-create__input-field"
 														/>
 														<button
 															class="d-icon-wrapper d-input__calendar-button shipments__header-input-button"
@@ -1695,7 +1696,7 @@
 															placeholder=""
 															value="Вторник"
 															name="nextDays"
-															class="d-input__field shipment-create__input"
+															class="d-input__field shipment-create__input-field"
 														/>
 														<button
 															class="d-input__dropdown-button shipment-create__input-button"
@@ -1722,7 +1723,7 @@
 															placeholder=""
 															value="1"
 															name="everyWeek"
-															class="d-input__field shipment-create__input"
+															class="d-input__field shipment-create__input-field"
 														/>
 														<button
 															class="d-input__dropdown-button shipment-create__input-button"
@@ -1751,7 +1752,7 @@
 														type="text"
 														placeholder=""
 														name="period"
-														class="d-input__field shipment-create__input"
+														class="d-input__field shipment-create__input-field"
 													/>
 													<button
 														class="d-icon-wrapper d-input__calendar-button shipments__header-input-button"
@@ -1896,16 +1897,16 @@
 											</div>
 										</div>
 									</div>
-									<div class="d-modal2__actions">
+									<div class="d-modal2__actions shipment-create__actions">
 										<button
-											class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button"
+											class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button shipment-create__actions-button shipment-create__actions-button--cancel"
 										>
 											Отмена
 										</button>
 										<button
-											class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button"
+											class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button shipment-create__actions-button shipment-create__actions-button--ok"
 										>
-											Сохранить
+											Ок
 										</button>
 									</div>
 								</div>
