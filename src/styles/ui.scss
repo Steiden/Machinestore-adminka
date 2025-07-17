@@ -4219,6 +4219,139 @@
   }
 }
 
+.d-top {
+  // Шаблон
+  // 	<!-- Верхушка страницы -->
+  // <div class="d-top">
+  // 	<a class="d-back d-top-back">
+  // 		<i
+  // 			class="d-icon-arrow d-back__icon d-top-back-icon"
+  // 		></i>
+  // 		<span class="d-back__text">Назад</span>
+  // 	</a>
+  // 	<ul class="d-breadcrumbs d-top-breadcrumbs">
+  // 		<li class="d-breadcrumbs__item d-top-breadcrumbs-item">
+  // 			<button class="d-breadcrumbs__button">Оптовые цены</button>
+  // 		</li>
+  // 		<li class="d-breadcrumbs__item d-top-breadcrumbs-item">
+  // 			<button class="d-breadcrumbs__button">Акции</button>
+  // 		</li>
+  // 		<li
+  // 			class="d-breadcrumbs__item d-breadcrumbs__item--active d-top-breadcrumbs-item"
+  // 		>
+  // 			<button class="d-breadcrumbs__button">
+  // 				Насторойка акции
+  // 			</button>
+  // 		</li>
+  // 	</ul>
+  // </div>
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+
+  &-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #282828;
+    padding: 0;
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      width: 48px;
+      height: 40px;
+    }
+  }
+
+  @media (width <=1536px) {
+    gap: 24px;
+    margin-bottom: 32px;
+
+    &-back {
+      &-icon {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &-breadcrumbs {
+      height: 28px;
+
+      &-item {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media (width <=1280px) {
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    &-back {
+      font-size: 12px;
+    }
+
+    &-breadcrumbs {
+      &-item {
+        font-size: 10px;
+      }
+    }
+  }
+
+  @media (width <=1024px) {
+    &-back {
+      font-size: 10px;
+
+      &-icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &-breadcrumbs {
+      padding: 6px 8px;
+      height: 24px;
+
+      &-item {
+        &:not(:last-child) {
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+
+  @media (width <=800px) {
+    &-back {
+      gap: 4px;
+      font-size: 9px;
+      font-weight: 500;
+
+      &-icon {
+        font-size: 7px;
+      }
+    }
+
+    &-breadcrumbs {
+      height: 20px;
+
+      &-item {
+        font-size: 9px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media (width <=600px) {
+    display: none;
+
+  }
+}
+
 // Table adaptive
 .d-table {
   @media (width <=1200px) {
