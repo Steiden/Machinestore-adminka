@@ -468,46 +468,52 @@
 							</div>
 
 							<div class="clients__filters">
-								<div class="clients__filters-input-container">
-									<div class="d-input d-input--light clients__filters-input">
-										<input
-											type="text"
-											placeholder="Введите название организации"
-											name="orgName"
-											class="d-input__field clients__filters-input-field"
-										/>
-										<div class="d-input__actions">
-											<button
-												class="d-icon-wrapper clients__filters-input-button"
-											>
-												<i class="d-icon-search-big"></i>
-											</button>
-										</div>
-									</div>
-									<div class="d-input d-input--light clients__filters-input">
-										<input
-											type="text"
-											placeholder="Найдите или выберите менеджера из списка"
-											name="date"
-											class="d-input__field clients__filters-input-field"
-										/>
-										<div class="d-input__actions">
-											<button
-												class="d-icon-wrapper clients__filters-input-button"
-											>
-												<i class="d-icon-search-big"></i>
-											</button>
+								<div class="clients__filters-left">
+									<div class="clients__filters-input-container">
+										<div class="d-input d-input--light clients__filters-input">
+											<input
+												type="text"
+												placeholder="Введите название организации"
+												name="orgName"
+												class="d-input__field clients__filters-input-field"
+											/>
 											<div
-												class="d-divider d-divider--vertical d-input__actions-divider"
-											></div>
-											<button
-												class="d-icon-wrapper clients__filters-input-button"
+												class="d-input__actions clients__filters-input-actions"
 											>
-												<i class="d-icon-angle-rounded-bottom-bold"></i>
-											</button>
+												<button
+													class="d-icon-wrapper clients__filters-input-button"
+												>
+													<i class="d-icon-search-big"></i>
+												</button>
+											</div>
+										</div>
+										<div class="d-input d-input--light clients__filters-input">
+											<input
+												type="text"
+												placeholder="Найдите менеджера"
+												name="date"
+												class="d-input__field clients__filters-input-field"
+											/>
+											<div
+												class="d-input__actions clients__filters-input-actions"
+											>
+												<button
+													class="d-icon-wrapper clients__filters-input-button"
+												>
+													<i class="d-icon-search-big"></i>
+												</button>
+												<div
+													class="d-divider d-divider--vertical d-input__actions-divider clients__filters-input-actions-divider"
+												></div>
+												<button
+													class="d-icon-wrapper clients__filters-input-button"
+												>
+													<i class="d-icon-angle-rounded-bottom-bold"></i>
+												</button>
+											</div>
 										</div>
 									</div>
-									<div class="d-radio__wrapper">
+									<div class="d-radio__wrapper clients__filters-radio-wrapper">
 										<label
 											for="vendorCreated"
 											class="d-radio clients__filters-radio"
@@ -538,108 +544,124 @@
 
 							<div class="clients__card-container">
 								<div class="clients__card">
-									<div class="clients__card-info">
-										<div class="clients__card-info-image-container">
-											<img
-												src="/icons/spo-logo.svg"
-												alt=""
-												class="clients__card-info-image"
-											/>
+									<div class="clients__card-left">
+										<div class="clients__card-info">
+											<div class="clients__card-info-image-container">
+												<img
+													src="/icons/spo-logo.svg"
+													alt=""
+													class="clients__card-info-image"
+												/>
+											</div>
+											<div class="clients__card-info-content">
+												<p class="clients__card-info-title">
+													Спец Проф Оборудование
+												</p>
+												<div class="clients__card-info-address">
+													<i
+														class="d-icon-location clients__card-info-address-icon"
+													></i>
+													<span
+														>г. Екатеринбург, Предельная улица,
+														57к3</span
+													>
+												</div>
+											</div>
 										</div>
-										<div class="clients__card-info-content">
-											<p class="clients__card-info-title">
-												Спец Проф Оборудование
-											</p>
-											<div class="clients__card-info-address">
-												<i
-													class="d-icon-location clients__card-info-address-icon"
-												></i>
-												<span>г. Екатеринбург, Предельная улица, 57к3</span>
+
+										<div
+											class="d-divider d-divider--vertical clients__card-divider"
+										></div>
+										<div class="clients__card-data">
+											<div class="clients__card-inn">
+												<p class="clients__card-inn-label">ИНН:</p>
+												<p class="clients__card-inn-value">6771453803</p>
+											</div>
+											<div
+												class="d-divider d-divider--vertical clients__card-divider clients__card-data-divider"
+											></div>
+											<div class="clients__card-contact-container">
+												<a
+													href="tel:+70000000000"
+													class="clients__card-contact"
+												>
+													<i
+														class="d-icon-telephone clients__card-contact-icon"
+													></i>
+													<span>+7 (000) 000-00-00</span>
+												</a>
+												<a
+													href="mailto:andreev@tk-tehnolorg.ru"
+													class="clients__card-contact"
+												>
+													<i
+														class="d-icon-mail2 clients__card-contact-icon"
+													></i>
+													<span>andreev@tk-tehnolorg.ru</span>
+												</a>
 											</div>
 										</div>
 									</div>
 
-									<div
-										class="d-divider d-divider--vertical clients__card-divider"
-									></div>
-
-									<div class="clients__card-inn">
-										<p class="clients__card-inn-label">ИНН:</p>
-										<p class="clients__card-inn-value">6771453803</p>
-									</div>
-
-									<div
-										class="d-divider d-divider--vertical clients__card-divider"
-									></div>
-
-									<div class="clients__card-contact-container">
-										<a href="tel:+70000000000" class="clients__card-contact">
-											<i
-												class="d-icon-telephone clients__card-contact-icon"
-											></i>
-											<span>+7 (000) 000-00-00</span>
-										</a>
-										<a
-											href="mailto:andreev@tk-tehnolorg.ru"
-											class="clients__card-contact"
-										>
-											<i class="d-icon-mail2 clients__card-contact-icon"></i>
-											<span>andreev@tk-tehnolorg.ru</span>
-										</a>
-									</div>
-
-									<div
-										class="d-divider d-divider--vertical clients__card-divider"
-									></div>
-
-									<div class="clients__card-price-container">
-										<div class="clients__card-price">
-											<span class="clients__card-price-label">ДЗ:</span>
-											<span class="clients__card-price-value"
-												>5 500 000 ₽</span
-											>
+									<div class="clients__card-right">
+										<div class="clients__card-right-left">
+											<div
+												class="d-divider d-divider--vertical clients__card-divider"
+											></div>
+											<div class="clients__card-price-container">
+												<div class="clients__card-price">
+													<span class="clients__card-price-label"
+														>ДЗ:</span
+													>
+													<span class="clients__card-price-value"
+														>5 500 000 ₽</span
+													>
+												</div>
+												<div
+													class="clients__card-price clients__card-price--secondary"
+												>
+													<span class="clients__card-price-label"
+														>ПЗД:</span
+													>
+													<span class="clients__card-price-value"
+														>3 200 000 ₽</span
+													>
+												</div>
+											</div>
+											<div
+												class="d-divider d-divider--vertical clients__card-divider"
+											></div>
+											<div class="clients__card-vendor">
+												Создан поставщиком
+											</div>
 										</div>
-										<div
-											class="clients__card-price clients__card-price--secondary"
-										>
-											<span class="clients__card-price-label">ПЗД:</span>
-											<span class="clients__card-price-value"
-												>3 200 000 ₽</span
+										<div class="clients__card-right-right">
+											<div
+												class="d-divider d-divider--vertical clients__card-divider"
+											></div>
+											<button
+												class="d-button d-button-primary box-shadow-none clients__card-offer"
 											>
+												<i
+													class="d-icon-plus-flat clients__card-offer-icon"
+												></i>
+												Предложение
+											</button>
+											<div
+												class="d-divider d-divider--vertical clients__card-divider"
+											></div>
+											<div class="clients__card-action-container">
+												<button class="clients__card-action">
+													<i class="d-icon-pen2"></i>
+												</button>
+												<div
+													class="d-divider d-divider--vertical clients__card-divider clients__card-action-divider"
+												></div>
+												<button class="clients__card-action">
+													<i class="d-icon-trash"></i>
+												</button>
+											</div>
 										</div>
-									</div>
-
-									<div
-										class="d-divider d-divider--vertical clients__card-divider"
-									></div>
-
-									<div class="clients__card-vendor">Создан поставщиком</div>
-
-									<div
-										class="d-divider d-divider--vertical clients__card-divider"
-									></div>
-
-									<button
-										class="d-button d-button-primary box-shadow-none clients__card-offer"
-									>
-										<i class="d-icon-plus-flat clients__card-offer-icon"></i>
-										Предложение
-									</button>
-
-									<div
-										class="d-divider d-divider--vertical clients__card-divider"
-									></div>
-
-									<div class="clients__card-action-container">
-										<button class="clients__card-action">
-											<i class="d-icon-pen2"></i>
-										</button>
-										<div
-											class="d-divider d-divider--vertical clients__card-divider"
-										></div>
-										<button class="clients__card-action">
-											<i class="d-icon-trash"></i>
-										</button>
 									</div>
 								</div>
 							</div>
