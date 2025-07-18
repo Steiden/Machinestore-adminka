@@ -29,7 +29,8 @@ export default defineConfig({
         basket: resolve(__dirname, "views/modals/basket/index.html"),
         address: resolve(__dirname, "views/modals/address/index.html"),
         aviasales: resolve(__dirname, "views/modals/aviasales/index.html"),
-        shipments: resolve(__dirname, "views/shipments/index.html")
+        shipments: resolve(__dirname, "views/shipments/index.html"),
+        clients: resolve(__dirname, "views/clients/index.html")
       },
     },
   },

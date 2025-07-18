@@ -1,0 +1,316 @@
+.clients {
+    padding-block: 20px 40px;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 40px;
+
+        &-title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        &-description {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+    &__filters {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 40px;
+
+        &-input {
+            max-width: 428px;
+            flex-shrink: 0;
+
+            &-container {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+            }
+
+            &-button {
+                font-size: 16px;
+            }
+        }
+
+        &-create {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 8px 16px;
+            height: 40px;
+            min-height: 40px;
+            width: fit-content;
+
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background-color: #FFFFFF;
+        border-radius: 12px;
+        box-shadow: 0px 4px 13.4px -5px #00000042;
+        padding: 24px 16px;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &-divider {
+            --d-divider-margin: 0;
+            --d-divider-length: 20px;
+        }
+
+        &-info {
+            display: flex;
+            gap: 8px;
+
+            &-image {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+
+                &-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FBFBFB;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            &-title {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            &-address {
+                display: flex;
+                gap: 8px;
+                color: #757575;
+                font-size: 14px;
+                font-weight: 500;
+
+                &-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 13px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        &-inn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &-label {
+                color: #757575;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            &-value {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        &-contact {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            font-size: 16px;
+            font-weight: 400;
+
+            &-container {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            &-icon {
+                color: #757575;
+                font-size: 16px;
+            }
+        }
+
+        &-price {
+            --clients-card-price-color: #282828;
+
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            border: 1px solid transparent;
+            background-color: #EDEDED;
+            border-radius: 53px;
+
+            padding: 2px 16px;
+            height: 28px;
+            min-width: max-content;
+
+            &--secondary {
+                --clients-card-price-color: #F92C0D;
+
+                background-color: transparent;
+                border-color: #F92C0D;
+                padding: 2px 8px;
+            }
+
+            &-container {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            &-label,
+            &-value {
+                color: var(--clients-card-price-color);
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+        &-vendor {
+            background-color: #CDF0A9;
+            border-radius: 53px;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            padding: 4px 8px;
+        }
+
+        &-offer {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 8px 16px;
+            height: 40px;
+            min-height: 40px;
+            width: fit-content;
+
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &-action {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+
+            &-container {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+
+    @media (width <=1920px) {
+        &__header {
+            margin-bottom: 32px;
+
+            &-title {
+                font-size: 20px;
+            }
+
+            &-description {
+                font-size: 14px;
+            }
+        }
+
+        &__filters {
+            gap: 24px;
+
+            &-create {
+                height: 38px;
+                min-height: 38px;
+            }
+        }
+
+        &__card {
+            padding: 16px;
+
+            &-info {
+                &-title {
+                    font-size: 14px;
+                }
+
+                &-address {
+                    font-size: 12px;
+                }
+            }
+
+            &-inn {
+                &-label,
+                &-value {
+                    font-size: 14px;
+                }
+            }
+
+            &-contact {
+                font-size: 14px;
+            }
+
+            &-price {
+                font-size: 14px;
+                padding: 2px 12px;
+                height: 24px;
+            }
+
+            &-vendor {
+                font-size: 14px;
+            }
+
+            &-offer {
+                height: 38px;
+                min-height: 38px;
+            }
+
+            &-action {
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+}
