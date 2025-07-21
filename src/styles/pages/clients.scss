@@ -740,4 +740,157 @@
             }
         }
     }
+
+    @media (width <=800px) {
+        &__header {
+
+            &-title {
+                font-size: 12px;
+            }
+
+            &-description {
+                font-size: 9px;
+            }
+        }
+
+        &__filters {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            justify-items: flex-end;
+
+            &-left,
+            &-input-container {
+                display: contents;
+            }
+
+            &-input {
+                --d-input-padding: 4px 8px;
+
+                border-radius: 3px;
+                font-size: 8px;
+                font-weight: 400;
+                width: 100%;
+                height: 20px;
+
+                &-button {
+                    font-size: 8px;
+                    padding: 2px;
+                    width: 14px;
+                    height: 14px;
+                }
+
+                &-actions {
+                    gap: 2px;
+
+                    &-divider {
+                        --d-divider-length: 8px;
+                    }
+                }
+            }
+
+            &-create {
+                font-size: 9px;
+                font-weight: 500;
+                padding: 2px 8px;
+                height: 18px;
+                min-height: 18px;
+            }
+
+            &-radio {
+                --d-radio-width: 14px;
+
+                &-wrapper {
+                    justify-content: flex-start;
+                    width: 100%;
+                }
+
+                &-label {
+                    font-size: 9px;
+                }
+            }
+        }
+
+        &__card {
+            gap: 8px;
+            border-radius: 6px;
+
+            &-top {
+                &-right {
+                    &-top {
+                        gap: 8px;
+                    }
+                }
+            }
+
+            &-bottom {
+                align-items: flex-start;
+                padding-top: 8px;
+
+                &-left {
+                    align-items: flex-start;
+                }
+            }
+
+            &-info {
+                &-title {
+                    font-size: 10px;
+                }
+
+                &-address {
+                    font-size: 9px;
+                }
+            }
+
+            &-offer,
+            &-vendor {
+                font-size: 9px;
+                font-weight: 500;
+                padding: 2px 8px;
+                height: 18px;
+                min-height: 18px;
+            }
+
+            &-contact {
+                font-size: 9px;
+                font-weight: 400;
+
+                &-container {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+
+                &-icon {
+                    font-size: 10px;
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+
+            &-inn {
+                font-size: 8px;
+
+                &-label,
+                &-value {
+                    font-size: inherit;
+                }
+            }
+
+            &-price {
+                font-size: 8px;
+                padding: 4px 8px;
+                height: 18px;
+            }
+
+            &-action {
+                font-size: 10px;
+                width: 14px;
+                height: 14px;
+
+                &-container {
+                    gap: 4px;
+                }
+            }
+        }
+    }
 }
