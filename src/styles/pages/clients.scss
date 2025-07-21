@@ -95,6 +95,22 @@
             --d-divider-length: 20px;
         }
 
+        &-top,
+        &-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        &-top {
+            gap: 20px;
+        }
+
+        &-bottom {
+            gap: 8px;
+        }
+
         &-left,
         &-right,
         &-right-left,
@@ -606,6 +622,121 @@
                     --d-divider-length: 11px;
                     display: block;
                 }
+            }
+        }
+    }
+
+    @media (width > 1024px) {
+        &__card {
+
+            &-top,
+            &-bottom {
+                display: none;
+            }
+        }
+    }
+
+    @media (width <=1024px) {
+        &__header {
+            margin-bottom: 24px;
+
+            &-title {
+                font-size: 14px;
+            }
+
+            &-description {
+                font-size: 10px;
+            }
+        }
+
+        &__filters {
+            align-items: flex-start;
+            margin-bottom: 24px;
+
+            &-create {
+                font-size: 10px;
+                font-weight: 400;
+                margin-top: 3px;
+                padding: 4px 12px;
+                height: 24px;
+                min-height: 24px;
+
+                &-icon {
+                    font-size: 8px;
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+
+            &-radio {
+                --d-radio-width: 16px;
+
+                &-wrapper {
+                    gap: 8px;
+                }
+            }
+        }
+
+        &__card {
+
+            &-left,
+            &-right {
+                display: none;
+            }
+
+            &-top {
+                &-right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    &-top {
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                    }
+                }
+            }
+
+            &-bottom {
+                justify-content: space-between;
+                border-top: 0.5px solid #757575;
+                padding-top: 12px;
+
+                &-left {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+
+            &-info {
+                &-address {
+                    font-size: 12px;
+                    font-weight: 400;
+
+                    &-icon {
+                        display: none;
+                    }
+                }
+            }
+
+            &-contact {
+                &-container {
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 8px;
+                }
+            }
+
+            &-price {
+                &-container {
+                    flex-grow: 0;
+                }
+            }
+
+            &-vendor {
+                order: initial;
             }
         }
     }
