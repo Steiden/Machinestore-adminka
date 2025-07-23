@@ -972,12 +972,14 @@
       width: 100%;
 
       &-item {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        color: #282828;
-        font-size: 14px;
-        font-weight: 500;
+        &-content {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          color: #282828;
+          font-size: 14px;
+          font-weight: 500;
+        }
 
         &-icon {
           display: flex;
