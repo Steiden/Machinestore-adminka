@@ -31,3 +31,22 @@ body {
   padding: 24px;
   width: 100%;
 }
+
+.test {
+  &-link {
+    display: block;
+    text-decoration: underline;
+    transition-duration: .3s;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-block: 8px;
+    }
+
+    &:hover {
+      color: blue;
+    }
+  }
+}
