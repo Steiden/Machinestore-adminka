@@ -54,6 +54,7 @@
         }
 
         &-create {
+            box-shadow: none;
             font-size: 16px;
             font-weight: 600;
             padding: 8px 16px;
@@ -220,6 +221,9 @@
             }
 
             &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 color: #757575;
                 font-size: 16px;
             }
@@ -276,6 +280,7 @@
         }
 
         &-offer {
+            box-shadow: none;
             gap: 8px;
             font-size: 16px;
             font-weight: 600;
@@ -501,6 +506,10 @@
                     font-size: 10px;
                 }
             }
+
+            &-create {
+                box-shadow: 0px 4px 13.4px -5px #00000042;
+            }
         }
 
         &__card {
@@ -600,6 +609,7 @@
             }
 
             &-offer {
+                box-shadow: 0px 4px 13.4px -5px #00000042;
                 font-size: 10px;
                 font-weight: 400;
                 padding: 4px 8px;
@@ -792,6 +802,7 @@
             &-create {
                 font-size: 9px;
                 font-weight: 500;
+                margin-top: 0;
                 padding: 2px 8px;
                 height: 18px;
                 min-height: 18px;
@@ -861,9 +872,7 @@
                 }
 
                 &-icon {
-                    font-size: 10px;
-                    width: 14px;
-                    height: 14px;
+                    font-size: 14px;
                 }
             }
 
@@ -890,6 +899,302 @@
                 &-container {
                     gap: 4px;
                 }
+
+                &-divider {
+                    --d-divider-length: 8px;
+                }
+            }
+        }
+    }
+
+    @media (width > 600px) {
+        &__header {
+            &-title {
+                &-icon {
+                    display: none;
+                }
+            }
+        }
+
+        &__card {
+            &-vendor {
+                &-wrapper {
+                    display: contents;
+                }
+            }
+        }
+    }
+
+    @media (width <=600px) {
+        --clients-padding-inline: 44px;
+
+        padding-block: calc(var(--header-height) + 24px) calc(var(--sidebar-height) + 56px);
+
+        &__header,
+        &__filters {
+            padding-inline: var(--clients-padding-inline);
+        }
+
+        &__header {
+            gap: 4px;
+
+            &-title {
+                font-size: 14px;
+
+                &-wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                }
+
+                &-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            &-description {
+                font-size: 12px;
+                margin-left: 28px;
+            }
+        }
+
+        &__filters {
+            justify-items: flex-start;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 40px;
+
+            &-input {
+                --d-input-padding: 12px 16px;
+
+                font-size: 12px;
+                font-weight: 400;
+                max-width: 100%;
+                height: 40px;
+
+                &-button {
+                    font-size: 12px;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            &-radio {
+                --d-radio-width: 18px;
+
+                &-wrapper {
+                    width: auto;
+                }
+
+                &-label {
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+
+            &-create {
+                font-size: 14px;
+                font-weight: 600;
+                margin-top: 8px;
+                padding: 4px 12px;
+                height: 32px;
+                min-height: 32px;
+                width: 100%;
+
+                &-icon {
+                    font-size: 14px;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        &__card {
+            flex-direction: column;
+            gap: 0;
+            padding: 16px 0;
+
+            &-container {
+                gap: 24px;
+            }
+
+            &-top,
+            &-top-right,
+            &-bottom,
+            &-bottom-left {
+                display: contents;
+            }
+
+            &-info {
+                border-bottom: 0.5px solid #757575;
+                padding: 0 var(--clients-padding-inline) 12px;
+                margin-bottom: 12px;
+                width: 100%;
+
+                &-image {
+                    &-container {
+                        width: 28px;
+                        gap: 28px;
+                    }
+                }
+
+                &-title {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                &-description {
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+
+            &-contact-container,
+            &-inn,
+            &-price-container,
+            &-vendor-wrapper,
+            &-top-right-top {
+                padding-inline: var(--clients-padding-inline);
+            }
+
+            &-contact {
+                font-size: 10px;
+                font-weight: 400;
+
+                &-container {
+                    flex-direction: row;
+                    gap: 16px;
+                    margin-bottom: 8px;
+                }
+            }
+
+            &-inn {
+                font-size: 10px;
+                margin-bottom: 20px;
+            }
+
+            &-price {
+                justify-content: center;
+                font-size: 10px;
+                padding: 4px 28px;
+                height: 24px;
+                width: 100%;
+
+                &--secondary {
+                    padding: 4px 36px;
+                }
+
+                &-container {
+                    margin-bottom: 16px;
+                    width: 100%;
+                }
+            }
+
+            &-vendor {
+                justify-content: center;
+                font-size: 10px;
+                font-weight: 400;
+                padding: 4px 12px;
+                width: 100%;
+                height: 24px;
+
+                &-wrapper {
+                    width: 100%;
+                }
+            }
+
+            &-top-right-top {
+                gap: 16px;
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            &-offer {
+                flex-grow: 1;
+                font-size: 14px;
+                font-weight: 600;
+                padding: 4px 12px;
+                height: 32px;
+                min-height: 32px;
+
+                &-icon {
+                    font-size: 14px;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            &-action {
+                font-size: 12px;
+                width: 24px;
+                height: 24px;
+
+                &-container {
+                    gap: 2px;
+                }
+            }
+
+            &-contact-container {
+                order: 1;
+            }
+
+            &-inn {
+                order: 2;
+            }
+
+            &-price-container {
+                order: 3;
+            }
+
+            &-vendor-wrapper {
+                order: 4;
+            }
+
+            &-top-right-top {
+                order: 5;
+            }
+        }
+    }
+
+    @media (width <=400px) {
+        --clients-padding-inline: 28px;
+
+        &__header {
+            &-description {
+                font-size: 10px;
+            }
+        }
+
+        &__filters {
+            margin-bottom: 48px;
+
+            &-input {
+                --d-input-padding: 12px 8px;
+            }
+
+            &-create {
+                margin-top: 16px;
+            }
+        }
+
+        &__card {
+            &-info {
+                &-address {
+                    font-size: 12px;
+                }
+            }
+
+            &-contact {
+                gap: 4px;
+            }
+
+            &-inn {
+                font-size: 12px;
             }
         }
     }
