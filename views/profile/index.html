@@ -436,7 +436,7 @@
 				</div>
 				<main class="main">
 					<div class="content-wrapper main__content-wrapper">
-						<section class="lk-access-groups" id="lk-access-groups">
+						<section class="profile" id="profile">
 							<!-- Верхушка страницы -->
 							<div class="d-top">
 								<a class="d-back d-top-back">
@@ -451,330 +451,411 @@
 										class="d-breadcrumbs__item d-breadcrumbs__item--active d-top-breadcrumbs-item"
 									>
 										<button class="d-breadcrumbs__button">
-											Группы прав доступа
+											Профиль пользователя
 										</button>
 									</li>
 								</ul>
 							</div>
 
-							<ul class="d-tab2__container lk-access-groups__tabs">
-								<li class="d-tab2 d-tab2--active">
-									<a href="/views/lk/about/index.html">О компании</a>
-								</li>
-								<li class="d-tab2">
-									<a href="/views/lk/staff/index.html">Сотрудники</a>
-								</li>
-								<li class="d-tab2">
-									<a href="/views/lk/access/index.html">Права доступа</a>
-								</li>
-							</ul>
+							<h1 class="profile__title">Профиль пользователя</h1>
 
-							<div class="lk-access-groups__header">
-								<h1 class="lk-access-groups__header-title">Группы прав доступа</h1>
-
-								<div class="lk-access-groups__header-filters">
-									<div
-										class="d-input d-input--light lk-access-groups__header-filters-input"
-									>
+							<div class="profile__info">
+								<div class="profile__info-item">
+									<div class="profile__info-label-wrapper">
+										<p class="profile__info-label">Имя</p>
+										<p class="profile__info-label-description"></p>
+									</div>
+									<div class="d-input d-input--light profile__info-input">
 										<input
 											type="text"
-											placeholder="Искать в группах"
-											name="groupName"
-											class="d-input__field lk-access-groups__header-filters-input-field"
+											placeholder="Игнатий"
+											name="date"
+											class="d-input__field profile__info-input-field"
 										/>
-										<div class="d-input__actions">
+										<div class="d-input__actions profile__input-actions">
+											<div
+												class="d-divider d-divider--vertical d-divider--no-margin profile__input-actions-divider"
+											></div>
 											<button
-												class="d-icon-wrapper lk-access-groups__header-filters-input-button"
+												class="d-icon-wrapper profile__info-input-button"
 											>
-												<i class="d-icon-search-big"></i>
+												<i class="d-icon-pen2"></i>
 											</button>
 										</div>
 									</div>
-
-									<button
-										class="d-button d-button-primary d-button--no-shadow lk-access-groups__header-filters-button"
-									>
-										<i
-											class="d-icon-plus-flat lk-access-groups__header-filters-button-icon"
-										></i>
-										Добавить в группу
-									</button>
+								</div>
+								<div class="profile__info-item">
+									<div class="profile__info-label-wrapper">
+										<p class="profile__info-label">Отчество</p>
+										<p class="profile__info-label-description"></p>
+									</div>
+									<div class="d-input d-input--light profile__info-input">
+										<input
+											type="text"
+											placeholder="Игнатий"
+											name="date"
+											class="d-input__field profile__info-input-field"
+										/>
+										<div class="d-input__actions profile__input-actions">
+											<div
+												class="d-divider d-divider--vertical d-divider--no-margin profile__input-actions-divider"
+											></div>
+											<button
+												class="d-icon-wrapper profile__info-input-button"
+											>
+												<i class="d-icon-pen2"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="profile__info-item">
+									<div class="profile__info-label-wrapper">
+										<p class="profile__info-label">Фамилия</p>
+										<p class="profile__info-label-description"></p>
+									</div>
+									<div class="d-input d-input--light profile__info-input">
+										<input
+											type="text"
+											placeholder="Игнатий"
+											name="date"
+											class="d-input__field profile__info-input-field"
+										/>
+										<div class="d-input__actions profile__input-actions">
+											<div
+												class="d-divider d-divider--vertical d-divider--no-margin profile__input-actions-divider"
+											></div>
+											<button
+												class="d-icon-wrapper profile__info-input-button"
+											>
+												<i class="d-icon-pen2"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="profile__info-item">
+									<div class="profile__info-label-wrapper">
+										<p class="profile__info-label">Личный телефон</p>
+										<p class="profile__info-label-description">
+											Виден только коллегам
+										</p>
+									</div>
+									<div class="d-input d-input--light profile__info-input">
+										<input
+											type="text"
+											placeholder="+7 (000) 000-00-00"
+											name="date"
+											class="d-input__field profile__info-input-field"
+										/>
+										<div class="d-input__actions profile__input-actions">
+											<div
+												class="d-divider d-divider--vertical d-divider--no-margin profile__input-actions-divider"
+											></div>
+											<button
+												class="d-icon-wrapper profile__info-input-button"
+											>
+												<i class="d-icon-pen2"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="profile__info-item">
+									<div class="profile__info-label-wrapper">
+										<p class="profile__info-label">Личный email</p>
+										<p class="profile__info-label-description">
+											Виден только коллегам, используется для востановления
+											пароля
+										</p>
+									</div>
+									<div class="d-input d-input--light profile__info-input">
+										<input
+											type="text"
+											placeholder="superStar@mst.tools"
+											name="date"
+											class="d-input__field profile__info-input-field"
+										/>
+										<div class="d-input__actions profile__input-actions">
+											<div
+												class="d-divider d-divider--vertical d-divider--no-margin profile__input-actions-divider"
+											></div>
+											<button
+												class="d-icon-wrapper profile__info-input-button"
+											>
+												<i class="d-icon-pen2"></i>
+											</button>
+										</div>
+									</div>
 								</div>
 							</div>
 
-							<table
-								class="d-table d-table--head-col-divider d-table--full-row-divider d-table--first-col-divider lk-access-groups__table"
-							>
-								<thead class="d-table__head lk-access-groups__table-head">
-									<tr class="d-table__row lk-access-groups__table-row">
-										<th
-											class="d-table__head-col lk-access-groups__table-head-col"
-										>
-											Роль
-										</th>
-										<th
-											class="d-table__head-col lk-access-groups__table-head-col"
-										>
-											Количество пользователей
-										</th>
-										<th
-											class="d-table__head-col lk-access-groups__table-head-col"
-										>
-											Комментарий
-										</th>
-										<th
-											class="d-table__head-col lk-access-groups__table-head-col lk-access-groups__table-head-col--add"
-										>
-											<div class="lk-access-groups__table-actions">
-												<i
-													class="d-icon-pen2 lk-access-groups__table-actions-icon"
-												></i>
-												<div
-													class="d-divider d-divider--vertical d-divider--no-margin lk-access-groupd__table-actions-divider"
-												></div>
-												<i
-													class="d-icon-trash lk-access-groups__table-actions-icon"
-												></i>
-											</div>
-										</th>
-									</tr>
-								</thead>
-								<tbody class="d-table__body lk-access-groups__table-body">
-									<tr class="d-table__row lk-access-groups__table-row">
-										<td class="d-table__col lk-access-groups__table-col">
-											Администратор
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											456
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											Следует отметить, что базовый вектор развития не даёт
-											нам иного выбора, кроме определения инновационных
-											методов управления процессами. Внезапно, реплицированные
-											с зарубежных источников, современные исследования, вне
-											зависимости от их уровня, должны быть подвергнуты целой
-											серии независимых исследований.
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											<div class="lk-access-groups__table-actions">
-												<i
-													class="d-icon-pen2 lk-access-groups__table-actions-icon"
-												></i>
-												<div
-													class="d-divider d-divider--vertical d-divider--no-margin lk-access-groupd__table-actions-divider"
-												></div>
-												<i
-													class="d-icon-trash lk-access-groups__table-actions-icon"
-												></i>
-											</div>
-										</td>
-									</tr>
-									<tr class="d-table__row lk-access-groups__table-row">
-										<td class="d-table__col lk-access-groups__table-col">
-											Администратор
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											456
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											Следует отметить, что базовый вектор развития не даёт
-											нам иного выбора, кроме определения инновационных
-											методов управления процессами. Внезапно, реплицированные
-											с зарубежных источников, современные исследования, вне
-											зависимости от их уровня, должны быть подвергнуты целой
-											серии независимых исследований.
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											<div class="lk-access-groups__table-actions">
-												<i
-													class="d-icon-pen2 lk-access-groups__table-actions-icon"
-												></i>
-												<div
-													class="d-divider d-divider--vertical d-divider--no-margin lk-access-groupd__table-actions-divider"
-												></div>
-												<i
-													class="d-icon-trash lk-access-groups__table-actions-icon"
-												></i>
-											</div>
-										</td>
-									</tr>
-									<tr class="d-table__row lk-access-groups__table-row">
-										<td class="d-table__col lk-access-groups__table-col">
-											Администратор
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											456
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											Следует отметить, что базовый вектор развития не даёт
-											нам иного выбора, кроме определения инновационных
-											методов управления процессами. Внезапно, реплицированные
-											с зарубежных источников, современные исследования, вне
-											зависимости от их уровня, должны быть подвергнуты целой
-											серии независимых исследований.
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											<div class="lk-access-groups__table-actions">
-												<i
-													class="d-icon-pen2 lk-access-groups__table-actions-icon"
-												></i>
-												<div
-													class="d-divider d-divider--vertical d-divider--no-margin lk-access-groupd__table-actions-divider"
-												></div>
-												<i
-													class="d-icon-trash lk-access-groups__table-actions-icon"
-												></i>
-											</div>
-										</td>
-									</tr>
-									<tr class="d-table__row lk-access-groups__table-row">
-										<td class="d-table__col lk-access-groups__table-col">
-											Администратор
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											456
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											Следует отметить, что базовый вектор развития не даёт
-											нам иного выбора, кроме определения инновационных
-											методов управления процессами. Внезапно, реплицированные
-											с зарубежных источников, современные исследования, вне
-											зависимости от их уровня, должны быть подвергнуты целой
-											серии независимых исследований.
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											<div class="lk-access-groups__table-actions">
-												<i
-													class="d-icon-pen2 lk-access-groups__table-actions-icon"
-												></i>
-												<div
-													class="d-divider d-divider--vertical d-divider--no-margin lk-access-groupd__table-actions-divider"
-												></div>
-												<i
-													class="d-icon-trash lk-access-groups__table-actions-icon"
-												></i>
-											</div>
-										</td>
-									</tr>
-									<tr class="d-table__row lk-access-groups__table-row">
-										<td class="d-table__col lk-access-groups__table-col">
-											Администратор
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											456
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											Следует отметить, что базовый вектор развития не даёт
-											нам иного выбора, кроме определения инновационных
-											методов управления процессами. Внезапно, реплицированные
-											с зарубежных источников, современные исследования, вне
-											зависимости от их уровня, должны быть подвергнуты целой
-											серии независимых исследований.
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											<div class="lk-access-groups__table-actions">
-												<i
-													class="d-icon-pen2 lk-access-groups__table-actions-icon"
-												></i>
-												<div
-													class="d-divider d-divider--vertical d-divider--no-margin lk-access-groupd__table-actions-divider"
-												></div>
-												<i
-													class="d-icon-trash lk-access-groups__table-actions-icon"
-												></i>
-											</div>
-										</td>
-									</tr>
-									<tr class="d-table__row lk-access-groups__table-row">
-										<td class="d-table__col lk-access-groups__table-col">
-											Администратор
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											456
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											Следует отметить, что базовый вектор развития не даёт
-											нам иного выбора, кроме определения инновационных
-											методов управления процессами. Внезапно, реплицированные
-											с зарубежных источников, современные исследования, вне
-											зависимости от их уровня, должны быть подвергнуты целой
-											серии независимых исследований.
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											<div class="lk-access-groups__table-actions">
-												<i
-													class="d-icon-pen2 lk-access-groups__table-actions-icon"
-												></i>
-												<div
-													class="d-divider d-divider--vertical d-divider--no-margin lk-access-groupd__table-actions-divider"
-												></div>
-												<i
-													class="d-icon-trash lk-access-groups__table-actions-icon"
-												></i>
-											</div>
-										</td>
-									</tr>
-									<tr class="d-table__row lk-access-groups__table-row">
-										<td class="d-table__col lk-access-groups__table-col">
-											Администратор
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											456
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											Следует отметить, что базовый вектор развития не даёт
-											нам иного выбора, кроме определения инновационных
-											методов управления процессами. Внезапно, реплицированные
-											с зарубежных источников, современные исследования, вне
-											зависимости от их уровня, должны быть подвергнуты целой
-											серии независимых исследований.
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											<div class="lk-access-groups__table-actions">
-												<i
-													class="d-icon-pen2 lk-access-groups__table-actions-icon"
-												></i>
-												<div
-													class="d-divider d-divider--vertical d-divider--no-margin lk-access-groupd__table-actions-divider"
-												></div>
-												<i
-													class="d-icon-trash lk-access-groups__table-actions-icon"
-												></i>
-											</div>
-										</td>
-									</tr>
-									<tr class="d-table__row lk-access-groups__table-row">
-										<td class="d-table__col lk-access-groups__table-col">
-											Администратор
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											456
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											Следует отметить, что базовый вектор развития не даёт
-											нам иного выбора, кроме определения инновационных
-											методов управления процессами. Внезапно, реплицированные
-											с зарубежных источников, современные исследования, вне
-											зависимости от их уровня, должны быть подвергнуты целой
-											серии независимых исследований.
-										</td>
-										<td class="d-table__col lk-access-groups__table-col">
-											<div class="lk-access-groups__table-actions">
-												<i
-													class="d-icon-pen2 lk-access-groups__table-actions-icon"
-												></i>
-												<div
-													class="d-divider d-divider--vertical d-divider--no-margin lk-access-groupd__table-actions-divider"
-												></div>
-												<i
-													class="d-icon-trash lk-access-groups__table-actions-icon"
-												></i>
-											</div>
-										</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="profile__info2">
+								<div class="profile__info-item profile__info-item--alt">
+									<div class="profile__info-label-wrapper">
+										<p class="profile__info-label">Логин</p>
+										<p class="profile__info-label-description">
+											Используется для входа в систему
+										</p>
+									</div>
+									<div class="d-input d-input--light profile__info-input">
+										<input
+											type="text"
+											placeholder="superStar"
+											name="date"
+											class="d-input__field profile__info-input-field"
+										/>
+										<div class="d-input__actions profile__input-actions">
+											<div
+												class="d-divider d-divider--vertical d-divider--no-margin profile__input-actions-divider"
+											></div>
+											<button
+												class="d-icon-wrapper profile__info-input-button"
+											>
+												<i class="d-icon-pen2"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="profile__info-item profile__info-item--alt">
+									<div class="profile__info-label-wrapper">
+										<p class="profile__info-label">Пароль</p>
+										<p class="profile__info-label-description">
+											Используется для входа в систему
+										</p>
+									</div>
+									<div class="d-input d-input--light profile__info-input">
+										<input
+											type="text"
+											placeholder="hbz1MOdv7y"
+											name="date"
+											class="d-input__field profile__info-input-field"
+										/>
+										<div class="d-input__actions profile__input-actions">
+											<div
+												class="d-divider d-divider--vertical d-divider--no-margin profile__input-actions-divider"
+											></div>
+											<button
+												class="d-icon-wrapper profile__info-input-button"
+											>
+												<i class="d-icon-pen2"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</section>
+					</div>
+
+					<!-- Модалка "Редактирование пароля" -->
+					<div class="d-modal2__overlay profile-edit__modal-overlay">
+						<div class="d-modal2__wrapper profile-edit__modal-wrapper">
+							<div
+								class="d-modal2 d-modal2--active profile-edit__modal"
+								data-modal2="editPassword"
+							>
+								<button
+									class="d-modal2__close profile-edit__modal-close"
+									data-modal2-close
+								>
+									<i class="d-icon-times d-modal2__close-icon"></i>
+								</button>
+								<div class="d-modal2__header profile-edit__modal-header">
+									<p class="d-modal2__title profile-edit__title">
+										Редактирование пароля
+									</p>
+									<p class="d-modal2__description profile-edit__decsription">
+										Пожалуйста, введите новый пароль. Редактирование нужно будет
+										подтвердить по вашей почте.
+									</p>
+								</div>
+								<div class="d-modal2__content profile-edit__modal-content">
+									<div class="profile-edit__content">
+										<div class="profile-edit__input-container">
+											<div class="d-input d-input--light profile-edit__input">
+												<input
+													type="text"
+													placeholder="Введите логин"
+													name="date"
+													class="d-input__field profile-edit__input-field"
+												/>
+												<div class="d-input__actions">
+													<div
+														class="d-divider d-divider--vertical d-divider--no-margin d-input__actions-divider"
+													></div>
+													<button
+														class="d-icon-wrapper profile-edit__input-button"
+													>
+														<i class="d-icon-eye"></i>
+													</button>
+												</div>
+											</div>
+											<div class="d-input d-input--light profile-edit__input">
+												<input
+													type="text"
+													placeholder="Введите пароль"
+													name="date"
+													class="d-input__field profile-edit__input-field"
+												/>
+												<div class="d-input__actions">
+													<div
+														class="d-divider d-divider--vertical d-divider--no-margin d-input__actions-divider"
+													></div>
+													<button
+														class="d-icon-wrapper profile-edit__input-button"
+													>
+														<i class="d-icon-eye"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="d-modal2__actions profile-edit__actions">
+										<button
+											class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button profile-edit__actions-button profile-edit__actions-button--cancel"
+										>
+											Отменить
+										</button>
+
+										<button
+											class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button profile-edit__actions-button profile-edit__actions-button--ok"
+										>
+											Сохранить
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Модалка "Редактирование почты" -->
+					<div class="d-modal2__overlay profile-edit__modal-overlay">
+						<div class="d-modal2__wrapper profile-edit__modal-wrapper">
+							<div
+								class="d-modal2 d-modal2--active profile-edit__modal"
+								data-modal2="editPassword"
+							>
+								<button
+									class="d-modal2__close profile-edit__modal-close"
+									data-modal2-close
+								>
+									<i class="d-icon-times d-modal2__close-icon"></i>
+								</button>
+								<div class="d-modal2__header profile-edit__modal-header">
+									<p class="d-modal2__title profile-edit__title">
+										Редактирование почты
+									</p>
+									<p class="d-modal2__description profile-edit__decsription">
+										Пожалуйста, введите новую почту.<br />
+										Редактирование нужно будет подтвердить по вашей старой
+										почте.
+									</p>
+								</div>
+								<div class="d-modal2__content profile-edit__modal-content">
+									<div class="profile-edit__content">
+										<div class="profile-edit__input-container">
+											<div class="d-input d-input--light profile-edit__input">
+												<input
+													type="text"
+													placeholder="Укажите новую почту"
+													name="date"
+													class="d-input__field profile-edit__input-field"
+												/>
+												<div class="d-input__actions">
+													<div
+														class="d-divider d-divider--vertical d-divider--no-margin d-input__actions-divider"
+													></div>
+													<button
+														class="d-icon-wrapper profile-edit__input-button"
+													>
+														<i class="d-icon-eye"></i>
+													</button>
+												</div>
+											</div>
+											<a href="/" class="profile-edit__link"
+												>Нет доступа к старой почте</a
+											>
+										</div>
+									</div>
+
+									<div class="d-modal2__actions profile-edit__actions">
+										<button
+											class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button profile-edit__actions-button profile-edit__actions-button--cancel"
+										>
+											Отменить
+										</button>
+
+										<button
+											class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button profile-edit__actions-button profile-edit__actions-button--ok"
+										>
+											Сохранить
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Модалка "Редактирование логина" -->
+					<div class="d-modal2__overlay profile-edit__modal-overlay">
+						<div class="d-modal2__wrapper profile-edit__modal-wrapper">
+							<div
+								class="d-modal2 d-modal2--active profile-edit__modal profile-edit__modal--login"
+								data-modal2="editPassword"
+							>
+								<button
+									class="d-modal2__close profile-edit__modal-close"
+									data-modal2-close
+								>
+									<i class="d-icon-times d-modal2__close-icon"></i>
+								</button>
+								<div class="d-modal2__header profile-edit__modal-header">
+									<p class="d-modal2__title profile-edit__title">
+										Редактирование логина
+									</p>
+									<p class="d-modal2__description profile-edit__decsription">
+										Пожалуйста, введите новый логин.<br />
+										Редактирование нужно будет подтвердить по вашей почте.
+									</p>
+								</div>
+								<div class="d-modal2__content profile-edit__modal-content">
+									<div class="profile-edit__content">
+										<div class="profile-edit__input-container">
+											<div class="d-input d-input--light profile-edit__input">
+												<input
+													type="text"
+													placeholder="Укажите логин"
+													name="date"
+													class="d-input__field profile-edit__input-field"
+												/>
+												<div class="d-input__actions">
+													<div
+														class="d-divider d-divider--vertical d-divider--no-margin d-input__actions-divider"
+													></div>
+													<button
+														class="d-icon-wrapper profile-edit__input-button"
+													>
+														<i class="d-icon-eye"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="d-modal2__actions profile-edit__actions">
+										<button
+											class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button profile-edit__actions-button profile-edit__actions-button--cancel"
+										>
+											Отменить
+										</button>
+
+										<button
+											class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button profile-edit__actions-button profile-edit__actions-button--ok"
+										>
+											Сохранить
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</main>
 			</div>

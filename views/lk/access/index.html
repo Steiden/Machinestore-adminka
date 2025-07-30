@@ -436,7 +436,7 @@
 				</div>
 				<main class="main">
 					<div class="content-wrapper main__content-wrapper">
-						<section class="lk-about" id="lk-about">
+						<section class="lk-access" id="lk-access">
 							<!-- Верхушка страницы -->
 							<div class="d-top">
 								<a class="d-back d-top-back">
@@ -455,17 +455,229 @@
 								</ul>
 							</div>
 
-							<ul class="d-tab2__container">
-								<li class="d-tab2 d-tab2--active">
+							<ul class="d-tab2__container lk-access__tabs">
+								<li class="d-tab2">
 									<a href="/views/lk/about/index.html">О компании</a>
 								</li>
 								<li class="d-tab2">
 									<a href="/views/lk/staff/index.html">Сотрудники</a>
 								</li>
-								<li class="d-tab2">
+								<li class="d-tab2 d-tab2--active">
 									<a href="/views/lk/access/index.html">Права доступа</a>
 								</li>
 							</ul>
+
+							<table
+								class="d-table d-table--head-col-divider d-table--full-row-divider lk-access__table"
+							>
+								<thead class="d-table__head lk-access__table-head">
+									<tr class="d-table__row lk-access__table-row">
+										<th class="d-table__head-col lk-access__table-head-col">
+											Роли
+										</th>
+										<th class="d-table__head-col lk-access__table-head-col">
+											Администратор
+										</th>
+										<th class="d-table__head-col lk-access__table-head-col">
+											Менеджер
+										</th>
+										<th class="d-table__head-col lk-access__table-head-col">
+											Колл-центр
+										</th>
+										<th
+											class="d-table__head-col lk-access__table-head-col lk-access__table-head-col--add"
+										>
+											<i
+												class="d-icon-plus-rounded lk-access__table-head-col-icon"
+											></i>
+										</th>
+									</tr>
+								</thead>
+								<tbody class="d-table__body lk-access__table-body">
+									<tr
+										class="d-table__row lk-access__table-row lk-access__table-row--dropdown"
+									>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										>
+											<button class="lk-access__table-dropdown">
+												<span>Изменение данных компаний</span>
+												<i
+													class="d-icon-angle-rounded-bottom-bold lk-access__table-dropdown-icon"
+												></i>
+											</button>
+										</td>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										></td>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										></td>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										></td>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Чтение</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">
+											Добавление
+										</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Изменение</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Удаление</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Экспорт</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Импорт</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">
+											Разрешить свой вид карточки
+										</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr
+										class="d-table__row lk-access__table-row lk-access__table-row--dropdown"
+									>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										>
+											<button class="lk-access__table-dropdown">
+												<span>Отгрузки</span>
+												<i
+													class="d-icon-angle-rounded-bottom-bold lk-access__table-dropdown-icon"
+												></i>
+											</button>
+										</td>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										></td>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										></td>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										></td>
+										<td
+											class="d-table__col lk-access__table-col lk-access__table-col--dropdown"
+										></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Чтение</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">
+											Добавление
+										</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Изменение</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Удаление</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Экспорт</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">Импорт</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+									<tr class="d-table__row lk-access__table-row">
+										<td class="d-table__col lk-access__table-col">
+											Разрешить свой вид карточки
+										</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">Все</td>
+										<td class="d-table__col lk-access__table-col">
+											Нет доступа
+										</td>
+										<td class="d-table__col lk-access__table-col"></td>
+									</tr>
+								</tbody>
+							</table>
 						</section>
 					</div>
 				</main>
