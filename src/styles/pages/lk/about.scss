@@ -7,6 +7,7 @@
 
     &__info {
         display: flex;
+        align-items: center;
         gap: 52px;
         border-bottom: 0.5px solid #757575;
         padding-bottom: 24px;
@@ -19,17 +20,15 @@
         }
 
         &-title {
+            font-size: 16px;
+            font-weight: 600;
+
             &-wrapper {
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
                 flex-shrink: 0;
                 width: 348px;
-            }
-
-            &-label {
-                font-size: 16px;
-                font-weight: 600;
             }
 
             &-description {
@@ -102,6 +101,7 @@
 
         background-color: #ffffff;
         border-radius: 12px;
+        box-shadow: 0px 4px 13.4px -5px #00000042;
 
         padding: 24px;
 
@@ -124,6 +124,7 @@
                     display: flex;
                     flex-direction: column;
                     gap: 8px;
+                    width: 400px;
                 }
 
                 &-description {
@@ -159,6 +160,17 @@
             flex-direction: column;
             gap: 16px;
             margin-bottom: 24px;
+
+            &--bank {
+                margin-bottom: 0;
+
+                .lk-about__block-table-row {
+                    &:last-child {
+                        padding-bottom: 0;
+                        border-bottom: none;
+                    }
+                }
+            }
 
             &-row {
                 display: flex;
@@ -328,5 +340,305 @@
                 height: 40px;
             }
         }
+    }
+
+    @media (width <=1920px) {
+        padding-block: 24px;
+
+        &__info {
+            padding-bottom: 16px;
+
+            &-container {
+                margin-bottom: 40px;
+            }
+
+            &-title {
+                &-wrapper {
+                    width: 256px;
+                }
+            }
+
+            &-input {
+                --d-input-padding: 8px 24px;
+
+                height: 38px;
+
+                &-button {
+                    font-size: 18px;
+                }
+            }
+
+            &-button {
+                height: 38px;
+            }
+        }
+
+        &__block {
+            &-header {
+                margin-bottom: 32px;
+
+                &-button {
+                    height: 38px;
+                }
+            }
+
+            &-subtitle {
+                margin-bottom: 40px;
+            }
+
+            &-table {
+                &:not(&--bank) {
+                    margin-bottom: 16px;
+                }
+
+                &-col {
+                    gap: 8px;
+                }
+            }
+        }
+    }
+
+    @media (width <=1536px) {
+        padding-block: 32px;
+
+        &__info {
+            &-container {
+                gap: 16px;
+            }
+
+            &-title {
+                font-size: 14px;
+
+                &-wrapper {
+                    width: 220px;
+                }
+
+                &-description {
+                    font-size: 12px;
+                }
+            }
+
+            &-text {
+                font-size: 12px;
+            }
+
+            &-input {
+                --d-input-padding: 8px 24px;
+                font-size: 12px;
+            }
+
+            &-button {
+                font-size: 14px;
+                padding: 4px 8px;
+                height: 32px;
+                min-height: 32px;
+            }
+        }
+
+        &__block {
+            &--requisites {
+                margin-bottom: 40px;
+            }
+
+            &--bank {
+                .lk-about__block-header {
+                    margin-bottom: 40px;
+                }
+            }
+
+            &-header {
+                &-title {
+                    font-size: 14px;
+
+                    &-wrapper {
+                        width: 348px;
+                    }
+
+                    &-description {
+                        font-size: 12px;
+                    }
+                }
+
+                &-button {
+                    font-size: 14px;
+                    height: 34px;
+                    min-height: 34px;
+                }
+            }
+
+            &-subtitle {
+                font-size: 14px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    @media (width <=1280px) {
+        &__tabs {
+            margin-bottom: 32px;
+        }
+
+        &__info {
+            gap: 20px;
+            padding-bottom: 8px;
+
+            &-container {
+                gap: 8px;
+                margin-bottom: 16px;
+            }
+
+            &-title {
+                font-size: 10px;
+
+                &-wrapper {
+                    gap: 4px;
+                    width: 150px;
+                }
+
+                &-description {
+                    font-size: 9px;
+                }
+            }
+
+            &-input {
+                --d-input-padding: 4px 16px;
+                border-radius: 4px;
+                font-size: 9px;
+                font-weight: 500;
+                height: 24px;
+
+                &-button {
+                    font-size: 13px;
+                    width: 16px;
+                    height: 16px;
+                }
+
+                &-actions {
+                    &-divider {
+                        --d-divider-length: 16px;
+                    }
+                }
+            }
+
+            &-image {
+                height: 30px;
+            }
+
+            &-text {
+                font-size: 9px;
+                font-weight: 500;
+            }
+
+            &-button {
+                gap: 4px;
+                font-size: 10px;
+                font-weight: 400;
+                padding: 4px 8px;
+                height: 24px;
+                min-height: 24px;
+
+                &-icon {
+                    font-size: 10px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        &__block {
+            border-radius: 8px;
+            padding: 16px;
+
+            &--requisites {
+                margin-bottom: 24px;
+            }
+
+            &--bank .lk-about__block-header {
+                margin-bottom: 24px;
+            }
+
+            &-header {
+                margin-bottom: 16px;
+
+                &-title {
+                    font-size: 10px;
+
+                    &-wrapper {
+                        width: 250px;
+                    }
+
+                    &-description {
+                        font-size: 9px;
+                    }
+                }
+
+                &-button {
+                    font-size: 10px;
+                    font-weight: 600;
+                    padding: 4px 16px;
+                    height: 24px;
+                    min-height: 24px;
+
+                    &--hide {
+                        gap: 4px;
+                        font-size: 10px;
+                        font-weight: 400;
+                        padding: 4px 8px;
+                    }
+
+                    &-icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 10px;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
+            &-subtitle {
+                font-size: 10px;
+                margin-bottom: 24px;
+            }
+
+            &-table {
+                gap: 8px;
+
+                &:not(.lk-about__block-table--bank) {
+                    margin-bottom: 8px;
+                }
+
+                &-row {
+                    padding-bottom: 8px;
+                }
+
+                &-label {
+                    font-size: 9px;
+                }
+
+                &-value {
+                    font-size: 9px;
+                    font-weight: 500;
+                }
+            }
+
+            &-radio {
+                --d-radio-width: 16px;
+
+                &-wrapper {
+                    gap: 8px;
+                }
+
+                &-label {
+                    font-size: 9px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    @media (width <= 800px) {
+        
     }
 }

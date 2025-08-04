@@ -86,6 +86,7 @@
 
 @for $i from 1 to 25 {
   $percent: math.div($i, 24) * 100;
+
   .d-col-#{$i},
   .d-col-sm-#{$i},
   .d-col-md-#{$i},
@@ -102,6 +103,7 @@
 
 @for $i from 1 to 25 {
   $percent: math.div($i, 24) * 100;
+
   .d-col-#{$i} {
     flex: 0 0 auto;
     width: #{$percent}#{"%"};
@@ -111,6 +113,7 @@
 @media (min-width: $big-phones) {
   @for $i from 1 to 25 {
     $percent: math.div($i, 24) * 100;
+
     .d-col-sm-#{$i} {
       flex: 0 0 auto;
       width: #{$percent}#{"%"};
@@ -121,6 +124,7 @@
 @media (min-width: $small-tablets) {
   @for $i from 1 to 25 {
     $percent: math.div($i, 24) * 100;
+
     .d-col-md-#{$i} {
       flex: 0 0 auto;
       width: #{$percent}#{"%"};
@@ -131,6 +135,7 @@
 @media (min-width: $tablets) {
   @for $i from 1 to 25 {
     $percent: math.div($i, 24) * 100;
+
     .d-col-lg-#{$i} {
       flex: 0 0 auto;
       width: #{$percent}#{"%"};
@@ -141,6 +146,7 @@
 @media (min-width: $small-desktop) {
   @for $i from 1 to 25 {
     $percent: math.div($i, 24) * 100;
+
     .d-col-xl-#{$i} {
       flex: 0 0 auto;
       width: #{$percent}#{"%"};
@@ -151,6 +157,7 @@
 @media (min-width: $desktop) {
   @for $i from 1 to 25 {
     $percent: math.div($i, 24) * 100;
+
     .d-col-xxl-#{$i} {
       flex: 0 0 auto;
       width: #{$percent}#{"%"};
@@ -166,7 +173,7 @@
 
 @media (min-width: $small-tablets) {
   .dart-container {
-    max-width: 640px;
+    max-width: 600px;
   }
 }
 
