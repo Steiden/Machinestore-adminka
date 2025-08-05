@@ -436,16 +436,662 @@
 				</div>
 				<main class="main">
 					<div class="content-wrapper main__content-wrapper">
-						<section class="promotions" id="promotions">
-							<div class="promotions__header">
-                                <h1 class="promotions__header-title">Акции</h1>
-                                <button class="d-select promotions__header-select">
-                                    <span class="d-select__title">Акции по брендам</span>
-                                    <i
-                                        class="d-icon-angle-rounded-bottom d-select__arrow promotions__header-select-dropdown"
-                                    ></i>
-                                </button>
-                            </div>
+						<section class="promo" id="promo">
+							<!-- Верхушка страницы -->
+							<div class="d-top">
+								<a class="d-back d-top-back">
+									<i class="d-icon-arrow d-back__icon d-top-back-icon"></i>
+									<span class="d-back__text">Назад</span>
+								</a>
+								<ul class="d-breadcrumbs d-top-breadcrumbs">
+									<li class="d-breadcrumbs__item d-top-breadcrumbs-item">
+										<button class="d-breadcrumbs__button">Оптовые цены</button>
+									</li>
+									<li class="d-breadcrumbs__item d-top-breadcrumbs-item">
+										<button class="d-breadcrumbs__button">Акции</button>
+									</li>
+									<li
+										class="d-breadcrumbs__item d-breadcrumbs__item--active d-top-breadcrumbs-item"
+									>
+										<button class="d-breadcrumbs__button">
+											Насторойка акции
+										</button>
+									</li>
+								</ul>
+							</div>
+
+							<div
+								class="promos__banners-item promos__banners-item--primary promos__banners-item--big promo__banner"
+							>
+								<div class="promos__banners-item-content">
+									<div class="promos__banners-item-top">
+										<p class="promos__banners-item-title">опупенная цена</p>
+										<p class="promos__banners-item-description">
+											разбирай, налетай
+										</p>
+									</div>
+									<div class="promos__banners-item-bottom">
+										<p class="promos__banners-item-price">4 850 ₽</p>
+										<p class="promos__banners-item-old-price">8 850 ₽</p>
+									</div>
+								</div>
+
+								<img
+									src="/images/drill.png"
+									alt=""
+									class="promos__banners-item-image"
+									loading="lazy"
+								/>
+
+								<div class="promos__banners-item-pagination">
+									<div
+										class="promos__banners-item-pagination-item promos__banners-item-pagination-item--active"
+									></div>
+									<div class="promos__banners-item-pagination-item"></div>
+									<div class="promos__banners-item-pagination-item"></div>
+								</div>
+
+								<div class="promos__banners-item-badges">
+									<div class="promos__banners-item-badges-item">Реклама</div>
+									<span class="promos__banners-item-badges-text">0+</span>
+								</div>
+							</div>
+
+							<div class="promo__cards">
+								<div
+									class="promotions__card promotions__card--collapsed promo__cards-item--big"
+								>
+									<div class="promotions__card-header">
+										<div class="promotions__card-header-left">
+											<i class="d-icon-lines promotions__card-icon"></i>
+											<p class="promotions__card-title">Контент акции</p>
+										</div>
+									</div>
+									<div class="promotions__card-content">
+										<div class="promotions__card-values">
+											<div class="promotions__card-value-container">
+												<span class="promotions__card-label"
+													>Название акции:</span
+												>
+												<p
+													class="promotions__card-value promotions__card-value--bold"
+												>
+													4+1 на дрели
+												</p>
+											</div>
+											<div class="promotions__card-value-container">
+												<span class="promotions__card-label"
+													>Описание акции:</span
+												>
+												<p class="promotions__card-value">
+													При покупке 5-ти УШМ (с текущей скидкой клиента)
+													вы получаете 25 дисков по металлу бесплатно
+													(выгода достигается за счет скидки на
+													инструмент). При покупке 5-ти УШМ (с текущей
+													скидкой клиента) вы получаете 25 дисков по
+													металлу бесплатно. УШМ (с текущей скидкой
+													клиента) вы получаете 25 дисков по металлу
+													бесплатно (выгода достигается за счет скидки на
+													инструмент). А тут я добавила текста чтобы было
+													так по количеству символов и еще тут...
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="promo__cards-right">
+									<div class="promotions__card promo__cards-item">
+										<div class="promotions__card-header">
+											<div class="promotions__card-header-left">
+												<i class="d-icon-truck promotions__card-icon"></i>
+												<p class="promotions__card-title">
+													Условия доставки
+												</p>
+											</div>
+										</div>
+										<div
+											class="promotions__card-content promo__cards-item-content promo__cards-item-content--small"
+										>
+											<div
+												class="promotions__card-values promotions__card-promo-conds-content promo__cards-item-values promo__cards-item-values--delivery"
+											>
+												<div class="promotions__card-value-container">
+													<span class="promotions__card-label"
+														>Оплата доставки:</span
+													>
+													<p
+														class="promotions__card-value promotions__card-value--bold promotions__card-delivery-conds-value"
+													>
+														Доставка за счет покупателя
+													</p>
+												</div>
+												<div class="promotions__card-value-container">
+													<span class="promotions__card-label"
+														>Срок доставки:</span
+													>
+													<p
+														class="promotions__card-value promotions__card-value--bold promotions__card-delivery-conds-value"
+													>
+														Рассчитывается ТК
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="promotions__card promo__cards-item">
+										<div class="promotions__card-header">
+											<div class="promotions__card-header-left">
+												<i class="d-icon-wallet promotions__card-icon"></i>
+												<p class="promotions__card-title">Условия оплаты</p>
+											</div>
+										</div>
+										<div
+											class="promotions__card-content promo__cards-item-content promo__cards-item-content--small"
+										>
+											<div
+												class="promotions__card-values promotions__card-values--md-long promo__cards-item-values"
+											>
+												<div class="promotions__card-info">
+													<div class="promotions__card-value-container">
+														<span
+															class="promotions__card-label d-md-max-content"
+															>Под реализацию</span
+														>
+														<p
+															class="promotions__card-value promotions__card-value--bold promotions__card-delivery-conds-value"
+														>
+															120 дней
+														</p>
+													</div>
+												</div>
+												<div
+													class="d-fractions promo__cards-item-values-fractions"
+												>
+													<div class="d-fractions__item">
+														<p class="d-fractions__item-text">
+															Предоплата
+														</p>
+														<div
+															class="d-fractions__item-block"
+															style="width: 36px"
+														></div>
+														<p
+															class="d-fractions__item-text d-fractions__item-text--bottom"
+														>
+															20%
+														</p>
+													</div>
+													<div class="d-fractions__item">
+														<p class="d-fractions__item-text">
+															30 дней
+														</p>
+														<div
+															class="d-fractions__item-block"
+															style="width: 32px"
+														></div>
+														<p
+															class="d-fractions__item-text d-fractions__item-text--bottom"
+														>
+															30%
+														</p>
+													</div>
+													<div
+														class="d-fractions__item d-fractions__item--center"
+													>
+														<p class="d-fractions__item-text">
+															145 дней
+														</p>
+														<div
+															class="d-fractions__item-block"
+															style="width: 100px"
+														></div>
+														<p
+															class="d-fractions__item-text d-fractions__item-text--bottom"
+														>
+															50%
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="promotions__card promo__cards-item">
+										<div class="promotions__card-header">
+											<div class="promotions__card-header-left">
+												<i
+													class="d-icon-calendar3 promotions__card-icon"
+												></i>
+												<p class="promotions__card-title">Даты акции</p>
+											</div>
+										</div>
+										<div
+											class="promotions__card-content promo__cards-item-content promo__cards-item-content--small"
+										>
+											<div
+												class="promotions__card-values promotions__card-values--md-long promo__cards-item-values"
+											>
+												<div class="promotions__card-info">
+													<div class="promotions__card-value-container">
+														<span
+															class="promotions__card-label d-md-max-content"
+															>Срок проведения акции:</span
+														>
+														<div
+															class="promotions__card-value promotions__card-value--bold promotions__card-delivery-conds-value promo__cards-item-conds-value"
+														>
+															<div
+																class="promo__cards-item-conds-value-content"
+															>
+																<span>с 04.07.2025</span>
+																<div
+																	class="d-divider d-divider--vertical d-divider--no-margin promo__cards-item-conds-value-divider"
+																></div>
+																<span>до 04.07.2025</span>
+															</div>
+															<p
+																class="promo__cards-item-conds-value-total"
+															>
+																34 дня
+															</p>
+														</div>
+													</div>
+												</div>
+												<div class="d-fractions">
+													<div
+														class="d-fractions__item d-fractions__item--center"
+													>
+														<div
+															class="d-fractions__item-block"
+															style="width: 240px"
+														></div>
+														<p
+															class="d-fractions__item-text d-fractions__item-text--bottom"
+														>
+															Осталось 24 дня
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="promotions__card promo__card">
+								<div class="promotions__card-header">
+									<div class="promotions__card-header-left">
+										<i class="d-icon-check-list promotions__card-icon"></i>
+										<p class="promotions__card-title">
+											Условия участия в акции
+										</p>
+									</div>
+								</div>
+								<div class="promotions__card-content">
+									<div
+										class="promotions__card-block-wrapper promo__card-block-wrapper"
+									>
+										<div
+											class="promotions__card-value-container promotions__card-block promo__card-block"
+										>
+											<div
+												class="promotions__card-block-inner promo__card-block-inner"
+											>
+												<div
+													class="promotions__card-block-title-container promo__card-block-title-container"
+												>
+													<span
+														class="promotions__card-label promotions__card-label--big"
+														>Требования к заказу</span
+													>
+													<p
+														class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-title"
+													>
+														Минимальная общая сумма заказа товаров акции
+													</p>
+												</div>
+												<p
+													class="promotions__card-label promotions__card-label--big promotions__card-block-description promo__card-block-description"
+												>
+													Общая сумма товаров акции должна быть не менее
+													указанной суммы.
+												</p>
+												<p
+													class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-value promo__card-block-value"
+												>
+													0 ₽
+												</p>
+											</div>
+										</div>
+
+										<div
+											class="promotions__card-value-container promotions__card-block promo__card-block"
+										>
+											<div
+												class="promotions__card-block-inner promo__card-block-inner"
+											>
+												<div
+													class="promotions__card-block-title-container promo__card-block-title-container"
+												>
+													<p
+														class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-title"
+													>
+														Минимальное количество SKU акции
+													</p>
+												</div>
+												<p
+													class="promotions__card-label promotions__card-label--big promotions__card-block-description promo__card-block-description"
+												>
+													В заказе должно быть не менее заданного
+													количества SKU товаров акции.
+												</p>
+												<p
+													class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-value promo__card-block-value"
+												>
+													Любое
+												</p>
+											</div>
+										</div>
+
+										<div
+											class="promotions__card-value-container promotions__card-block promo__card-block"
+										>
+											<div
+												class="promotions__card-block-inner promo__card-block-inner"
+											>
+												<div
+													class="promotions__card-block-title-container promo__card-block-title-container"
+												>
+													<p
+														class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-title"
+													>
+														Минимально общее количество товаров
+													</p>
+												</div>
+												<p
+													class="promotions__card-label promotions__card-label--big promotions__card-block-description promo__card-block-description"
+												>
+													В заказе должно быть не менее заданного общего
+													количества товаров акции.
+												</p>
+												<p
+													class="promotions__card-value promotions__card-value--bold promotions__card-value--small promotions__card-block-value promo__card-block-value"
+												>
+													Любое
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<table
+								class="d-table d-table--head-col-divider d-table--full-row-divider d-table--first-col-divider promo__table"
+							>
+								<thead class="d-table__head promo__table-head">
+									<tr class="d-table__row promo__table-row">
+										<th class="d-table__head-col promo__table-head-col">
+											Фото
+										</th>
+										<th class="d-table__head-col promo__table-head-col">
+											Товар
+										</th>
+										<th class="d-table__head-col promo__table-head-col">РРЦ</th>
+										<th class="d-table__head-col promo__table-head-col">
+											Скидка
+										</th>
+										<th class="d-table__head-col promo__table-head-col">
+											Цена с скидкой за шт.
+										</th>
+										<th
+											class="d-table__head-col promo__table-head-col promo__table-head-col--add"
+										></th>
+									</tr>
+								</thead>
+								<tbody class="d-table__body promo__table-body">
+									<tr class="d-table__row promo__table-row">
+										<td class="d-table__col promo__table-col">
+											<img
+												class="promo__table-image"
+												src="/images/drill-sm.png"
+												alt=""
+												loading="lazy"
+											/>
+										</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-title-container">
+												<div class="promo__table-title-wrapper">
+													<p class="promo__table-title">
+														Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ
+														ДА-10/14.4Л2
+													</p>
+													<div class="promo__table-title-article">
+														Арт: 844337
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="d-table__col promo__table-col">2 500.00 ₽</td>
+										<td class="d-table__col promo__table-col">30%</td>
+										<td class="d-table__col promo__table-col">1 750.00 ₽</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-button-wrapper">
+												<button class="promo__table-button">
+													<i class="d-icon-cart"></i>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr class="d-table__row promo__table-row">
+										<td class="d-table__col promo__table-col">
+											<img
+												class="promo__table-image"
+												src="/images/drill-sm.png"
+												alt=""
+												loading="lazy"
+											/>
+										</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-title-container">
+												<div class="promo__table-title-wrapper">
+													<p class="promo__table-title">
+														Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ
+														ДА-10/14.4Л2
+													</p>
+													<div class="promo__table-title-article">
+														Арт: 844337
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="d-table__col promo__table-col">2 500.00 ₽</td>
+										<td class="d-table__col promo__table-col">30%</td>
+										<td class="d-table__col promo__table-col">1 750.00 ₽</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-button-wrapper">
+												<button class="promo__table-button">
+													<i class="d-icon-cart"></i>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr class="d-table__row promo__table-row">
+										<td class="d-table__col promo__table-col">
+											<img
+												class="promo__table-image"
+												src="/images/drill-sm.png"
+												alt=""
+												loading="lazy"
+											/>
+										</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-title-container">
+												<div class="promo__table-title-wrapper">
+													<p class="promo__table-title">
+														Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ
+														ДА-10/14.4Л2
+													</p>
+													<div class="promo__table-title-article">
+														Арт: 844337
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="d-table__col promo__table-col">2 500.00 ₽</td>
+										<td class="d-table__col promo__table-col">30%</td>
+										<td class="d-table__col promo__table-col">1 750.00 ₽</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-button-wrapper">
+												<button class="promo__table-button">
+													<i class="d-icon-cart"></i>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr class="d-table__row promo__table-row">
+										<td class="d-table__col promo__table-col">
+											<img
+												class="promo__table-image"
+												src="/images/drill-sm.png"
+												alt=""
+												loading="lazy"
+											/>
+										</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-title-container">
+												<div class="promo__table-title-wrapper">
+													<p class="promo__table-title">
+														Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ
+														ДА-10/14.4Л2
+													</p>
+													<div class="promo__table-title-article">
+														Арт: 844337
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="d-table__col promo__table-col">2 500.00 ₽</td>
+										<td class="d-table__col promo__table-col">30%</td>
+										<td class="d-table__col promo__table-col">1 750.00 ₽</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-button-wrapper">
+												<button class="promo__table-button">
+													<i class="d-icon-cart"></i>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr class="d-table__row promo__table-row">
+										<td class="d-table__col promo__table-col">
+											<img
+												class="promo__table-image"
+												src="/images/drill-sm.png"
+												alt=""
+												loading="lazy"
+											/>
+										</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-title-container">
+												<div class="promo__table-title-wrapper">
+													<p class="promo__table-title">
+														Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ
+														ДА-10/14.4Л2
+													</p>
+													<div class="promo__table-title-article">
+														Арт: 844337
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="d-table__col promo__table-col">2 500.00 ₽</td>
+										<td class="d-table__col promo__table-col">30%</td>
+										<td class="d-table__col promo__table-col">1 750.00 ₽</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-button-wrapper">
+												<button class="promo__table-button">
+													<i class="d-icon-cart"></i>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr class="d-table__row promo__table-row">
+										<td class="d-table__col promo__table-col">
+											<img
+												class="promo__table-image"
+												src="/images/drill-sm.png"
+												alt=""
+												loading="lazy"
+											/>
+										</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-title-container">
+												<div class="promo__table-title-wrapper">
+													<p class="promo__table-title">
+														Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ
+														ДА-10/14.4Л2
+													</p>
+													<div class="promo__table-title-article">
+														Арт: 844337
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="d-table__col promo__table-col">2 500.00 ₽</td>
+										<td class="d-table__col promo__table-col">30%</td>
+										<td class="d-table__col promo__table-col">1 750.00 ₽</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-button-wrapper">
+												<button class="promo__table-button">
+													<i class="d-icon-cart"></i>
+												</button>
+											</div>
+										</td>
+									</tr>
+									<tr class="d-table__row promo__table-row">
+										<td class="d-table__col promo__table-col">
+											<img
+												class="promo__table-image"
+												src="/images/drill-sm.png"
+												alt=""
+												loading="lazy"
+											/>
+										</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-title-container">
+												<div class="promo__table-title-wrapper">
+													<p class="promo__table-title">
+														Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ
+														ДА-10/14.4Л2
+													</p>
+													<div class="promo__table-title-article">
+														Арт: 844337
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="d-table__col promo__table-col">2 500.00 ₽</td>
+										<td class="d-table__col promo__table-col">30%</td>
+										<td class="d-table__col promo__table-col">1 750.00 ₽</td>
+										<td class="d-table__col promo__table-col">
+											<div class="promo__table-button-wrapper">
+												<button class="promo__table-button">
+													<i class="d-icon-cart"></i>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="promo__pagination-wrapper">
+								<ul class="d-pagination promo__pagination">
+									<li class="d-pagination__item">1</li>
+									<li class="d-pagination__item">2</li>
+									<li class="d-pagination__item">3</li>
+									<li class="d-pagination__item d-pagination__item--active">4</li>
+									<li class="d-pagination__item">+</li>
+								</ul>
+							</div>
 						</section>
 					</div>
 				</main>
