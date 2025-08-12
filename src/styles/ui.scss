@@ -2553,6 +2553,33 @@
     }
   }
 
+  &--first-row-divider {
+    .d-table__row {
+      &:not(:not(:first-child)) {
+        &::after {
+          content: "";
+          background-color: #757575;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          translate: -50% 0;
+          width: var(--d-table-row-divider-width);
+          height: 0.5px;
+        }
+      }
+    }
+
+    .d-table__head {
+      &>.d-table__row {
+        &:not(:not(:first-child)) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
   &--first-col-divider {
     .d-table__row {
       &:not(:not(:first-child)) {

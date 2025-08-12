@@ -43,6 +43,7 @@ export default defineConfig({
 				promo: resolve(__dirname, "views/promos/promo/index.html"),
 				"opt-orders": resolve(__dirname, "views/opt-orders/index.html"),
 				"opt-order": resolve(__dirname, "views/opt-orders/opt-order/index.html"),
+				balance: resolve(__dirname, "views/balance/index.html"),
 			},
 		},
 	},
