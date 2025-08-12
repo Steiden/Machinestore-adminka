@@ -1,0 +1,60 @@
+.opt-orders {
+    padding-block: 20px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+
+        &-title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        &-input {
+            width: 428px;
+        }
+    }
+
+    &__table {
+        &-row:nth-child(1) {
+            .opt-orders__table-col {
+                padding-top: 16px;
+            }
+        }
+
+        &-head-col {
+            &:nth-child(6) {
+                width: 256px;
+            }
+        }
+
+        &-col {
+            text-align: center;
+        }
+
+        &-badge {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 2px 8px;
+            height: 24px;
+            width: fit-content;
+
+            &--wait {
+                background-color: #ff715b;
+            }
+
+            &-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

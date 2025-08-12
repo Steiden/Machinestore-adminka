@@ -638,7 +638,45 @@
         }
     }
 
-    @media (width <= 800px) {
-        
+    @media (width <=800px) {
+        &__tabs {
+            margin-bottom: 24px;
+        }
+
+        &__info {
+            &--primary {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .lk-about__info-button {
+                    justify-self: flex-end;
+                }
+
+                .lk-about__info-input {
+                    order: 2;
+                    grid-column: 1/3;
+                    width: 100%;
+                }
+            }
+
+            &-input {
+                --d-input-padding: 4px 8px;
+                font-size: 8px;
+                font-weight: 500;
+                height: 18px;
+
+                &-button {
+                    font-size: 10px;
+                    width: 14px;
+                    height: 14px;
+                }
+
+                &-actions {
+                    &-divider {
+                        --d-divider-length: 8px;
+                    }
+                }
+            }
+        }
     }
 }

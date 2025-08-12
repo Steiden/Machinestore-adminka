@@ -41,6 +41,8 @@ export default defineConfig({
 				lk_staff_edit: resolve(__dirname, "views/lk/staff/edit/index.html"),
 				promos: resolve(__dirname, "views/promos/index.html"),
 				promo: resolve(__dirname, "views/promos/promo/index.html"),
+				"opt-orders": resolve(__dirname, "views/opt-orders/index.html"),
+				"opt-order": resolve(__dirname, "views/opt-orders/opt-order/index.html"),
 			},
 		},
 	},
