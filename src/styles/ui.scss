@@ -4145,6 +4145,149 @@
   }
 }
 
+.d-calendar {
+  --d-calendar-col-bg-color: transparent;
+  --d-calendar-button-offset: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      width: 24px;
+      height: 24px;
+
+      &:first-child {
+        margin-left: var(--d-calendar-button-offset);
+      }
+
+      &:last-child {
+        margin-right: var(--d-calendar-button-offset);
+      }
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 600;
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+
+    &-dropdown {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+
+      background-color: #282828;
+      border-radius: 50px;
+
+      color: #fbfbfb;
+      font-size: 16px;
+      font-weight: 500;
+
+      padding-inline: 8px;
+      height: 22px;
+
+      &-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+
+    &-hrow,
+    &-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-hrow {
+      border-bottom: 0.5px solid #757575;
+      height: 22px;
+    }
+
+    &-row {
+      height: 40px;
+    }
+
+    &-hcol,
+    &-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    &-hcol {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    &-col {
+      border-radius: 50%;
+      font-size: 16px;
+      font-weight: 400;
+
+      &-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--d-calendar-col-bg-color);
+        border-radius: 50%;
+
+        aspect-ratio: 1;
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        min-height: 36px;
+      }
+
+      &--disabled {
+        color: #757575;
+      }
+
+      &--weekend {
+        --d-calendar-col-bg-color: #ededed;
+      }
+
+      &--accent {
+        --d-calendar-col-bg-color: #f92c0d;
+        color: #ededed;
+      }
+
+      &--accent.d-calendar__body-col--weekend {
+        --d-calendar-col-bg-color: #ffcec7;
+        color: #282828;
+      }
+    }
+  }
+}
+
 // __________Other adaptive__________
 
 // Tab adaptive

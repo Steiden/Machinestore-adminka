@@ -322,7 +322,7 @@
 				</div>
 				<main class="main">
 					<div class="content-wrapper main__content-wrapper">
-						<section class="opt-orders" id="opt-orders">
+						<section class="warehouses" id="warehouses">
 							<!-- Верхушка страницы -->
 							<div class="d-top">
 								<a class="d-back d-top-back">
@@ -333,139 +333,299 @@
 									<li class="d-breadcrumbs__item d-top-breadcrumbs-item">
 										<button class="d-breadcrumbs__button">МСТ</button>
 									</li>
-									<li class="d-breadcrumbs__item d-top-breadcrumbs-item d-breadcrumbs__item--active">
-										<button class="d-breadcrumbs__button">Розничные заказы</button>
+									<li class="d-breadcrumbs__item d-breadcrumbs__item--active d-top-breadcrumbs-item">
+										<button class="d-breadcrumbs__button">Насторойка складов</button>
 									</li>
 								</ul>
 							</div>
 
-							<div class="opt-orders__header">
-								<h1 class="opt-orders__header-title">Розничные заказы</h1>
+							<div class="warehouses__header">
+								<h1 class="warehouses__header-title">Настройка складов</h1>
+							</div>
 
-								<div class="d-input d-input--light opt-orders__header-input">
-									<input type="text" placeholder="Наименование, артикул" name="search" class="d-input__field opt-orders__header-input-field" />
-									<div class="d-input__actions">
-										<button class="d-icon-wrapper opt-orders__header-input-button">
-											<i class="d-icon-search-big"></i>
-										</button>
+							<div class="warehouses__table">
+								<div class="warehouses__table-header">
+									<div class="warehouses__table-th">Название / Адрес</div>
+									<div class="warehouses__table-th">График работы</div>
+									<div class="warehouses__table-th">Активно</div>
+								</div>
+
+								<div class="warehouses__table-body">
+									<div class="warehouses__table-row">
+										<div class="warehouses__table-col">
+											<div class="warehouses__info">
+												<div class="warehouses__info-header">
+													<div class="warehouses__info-header-image-wrapper"><img src="/icons/machinestore.svg" alt="" class="warehouses__info-header-image" /></div>
+													<p class="warehouses__info-header-title">Фин Пром строй комплект</p>
+												</div>
+												<div class="warehouses__info-address">
+													<i class="d-icon-location warehouses__info-address-icon"></i>
+													<span>г. Химки, ул. Ленинградская, д. 29, этаж 9, пом. 4</span>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__schedules">
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Вт - Сб:</p>
+													<p class="warehouses__schedules-item-value">08:00-17:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Перерыв:</p>
+													<p class="warehouses__schedules-item-value">12:00-13:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Понедельник:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Воскресенье:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__check">
+												<i class="d-icon-check warehouses__check-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="warehouses__table-row">
+										<div class="warehouses__table-col">
+											<div class="warehouses__info">
+												<div class="warehouses__info-header">
+													<div class="warehouses__info-header-image-wrapper"><img src="/icons/machinestore.svg" alt="" class="warehouses__info-header-image" /></div>
+													<p class="warehouses__info-header-title">Фин Пром строй комплект</p>
+												</div>
+												<div class="warehouses__info-address">
+													<i class="d-icon-location warehouses__info-address-icon"></i>
+													<span>г. Химки, ул. Ленинградская, д. 29, этаж 9, пом. 4</span>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__schedules">
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Вт - Сб:</p>
+													<p class="warehouses__schedules-item-value">08:00-17:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Перерыв:</p>
+													<p class="warehouses__schedules-item-value">12:00-13:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Понедельник:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Воскресенье:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__check">
+												<i class="d-icon-check warehouses__check-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="warehouses__table-row">
+										<div class="warehouses__table-col">
+											<div class="warehouses__info">
+												<div class="warehouses__info-header">
+													<div class="warehouses__info-header-image-wrapper"><img src="/icons/machinestore.svg" alt="" class="warehouses__info-header-image" /></div>
+													<p class="warehouses__info-header-title">Фин Пром строй комплект</p>
+												</div>
+												<div class="warehouses__info-address">
+													<i class="d-icon-location warehouses__info-address-icon"></i>
+													<span>г. Химки, ул. Ленинградская, д. 29, этаж 9, пом. 4</span>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__schedules">
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Вт - Сб:</p>
+													<p class="warehouses__schedules-item-value">08:00-17:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Перерыв:</p>
+													<p class="warehouses__schedules-item-value">12:00-13:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Понедельник:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Воскресенье:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__check">
+												<i class="d-icon-check warehouses__check-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="warehouses__table-row">
+										<div class="warehouses__table-col">
+											<div class="warehouses__info">
+												<div class="warehouses__info-header">
+													<div class="warehouses__info-header-image-wrapper"><img src="/icons/machinestore.svg" alt="" class="warehouses__info-header-image" /></div>
+													<p class="warehouses__info-header-title">Фин Пром строй комплект</p>
+												</div>
+												<div class="warehouses__info-address">
+													<i class="d-icon-location warehouses__info-address-icon"></i>
+													<span>г. Химки, ул. Ленинградская, д. 29, этаж 9, пом. 4</span>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__schedules">
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Вт - Сб:</p>
+													<p class="warehouses__schedules-item-value">08:00-17:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Перерыв:</p>
+													<p class="warehouses__schedules-item-value">12:00-13:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Понедельник:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Воскресенье:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__check">
+												<i class="d-icon-check warehouses__check-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="warehouses__table-row">
+										<div class="warehouses__table-col">
+											<div class="warehouses__info">
+												<div class="warehouses__info-header">
+													<div class="warehouses__info-header-image-wrapper"><img src="/icons/machinestore.svg" alt="" class="warehouses__info-header-image" /></div>
+													<p class="warehouses__info-header-title">Фин Пром строй комплект</p>
+												</div>
+												<div class="warehouses__info-address">
+													<i class="d-icon-location warehouses__info-address-icon"></i>
+													<span>г. Химки, ул. Ленинградская, д. 29, этаж 9, пом. 4</span>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__schedules">
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Вт - Сб:</p>
+													<p class="warehouses__schedules-item-value">08:00-17:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Перерыв:</p>
+													<p class="warehouses__schedules-item-value">12:00-13:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Понедельник:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Воскресенье:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__check">
+												<i class="d-icon-check warehouses__check-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="warehouses__table-row">
+										<div class="warehouses__table-col">
+											<div class="warehouses__info">
+												<div class="warehouses__info-header">
+													<div class="warehouses__info-header-image-wrapper"><img src="/icons/machinestore.svg" alt="" class="warehouses__info-header-image" /></div>
+													<p class="warehouses__info-header-title">Фин Пром строй комплект</p>
+												</div>
+												<div class="warehouses__info-address">
+													<i class="d-icon-location warehouses__info-address-icon"></i>
+													<span>г. Химки, ул. Ленинградская, д. 29, этаж 9, пом. 4</span>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__schedules">
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Вт - Сб:</p>
+													<p class="warehouses__schedules-item-value">08:00-17:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Перерыв:</p>
+													<p class="warehouses__schedules-item-value">12:00-13:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Понедельник:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Воскресенье:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__check">
+												<i class="d-icon-check warehouses__check-icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="warehouses__table-row">
+										<div class="warehouses__table-col">
+											<div class="warehouses__info">
+												<div class="warehouses__info-header">
+													<div class="warehouses__info-header-image-wrapper"><img src="/icons/machinestore.svg" alt="" class="warehouses__info-header-image" /></div>
+													<p class="warehouses__info-header-title">Фин Пром строй комплект</p>
+												</div>
+												<div class="warehouses__info-address">
+													<i class="d-icon-location warehouses__info-address-icon"></i>
+													<span>г. Химки, ул. Ленинградская, д. 29, этаж 9, пом. 4</span>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__schedules">
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Вт - Сб:</p>
+													<p class="warehouses__schedules-item-value">08:00-17:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Перерыв:</p>
+													<p class="warehouses__schedules-item-value">12:00-13:00</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Понедельник:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+												<div class="warehouses__schedules-item">
+													<p class="warehouses__schedules-item-label">Воскресенье:</p>
+													<p class="warehouses__schedules-item-value">Выходной</p>
+												</div>
+											</div>
+										</div>
+										<div class="warehouses__table-col">
+											<div class="warehouses__check">
+												<i class="d-icon-check warehouses__check-icon"></i>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-
-							<table class="d-table d-table--head-col-divider d-table--full-row-divider d-table--first-col-divider opt-orders__table">
-								<thead class="d-table__head opt-orders__table-head">
-									<tr class="d-table__row opt-orders__table-row">
-										<th class="d-table__head-col opt-orders__table-head-col">Номер</th>
-										<th class="d-table__head-col opt-orders__table-head-col">Покупатель</th>
-										<th class="d-table__head-col opt-orders__table-head-col">Дата</th>
-										<th class="d-table__head-col opt-orders__table-head-col">Статус</th>
-										<th class="d-table__head-col opt-orders__table-head-col">Сумма</th>
-										<th class="d-table__head-col opt-orders__table-head-col">Доставка</th>
-										<th class="d-table__head-col opt-orders__table-head-col">Оплата</th>
-										<th class="d-table__head-col opt-orders__table-head-col">Магазин / Склад</th>
-									</tr>
-								</thead>
-								<tbody class="d-table__body opt-orders__table-body">
-									<tr class="d-table__row opt-orders__table-row">
-										<td class="d-table__col opt-orders__table-col">291_1</td>
-										<td class="d-table__col opt-orders__table-col">Тестович тест</td>
-										<td class="d-table__col opt-orders__table-col">05.06.2025<br />15:49:59</td>
-										<td class="d-table__col opt-orders__table-col">
-											<div class="opt-orders__table-badge-wrapper">
-												<div class="opt-orders__table-badge opt-orders__table-badge--wait">Ожидает выплаты</div>
-											</div>
-										</td>
-										<td class="d-table__col opt-orders__table-col">959 ₽</td>
-										<td class="d-table__col opt-orders__table-col">Челябинская обл., г. Миасс - Санкт Петербург</td>
-										<td class="d-table__col opt-orders__table-col">Юкаssa</td>
-										<td class="d-table__col opt-orders__table-col">МСТ</td>
-									</tr>
-									<tr class="d-table__row opt-orders__table-row">
-										<td class="d-table__col opt-orders__table-col">291_1</td>
-										<td class="d-table__col opt-orders__table-col">Тестович тест</td>
-										<td class="d-table__col opt-orders__table-col">05.06.2025<br />15:49:59</td>
-										<td class="d-table__col opt-orders__table-col">
-											<div class="opt-orders__table-badge-wrapper">
-												<div class="opt-orders__table-badge opt-orders__table-badge--wait">Ожидает выплаты</div>
-											</div>
-										</td>
-										<td class="d-table__col opt-orders__table-col">959 ₽</td>
-										<td class="d-table__col opt-orders__table-col">Челябинская обл., г. Миасс - Санкт Петербург</td>
-										<td class="d-table__col opt-orders__table-col">Юкаssa</td>
-										<td class="d-table__col opt-orders__table-col">МСТ</td>
-									</tr>
-									<tr class="d-table__row opt-orders__table-row">
-										<td class="d-table__col opt-orders__table-col">291_1</td>
-										<td class="d-table__col opt-orders__table-col">Тестович тест</td>
-										<td class="d-table__col opt-orders__table-col">05.06.2025<br />15:49:59</td>
-										<td class="d-table__col opt-orders__table-col">
-											<div class="opt-orders__table-badge-wrapper">
-												<div class="opt-orders__table-badge opt-orders__table-badge--wait">Ожидает выплаты</div>
-											</div>
-										</td>
-										<td class="d-table__col opt-orders__table-col">959 ₽</td>
-										<td class="d-table__col opt-orders__table-col">Челябинская обл., г. Миасс - Санкт Петербург</td>
-										<td class="d-table__col opt-orders__table-col">Юкаssa</td>
-										<td class="d-table__col opt-orders__table-col">МСТ</td>
-									</tr>
-									<tr class="d-table__row opt-orders__table-row">
-										<td class="d-table__col opt-orders__table-col">291_1</td>
-										<td class="d-table__col opt-orders__table-col">Тестович тест</td>
-										<td class="d-table__col opt-orders__table-col">05.06.2025<br />15:49:59</td>
-										<td class="d-table__col opt-orders__table-col">
-											<div class="opt-orders__table-badge-wrapper">
-												<div class="opt-orders__table-badge opt-orders__table-badge--wait">Ожидает выплаты</div>
-											</div>
-										</td>
-										<td class="d-table__col opt-orders__table-col">959 ₽</td>
-										<td class="d-table__col opt-orders__table-col">Челябинская обл., г. Миасс - Санкт Петербург</td>
-										<td class="d-table__col opt-orders__table-col">Юкаssa</td>
-										<td class="d-table__col opt-orders__table-col">МСТ</td>
-									</tr>
-									<tr class="d-table__row opt-orders__table-row">
-										<td class="d-table__col opt-orders__table-col">291_1</td>
-										<td class="d-table__col opt-orders__table-col">Тестович тест</td>
-										<td class="d-table__col opt-orders__table-col">05.06.2025<br />15:49:59</td>
-										<td class="d-table__col opt-orders__table-col">
-											<div class="opt-orders__table-badge-wrapper">
-												<div class="opt-orders__table-badge opt-orders__table-badge--wait">Ожидает выплаты</div>
-											</div>
-										</td>
-										<td class="d-table__col opt-orders__table-col">959 ₽</td>
-										<td class="d-table__col opt-orders__table-col">Челябинская обл., г. Миасс - Санкт Петербург</td>
-										<td class="d-table__col opt-orders__table-col">Юкаssa</td>
-										<td class="d-table__col opt-orders__table-col">МСТ</td>
-									</tr>
-									<tr class="d-table__row opt-orders__table-row">
-										<td class="d-table__col opt-orders__table-col">291_1</td>
-										<td class="d-table__col opt-orders__table-col">Тестович тест</td>
-										<td class="d-table__col opt-orders__table-col">05.06.2025<br />15:49:59</td>
-										<td class="d-table__col opt-orders__table-col">
-											<div class="opt-orders__table-badge-wrapper">
-												<div class="opt-orders__table-badge opt-orders__table-badge--wait">Ожидает выплаты</div>
-											</div>
-										</td>
-										<td class="d-table__col opt-orders__table-col">959 ₽</td>
-										<td class="d-table__col opt-orders__table-col">Челябинская обл., г. Миасс - Санкт Петербург</td>
-										<td class="d-table__col opt-orders__table-col">Юкаssa</td>
-										<td class="d-table__col opt-orders__table-col">МСТ</td>
-									</tr>
-									<tr class="d-table__row opt-orders__table-row">
-										<td class="d-table__col opt-orders__table-col">291_1</td>
-										<td class="d-table__col opt-orders__table-col">Тестович тест</td>
-										<td class="d-table__col opt-orders__table-col">05.06.2025<br />15:49:59</td>
-										<td class="d-table__col opt-orders__table-col">
-											<div class="opt-orders__table-badge-wrapper">
-												<div class="opt-orders__table-badge opt-orders__table-badge--wait">Ожидает выплаты</div>
-											</div>
-										</td>
-										<td class="d-table__col opt-orders__table-col">959 ₽</td>
-										<td class="d-table__col opt-orders__table-col">Челябинская обл., г. Миасс - Санкт Петербург</td>
-										<td class="d-table__col opt-orders__table-col">Юкаssa</td>
-										<td class="d-table__col opt-orders__table-col">МСТ</td>
-									</tr>
-								</tbody>
-							</table>
 						</section>
 					</div>
 				</main>

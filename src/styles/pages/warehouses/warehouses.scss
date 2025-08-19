@@ -1,0 +1,205 @@
+.warehouses {
+    padding-block: 20px;
+
+    &__header {
+        margin-bottom: 40px;
+
+        &-title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+
+    &__table {
+        --warehouses-table-col-gap: 28px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &-header {
+            display: flex;
+            align-items: center;
+            gap: var(--warehouses-table-col-gap);
+
+            background-color: #282828;
+            border-radius: 30px;
+
+            padding: 4px 16px;
+            height: 48px;
+        }
+
+        &-th,
+        &-col {
+            &:nth-child(1) {
+                max-width: 30%;
+            }
+
+            &:nth-child(2) {
+                max-width: 50%;
+            }
+
+            &:nth-child(3) {
+                max-width: 20%;
+            }
+        }
+
+        &-th {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #fbfbfb;
+            font-size: 14px;
+            font-weight: 400;
+
+            position: relative;
+            width: 100%;
+
+            &:not(:last-child) {
+                padding-right: var(--warehouses-table-col-gap);
+
+                &::after {
+                    content: '';
+
+                    background-color: #ffffff;
+
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    translate: 0 -50%;
+                    opacity: 0.5;
+
+                    height: 20px;
+                    width: 0.5px;
+                }
+            }
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &-row {
+            display: flex;
+            align-items: center;
+            gap: var(--warehouses-table-col-gap);
+
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 13.4px -5px #00000042;
+            padding: 16px;
+        }
+
+        &-col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+            width: 100%;
+
+            &:not(:last-child) {
+                padding-right: var(--warehouses-table-col-gap);
+
+                &::after {
+                    content: '';
+
+                    background-color: #757575;
+
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    translate: 0 -50%;
+                    opacity: 0.5;
+
+                    height: 20px;
+                    width: 0.5px;
+                }
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+
+        &-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &-image {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+
+                &-wrapper {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            &-title {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        &-address {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            color: #757575;
+            font-size: 14px;
+            font-weight: 400;
+
+            &-icon {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &__schedules {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px 24px;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &-label,
+            &-value {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            &-label {
+                color: #757575;
+
+            }
+        }
+    }
+
+    &__check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #cdf0a9;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+
+        &-icon {
+            font-size: 6px;
+        }
+    }
+}
