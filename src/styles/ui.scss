@@ -58,7 +58,7 @@
   // __________Divider__________
   --d-divider-length: 20px;
   --d-divider-width: 0.5px;
-  --d-divider-color: #757575;
+  --d-divider-color: #b8b8b8;
   --d-divider-margin: 8px;
   // ___________________________
 
@@ -2506,6 +2506,7 @@
           top: 50%;
           left: 0;
           translate: 0 -50%;
+          opacity: 0.5;
 
           width: 0.5px;
           height: 20px;
@@ -2535,8 +2536,9 @@
           position: absolute;
           bottom: 0;
           left: 50%;
-          translate: -50% 0;
+          opacity: 0.5;
           width: var(--d-table-row-divider-width);
+          translate: -50% 0;
           height: 0.5px;
         }
       }
@@ -2563,6 +2565,7 @@
           bottom: 0;
           left: 50%;
           translate: -50% 0;
+          opacity: 0.5;
           width: var(--d-table-row-divider-width);
           height: 0.5px;
         }
@@ -2594,6 +2597,7 @@
               top: 50%;
               left: 0;
               translate: 0 -50%;
+              opacity: 0.5;
 
               width: 0.5px;
               height: var(--d-table-col-divider-height);
@@ -2616,7 +2620,8 @@
     position: relative;
 
     &:first-child>.d-table__col {
-      padding-top: 8px;
+      // padding-top: 8px;
+      padding-top: 0;
     }
 
     &:not(:last-child, :first-child) {
@@ -2627,6 +2632,7 @@
         bottom: 0;
         left: 50%;
         translate: -50% 0;
+        opacity: 0.5;
         width: var(--d-table-row-divider-width);
         height: 1px;
       }
@@ -2644,6 +2650,7 @@
             top: 50%;
             left: 0;
             translate: 0 -50%;
+            opacity: 0.5;
 
             width: 0.5px;
             height: var(--d-table-col-divider-height);
@@ -4552,21 +4559,21 @@
 }
 
 .d-tab2 {
-  --d-tab2-bg-active: #F92C0D;
-  --d-tab2-color-active: #FBFBFB;
-  --d-tab2-font-weight-active: 600;
+  --d-tab2-bg: #fbfbfb;
+  --d-tab2-color: #757575;
+  --d-tab2-font-weight: 500;
 
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4px;
 
-  background-color: transparent;
+  background-color: var(--d-tab2-bg);
   border-radius: 30px;
 
-  color: #757575;
+  color: var(--d-tab2-color);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: var(--d-tab2-font-weight);
 
   transition-duration: .2s;
 
@@ -4575,9 +4582,9 @@
   max-height: 100%;
 
   &--active {
-    background-color: var(--d-tab2-bg-active);
-    color: var(--d-tab2-color-active);
-    font-weight: var(--d-tab2-font-weight-active);
+    --d-tab2-bg: #F92C0D;
+    --d-tab2-color: #FBFBFB;
+    --d-tab2-font-weight: 600;
   }
 
   &__container {

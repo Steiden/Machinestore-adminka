@@ -48,6 +48,8 @@ export default defineConfig({
 				warehouse: resolve(__dirname, "views/warehouses/warehouse/index.html"),
 				analysis: resolve(__dirname, "views/warehouses/analysis/index.html"),
 				analysis_id: resolve(__dirname, "views/warehouses/analysis/id/index.html"),
+				collections: resolve(__dirname, "views/collections/index.html"),
+				collection: resolve(__dirname, "views/collections/collection/index.html"),
 			},
 		},
 	},
