@@ -1,3 +1,5 @@
+@use "../../mixins" as *;
+
 .collection {
     --collection-block-gap: 24px;
 
@@ -336,5 +338,51 @@
 
     &__check {
         margin-left: 64px;
+    }
+
+    &__choose {
+        &-modal {
+            width: 764px;
+            height: 284px;
+        }
+
+        &-header {
+            margin-bottom: 32px;
+        }
+
+        &-list {
+            @include scrollbar;
+
+            & {
+                display: flex;
+                gap: 16px;
+                flex-wrap: wrap;
+                overflow-y: auto;
+            }
+        }
+
+        &-item {
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #ededed;
+            border-radius: 30px;
+
+            font-size: 16px;
+            font-weight: 400;
+
+            padding: 8px 24px;
+            height: 40px;
+            width: fit-content;
+
+            &--active {
+                background-color: #f92c0d;
+                color: #fbfbfb;
+                font-weight: 500;
+            }
+        }
     }
 }

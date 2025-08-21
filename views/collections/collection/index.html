@@ -407,7 +407,7 @@
 													</label>
 													<label for="test-radio4" class="d-radio__label collection__block-radio-label">Загрузить файлом</label>
 												</div>
-												<button class="d-button d-button-primary d-button--no-shadow collection__block-conditions-add-button">
+												<button class="d-button d-button-primary d-button--no-shadow collection__block-conditions-add-button" data-modal2-trigger="d-modal2">
 													<i class="d-icon-plus-flat collection__block-conditions-add-button-icon"></i>
 													<span>Добавить условие</span>
 												</button>
@@ -833,6 +833,42 @@
 								</div>
 							</div>
 						</section>
+
+						<!-- Модалка "Выберите тип условия" -->
+						<div class="d-modal2__overlay collection__choose-overlay">
+							<div class="d-modal2__wrapper collection__choose-wrapper">
+								<div class="d-modal2 d-modal2--active collection__choose-modal" data-modal2="chooseConditions">
+									<button class="d-modal2__close collection__choose-close" data-modal2-close>
+										<i class="d-icon-times d-modal2__close-icon"></i>
+									</button>
+									<div class="d-modal2__header collection__choose-header">
+										<p class="d-modal2__title collection__choose-title">Выберите тип условия</p>
+									</div>
+									<div class="d-modal2__content collection__choose-content">
+										<div class="collection__choose-list">
+											<div class="collection__choose-item collection__choose-item--active">Категории</div>
+											<div class="collection__choose-item">Категории системных интеграций</div>
+											<div class="collection__choose-item">Теги</div>
+											<div class="collection__choose-item">Бренды</div>
+										</div>
+
+										<div class="d-modal2__actions collection__choose-actions">
+											<button
+												class="d-button d-button-secondary d-button-secondary-small box-shadow-none d-modal2__action-button collection__choose-actions-button collection__choose-actions-button--cancel"
+											>
+												<span>Отмена</span>
+											</button>
+
+											<button
+												class="d-button d-button-primary d-button-primary-small box-shadow-none d-modal2__action-button collection__choose-actions-button collection__choose-actions-button--ok"
+											>
+												<span>Добавить</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</main>
 			</div>
