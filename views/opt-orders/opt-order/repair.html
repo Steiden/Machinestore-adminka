@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/icons/logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Главная</title>
+		<link href="https://dev.iconly.io/public/NrjD5MCn0Lux/iconly.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="app">
+			<aside class="sidebar" id="sidebar">
+				<div class="sidebar__inner sidebar__inner--desktop">
+					<div class="sidebar__content-wrapper">
+						<div class="sidebar__logo-wrapper">
+							<a href="/" class="sidebar__logo-container">
+								<img src="/icons/logo.svg" alt="MST" width="40" height="40" class="sidebar__logo" />
+								<span class="sidebar__logo-text">МСТ Аналитика</span>
+							</a>
+							<div class="sidebar__block sidebar__toggle-block sidebar__logo-toggle">
+								<button class="sidebar__toggle" data-sidebar-toggle>
+									<i class="d-icon-arrow sidebar__toggle-icon"></i>
+								</button>
+							</div>
+						</div>
+						<div class="sidebar__content">
+							<div class="sidebar__divider sidebar__divider--light sidebar__warehouse-divider-top sidebar__hidden"></div>
+
+							<div class="sidebar__warehouse sidebar__hidden">
+								<div class="sidebar__warehouse-content">
+									<span class="sidebar__warehouse-title">Склад доставки:</span>
+									<p class="sidebar__warehouse-text">Ростов на Дону, ул. Микухина Каланахлоя, 11 / 7 к 32 ЛИТ 898</p>
+								</div>
+								<button class="d-icon-wrapper sidebar__warehouse-button">
+									<i class="d-icon-pen sidebar__warehouse-button-icon"></i>
+								</button>
+							</div>
+
+							<div class="sidebar__divider sidebar__divider--light sidebar__warehouse-divider-bottom sidebar__hidden"></div>
+
+							<div class="sidebar__block sidebar__toggle-block">
+								<button class="sidebar__toggle" data-sidebar-toggle>
+									<i class="d-icon-arrow sidebar__toggle-icon"></i>
+								</button>
+							</div>
+
+							<div class="sidebar__divider sidebar__divider--light header__vendor-divider-top sidebar__hidden"></div>
+
+							<div class="header__vendor">
+								<span class="header__vendor-title">выбрано поставщиков:</span>
+								<button class="header__vendor-button">
+									<div>
+										<i class="d-icon-trolley header__vendor-icon"></i>
+										<span class="header__vendor-value">6 из 45</span>
+									</div>
+									<i class="d-icon-angle-rounded header__vendor-arrow"></i>
+								</button>
+							</div>
+
+							<div class="sidebar__divider sidebar__divider--light sidebar__organization-divider-top sidebar__hidden"></div>
+
+							<div class="sidebar__block sidebar__organization-block">
+								<button class="sidebar__organization sidebar__organization--mini">
+									<img src="/icons/spo-logo.svg" alt="SPO" class="sidebar__organization-logo" />
+								</button>
+								<div class="sidebar__organization sidebar__organization--full sidebar__hidden">
+									<img src="/icons/spo-logo.svg" alt="SPO" class="sidebar__organization-logo" />
+									<div class="sidebar__organization-content">
+										<span class="sidebar__organization-title">Специальное Профессиональное Оборудование</span>
+										<button class="d-button d-button-tertiary d-button-tertiary-small sidebar__organization-button">
+											<i class="d-icon-refresh sidebar__organization-button-icon"></i>
+											<span class="sidebar__organization-button-text">Сменить компанию</span>
+										</button>
+									</div>
+									<button class="d-icon-wrapper sidebar__organization-info-button">
+										<i class="d-icon-info sidebar__organization-info-button-icon"></i>
+									</button>
+								</div>
+							</div>
+
+							<div class="sidebar__divider sidebar__divider--light sidebar__user-divider--top sidebar__hidden"></div>
+
+							<button class="sidebar__user sidebar__hidden">
+								<i class="d-icon-profile sidebar__user-icon"></i>
+								<span class="sidebar__user-text">Игорь Игореведовичив</span>
+							</button>
+
+							<div class="sidebar__divider sidebar__divider--light sidebar__user-divider--bottom sidebar__hidden"></div>
+
+							<div class="sidebar__divider sidebar__nav-divider--top"></div>
+
+							<nav class="sidebar__nav">
+								<ul class="sidebar__list">
+									<li class="sidebar__block sidebar__item">
+										<button class="sidebar__item-button">
+											<i class="d-icon-list sidebar__item-icon"></i>
+											<span class="sidebar__item-text">Закупки</span>
+										</button>
+									</li>
+									<li class="sidebar__block sidebar__item">
+										<button class="sidebar__item-button sidebar__visible">
+											<i class="d-icon-cart-solid sidebar__item-icon"></i>
+											<span class="sidebar__item-text">Заказы</span>
+										</button>
+										<button class="sidebar__item-button sidebar__hidden">
+											<i class="d-icon-bag sidebar__item-icon"></i>
+											<span class="sidebar__item-text">Мои заказы</span>
+										</button>
+									</li>
+									<li class="sidebar__block sidebar__item">
+										<button class="sidebar__item-button">
+											<i class="d-icon-star sidebar__item-icon"></i>
+											<span class="sidebar__item-text sidebar__visible">Поставщики</span>
+											<span class="sidebar__item-text sidebar__hidden">Мои поставщики</span>
+										</button>
+									</li>
+									<li class="sidebar__block sidebar__item">
+										<button class="sidebar__item-button">
+											<i class="d-icon-box sidebar__item-icon"></i>
+											<span class="sidebar__item-text">Товары</span>
+										</button>
+									</li>
+								</ul>
+							</nav>
+							<div class="sidebar__divider sidebar__bottom-divider sidebar__visible"></div>
+						</div>
+					</div>
+					<div class="sidebar__bottom">
+						<div class="sidebar__divider sidebar__bottom-divider sidebar__hidden"></div>
+
+						<div class="sidebar__block sidebar__item sidebar__question-block sidebar__question-block--mini">
+							<button class="sidebar__item-button sidebar__question">
+								<i class="d-icon-question sidebar__item-icon sidebar__question-logo"></i>
+								<span class="sidebar__item-text">Вопросы</span>
+							</button>
+						</div>
+						<div class="sidebar__block sidebar__item sidebar__exit-block sidebar__exit-block--mini">
+							<button class="sidebar__item-button sidebar__exit">
+								<i class="d-icon-exit sidebar__item-icon sidebar__exit-logo"></i>
+								<span class="sidebar__item-text">Выйти</span>
+							</button>
+						</div>
+
+						<button class="sidebar__bottom-block sidebar__question-block sidebar__hidden">
+							<i class="d-icon-question sidebar__question-logo"></i>
+							<span class="sidebar__bottom-block-text">Работа в Закупках</span>
+						</button>
+
+						<button class="sidebar__bottom-block sidebar__exit-block sidebar__hidden">
+							<i class="d-icon-exit sidebar__exit-logo"></i>
+							<span class="sidebar__bottom-block-text">Выйти из ЛК</span>
+						</button>
+					</div>
+				</div>
+				<div class="sidebar__inner sidebar__inner--mobile">
+					<nav class="sidebar__nav">
+						<ul class="sidebar__list">
+							<li class="sidebar__block sidebar__item">
+								<button class="sidebar__item-button" data-catalog-toggle>
+									<i class="d-icon-burger sidebar__item-icon"></i>
+								</button>
+							</li>
+							<li class="sidebar__block sidebar__item">
+								<button class="sidebar__item-button">
+									<i class="d-icon-bell-solid sidebar__item-icon"></i>
+								</button>
+							</li>
+							<li class="sidebar__block sidebar__item">
+								<button class="sidebar__item-button">
+									<i class="d-icon-upload-solid sidebar__item-icon"></i>
+								</button>
+							</li>
+							<li class="sidebar__block sidebar__item sidebar__item--active">
+								<button class="sidebar__item-button">
+									<i class="d-icon-catalog-solid sidebar__item-icon"></i>
+								</button>
+							</li>
+							<li class="sidebar__block sidebar__item">
+								<button class="sidebar__item-button">
+									<i class="d-icon-cart-solid sidebar__item-icon"></i>
+								</button>
+							</li>
+							<li class="sidebar__block sidebar__item">
+								<button class="sidebar__item-button">
+									<img src="/icons/spo-logo.svg" class="sidebar__item-img" />
+								</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</aside>
+			<div class="content">
+				<div class="header__wrapper">
+					<header class="content-wrapper header">
+						<div class="header__catalog-content">
+							<a href="/" class="header__logo-container">
+								<img src="/icons/logo.svg" alt="MST" width="40" height="40" class="header__logo" />
+								<span class="header__logo-text">Управление продажами</span>
+							</a>
+							<div class="sidebar__divider sidebar__divider--light header__logo-divider"></div>
+							<div class="header__top">
+								<button class="header__address">
+									<i class="d-icon-location header__address-icon"></i>
+									<p class="header__address-title">Склад:</p>
+									<div class="header__address-value">
+										<p class="header__address-text">Ростов на Дону, ул. Микухина Каланахлоя, 11 / 7 к 32 ЛИТ 898</p>
+										<div class="header__address-divider"></div>
+										<i class="d-icon-pen header__address-edit-icon"></i>
+									</div>
+								</button>
+								<div class="header__vendor">
+									<span class="header__vendor-title">выбрано поставщиков:</span>
+									<button class="header__vendor-button">
+										<i class="d-icon-trolley header__vendor-icon"></i>
+										<span class="header__vendor-value">6 из 45</span>
+										<i class="d-icon-angle header__vendor-arrow"></i>
+									</button>
+								</div>
+							</div>
+							<div class="header__content">
+								<div class="header__left">
+									<div class="header__design" data-catalog-design>
+										<div class="header__design-block header__design-block--left"></div>
+										<div class="header__design-block header__design-block--right"></div>
+
+										<button class="d-button d-button-primary header__catalog" data-catalog-toggle>
+											<i class="d-icon-catalog header__catalog-icon"></i>
+											<span class="header__catalog-text">Каталог</span>
+										</button>
+										<form class="d-search header__search">
+											<input type="text" placeholder="Найти у поставщиков" class="d-search__field header__search-field" />
+											<button type="submit" class="d-button d-button-primary d-button-primary-small box-shadow-none d-search__button header__search-button">Найти</button>
+											<button type="submit" class="d-search__icon-button header__search-icon-button">
+												<i class="d-icon-search-big header__icon-button-icon"></i>
+											</button>
+											<ul class="d-search__suggestions">
+												<!-- <li class="d-search__suggestion">
+													Россия, Москва, Большой Предтеченский переулок, 13с4
+												</li>
+												<li class="d-search__suggestion">
+													Россия, Москва, Большой Предтеченский переулок, 13с4
+												</li>
+												<li class="d-search__suggestion">
+													Россия, Москва, Большой Предтеченский переулок, 13с4
+												</li>
+												<li class="d-search__suggestion">
+													Россия, Москва, Большой Предтеченский переулок, 13с4
+												</li> -->
+											</ul>
+										</form>
+									</div>
+									<button class="d-button d-button-tertiary shadow header__upload">
+										<i class="d-icon-upload header__upload-icon"></i>
+										<span class="header__upload-text">Потребность</span>
+									</button>
+								</div>
+								<div class="header__right">
+									<button class="d-button d-button-secondary d-button-rounded header__cart">
+										<i class="d-icon-cart header__cart-icon"></i>
+									</button>
+									<button class="d-button d-button-secondary d-button-rounded header__notification">
+										<i class="d-icon-bell header__notification-icon"></i>
+										<div class="status">+100</div>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="header__profile-content">
+							<div class="header__vendor">
+								<div class="header__vendor-content">
+									<span class="header__vendor-title">выбрано поставщиков:</span>
+									<div class="header__vendor-button">
+										<i class="d-icon-trolley header__vendor-icon"></i>
+										<span class="header__vendor-value">6 из 45</span>
+									</div>
+								</div>
+								<button>
+									<i class="d-icon-angle-rounded header__vendor-arrow"></i>
+								</button>
+							</div>
+
+							<div class="sidebar__divider sidebar__divider--light header__vendor-divider"></div>
+
+							<div class="header__organization">
+								<div class="header__organization-info">
+									<img src="/icons/spo-logo.svg" alt="SPO" class="header__organization-logo" />
+									<span class="header__organization-title">Специальное Профессиональное Оборудование</span>
+								</div>
+								<button class="d-icon-wrapper header__organization-info-button">
+									<i class="d-icon-info header__organization-info-button-icon"></i>
+								</button>
+							</div>
+
+							<div class="sidebar__divider sidebar__divider--light header__user-divider header__user-divider--top"></div>
+
+							<button class="header__user">
+								<i class="d-icon-profile header__user-icon"></i>
+								<span class="header__user-text">Игорь Игореведовичив</span>
+							</button>
+
+							<div class="sidebar__divider sidebar__divider--light header__user-divider header__user-divider--bottom"></div>
+
+							<div class="header__organization-button-wrapper">
+								<button class="d-button d-button-tertiary d-button-tertiary-small sidebar__organization-button">
+									<i class="d-icon-refresh sidebar__organization-button-icon"></i>
+									<span class="sidebar__organization-button-text">Сменить компанию</span>
+								</button>
+							</div>
+
+							<div class="header__address header__address--alt">
+								<i class="d-icon-location header__address-icon"></i>
+								<div class="header__address-content">
+									<p class="header__address-title">Склад:</p>
+									<p class="header__address-text">Ростов на Дону, ул. Микухина Каланахлоя, 11 / 7 к 32 ЛИТ 898</p>
+								</div>
+								<button class="header__address-edit">
+									<i class="d-icon-pen header__address-edit-icon"></i>
+								</button>
+							</div>
+						</div>
+					</header>
+				</div>
+				<main class="main">
+					<div class="content-wrapper main__content-wrapper">
+						<section class="opt-order-r" id="opt-order-r">
+							<!-- Верхушка страницы -->
+							<div class="d-top">
+								<a class="d-back d-top-back">
+									<i class="d-icon-arrow d-back__icon d-top-back-icon"></i>
+									<span class="d-back__text">Назад</span>
+								</a>
+								<ul class="d-breadcrumbs d-top-breadcrumbs">
+									<li class="d-breadcrumbs__item d-top-breadcrumbs-item">
+										<button class="d-breadcrumbs__button">МСТ</button>
+									</li>
+									<li class="d-breadcrumbs__item d-top-breadcrumbs-item d-breadcrumbs__item--active">
+										<button class="d-breadcrumbs__button">Заказ № 345653</button>
+									</li>
+								</ul>
+							</div>
+
+							<div class="opt-order-r__header">
+								<div class="opt-order-r__header-left">
+									<div class="opt-order-r__header-title-wrapper">
+										<h1 class="opt-order-r__header-title">Заказ № 345653</h1>
+										<div class="opt-order-r__header-badge">Ожидает оплаты</div>
+									</div>
+									<p class="opt-order-r__header-description">от 20.06.2024 <span class="opt-order-r__header-description-strong">15:49:59</span></p>
+								</div>
+
+								<div class="opt-order-r__header-actions">
+									<button class="d-button d-button-primary d-button--no-shadow opt-order-r__header-actions-button opt-order-r__header-actions-button--cancel">Отменить заказ</button>
+									<button class="d-button d-button-quaternary d-button--no-shadow opt-order-r__header-actions-button opt-order-r__header-actions-button--file">
+										<i class="d-icon-file opt-order-r__header-actions-button-icon"></i>
+										<span>Документы (2)</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="opt-order-r__info">
+								<h2 class="opt-order-r__info-title">Информация о заказе</h2>
+								<div class="opt-order-r__info-list">
+									<div class="opt-order-r__info-item">
+										<p class="opt-order-r__info-item-label">Сумма</p>
+										<div class="opt-order-r__info-item-value">
+											<p class="opt-order-r__info-item-price">959 ₽</p>
+										</div>
+									</div>
+									<div class="opt-order-r__info-item">
+										<p class="opt-order-r__info-item-label">Инициатор</p>
+										<div class="opt-order-r__info-item-value">
+											<p>МСТ</p>
+											<p class="opt-order-r__info-item-description">(Яна Харламова)</p>
+										</div>
+									</div>
+									<div class="opt-order-r__info-item">
+										<p class="opt-order-r__info-item-label">Поставщик</p>
+										<div class="opt-order-r__info-item-value">
+											<p>ООО «ЗМЗ»</p>
+											<p>ИНН: 77743255403</p>
+											<p class="opt-order-r__info-item-text">Московская область, рабочий поселок Некрасовский, Шоссейная улица, 13А</p>
+										</div>
+									</div>
+									<div class="opt-order-r__info-item">
+										<p class="opt-order-r__info-item-label">Покупатель</p>
+										<div class="opt-order-r__info-item-value">
+											<p>ООО «МСТ»</p>
+											<p>ИНН: 77743255403</p>
+											<p class="opt-order-r__info-item-text">Московская область, рабочий поселок Некрасовский, Шоссейная улица, 13А</p>
+										</div>
+									</div>
+									<div class="opt-order-r__info-item">
+										<p class="opt-order-r__info-item-label">Отсрочка</p>
+										<div class="opt-order-r__info-item-value">
+											<p>Предоплата</p>
+										</div>
+									</div>
+									<div class="opt-order-r__info-item">
+										<p class="opt-order-r__info-item-label">Оплата доставки</p>
+										<div class="opt-order-r__info-item-value">
+											<p>Поставщик</p>
+										</div>
+									</div>
+									<div class="opt-order-r__info-item">
+										<p class="opt-order-r__info-item-label">Срок доставки</p>
+										<div class="opt-order-r__info-item-value">
+											<p>1 дн. <span>(05.06.2025)</span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="opt-order-r__table-wrapper">
+								<h2 class="opt-order-r__table-title">Состав заказа</h2>
+
+								<table class="d-table d-table--full d-table--head-col-divider opt-order-r__table">
+									<thead class="d-table__head opt-order-r__table-head">
+										<tr class="d-table__row opt-order-r__table-row">
+											<th class="d-table__head-col opt-order-r__table-hcol">Фото</th>
+											<th class="d-table__head-col opt-order-r__table-hcol">Наименование</th>
+											<th class="d-table__head-col opt-order-r__table-hcol">Артикул</th>
+											<th class="d-table__head-col opt-order-r__table-hcol">Количество</th>
+											<th class="d-table__head-col opt-order-r__table-hcol">Цена</th>
+											<th class="d-table__head-col opt-order-r__table-hcol">Сумма</th>
+										</tr>
+									</thead>
+									<tbody class="d-table__body opt-order-r__table-body">
+										<tr class="d-table__row opt-order-r__table-row">
+											<td class="d-table__col opt-order-r__table-col"></td>
+											<td class="d-table__col opt-order-r__table-col"></td>
+											<td class="d-table__col opt-order-r__table-col"></td>
+											<td class="d-table__col opt-order-r__table-col"></td>
+											<td class="d-table__col opt-order-r__table-col"></td>
+											<td class="d-table__col opt-order-r__table-col"></td>
+										</tr>
+										<tr class="d-table__row opt-order-r__table-row">
+											<td class="d-table__col opt-order-r__table-col">
+												<img src="/images/drill-sm.png" alt="" class="opt-order-r__table-image" />
+											</td>
+											<td class="d-table__col opt-order-r__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
+											<td class="d-table__col opt-order-r__table-col">56754447789</td>
+											<td class="d-table__col opt-order-r__table-col">1 шт.</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+										</tr>
+										<tr class="d-table__row opt-order-r__table-row">
+											<td class="d-table__col opt-order-r__table-col">
+												<img src="/images/drill-sm.png" alt="" class="opt-order-r__table-image" />
+											</td>
+											<td class="d-table__col opt-order-r__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
+											<td class="d-table__col opt-order-r__table-col">56754447789</td>
+											<td class="d-table__col opt-order-r__table-col">1 шт.</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+										</tr>
+										<tr class="d-table__row opt-order-r__table-row">
+											<td class="d-table__col opt-order-r__table-col">
+												<img src="/images/drill-sm.png" alt="" class="opt-order-r__table-image" />
+											</td>
+											<td class="d-table__col opt-order-r__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
+											<td class="d-table__col opt-order-r__table-col">56754447789</td>
+											<td class="d-table__col opt-order-r__table-col">1 шт.</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+										</tr>
+										<tr class="d-table__row opt-order-r__table-row">
+											<td class="d-table__col opt-order-r__table-col">
+												<img src="/images/drill-sm.png" alt="" class="opt-order-r__table-image" />
+											</td>
+											<td class="d-table__col opt-order-r__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
+											<td class="d-table__col opt-order-r__table-col">56754447789</td>
+											<td class="d-table__col opt-order-r__table-col">1 шт.</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+										</tr>
+										<tr class="d-table__row opt-order-r__table-row">
+											<td class="d-table__col opt-order-r__table-col">
+												<img src="/images/drill-sm.png" alt="" class="opt-order-r__table-image" />
+											</td>
+											<td class="d-table__col opt-order-r__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
+											<td class="d-table__col opt-order-r__table-col">56754447789</td>
+											<td class="d-table__col opt-order-r__table-col">1 шт.</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+										</tr>
+										<tr class="d-table__row opt-order-r__table-row">
+											<td class="d-table__col opt-order-r__table-col">
+												<img src="/images/drill-sm.png" alt="" class="opt-order-r__table-image" />
+											</td>
+											<td class="d-table__col opt-order-r__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
+											<td class="d-table__col opt-order-r__table-col">56754447789</td>
+											<td class="d-table__col opt-order-r__table-col">1 шт.</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+											<td class="d-table__col opt-order-r__table-col">959 ₽</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<script type="module" src="/src/main.js"></script>
+	</body>
+</html>
