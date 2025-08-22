@@ -21,13 +21,17 @@
     &__table {
         &-row:nth-child(1) {
             .opt-orders__table-col {
-                padding-top: 16px;
+                padding-top: 0;
             }
         }
 
         &-head-col {
             &:nth-child(6) {
                 width: 256px;
+            }
+
+            &:nth-child(8) {
+                width: 290px;
             }
         }
 
