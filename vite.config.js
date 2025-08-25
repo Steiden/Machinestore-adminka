@@ -50,6 +50,8 @@ export default defineConfig({
 				analysis_id: resolve(__dirname, "views/warehouses/analysis/id/index.html"),
 				collections: resolve(__dirname, "views/collections/index.html"),
 				collection: resolve(__dirname, "views/collections/collection/index.html"),
+				offers: resolve(__dirname, "views/offers/index.html"),
+				orders: resolve(__dirname, "views/orders/index.html"),
 			},
 		},
 	},
