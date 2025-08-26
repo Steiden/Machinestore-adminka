@@ -1,4 +1,4 @@
-.sales-policies {
+.ppromotions {
     padding-block: 20px;
 
     &__header {
@@ -10,10 +10,6 @@
         }
     }
 
-    &__tabs {
-        margin-bottom: 40px;
-    }
-
     &__actions {
         display: flex;
         align-items: center;
@@ -23,6 +19,22 @@
 
         &-input {
             width: 428px;
+
+            &--dropdown {
+                width: 400px;
+            }
+
+            &-container {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+            }
+        }
+
+        &-radio {
+            &-wrapper {
+                width: fit-content;
+            }
         }
 
         &-button {
@@ -46,19 +58,32 @@
 
         &-hcol {
             &:nth-child(1) {
-                width: 120px;
+                width: 90px;
             }
 
             &:nth-child(2) {
-                width: 410px;
+                width: 190px;
             }
 
+            &:nth-child(3) {
+                width: 360px;
+            }
+
+            &:nth-child(4),
             &:nth-child(5) {
-                width: 480px;
+                width: 105px;
             }
 
-            &:nth-child(6) {
-                width: 15px;
+            &:nth-child(7) {
+                width: 85px;
+            }
+
+            &:nth-child(9) {
+                width: 200px;
+            }
+
+            &:nth-child(10) {
+                width: 140px;
 
                 &::before {
                     display: none;
@@ -68,6 +93,18 @@
 
         &-col {
             text-align: center;
+        }
+
+        &-org {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &-image {
+                aspect-ratio: 1;
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 }
