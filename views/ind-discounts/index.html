@@ -322,7 +322,7 @@
 				</div>
 				<main class="main">
 					<div class="content-wrapper main__content-wrapper">
-						<section class="retail-promos" id="retail-promos">
+						<section class="ind-discounts" id="ind-discounts">
 							<!-- Верхушка страницы -->
 							<div class="d-top">
 								<a class="d-back d-top-back">
@@ -334,86 +334,76 @@
 										<button class="d-breadcrumbs__button">МСТ</button>
 									</li>
 									<li class="d-breadcrumbs__item d-breadcrumbs__item--active d-top-breadcrumbs-item">
-										<button class="d-breadcrumbs__button">Розничные акции</button>
+										<button class="d-breadcrumbs__button">Индивидуальные скидки</button>
 									</li>
 								</ul>
 							</div>
 
-							<div class="retail-promos__header">
-								<h1 class="retail-promos__header-title">Розничные акции</h1>
+							<div class="ind-discounts__header">
+								<h1 class="ind-discounts__header-title">Индивидуальные скидки</h1>
 							</div>
 
-							<div class="retail-promos__actions">
-								<div class="d-input d-input--light retail-promos__actions-input">
-									<input type="text" placeholder="Введите название акции" name="search" class="d-input__field retail-promos__actions-input-field" />
-									<div class="d-input__actions">
-										<button class="d-icon-wrapper retail-promos__actions-input-button">
-											<i class="d-icon-search-big"></i>
-										</button>
+							<div class="ind-discounts__actions">
+								<div class="ind-discounts__actions-input-container">
+									<div class="d-input d-input--light ind-discounts__actions-input">
+										<input type="text" placeholder="Наименование" name="search" class="d-input__field ind-discounts__actions-input-field" />
+										<div class="d-input__actions">
+											<button class="d-icon-wrapper ind-discounts__actions-input-button">
+												<i class="d-icon-search-big"></i>
+											</button>
+										</div>
+									</div>
+									<div class="d-input d-input--light ind-discounts__actions-input ind-discounts__actions-input--dropdown">
+										<input type="text" placeholder="Выберите склад" name="search" class="d-input__field ind-discounts__actions-input-field" />
+										<div class="d-input__actions">
+											<button class="d-icon-wrapper ind-discounts__actions-input-button">
+												<i class="d-icon-angle-rounded-bottom-bold"></i>
+											</button>
+										</div>
 									</div>
 								</div>
 
-								<button class="d-button d-button-primary d-button--no-shadow retail-promos__actions-button">
-									<i class="d-icon-plus-flat retail-promos__actions-button-icon"></i>
-									<span>Создать акцию</span>
+								<button class="d-button d-button-primary d-button--no-shadow ind-discounts__actions-button">
+									<i class="d-icon-plus-flat ind-discounts__actions-button-icon"></i>
+									<span>Создать скидку</span>
 								</button>
 							</div>
 
-							<table class="d-table d-table--full d-table--head-col-divider d-table--big-padding retail-promos__table">
-								<thead class="d-table__head retail-promos__table-head">
-									<tr class="d-table__row retail-promos__table-row">
-										<th class="d-table__head-col retail-promos__table-hcol">Номер</th>
-										<th class="d-table__head-col retail-promos__table-hcol">Баннер</th>
-										<th class="d-table__head-col retail-promos__table-hcol">Название</th>
-										<th class="d-table__head-col retail-promos__table-hcol">Действует с</th>
-										<th class="d-table__head-col retail-promos__table-hcol">Действует до</th>
-										<th class="d-table__head-col retail-promos__table-hcol">Статус</th>
-										<th class="d-table__head-col retail-promos__table-hcol">Активно</th>
-										<th class="d-table__head-col retail-promos__table-hcol">Склад</th>
-										<th class="d-table__head-col retail-promos__table-hcol">Комментарий</th>
-										<th class="d-table__head-col retail-promos__table-hcol"></th>
+							<table class="d-table d-table--full d-table--head-col-divider d-table--big-padding ind-discounts__table">
+								<thead class="d-table__head ind-discounts__table-head">
+									<tr class="d-table__row ind-discounts__table-row">
+										<th class="d-table__head-col ind-discounts__table-hcol">Организация</th>
+										<th class="d-table__head-col ind-discounts__table-hcol">Склад</th>
+										<th class="d-table__head-col ind-discounts__table-hcol">Активно</th>
+										<th class="d-table__head-col ind-discounts__table-hcol">Комментарий</th>
+										<th class="d-table__head-col ind-discounts__table-hcol"></th>
 									</tr>
 								</thead>
-								<tbody class="d-table__body retail-promos__table-body">
-									<tr class="d-table__row retail-promos__table-row">
-										<td class="d-table__col retail-promos__table-col"></td>
-										<td class="d-table__col retail-promos__table-col"></td>
-										<td class="d-table__col retail-promos__table-col"></td>
-										<td class="d-table__col retail-promos__table-col"></td>
-										<td class="d-table__col retail-promos__table-col"></td>
-										<td class="d-table__col retail-promos__table-col"></td>
-										<td class="d-table__col retail-promos__table-col"></td>
-										<td class="d-table__col retail-promos__table-col"></td>
-										<td class="d-table__col retail-promos__table-col"></td>
-										<td class="d-table__col retail-promos__table-col"></td>
+								<tbody class="d-table__body ind-discounts__table-body">
+									<tr class="d-table__row ind-discounts__table-row">
+										<td class="d-table__col ind-discounts__table-col"></td>
+										<td class="d-table__col ind-discounts__table-col"></td>
+										<td class="d-table__col ind-discounts__table-col"></td>
+										<td class="d-table__col ind-discounts__table-col"></td>
+										<td class="d-table__col ind-discounts__table-col"></td>
 									</tr>
-									<tr class="d-table__row retail-promos__table-row">
-										<td class="d-table__col retail-promos__table-col">3452</td>
-										<td class="d-table__col retail-promos__table-col">
-											<img src="/images/promo.png" alt="" class="retail-promos__table-image" />
-										</td>
-										<td class="d-table__col retail-promos__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
+									<tr class="d-table__row ind-discounts__table-row">
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
-												<div class="d-badge d-badge--delivery">В пути</div>
+												<div class="ind-discounts__table-org">
+													<img src="/icons/spo-logo.svg" alt="" class="ind-discounts__table-org-image" />
+													<span>Спец Проф Оборудование</span>
+												</div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Химки. Ленинградская. 29</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
 												<div class="d-check"><i class="d-icon-check d-check__icon"></i></div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">Химки. Ленинградская. 29</td>
-										<td class="d-table__col retail-promos__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-actions">
 												<button class="d-table__col-actions-button">
 													<i class="d-icon-pen2"></i>
@@ -429,33 +419,23 @@
 											</div>
 										</td>
 									</tr>
-									<tr class="d-table__row retail-promos__table-row">
-										<td class="d-table__col retail-promos__table-col">3452</td>
-										<td class="d-table__col retail-promos__table-col">
-											<img src="/images/promo.png" alt="" class="retail-promos__table-image" />
-										</td>
-										<td class="d-table__col retail-promos__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
+									<tr class="d-table__row ind-discounts__table-row">
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
-												<div class="d-badge d-badge--delivery">В пути</div>
+												<div class="ind-discounts__table-org">
+													<img src="/icons/spo-logo.svg" alt="" class="ind-discounts__table-org-image" />
+													<span>Спец Проф Оборудование</span>
+												</div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Химки. Ленинградская. 29</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
 												<div class="d-check"><i class="d-icon-check d-check__icon"></i></div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">Химки. Ленинградская. 29</td>
-										<td class="d-table__col retail-promos__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-actions">
 												<button class="d-table__col-actions-button">
 													<i class="d-icon-pen2"></i>
@@ -471,33 +451,23 @@
 											</div>
 										</td>
 									</tr>
-									<tr class="d-table__row retail-promos__table-row">
-										<td class="d-table__col retail-promos__table-col">3452</td>
-										<td class="d-table__col retail-promos__table-col">
-											<img src="/images/promo.png" alt="" class="retail-promos__table-image" />
-										</td>
-										<td class="d-table__col retail-promos__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
+									<tr class="d-table__row ind-discounts__table-row">
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
-												<div class="d-badge d-badge--delivery">В пути</div>
+												<div class="ind-discounts__table-org">
+													<img src="/icons/spo-logo.svg" alt="" class="ind-discounts__table-org-image" />
+													<span>Спец Проф Оборудование</span>
+												</div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Химки. Ленинградская. 29</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
 												<div class="d-check"><i class="d-icon-check d-check__icon"></i></div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">Химки. Ленинградская. 29</td>
-										<td class="d-table__col retail-promos__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-actions">
 												<button class="d-table__col-actions-button">
 													<i class="d-icon-pen2"></i>
@@ -513,33 +483,23 @@
 											</div>
 										</td>
 									</tr>
-									<tr class="d-table__row retail-promos__table-row">
-										<td class="d-table__col retail-promos__table-col">3452</td>
-										<td class="d-table__col retail-promos__table-col">
-											<img src="/images/promo.png" alt="" class="retail-promos__table-image" />
-										</td>
-										<td class="d-table__col retail-promos__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
+									<tr class="d-table__row ind-discounts__table-row">
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
-												<div class="d-badge d-badge--delivery">В пути</div>
+												<div class="ind-discounts__table-org">
+													<img src="/icons/spo-logo.svg" alt="" class="ind-discounts__table-org-image" />
+													<span>Спец Проф Оборудование</span>
+												</div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Химки. Ленинградская. 29</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
 												<div class="d-check"><i class="d-icon-check d-check__icon"></i></div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">Химки. Ленинградская. 29</td>
-										<td class="d-table__col retail-promos__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-actions">
 												<button class="d-table__col-actions-button">
 													<i class="d-icon-pen2"></i>
@@ -555,75 +515,23 @@
 											</div>
 										</td>
 									</tr>
-									<tr class="d-table__row retail-promos__table-row">
-										<td class="d-table__col retail-promos__table-col">3452</td>
-										<td class="d-table__col retail-promos__table-col">
-											<img src="/images/promo.png" alt="" class="retail-promos__table-image" />
-										</td>
-										<td class="d-table__col retail-promos__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
+									<tr class="d-table__row ind-discounts__table-row">
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
-												<div class="d-badge d-badge--delivery">В пути</div>
+												<div class="ind-discounts__table-org">
+													<img src="/icons/spo-logo.svg" alt="" class="ind-discounts__table-org-image" />
+													<span>Спец Проф Оборудование</span>
+												</div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Химки. Ленинградская. 29</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-inner">
 												<div class="d-check"><i class="d-icon-check d-check__icon"></i></div>
 											</div>
 										</td>
-										<td class="d-table__col retail-promos__table-col">Химки. Ленинградская. 29</td>
-										<td class="d-table__col retail-promos__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
-										<td class="d-table__col retail-promos__table-col">
-											<div class="d-table__col-actions">
-												<button class="d-table__col-actions-button">
-													<i class="d-icon-pen2"></i>
-												</button>
-												<div class="d-divider d-divider--vertical d-divider--no-margin d-table__col-actions-divider"></div>
-												<button class="d-table__col-actions-button">
-													<i class="d-icon-power"></i>
-												</button>
-												<div class="d-divider d-divider--vertical d-divider--no-margin d-table__col-actions-divider"></div>
-												<button class="d-table__col-actions-button">
-													<i class="d-icon-trash"></i>
-												</button>
-											</div>
-										</td>
-									</tr>
-									<tr class="d-table__row retail-promos__table-row">
-										<td class="d-table__col retail-promos__table-col">3452</td>
-										<td class="d-table__col retail-promos__table-col">
-											<img src="/images/promo.png" alt="" class="retail-promos__table-image" />
-										</td>
-										<td class="d-table__col retail-promos__table-col">Аккумуляторная дрель-шуруповерт ИНТЕРСКОЛ ДА-10/14.4Л2</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
-											<p>07.06.2024</p>
-											<p>15:00</p>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
-											<div class="d-table__col-inner">
-												<div class="d-badge d-badge--delivery">В пути</div>
-											</div>
-										</td>
-										<td class="d-table__col retail-promos__table-col">
-											<div class="d-table__col-inner">
-												<div class="d-check"><i class="d-icon-check d-check__icon"></i></div>
-											</div>
-										</td>
-										<td class="d-table__col retail-promos__table-col">Химки. Ленинградская. 29</td>
-										<td class="d-table__col retail-promos__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
-										<td class="d-table__col retail-promos__table-col">
+										<td class="d-table__col ind-discounts__table-col">Любой комментарий который может быть любого размера даже в пол страницы например как тут</td>
+										<td class="d-table__col ind-discounts__table-col">
 											<div class="d-table__col-actions">
 												<button class="d-table__col-actions-button">
 													<i class="d-icon-pen2"></i>
