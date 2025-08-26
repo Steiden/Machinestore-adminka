@@ -1,0 +1,93 @@
+.retail-promos {
+    padding-block: 20px;
+
+    &__header {
+        margin-bottom: 32px;
+
+        &-title {
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 40px;
+
+        &-input {
+            width: 428px;
+        }
+
+        &-button {
+            gap: 8px;
+            padding: 8px 24px;
+            width: fit-content;
+
+            &-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__table {
+        --d-table-first-col-padding: 16px;
+        --d-table-col-padding: 16px;
+
+        &-row {
+            &:first-child {
+                --d-table-col-padding: 8px;
+            }
+
+            &:nth-child(2) {
+                --d-table-col-padding: 8px 16px 16px 16px;
+            }
+        }
+
+        &-hcol {
+            &:nth-child(1) {
+                width: 90px;
+            }
+
+            &:nth-child(2) {
+                width: 190px;
+            }
+
+            &:nth-child(3) {
+                width: 360px;
+            }
+
+            &:nth-child(4),
+            &:nth-child(5) {
+                width: 105px;
+            }
+
+            &:nth-child(7) {
+                width: 85px;
+            }
+
+            &:nth-child(9) {
+                width: 200px;
+            }
+
+            &:nth-child(10) {
+                width: 140px;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        &-col {
+            text-align: center;
+        }
+    }
+}

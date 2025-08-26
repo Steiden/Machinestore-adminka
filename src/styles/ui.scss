@@ -76,6 +76,7 @@
   --d-table-head-height: 48px;
   --d-table-first-col-padding: 24px;
   --d-table-col-divider-height: 20px;
+  --d-table-col-padding: 8px;
   --d-table-head-col-divider-height: 20px;
   --d-table-row-divider-width: calc(100% - var(--d-table-first-col-padding) * 2);
   // ___________________________
@@ -2757,7 +2758,7 @@
   }
 
   &__col {
-    padding: 8px;
+    padding: var(--d-table-col-padding);
     vertical-align: middle;
 
     &:not(:first-child) {
@@ -2770,6 +2771,25 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    &-actions {
+      display: flex;
+      align-items: center;
+
+      &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        aspect-ratio: 1;
+        width: 40px;
+        height: 40px;
+      }
+
+      &-divider {
+        --d-divider-length: 20px;
+      }
     }
   }
 
@@ -4337,6 +4357,20 @@
         color: #282828;
       }
     }
+  }
+}
+
+.d-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cdf0a9;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+
+  &__icon {
+    font-size: 8px;
   }
 }
 
