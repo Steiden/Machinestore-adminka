@@ -4384,6 +4384,207 @@
   }
 }
 
+.d-notification {
+  pointer-events: all;
+
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(35px);
+  border-radius: 12px;
+  box-shadow: 0px 4px 13.4px -5px #00000042;
+
+  position: relative;
+  padding: 24px;
+  width: 560px;
+
+  &__overlay {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 16px;
+
+    padding-top: calc(var(--header-height) + 16px);
+    height: 100%;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 8px;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+      }
+
+      &-divider {
+        --d-divider-length: 16px;
+      }
+    }
+
+    &-icon {
+      &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &-text {
+      color: #757575;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__badge {
+    background-color: #F92C0D;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    aspect-ratio: 1;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    min-height: 8px;
+  }
+
+  &__modal {
+    background-color: #FFFFFF8C;
+    backdrop-filter: blur(23px);
+
+    width: 1072px;
+    height: 100%;
+
+    &-wrapper {
+      height: 100%;
+    }
+
+    &-close {
+      position: static;
+      margin-left: 32px;
+      width: 16px;
+      height: 16px;
+
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 20px;
+      margin-bottom: 32px;
+
+      &-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &-button {
+          font-size: 16px;
+          font-weight: 500;
+          padding: 4px 12px;
+          width: 144px;
+          height: 36px;
+          min-height: 36px;
+
+          &--delete {
+            color: #757575;
+          }
+        }
+      }
+    }
+
+    &-content {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 32px;
+      padding-bottom: calc(var(--d-modal2-padding) + 60px);
+    }
+
+    &-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background-color: #FFFFFF8C;
+      background-color: #fff;
+      backdrop-filter: blur(23px);
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      translate: -50% 0;
+      padding: 8px;
+      height: 60px;
+      width: 100%;
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &-title {
+        color: #757575;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
 // __________Other adaptive__________
 
 // Tab adaptive
